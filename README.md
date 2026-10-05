@@ -4,18 +4,18 @@
 cd ~/Documents/hochochoc/English/on_ielts && python3 server.py   # http://localhost:8766
 ```
 
-Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Nút **Nộp & chấm** gọi `claude -p` trên máy với rubric ở `cham-diem/`. Kho Aptis cũ vẫn chạy song song ở `../on_aptis` (cổng 8765).
+Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Muốn có icon riêng trên thanh taskbar/Dock: Chrome → menu ⋮ → Truyền, lưu và chia sẻ → Cài đặt trang dưới dạng ứng dụng. Phím `[` thu gọn / mở rộng thanh bên. Nút **Nộp & chấm** gọi `claude -p` trên máy với rubric ở `cham-diem/`. Kho Aptis cũ vẫn chạy song song ở `../on_aptis` (cổng 8765).
 
 ## Có gì
 
 | Màn | Nội dung |
 |---|---|
-| Học | Bài học 10–15 phút theo kỹ năng (Nền tảng, Task 2, Speaking; Task 1, Reading, Listening ở đợt sau) và trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
+| Học | 51 bài học 10–15 phút theo kỹ năng (Nền tảng, Task 1, Task 2, Speaking, Reading, Listening) và trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
 | Writing | Task 1 (biểu đồ vẽ từ khối ```chart) và Task 2; đồng hồ 20/40 phút; đếm từ theo mốc 150/250; chấm 4 tiêu chí |
 | Speaking | Part 1; Part 2 cue card (1 phút chuẩn bị, 2 phút nói) + Part 3; chấm FC/LR/GRA/P (P là ước lượng) |
 | Reading | Nhập đáp án đề Cambridge của bạn → tự chấm, quy ra band, thống kê theo dạng câu. (Listening tự ôn ngoài web.) |
 | Thi thử | Speaking Part 1 → 2 → 3, khoảng 13 phút, bốc đề ngẫu nhiên |
-| Tổng quan | Chuỗi ngày học, phút học hôm nay/tuần, hạn mức 3 việc mỗi ngày (tự đánh dấu khi làm xong), ghi tay phút Listening, 2 ngày nghỉ phép/tháng, tiêu chí yếu nhất, bảng band theo tiêu chí |
+| Tổng quan | Đọc mỗi ngày (1 quote hoặc truyện ngắn, xoay vòng 120 bài trong `hoc/doc-moi-ngay.json`), Chuỗi ngày học, phút học hôm nay/tuần, hạn mức 3 việc mỗi ngày (tự đánh dấu khi làm xong), ghi tay phút Listening, 2 ngày nghỉ phép/tháng, tiêu chí yếu nhất, bảng band theo tiêu chí |
 | Từ chủ động | Kho cụm tự thu từ mỗi lần chấm; ôn giãn cách 1→2→4→8→16 ngày với 4 kiểu bài (gợi nhớ ngược, điền câu, tự đặt câu, nói); “từ đích” hiện khi làm bài, máy chấm kiểm tra đã dùng đúng chưa; dùng đúng ở 3 bài khác nhau = chủ động |
 | Tiến độ | Lịch tháng, lưới chặng tới ngày thi, cài đặt mục tiêu; biểu đồ giờ học/tuần, band theo thời gian, tiêu chí Writing, Reading theo dạng câu, lỗi lặp lại, phễu từ chủ động |
 
@@ -37,6 +37,7 @@ on_ielts/
 ├── research/                 ← format & band, xu hướng đề 2026
 ├── hoc/bai/*.md              ← bài học kỹ năng (quy ước: hoc/QUY-UOC.md, kiểm tra: tools/validate_hoc.py)
 ├── hoc/chu-de/*.md           ← trang học theo chủ đề
+├── hoc/doc-moi-ngay.json     ← 80 quote + 40 truyện ngắn cho mục Đọc mỗi ngày
 ├── hoc/tu-aptis/             ← tài liệu dùng lại từ đợt Aptis
 ├── attempts/                 ← bài đã chấm (mỗi lần một file .md, kèm nhãn lỗi)
 │   ├── _log/study.jsonl      ← giờ học theo ngày · _log/state.json: cài đặt, check-in, ngày nghỉ phép

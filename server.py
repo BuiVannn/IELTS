@@ -2,6 +2,7 @@
 Stdlib only. Chấm Writing/Speaking bằng Claude Code CLI local (`claude -p`)."""
 import json
 import math
+import mimetypes
 import os
 import re
 import subprocess
@@ -17,6 +18,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from build_index import frontmatter, main as build_index  # noqa: E402
 
 PORT = 8766
+mimetypes.add_type("application/manifest+json", ".webmanifest")
 EXAM_DIRS = ["writing/task1", "writing/task2", "speaking/part1", "speaking/part2"]
 ATTEMPTS = ROOT / "attempts"
 RUBRIC = {"writing": ROOT / "cham-diem/rubric-writing.md", "speaking": ROOT / "cham-diem/rubric-speaking.md"}
