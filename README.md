@@ -10,7 +10,7 @@ Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Muốn có ico
 
 | Màn | Nội dung |
 |---|---|
-| Học | 51 bài học 10–15 phút theo kỹ năng (Nền tảng, Task 1, Task 2, Speaking, Reading, Listening) và trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
+| Học | 51 bài học 10–15 phút theo kỹ năng (Nền tảng, Task 1, Task 2, Speaking, Reading, Listening) và 15 trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
 | Writing | Task 1 (biểu đồ vẽ từ khối ```chart) và Task 2; đồng hồ 20/40 phút; đếm từ theo mốc 150/250; chấm 4 tiêu chí |
 | Speaking | Part 1; Part 2 cue card (1 phút chuẩn bị, 2 phút nói) + Part 3; chấm FC/LR/GRA/P (P là ước lượng) |
 | Reading | Nhập đáp án đề Cambridge của bạn → tự chấm, quy ra band, thống kê theo dạng câu. (Listening tự ôn ngoài web.) |
