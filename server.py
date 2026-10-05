@@ -152,12 +152,6 @@ def save_attempt(item_id, skill, part, ans, feedback, result, path=None):
     build_index()
 
 
-PRACTICE = ATTEMPTS / "_luyen-cau"
-PRACTICE_LOG = PRACTICE / "log.jsonl"
-MODES = {"bac1": "Bậc 1 — Câu lõi", "bac2": "Bậc 2 — Mở rộng câu", "bac3": "Bậc 3 — Nối câu",
-         "bac4": "Bậc 4 — Dịch ngược", "bac5": "Bậc 5 — Ghép đoạn", "y-tuong": "Tìm ý 60 giây"}
-
-
 def append_jsonl(path, entries):
     path.parent.mkdir(parents=True, exist_ok=True)
     t = datetime.now().isoformat(timespec="seconds")
@@ -170,34 +164,6 @@ def read_jsonl(path):
     if not path.exists():
         return []
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
-
-
-def check_practice(mode, items):
-    """Chấm 1 lượt luyện câu (nhiều câu, 1 lần gọi Claude)."""
-    if mode not in MODES:
-        raise ValueError("mode sai")
-    fields = [("Đề bài", "prompt_vi"), ("Câu cho sẵn", "given"), ("Khung / từ nối bắt buộc", "hint"),
-              ("Câu hỏi đề thi", "question"), ("Ý gợi ý", "ideas_vi"), ("Đáp án mẫu (tham khảo)", "answers")]
-    blocks = []
-    for n, it in enumerate(items, 1):
-        lines = [f"## Câu {n} ({it.get('id', '')}{', trả lời bằng giọng nói' if it.get('spoken') else ''})"]
-        for label, k in fields:
-            v = it.get(k)
-            if v:
-                lines.append(f"**{label}:** " + (" / ".join(v) if isinstance(v, list) else str(v)))
-        lines.append(f"**Học viên trả lời:** {it.get('text', '').strip() or '(bỏ trống)'}")
-        blocks.append("\n".join(lines))
-    prompt = f"Dạng bài: {MODES[mode]}\n\n" + "\n\n".join(blocks) + "\n\nChữa đúng format bắt buộc, kết thúc bằng khối ```json."
-    feedback = run_claude(ROOT / "cham-diem/rubric-luyen-cau.md", prompt, model="sonnet")
-    result = parse_json_block(feedback)
-    ts = datetime.now().strftime("%Y-%m-%d_%H%M%S")
-    PRACTICE.mkdir(parents=True, exist_ok=True)
-    (PRACTICE / f"{ts}_{mode}.md").write_text(f"# {MODES[mode]} — {ts}\n\n# Bài làm\n\n{prompt}\n\n# Nhận xét\n\n{feedback}\n",
-                                              encoding="utf-8")
-    scores = {r.get("n"): r.get("score") for r in result.get("results", [])}
-    append_jsonl(PRACTICE_LOG, [{"id": it.get("id"), "mode": mode, "mark": "ai", "score": scores.get(n)}
-                                for n, it in enumerate(items, 1)])
-    return {"feedback": feedback, "result": result}
 
 
 MOCK_NOTE = """
@@ -229,9 +195,9 @@ RL_LOG = ATTEMPTS / "_rl" / "log.jsonl"
 
 
 def save_rl(entry):
-    """Một lần làm Reading/Listening (đáp án chấm ở trình duyệt)."""
-    if entry.get("skill") not in ("reading", "listening"):
-        raise ValueError("skill phải là reading hoặc listening")
+    """Một lần làm Reading (đáp án chấm ở trình duyệt)."""
+    if entry.get("skill") != "reading":
+        raise ValueError("chỉ lưu kết quả Reading")
     append_jsonl(RL_LOG, [{k: entry.get(k) for k in ("skill", "source", "raw", "band", "rows")}])
     return {"ok": True}
 
@@ -273,8 +239,6 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_json(items)
         elif self.path == "/api/attempts":
             self.send_json(list_attempts())
-        elif self.path == "/api/practice-log":
-            self.send_json(read_jsonl(PRACTICE_LOG))
         elif self.path == "/api/rl":
             self.send_json(read_jsonl(RL_LOG))
         else:
@@ -283,13 +247,8 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         try:
             data = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or "{}")
-            if self.path == "/api/check":
-                return self.send_json(check_practice(data.get("mode"), data.get("items", [])[:20]))
             if self.path == "/api/mock-grade":
                 return self.send_json(grade_mock(data.get("items", [])[:30]))
-            if self.path == "/api/practice-log":
-                append_jsonl(PRACTICE_LOG, [{k: e.get(k) for k in ("id", "mode", "mark")} for e in data.get("entries", [])])
-                return self.send_json({"ok": True})
             if self.path == "/api/rl":
                 return self.send_json(save_rl(data))
             files = exam_files()
