@@ -14,6 +14,11 @@ Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Nút **Nộp &
 | Speaking | Part 1; Part 2 cue card (1 phút chuẩn bị, 2 phút nói) + Part 3; chấm FC/LR/GRA/P (P là ước lượng) |
 | Reading | Nhập đáp án đề Cambridge của bạn → tự chấm, quy ra band, thống kê theo dạng câu. (Listening tự ôn ngoài web.) |
 | Thi thử | Speaking Part 1 → 2 → 3, khoảng 13 phút, bốc đề ngẫu nhiên |
+| Tổng quan | Chuỗi ngày học, phút học hôm nay/tuần, hạn mức 3 việc mỗi ngày (tự đánh dấu khi làm xong), ghi tay phút Listening, 2 ngày nghỉ phép/tháng, tiêu chí yếu nhất, bảng band theo tiêu chí |
+| Từ chủ động | Kho cụm tự thu từ mỗi lần chấm; ôn giãn cách 1→2→4→8→16 ngày với 4 kiểu bài (gợi nhớ ngược, điền câu, tự đặt câu, nói); “từ đích” hiện khi làm bài, máy chấm kiểm tra đã dùng đúng chưa; dùng đúng ở 3 bài khác nhau = chủ động |
+| Tiến độ | Lịch tháng, lưới chặng tới ngày thi, cài đặt mục tiêu; biểu đồ giờ học/tuần, band theo thời gian, tiêu chí Writing, Reading theo dạng câu, lỗi lặp lại, phễu từ chủ động |
+
+**Giờ học** được tự đếm khi đang mở một bài (đề, Reading có bấm giờ, ôn từ, thi thử) và tab đang hiện, có thao tác trong 2 phút gần nhất hoặc đồng hồ đang chạy.
 
 **Band:** mỗi tiêu chí là band nguyên; band task/kỹ năng = trung bình, làm tròn xuống nửa band (server tự tính, không tin số học của model). Writing tổng = (T1 + 2·T2)/3. Máy chấm có sai số, xem `tools/calibrate.py`.
 
@@ -23,16 +28,19 @@ Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Nút **Nộp &
 on_ielts/
 ├── server.py                 ← API + chấm bằng claude -p
 ├── web/index.html            ← toàn bộ giao diện (vanilla JS)
-├── cham-diem/                ← rubric-writing.md, rubric-speaking.md
+├── cham-diem/                ← rubric-writing.md, rubric-speaking.md, rubric-tu.md (chấm nhanh câu tự đặt, model haiku)
 ├── writing/task1/T1-*.md     ← đề Task 1
 ├── writing/task2/T2-*.md     ← đề Task 2
 ├── speaking/part1/S1-*.md    ← 1 chủ đề Part 1 (nhiều câu)
 ├── speaking/part2/S2-*.md    ← 1 cue card + câu hỏi Part 3
 ├── research/                 ← format & band, xu hướng đề 2026
 ├── hoc/tu-aptis/             ← tài liệu dùng lại từ đợt Aptis
-├── attempts/                 ← bài đã chấm (mỗi lần một file .md)
+├── attempts/                 ← bài đã chấm (mỗi lần một file .md, kèm nhãn lỗi)
+│   ├── _log/study.jsonl      ← giờ học theo ngày · _log/state.json: cài đặt, check-in, ngày nghỉ phép
+│   ├── _vocab/vocab.json     ← kho từ chủ động
+│   └── _rl/log.jsonl         ← kết quả Reading
 ├── calibration/              ← bài mẫu có band chính thức để hiệu chỉnh (không đưa vào git)
-└── tools/                    ← build_index.py, calibrate.py, test_scoring.mjs
+└── tools/                    ← build_index.py, calibrate.py, test_scoring.mjs, test_server.py
 ```
 
 ## Quy ước file đề
@@ -64,6 +72,7 @@ Sau khi thêm/sửa đề: `python3 tools/build_index.py`.
 ## Kiểm tra
 
 ```bash
-node tools/test_scoring.mjs        # logic chấm Reading + làm tròn band
+node tools/test_scoring.mjs        # chấm Reading, làm tròn band, chuỗi ngày, tô câu sửa, nhận cụm đích
+python3 tools/test_server.py       # ôn giãn cách, giai đoạn từ, thu hoạch từ, ngày nghỉ phép, giờ học
 python3 tools/calibrate.py         # so máy chấm Writing với band giám khảo trên bài mẫu chính thức
 ```

@@ -52,7 +52,7 @@ Với từng tiêu chí chưa đạt 7: điều cụ thể còn thiếu so với
 Với mỗi câu trả lời (gom theo Part): độ dài có đủ không, ý có mở rộng không (quan điểm → lý do → ví dụ), 1 điểm tốt + 1 điểm cần sửa. Ngắn gọn.
 
 ## Sửa lỗi
-Tối đa 12 lỗi quan trọng nhất: `❌ câu gốc` → `✅ câu sửa` — giải thích ≤ 15 từ.
+Tối đa 12 lỗi quan trọng nhất: mỗi lỗi đúng MỘT dòng, dạng `- ❌ câu gốc → ✅ câu sửa — giải thích ≤ 15 từ` (không in nghiêng, không xuống dòng giữa chừng; web tự tô phần sửa).
 
 ## Câu trả lời mẫu band 7+
 Viết lại câu trả lời **dài nhất hoặc yếu nhất** (Part 2 nếu có) ở mức band 7.5–8, giữ ý của học viên, văn nói tự nhiên (không văn viết), in đậm các cụm đáng học.
@@ -66,5 +66,15 @@ Viết lại câu trả lời **dài nhất hoặc yếu nhất** (Part 2 nếu 
 Cuối cùng, THỨ CUỐI CÙNG của câu trả lời, một khối code gắn nhãn json hợp lệ:
 
 ```json
-{"criteria": {"FC": 6, "LR": 6, "GRA": 6, "P": 6}, "p_estimated": true}
+{"criteria": {"FC": 6, "LR": 6, "GRA": 6, "P": 6}, "p_estimated": true,
+ "errors": {"article": 2, "plural": 1, "tense": 2, "agreement": 1, "word_form": 1, "collocation": 2, "spelling": 0, "punctuation": 0, "repetition": 3, "sentence": 1},
+ "vocab": [{"en": "to be honest", "vi": "thật lòng mà nói", "ex": "To be honest, I rarely cook at home.", "from": ""}],
+ "targets": []}
 ```
+
+Các khoá bắt buộc trong json:
+- `criteria`: band nguyên từng tiêu chí.
+- `errors`: **số lần** mắc từng loại lỗi trong bài (0 nếu không có), đúng các khoá: `article` (mạo từ), `plural` (số ít/nhiều, danh từ đếm được), `tense` (thì), `agreement` (hoà hợp chủ–vị), `word_form` (sai từ loại), `collocation` (kết hợp từ / dùng từ sai nghĩa), `spelling` và `punctuation` (luôn 0 vì là bài nói), `repetition` (lặp từ), `sentence` (câu cụt, câu dính, cấu trúc câu sai).
+- `vocab`: chính các cụm ở mục "Từ vựng & cấu trúc nên học", mỗi cụm `{"en": cụm tiếng Anh dạng gốc, "vi": nghĩa tiếng Việt ngắn, "ex": 1 câu ví dụ ở CHỦ ĐỀ KHÁC có chứa nguyên cụm, "from": cách diễn đạt yếu của học viên mà cụm này thay thế, hoặc ""}`. Ưu tiên cụm/collocation dùng lại được ở nhiều đề, không lấy từ đơn quá dễ.
+- `targets`: nếu đề bài có mục "TỪ ĐÍCH", mỗi cụm một phần tử `{"en": giữ nguyên chữ, "used": học viên có dùng (chấp nhận biến đổi ngữ pháp) không, "ok": dùng đúng và tự nhiên không}`. Không có mục đó thì `[]`.
+

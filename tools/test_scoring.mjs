@@ -1,4 +1,4 @@
-// Kiểm tra logic chấm Reading và làm tròn band trong web/index.html. Chạy: node tools/test_scoring.mjs
+// Kiểm tra logic chấm Reading, làm tròn band, chuỗi ngày, diff câu sửa, nhận cụm đích trong web/index.html. Chạy: node tools/test_scoring.mjs
 import {readFileSync} from 'node:fs';
 const src = readFileSync(new URL('../web/index.html', import.meta.url), 'utf8');
 const grab = name => { const m = src.match(new RegExp(`^const ${name} = [\\s\\S]*?;\\n(?=const |function |/\\*|let )`, 'm')); if (!m) throw new Error('không thấy ' + name); return m[0]; };
@@ -11,4 +11,25 @@ eq(half(6.25), 6.5, '.25 lên .5'); eq(half(6.75), 7, '.75 lên 1'); eq(half(6.1
 eq(isRight('T', 'TRUE'), true, 'T = TRUE'); eq(isRight('ng', 'NOT GIVEN'), true, 'ng'); eq(isRight(' Library. ', 'library'), true, 'trim/dấu chấm');
 eq(isRight('libraries', 'library'), false, 'số nhiều khác'); eq(isRight('15th May', 'May 15th / 15th May'), true, 'nhiều đáp án'); eq(isRight('', 'a'), false, 'bỏ trống');
 eq(isRight('false', 'TRUE'), false, 'sai');
+
+const code2 = ['esc', 'iso', 'addDays', 'daySec', 'streakOf', 'bestStreak', 'wordDiff', 'phraseRe', 'near'].map(grab).join('\n');
+const {addDays, streakOf, bestStreak, wordDiff, phraseRe, near} = new Function(code2 + '\nreturn {addDays, streakOf, bestStreak, wordDiff, phraseRe, near};')();
+eq(addDays('2026-10-31', 1), '2026-11-01', 'qua tháng'); eq(addDays('2027-01-01', -1), '2026-12-31', 'lùi năm');
+const st = {'2026-11-01': {writing: 1200}, '2026-11-02': {vocab: 600, writing: 400}, '2026-11-04': {reading: 900}, '2026-11-05': {speaking: 300}};
+eq(streakOf(st, [], 900, '2026-11-05'), 1, 'hôm nay chưa đủ → tính tới hôm qua');
+eq(streakOf(st, ['2026-11-03'], 900, '2026-11-05'), 3, 'nghỉ phép giữ chuỗi, không cộng');
+eq(streakOf(st, [], 900, '2026-11-06'), 0, 'bỏ 1 ngày → đứt');
+eq(streakOf(st, ['2026-11-05'], 900, '2026-11-05'), 1, 'hôm nay nghỉ phép');
+eq(bestStreak(st, ['2026-11-03'], 900, '2026-11-06'), 3, 'kỷ lục');
+eq(wordDiff('Art help students', 'Art helps students'), 'Art <del>help</del> <ins>helps</ins> students', 'diff 1 từ');
+eq(wordDiff('a <b>', 'a <b>'), 'a &lt;b&gt;', 'diff escape');
+eq(phraseRe('do more harm than good').test('it may do more harm than good.'), true, 'cụm nguyên');
+eq(phraseRe('foster creativity').test('Art fosters creativity'), true, 'chia động từ');
+eq(phraseRe('place undue pressure on sb').test('placing undue pressure on young students'), true, 'sb = vài từ');
+eq(phraseRe('foster creativity').test('creativity is fostered'), false, 'đảo thứ tự không tính');
+eq(near('do more harm then good', 'do more harm than good'), true, 'sai 1 ký tự'); eq(near('do harm', 'do more harm than good'), false, 'thiếu nhiều');
+const {diffLines} = new Function(['esc', 'wordDiff', 'DIFF_RE', 'diffLines'].map(grab).join('\n') + '\nreturn {diffLines};')();
+eq(diffLines('- ❌ `Art help students` → ✅ `Art helps students` — chia động từ'), '- <span class="fix">Art <del>help</del> <ins>helps</ins> students</span> <span class="why">chia động từ</span>', 'sửa lỗi 1 dòng');
+eq(diffLines('1. ❌ *a big amount of*\n→ ✅ *a large amount of*\n— collocation'), '1. <span class="fix">a <del>big</del> <ins>large</ins> amount of</span> <span class="why">collocation</span>', 'sửa lỗi xuống dòng, in nghiêng');
+eq(diffLines('- ❌ a well-known fact → ✅ a widely known fact'), '- <span class="fix">a <del>well-known</del> <ins>widely known</ins> fact</span>', 'gạch nối trong câu');
 console.log('scoring OK');

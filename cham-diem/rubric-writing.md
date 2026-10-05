@@ -63,7 +63,7 @@ Bảng: Tiêu chí | Band | 1 câu bằng chứng (trích từ bài). Dòng cu�
 Với từng tiêu chí chưa đạt 7: điều **cụ thể** còn thiếu so với band 7 (dựa vào descriptors ở trên), mỗi tiêu chí 1–2 gạch đầu dòng.
 
 ## Sửa lỗi từng câu
-Chỉ những câu có lỗi, tối đa 12 câu quan trọng nhất: `❌ câu gốc` → `✅ câu sửa` — giải thích ≤ 15 từ. Gom lỗi lặp lại (ví dụ mạo từ) thành 1 dòng.
+Chỉ những câu có lỗi, tối đa 12 câu quan trọng nhất: mỗi lỗi đúng MỘT dòng, dạng `- ❌ câu gốc → ✅ câu sửa — giải thích ≤ 15 từ` (không in nghiêng, không xuống dòng giữa chừng; web tự tô phần sửa). Gom lỗi lặp lại (ví dụ mạo từ) thành 1 dòng.
 
 ## Bản nâng cấp band 7+
 Viết lại **toàn bài** ở mức band 7.5–8, **giữ ý và cấu trúc đoạn của học viên**, in đậm các cụm đáng học. T1: có overview rõ ở đoạn 2. T2: 4–5 đoạn.
@@ -77,5 +77,15 @@ Viết lại **toàn bài** ở mức band 7.5–8, **giữ ý và cấu trúc �
 Cuối cùng, THỨ CUỐI CÙNG của câu trả lời, một khối code gắn nhãn json hợp lệ (Task 1 dùng "TA", Task 2 dùng "TR"):
 
 ```json
-{"task": 2, "criteria": {"TR": 6, "CC": 6, "LR": 6, "GRA": 6}, "words": 262}
+{"task": 2, "criteria": {"TR": 6, "CC": 6, "LR": 6, "GRA": 6}, "words": 262,
+ "errors": {"article": 3, "plural": 1, "tense": 0, "agreement": 1, "word_form": 2, "collocation": 2, "spelling": 1, "punctuation": 0, "repetition": 2, "sentence": 1},
+ "vocab": [{"en": "do more harm than good", "vi": "gây hại nhiều hơn lợi", "ex": "Skipping breakfast may do more harm than good.", "from": "is not good"}],
+ "targets": [{"en": "foster creativity", "used": true, "ok": true}]}
 ```
+
+Các khoá bắt buộc trong json:
+- `criteria`: band nguyên từng tiêu chí.
+- `errors`: **số lần** mắc từng loại lỗi trong bài (0 nếu không có), đúng các khoá: `article` (mạo từ), `plural` (số ít/nhiều, danh từ đếm được), `tense` (thì), `agreement` (hoà hợp chủ–vị), `word_form` (sai từ loại), `collocation` (kết hợp từ / dùng từ sai nghĩa), `spelling`, `punctuation`, `repetition` (lặp từ), `sentence` (câu cụt, câu dính, cấu trúc câu sai).
+- `vocab`: chính các cụm ở mục "Từ vựng & cấu trúc nên học", mỗi cụm `{"en": cụm tiếng Anh dạng gốc, "vi": nghĩa tiếng Việt ngắn, "ex": 1 câu ví dụ ở CHỦ ĐỀ KHÁC có chứa nguyên cụm, "from": cách diễn đạt yếu của học viên mà cụm này thay thế, hoặc ""}`. Ưu tiên cụm/collocation dùng lại được ở nhiều đề, không lấy từ đơn quá dễ.
+- `targets`: nếu đề bài có mục "TỪ ĐÍCH", mỗi cụm một phần tử `{"en": giữ nguyên chữ, "used": học viên có dùng (chấp nhận biến đổi ngữ pháp) không, "ok": dùng đúng và tự nhiên không}`. Không có mục đó thì `[]`.
+
