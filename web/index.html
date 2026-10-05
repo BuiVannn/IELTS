@@ -53,6 +53,7 @@ main{max-width:1120px;margin:0 auto;padding:28px 32px 96px}
   .tabbar{display:flex;position:fixed;inset:auto 0 0 0;background:var(--surface);border-top:1px solid var(--line);z-index:20;padding-bottom:env(safe-area-inset-bottom)}
   .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 6px;font-size:11px;color:var(--mute);min-height:52px}
   .tabbar a.on{color:var(--brand)}.tabbar a:hover{text-decoration:none}
+  .tabbar{overflow-x:auto}.tabbar a{flex:1 0 62px;white-space:nowrap}
 }
 body.focus .side,body.focus .tabbar{display:none}
 body.focus .content{margin-left:0}
@@ -121,7 +122,7 @@ h2{font-size:17px;margin:0}
 .fbar{position:sticky;top:0;z-index:15;background:var(--surface);border-bottom:1px solid var(--line);height:60px;display:flex;align-items:center;gap:12px;padding:0 16px}
 .fbar .title{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:280px}
 .steps{display:flex;gap:4px;margin:0 auto}
-.steps button{border:1px solid var(--line);background:var(--surface);height:34px;min-width:34px;padding:0 12px;border-radius:8px;font-size:13px;font-weight:500;color:var(--mute);display:inline-flex;align-items:center;gap:6px}
+.steps button{white-space:nowrap;border:1px solid var(--line);background:var(--surface);height:34px;min-width:34px;padding:0 12px;border-radius:8px;font-size:13px;font-weight:500;color:var(--mute);display:inline-flex;align-items:center;gap:6px}
 .steps button.on{border-color:var(--brand);color:var(--brand);background:var(--brand-soft)}
 .steps button .dot{width:6px;height:6px;border-radius:50%;background:var(--line-2)}
 .steps button .dot.full{background:var(--ok)}
@@ -234,7 +235,7 @@ kbd{font:600 11px "JetBrains Mono",monospace;border:1px solid var(--line-2);bord
 .rlgrid input,.rlgrid select{height:34px;border:1px solid var(--line-2);border-radius:6px;background:var(--surface);padding:0 8px;width:100%;min-width:0}
 .rlgrid .n{font:600 13px "JetBrains Mono",monospace;color:var(--mute);text-align:right}
 .rlgrid .okc{color:var(--ok)}.rlgrid .bad{color:var(--bad)}
-@media (max-width:640px){.rlgrid{grid-template-columns:34px 1fr 1fr 22px}.rlgrid select{grid-column:2/4}}
+@media (max-width:640px){.rlgrid{grid-template-columns:34px 1fr 1fr 22px}.rlgrid select{grid-column:2/4}.rlgrid.small span:nth-child(4){display:none}}
 @media print{.side,.tabbar,.fbar,.panel,.noprint{display:none!important}.content{margin:0}}
 </style>
 </head>
@@ -263,7 +264,7 @@ const S_PARTS = {1:['Part 1 · Interview','Câu hỏi ngắn · 20–30 giây m�
 const SP_LIMIT = {1:40, 2:120, 3:60};
 const W_RANGE = {1:[150,200], 2:[250,320]};
 const W_MIN = {1:20, 2:40};
-const NAV = [['','layout-dashboard','Tổng quan'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['rl','list-checks','Reading & Listening'],['luyen','blocks','Luyện câu'],['thi-thu','timer','Thi thử'],['tai-lieu','book-open','Tài liệu'],['lich-su','line-chart','Lịch sử']];
+const NAV = [['','layout-dashboard','Tổng quan'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['rl','list-checks','Reading & Listening','R & L'],['luyen','blocks','Luyện câu'],['thi-thu','timer','Thi thử'],['tai-lieu','book-open','Tài liệu'],['lich-su','line-chart','Lịch sử']];
 const RL_TABLE = {listening: [[39,9],[37,8.5],[35,8],[32,7.5],[30,7],[26,6.5],[23,6],[18,5.5],[16,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5]],
   reading: [[39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],[23,6],[19,5.5],[15,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5]]};
 const rlBand = (skill, raw) => (RL_TABLE[skill].find(([min]) => raw >= min) || [0, raw >= 1 ? 1 : 0])[1];
@@ -334,7 +335,7 @@ function shell(){
   const cur = location.hash.slice(2);
   const on = k => k === '' ? cur === '' : cur.startsWith(k.split('/')[0]);
   $('#nav').innerHTML = '<div class="sec">Luyện tập</div>' + NAV.map(([k, i, l]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${l}</a>`).join('');
-  $('#tabbar').innerHTML = NAV.map(([k, i, l]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${l}</a>`).join('');
+  $('#tabbar').innerHTML = NAV.map(([k, i, l, sh]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${sh || l}</a>`).join('');
   $('#countdown').innerHTML = `<span class="label">Mục tiêu</span><b>IELTS 7.0+</b><span class="small mute">Academic · chưa chốt ngày thi</span>`;
 }
 window.addEventListener('hashchange', route);
@@ -389,7 +390,7 @@ function home(){
     next(x => x.skill === 'speaking' && x.part == 2 && x.status !== 'done'), next(x => x.skill === 'speaking' && x.part == 1 && x.status !== 'done')].filter(Boolean);
   const drafts = recentDrafts();
   app.innerHTML = `
-    <h1>Tổng quan</h1><p class="sub">IELTS Academic · mục tiêu overall 7.0 (tổng 4 kỹ năng ≥ 27, ví dụ 7 / 7 / 6.5 / 6.5). Band là ước lượng của máy chấm, sai số khoảng ±0.5.</p>
+    <h1>Tổng quan</h1><p class="sub">IELTS Academic · mục tiêu overall 7.0 (tổng 4 kỹ năng ≥ 27, ví dụ 7 / 7 / 6.5 / 6.5). Band là ước lượng của máy chấm, thường thấp hơn giám khảo thật khoảng 0.5.</p>
     <div class="card pad row wrap" style="gap:18px;margin-bottom:16px"><div><div class="label">Overall ước lượng</div><div class="kpi">${overall ?? '—'}</div></div>
       <div class="grow small mute">${overall == null ? 'Cần có điểm cả 4 kỹ năng: chấm Writing và Speaking, nhập đáp án một đề Reading và Listening.' : `Trung bình 4 kỹ năng, làm tròn theo luật IELTS (.25 lên .5, .75 lên số nguyên).`}</div></div>
     <div class="grid3" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${Object.keys(SKILLS).map(card).join('')}</div>
@@ -630,7 +631,7 @@ function bandHead(res, T){
   return `<div class="score-head"><div class="kpi">${b}<span class="small mute">/9</span></div>
     <div class="grow"><div class="row wrap" style="gap:6px"><b>Band ước lượng</b><span class="badge ${b >= T ? 'ok' : 'warn'}">${b >= T ? 'Đạt mục tiêu 7' : `Còn thiếu ${T - b} band`}</span></div>
       <div class="crit">${Object.entries(res.criteria || {}).map(([k, v]) => `<span class="badge ${v >= T ? 'ok' : ''}">${esc(k)} ${esc(v)}</span>`).join('')}</div>
-      <div class="small mute" style="margin-top:6px">Trung bình tiêu chí ${res.raw != null ? (+res.raw).toFixed(2) : '—'}, làm tròn xuống nửa band · sai số máy chấm khoảng ±0.5</div></div></div>`;
+      <div class="small mute" style="margin-top:6px">Trung bình tiêu chí ${res.raw != null ? (+res.raw).toFixed(2) : '—'}, làm tròn xuống nửa band · máy chấm hiện có xu hướng <b>thấp hơn</b> giám khảo khoảng 0.5 band (xem tools/calibrate.py)</div></div></div>`;
 }
 
 /* ---- writing ---- */
