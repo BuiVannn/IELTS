@@ -1,0 +1,3151 @@
+[
+ {
+  "id": "b1-con-nguoi-001",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Tôi sống với bố mẹ và em gái.",
+  "given": [],
+  "hint": "S + V (live with)",
+  "answers": [
+   "I live with my parents and my younger sister."
+  ],
+  "note": "Chủ ngữ I → live (không thêm -s).",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-002",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Bố tôi làm việc ở một bệnh viện.",
+  "given": [],
+  "hint": "S + V-s + nơi chốn",
+  "answers": [
+   "My father works in a hospital."
+  ],
+  "note": "Chủ ngữ số ít (my father) → works, không 'work'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-003",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Gia đình tôi có bốn người.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are four people in my family."
+  ],
+  "note": "Tự nhiên hơn dịch từng chữ 'My family have four people'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-004",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Mẹ tôi rất kiên nhẫn và tốt bụng.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "My mother is very patient and kind."
+  ],
+  "note": "Tính từ cần 'be': không nói 'My mother very patient'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-005",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Bạn thân tôi là giáo viên tiếng Anh.",
+  "given": [],
+  "hint": "S + be + a/an + N",
+  "answers": [
+   "My best friend is an English teacher."
+  ],
+  "note": "Nghề nghiệp số ít phải có a/an: an English teacher.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-006",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Tôi hợp tính với em gái.",
+  "given": [],
+  "hint": "get on well with sb",
+  "answers": [
+   "I get on well with my younger sister."
+  ],
+  "note": "get on well with + người (không dùng 'to').",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-007",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Tôi giữ liên lạc với bạn cũ qua Zalo.",
+  "given": [],
+  "hint": "keep in touch with",
+  "answers": [
+   "I keep in touch with my old classmates on Zalo.",
+   "I keep in touch with old friends on Zalo."
+  ],
+  "note": "keep in touch with + người; trên ứng dụng dùng 'on'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-008",
+  "cluster": "con-nguoi",
+  "level": 1,
+  "prompt_vi": "Tôi muốn bố mẹ nghỉ ngơi nhiều hơn.",
+  "given": [],
+  "hint": "want + O + to V",
+  "answers": [
+   "I want my parents to rest more."
+  ],
+  "note": "want + người + to V; không nói 'I want my parents rest'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-009",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tôi quen bạn thân được mười năm rồi.",
+  "given": [],
+  "hint": "have + V3 + for",
+  "answers": [
+   "I have known my best friend for ten years.",
+   "I've known my best friend for ten years."
+  ],
+  "note": "Kéo dài tới nay → hiện tại hoàn thành, không 'I know her for ten years'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-010",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tôi và bạn thân có nhiều điểm chung.",
+  "given": [],
+  "hint": "have a lot in common",
+  "answers": [
+   "My best friend and I have a lot in common."
+  ],
+  "note": "Viết 'My friend and I', không 'Me and my friend'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-011",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tôi rất kính trọng ông nội.",
+  "given": [],
+  "hint": "look up to sb",
+  "answers": [
+   "I really look up to my grandfather."
+  ],
+  "note": "Không nói 'I very look up to' → dùng 'really'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-012",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tôi đã mất liên lạc với vài bạn cũ.",
+  "given": [],
+  "hint": "lose touch with (present perfect)",
+  "answers": [
+   "I have lost touch with some old school friends.",
+   "I've lost touch with some of my old friends."
+  ],
+  "note": "lose → lost; hậu quả còn tới nay → have lost.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-013",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tuần trước tôi đã giúp hàng xóm chuyển nhà.",
+  "given": [],
+  "hint": "lend sb a hand (past simple)",
+  "answers": [
+   "I lent my neighbour a hand with moving house last week.",
+   "Last week I helped my neighbour move house."
+  ],
+  "note": "lend → lent; có 'last week' → quá khứ đơn.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-014",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tôi luôn có thể dựa vào bạn thân.",
+  "given": [],
+  "hint": "rely on sb",
+  "answers": [
+   "I can always rely on my best friend."
+  ],
+  "note": "rely on (không 'rely in'); sau can là V nguyên mẫu.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-015",
+  "cluster": "con-nguoi",
+  "level": 2,
+  "prompt_vi": "Tôi đã gặp bạn thân ở câu lạc bộ tiếng Anh.",
+  "given": [],
+  "hint": "past simple (meet → met)",
+  "answers": [
+   "I met my best friend at an English club."
+  ],
+  "note": "meet → met; gặp ở một địa điểm dùng 'at'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-016",
+  "cluster": "con-nguoi",
+  "level": 3,
+  "prompt_vi": "Dành thời gian cho gia đình rất quan trọng.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is important to spend quality time with family.",
+   "It's important to spend time with your family."
+  ],
+  "note": "Phải có 'It' làm chủ ngữ giả: không nói 'Is important to...'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-017",
+  "cluster": "con-nguoi",
+  "level": 3,
+  "prompt_vi": "Việc ăn cơm cùng nhau gắn kết gia đình.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + V-s",
+  "answers": [
+   "Having meals together brings the family closer.",
+   "Eating together brings families closer."
+  ],
+  "note": "V-ing làm chủ ngữ → động từ số ít (brings).",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-018",
+  "cluster": "con-nguoi",
+  "level": 3,
+  "prompt_vi": "Hồi nhỏ, tôi thường chơi với anh chị họ mỗi mùa hè.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "I used to play with my cousins every summer."
+  ],
+  "note": "used to + V nguyên mẫu; không 'use to' hay 'used to playing'.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-019",
+  "cluster": "con-nguoi",
+  "level": 3,
+  "prompt_vi": "Tôi thích gặp bạn trực tiếp hơn là nhắn tin.",
+  "given": [],
+  "hint": "prefer + V-ing + to + V-ing",
+  "answers": [
+   "I prefer meeting friends in person to texting them."
+  ],
+  "note": "prefer A to B (không dùng 'than'), hai vế cùng dạng V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-con-nguoi-020",
+  "cluster": "con-nguoi",
+  "level": 3,
+  "prompt_vi": "Bạn tôi hài hước đến mức ai cũng quý cô ấy.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "My best friend is so funny that everyone likes her."
+  ],
+  "note": "so + tính từ + that + S + V.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-001",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Tôi sống trong một căn hộ ấm cúng ở trung tâm thành phố.",
+  "given": [],
+  "hint": "S + V + in + N",
+  "answers": [
+   "I live in a cosy flat in the city centre."
+  ],
+  "note": "Anh-Anh: flat, cosy, centre (Mỹ: apartment, cozy, center).",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-002",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Nhà tôi có ba phòng ngủ.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are three bedrooms in my house.",
+   "My house has three bedrooms."
+  ],
+  "note": "Nhiều vật → There are; không nói 'There have'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-003",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Khu phố của tôi rất yên tĩnh.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "My neighbourhood is very quiet and peaceful."
+  ],
+  "note": "Anh-Anh: neighbourhood; cần 'is' trước tính từ.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-004",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Gần nhà tôi có một khu chợ.",
+  "given": [],
+  "hint": "There is + N",
+  "answers": [
+   "There is a market near my house."
+  ],
+  "note": "Một vật → There is; 'near' không cần 'to'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-005",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Tôi dọn phòng vào mỗi Chủ nhật.",
+  "given": [],
+  "hint": "tidy up my room",
+  "answers": [
+   "I tidy up my room every Sunday."
+  ],
+  "note": "Thói quen → hiện tại đơn; không có 'in' trước 'every Sunday'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-006",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Chúng tôi thay phiên nhau làm việc nhà.",
+  "given": [],
+  "hint": "do the household chores",
+  "answers": [
+   "We take turns to do the household chores."
+  ],
+  "note": "Làm việc nhà dùng 'do', không dùng 'make'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-007",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Căn hộ của tôi ở vị trí thuận tiện.",
+  "given": [],
+  "hint": "S + be + in + N",
+  "answers": [
+   "My flat is in a convenient location."
+  ],
+  "note": "Dùng 'in a convenient location', không 'at'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-008",
+  "cluster": "nha-cua",
+  "level": 1,
+  "prompt_vi": "Bố mẹ muốn tôi sống gần họ.",
+  "given": [],
+  "hint": "want + O + to V",
+  "answers": [
+   "My parents want me to live near them."
+  ],
+  "note": "want + me (tân ngữ) + to V; không nói 'want I live'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-009",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Tôi đã sống một mình từ khi học đại học.",
+  "given": [],
+  "hint": "live on my own + since",
+  "answers": [
+   "I have lived on my own since university.",
+   "I've lived on my own since university."
+  ],
+  "note": "since + mốc thời gian → hiện tại hoàn thành.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-010",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Gia đình tôi chuyển lên thành phố mười năm trước.",
+  "given": [],
+  "hint": "move to the city + ago",
+  "answers": [
+   "My family moved to the city ten years ago."
+  ],
+  "note": "Có 'ago' → quá khứ đơn.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-011",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Căn hộ của tôi gần siêu thị, đi bộ tới được.",
+  "given": [],
+  "hint": "within walking distance of",
+  "answers": [
+   "My flat is within walking distance of a supermarket."
+  ],
+  "note": "within walking distance of + nơi chốn.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-012",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Tôi luôn thấy thoải mái ở nhà ông bà.",
+  "given": [],
+  "hint": "feel at home",
+  "answers": [
+   "I always feel at home in my grandparents' house."
+  ],
+  "note": "Trạng từ tần suất (always) đứng trước động từ thường.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-013",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Tôi trang trí ban công bằng nhiều cây xanh.",
+  "given": [],
+  "hint": "decorate + O + with + N",
+  "answers": [
+   "I decorate my balcony with lots of plants."
+  ],
+  "note": "decorate something with something.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-014",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Tôi chán sự ồn ào náo nhiệt của thành phố.",
+  "given": [],
+  "hint": "be tired of + N",
+  "answers": [
+   "I am tired of the hustle and bustle of the city.",
+   "I'm tired of the hustle and bustle of city life."
+  ],
+  "note": "be tired of + N/V-ing = chán cái gì.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-015",
+  "cluster": "nha-cua",
+  "level": 2,
+  "prompt_vi": "Năm ngoái tôi thuê một căn hộ gần chỗ làm.",
+  "given": [],
+  "hint": "rent a flat (past simple)",
+  "answers": [
+   "Last year I rented a flat near my office."
+  ],
+  "note": "rent → rented; có 'last year' → quá khứ đơn.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-016",
+  "cluster": "nha-cua",
+  "level": 3,
+  "prompt_vi": "Sống cùng gia đình giúp tiết kiệm nhiều tiền.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + V-s",
+  "answers": [
+   "Living with my family saves a lot of money.",
+   "Living with your family helps you save money."
+  ],
+  "note": "V-ing làm chủ ngữ → saves/helps (số ít).",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-017",
+  "cluster": "nha-cua",
+  "level": 3,
+  "prompt_vi": "Tìm một căn hộ rẻ ở Hà Nội khá khó.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is quite hard to find a cheap flat in Hanoi."
+  ],
+  "note": "Không nói 'Find a cheap flat is hard' → It is hard to find...",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-018",
+  "cluster": "nha-cua",
+  "level": 3,
+  "prompt_vi": "Tôi thích sống ở nông thôn hơn ở thành phố.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer living in the countryside to living in the city.",
+   "I prefer the countryside to the city."
+  ],
+  "note": "prefer A to B, không dùng 'than'.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-019",
+  "cluster": "nha-cua",
+  "level": 3,
+  "prompt_vi": "Căn hộ của tôi quá nhỏ để tổ chức tiệc lớn.",
+  "given": [],
+  "hint": "too + adj + to V",
+  "answers": [
+   "My flat is too small to host a big party."
+  ],
+  "note": "too + adj + to V = quá … nên không thể.",
+  "source": ""
+ },
+ {
+  "id": "b1-nha-cua-020",
+  "cluster": "nha-cua",
+  "level": 3,
+  "prompt_vi": "Trước đây chúng tôi sống ở một ngôi làng nhỏ.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "We used to live in a small village."
+  ],
+  "note": "used to: thói quen/trạng thái cũ, nay không còn.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-001",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Tôi nấu bữa tối hầu như mỗi ngày.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "I cook dinner almost every day."
+  ],
+  "note": "'almost every day', không nói 'almost days'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-002",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Mẹ tôi nấu ăn rất giỏi.",
+  "given": [],
+  "hint": "S + be + a + adj + N",
+  "answers": [
+   "My mother is a very good cook.",
+   "My mother cooks really well."
+  ],
+  "note": "Không nói 'My mother cooks very delicious' → cooks really well.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-003",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Phở là món ăn yêu thích của tôi.",
+  "given": [],
+  "hint": "S + be + N",
+  "answers": [
+   "Pho is my favourite dish."
+  ],
+  "note": "Anh-Anh: favourite (Mỹ: favorite).",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-004",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Gần nhà tôi có nhiều quán đồ ăn đường phố.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are many street food stalls near my house."
+  ],
+  "note": "street food stalls = quán/xe đồ ăn vỉa hè.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-005",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Tôi thích đồ ngọt nên rất mê bánh.",
+  "given": [],
+  "hint": "have a sweet tooth",
+  "answers": [
+   "I have a sweet tooth, so I love cakes."
+  ],
+  "note": "have a sweet tooth = thích đồ ngọt; nối bằng ', so'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-006",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Gia đình tôi ăn ngoài mỗi tuần một lần.",
+  "given": [],
+  "hint": "eat out",
+  "answers": [
+   "My family eats out once a week."
+  ],
+  "note": "My family (số ít) → eats.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-007",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Đồ ăn đường phố Việt Nam rẻ và ngon.",
+  "given": [],
+  "hint": "S + be + adj + and + adj",
+  "answers": [
+   "Vietnamese street food is cheap and tasty."
+  ],
+  "note": "food không đếm được → is; không bỏ 'is'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-008",
+  "cluster": "an-uong",
+  "level": 1,
+  "prompt_vi": "Tôi thường nhờ mẹ dạy nấu món mới.",
+  "given": [],
+  "hint": "ask + O + to V",
+  "answers": [
+   "I often ask my mother to teach me new recipes."
+  ],
+  "note": "ask + người + to V; often đứng trước động từ.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-009",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Gần đây tôi đã bớt ăn đồ ngọt.",
+  "given": [],
+  "hint": "cut down on (present perfect)",
+  "answers": [
+   "I have cut down on sugar recently.",
+   "I've cut down on sweets recently."
+  ],
+  "note": "recently → hiện tại hoàn thành; cut → cut (V3).",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-010",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Tôi thường ăn vội trước khi đi làm.",
+  "given": [],
+  "hint": "grab a quick bite",
+  "answers": [
+   "I usually grab a quick bite before work."
+  ],
+  "note": "usually + V nguyên mẫu, không 'usually grabbing'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-011",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Tôi nấu theo công thức trên YouTube.",
+  "given": [],
+  "hint": "follow a recipe",
+  "answers": [
+   "I usually follow a recipe on YouTube.",
+   "I follow recipes from YouTube."
+  ],
+  "note": "follow a recipe = nấu theo công thức.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-012",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Tôi đã thử nhiều đặc sản địa phương ở Huế.",
+  "given": [],
+  "hint": "try local specialities (past)",
+  "answers": [
+   "I tried a lot of local specialities in Hue."
+  ],
+  "note": "Anh-Anh: specialities (Mỹ: specialties).",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-013",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Tôi rất thích nấu các món truyền thống.",
+  "given": [],
+  "hint": "be keen on + V-ing",
+  "answers": [
+   "I'm really keen on cooking traditional dishes.",
+   "I am keen on cooking traditional Vietnamese dishes."
+  ],
+  "note": "keen on + V-ing, không dùng 'keen on to cook'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-014",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Nhà hàng này rất đáng tiền.",
+  "given": [],
+  "hint": "good value for money",
+  "answers": [
+   "This restaurant is really good value for money."
+  ],
+  "note": "'good value for money' không cần 'a'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-015",
+  "cluster": "an-uong",
+  "level": 2,
+  "prompt_vi": "Tôi chưa bao giờ ăn đồ ăn Ấn Độ.",
+  "given": [],
+  "hint": "have never + V3",
+  "answers": [
+   "I have never eaten Indian food.",
+   "I've never tried Indian food."
+  ],
+  "note": "eat → ate → eaten; never đứng giữa have và V3.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-016",
+  "cluster": "an-uong",
+  "level": 3,
+  "prompt_vi": "Nấu ăn ở nhà tiết kiệm được nhiều tiền.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + V-s",
+  "answers": [
+   "Cooking at home saves a lot of money."
+  ],
+  "note": "❌ 'Cook at home save money' → Cooking … saves.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-017",
+  "cluster": "an-uong",
+  "level": 3,
+  "prompt_vi": "Ăn nhiều rau rất tốt cho sức khoẻ.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is good for your health to eat a lot of vegetables.",
+   "It is important to eat plenty of vegetables."
+  ],
+  "note": "Chủ ngữ giả 'It' đứng đầu, việc làm đặt sau 'to V'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-018",
+  "cluster": "an-uong",
+  "level": 3,
+  "prompt_vi": "Tôi thích đồ ăn nhà nấu hơn đồ ăn nhanh.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer home-cooked meals to fast food."
+  ],
+  "note": "prefer A to B, không nói 'prefer A than B'.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-019",
+  "cluster": "an-uong",
+  "level": 3,
+  "prompt_vi": "Món đó cay đến nỗi tôi không ăn hết được.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "The dish was so spicy that I couldn't finish it."
+  ],
+  "note": "so + adj + that + S + V; kể chuyện cũ → was, couldn't.",
+  "source": ""
+ },
+ {
+  "id": "b1-an-uong-020",
+  "cluster": "an-uong",
+  "level": 3,
+  "prompt_vi": "Tôi không có đủ thời gian để nấu bữa sáng.",
+  "given": [],
+  "hint": "enough + N + to V",
+  "answers": [
+   "I don't have enough time to cook breakfast."
+  ],
+  "note": "enough đứng TRƯỚC danh từ: enough time.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-001",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Tôi thường đi du lịch cùng gia đình hai lần một năm.",
+  "given": [],
+  "hint": "S + V + trạng ngữ",
+  "answers": [
+   "I usually travel twice a year with my family."
+  ],
+  "note": "'twice a year' = hai lần một năm, không nói 'two times in a year'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-002",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Sa Pa có phong cảnh ngoạn mục và không khí trong lành.",
+  "given": [],
+  "hint": "S + has + N",
+  "answers": [
+   "Sa Pa has breathtaking scenery and fresh air."
+  ],
+  "note": "scenery không đếm được, không thêm -s.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-003",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Hội An là một phố cổ rất đẹp.",
+  "given": [],
+  "hint": "S + be + a + adj + N",
+  "answers": [
+   "Hoi An is a beautiful old town."
+  ],
+  "note": "Tính từ đứng trước danh từ: a beautiful old town.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-004",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Ở Đà Nẵng có nhiều bãi biển đẹp.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are many beautiful beaches in Da Nang."
+  ],
+  "note": "Không nói 'Da Nang has many beach' → beaches số nhiều.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-005",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Tôi đi phương tiện công cộng để tiết kiệm tiền.",
+  "given": [],
+  "hint": "take public transport + to V",
+  "answers": [
+   "I take public transport to save money."
+  ],
+  "note": "to V chỉ mục đích; không nói 'for save money'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-006",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Tôi luôn mang ít đồ trong những chuyến đi ngắn.",
+  "given": [],
+  "hint": "travel light",
+  "answers": [
+   "I always travel light on short trips."
+  ],
+  "note": "travel light = mang ít hành lý.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-007",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Tôi thích tìm hiểu văn hoá địa phương.",
+  "given": [],
+  "hint": "love + V-ing",
+  "answers": [
+   "I love learning about local culture and customs."
+  ],
+  "note": "love + V-ing; không nói 'I love learn'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-008",
+  "cluster": "du-lich",
+  "level": 1,
+  "prompt_vi": "Bố mẹ khuyên tôi đặt khách sạn trước.",
+  "given": [],
+  "hint": "advise + O + to V",
+  "answers": [
+   "My parents advise me to book hotels in advance."
+  ],
+  "note": "advise + người + to V; book in advance = đặt trước.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-009",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Tôi đã đến Đà Lạt ba lần.",
+  "given": [],
+  "hint": "have been to",
+  "answers": [
+   "I have been to Da Lat three times.",
+   "I've been to Da Lat three times."
+  ],
+  "note": "have been to = đã từng đến (không 'have gone to').",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-010",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Năm ngoái chúng tôi đi tham quan ở Hội An.",
+  "given": [],
+  "hint": "go sightseeing (past)",
+  "answers": [
+   "We went sightseeing in Hoi An last year."
+  ],
+  "note": "go → went; last year → quá khứ đơn.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-011",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Chúng tôi bị lạc ở phố cổ.",
+  "given": [],
+  "hint": "get lost (past)",
+  "answers": [
+   "We got lost in the old town."
+  ],
+  "note": "get lost → got lost; không nói 'we were lost way'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-012",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Chúng tôi bị kẹt xe suốt hai tiếng.",
+  "given": [],
+  "hint": "be stuck in a traffic jam",
+  "answers": [
+   "We were stuck in a traffic jam for two hours."
+  ],
+  "note": "We → were; khoảng thời gian dùng 'for'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-013",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Đó là trải nghiệm có một không hai với tôi.",
+  "given": [],
+  "hint": "a once-in-a-lifetime experience",
+  "answers": [
+   "It was a once-in-a-lifetime experience for me."
+  ],
+  "note": "Cụm tính từ ghép có gạch nối: once-in-a-lifetime.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-014",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Tháng trước tôi đi một chuyến trong ngày tới Ninh Bình.",
+  "given": [],
+  "hint": "take a day trip to",
+  "answers": [
+   "Last month I took a day trip to Ninh Binh."
+  ],
+  "note": "take → took; a day trip to + nơi chốn.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-015",
+  "cluster": "du-lich",
+  "level": 2,
+  "prompt_vi": "Tôi chưa bao giờ đi nước ngoài.",
+  "given": [],
+  "hint": "have never + V3",
+  "answers": [
+   "I have never travelled abroad.",
+   "I've never been abroad before."
+  ],
+  "note": "Anh-Anh: travelled (2 chữ l); 'abroad' không cần 'to'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-016",
+  "cluster": "du-lich",
+  "level": 3,
+  "prompt_vi": "Từ Hà Nội đến Sa Pa mất khoảng sáu tiếng.",
+  "given": [],
+  "hint": "It takes + time + to V",
+  "answers": [
+   "It takes about six hours to get to Sa Pa from Hanoi."
+  ],
+  "note": "It takes + thời gian + to V; không nói 'It spends six hours'.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-017",
+  "cluster": "du-lich",
+  "level": 3,
+  "prompt_vi": "Tôi thích những nơi vắng khách hơn chỗ du lịch đông đúc.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer places off the beaten track to crowded tourist spots."
+  ],
+  "note": "off the beaten track = nơi ít khách du lịch.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-018",
+  "cluster": "du-lich",
+  "level": 3,
+  "prompt_vi": "Hồi sinh viên, tôi thường đi phượt bằng xe máy.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "I used to travel by motorbike when I was a student."
+  ],
+  "note": "by + phương tiện (không có 'a'): by motorbike.",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-019",
+  "cluster": "du-lich",
+  "level": 3,
+  "prompt_vi": "Cảnh đẹp đến nỗi chúng tôi chụp hàng trăm tấm ảnh.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "The view was so beautiful that we took hundreds of photos."
+  ],
+  "note": "so + adj + that; take → took photos (không 'make photos').",
+  "source": ""
+ },
+ {
+  "id": "b1-du-lich-020",
+  "cluster": "du-lich",
+  "level": 3,
+  "prompt_vi": "Đi nghỉ biển giúp tôi nạp lại năng lượng.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + help + O + V",
+  "answers": [
+   "Going on a beach holiday helps me recharge my batteries."
+  ],
+  "note": "help + O + V nguyên mẫu; V-ing chủ ngữ → helps.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-001",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Tôi lướt mạng xã hội trước khi đi ngủ.",
+  "given": [],
+  "hint": "browse social media",
+  "answers": [
+   "I browse social media before I go to bed.",
+   "I browse social media before bed."
+  ],
+  "note": "Thói quen → hiện tại đơn; 'before bed' không cần 'the'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-002",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Điện thoại của tôi rất hữu ích cho việc học.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "My smartphone is very useful for my studies."
+  ],
+  "note": "useful for + N; không bỏ 'is'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-003",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Có nhiều ứng dụng học tiếng Anh miễn phí.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are many free apps for learning English."
+  ],
+  "note": "Tính từ đứng trước danh từ: free apps; for + V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-004",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Tôi mua sắm online để tiết kiệm thời gian.",
+  "given": [],
+  "hint": "shop online + to V",
+  "answers": [
+   "I shop online to save time."
+  ],
+  "note": "to V chỉ mục đích; 'online' là trạng từ, không cần 'on'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-005",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Tôi gọi video cho bố mẹ mỗi tuần.",
+  "given": [],
+  "hint": "make a video call",
+  "answers": [
+   "I make a video call to my parents every week.",
+   "I have a video call with my parents every week."
+  ],
+  "note": "make a video call, không nói 'call video'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-006",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Học trực tuyến rất linh hoạt.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "Online learning is very flexible."
+  ],
+  "note": "Online learning là chủ ngữ số ít → is.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-007",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Tôi dùng laptop cho công việc hằng ngày.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "I use my laptop for work every day."
+  ],
+  "note": "every day (2 chữ) = hằng ngày; everyday (1 chữ) là tính từ.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-008",
+  "cluster": "cong-nghe",
+  "level": 1,
+  "prompt_vi": "Bố mẹ không cho tôi dùng điện thoại trong bữa ăn.",
+  "given": [],
+  "hint": "allow + O + to V",
+  "answers": [
+   "My parents don't allow me to use my phone during meals."
+  ],
+  "note": "allow + người + to V; phủ định với chủ ngữ số nhiều → don't.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-009",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Tôi đã dùng điện thoại này được ba năm.",
+  "given": [],
+  "hint": "have + V3 + for",
+  "answers": [
+   "I have used this phone for three years.",
+   "I've had this phone for three years."
+  ],
+  "note": "Kéo dài tới nay → hiện tại hoàn thành + for.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-010",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Nhiều thiếu niên nghiện điện thoại.",
+  "given": [],
+  "hint": "be addicted to",
+  "answers": [
+   "Many teenagers are addicted to their phones."
+  ],
+  "note": "addicted to + N/V-ing; không bỏ 'are'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-011",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Điện thoại giúp chúng ta giữ kết nối với gia đình.",
+  "given": [],
+  "hint": "stay connected",
+  "answers": [
+   "Smartphones help us stay connected with our families."
+  ],
+  "note": "help + O + V nguyên mẫu.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-012",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Năm ngoái tôi đã học một khoá trực tuyến.",
+  "given": [],
+  "hint": "take a course (past)",
+  "answers": [
+   "I took an online course last year."
+  ],
+  "note": "take a course, không nói 'learn a course'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-013",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Ngân hàng online thật sự tiết kiệm thời gian.",
+  "given": [],
+  "hint": "a real time-saver",
+  "answers": [
+   "Online banking is a real time-saver."
+  ],
+  "note": "a real time-saver = thứ giúp tiết kiệm thời gian.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-014",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Gần đây tôi đã giảm thời gian dùng màn hình.",
+  "given": [],
+  "hint": "cut down on (present perfect)",
+  "answers": [
+   "I have cut down on my screen time recently."
+  ],
+  "note": "recently → have + V3.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-015",
+  "cluster": "cong-nghe",
+  "level": 2,
+  "prompt_vi": "Mạng xã hội có thể lan truyền tin giả rất nhanh.",
+  "given": [],
+  "hint": "can + V",
+  "answers": [
+   "Social media can spread fake news very quickly."
+  ],
+  "note": "can + V nguyên mẫu, không 'can spreads'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-016",
+  "cluster": "cong-nghe",
+  "level": 3,
+  "prompt_vi": "Người lớn tuổi khó theo kịp công nghệ.",
+  "given": [],
+  "hint": "It is + adj + for sb + to V",
+  "answers": [
+   "It is hard for older people to keep up with technology."
+  ],
+  "note": "It is + adj + for + người + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-017",
+  "cluster": "cong-nghe",
+  "level": 3,
+  "prompt_vi": "Dùng điện thoại quá nhiều không tốt cho mắt.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + is",
+  "answers": [
+   "Using your phone too much is bad for your eyes."
+  ],
+  "note": "V-ing làm chủ ngữ → is (số ít).",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-018",
+  "cluster": "cong-nghe",
+  "level": 3,
+  "prompt_vi": "Tôi thích nói chuyện trực tiếp hơn gọi video.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer face-to-face conversations to video calls."
+  ],
+  "note": "prefer A to B, không 'prefer A than B'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-019",
+  "cluster": "cong-nghe",
+  "level": 3,
+  "prompt_vi": "Trước đây tôi thường chơi game hàng giờ mỗi tối.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "I used to play games for hours every evening."
+  ],
+  "note": "used to + V; không 'I use to play'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-nghe-020",
+  "cluster": "cong-nghe",
+  "level": 3,
+  "prompt_vi": "Laptop cũ của tôi không đủ nhanh để chạy phần mềm mới.",
+  "given": [],
+  "hint": "adj + enough + to V",
+  "answers": [
+   "My old laptop isn't fast enough to run new software."
+  ],
+  "note": "enough đứng SAU tính từ: fast enough.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-001",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Tôi là sinh viên năm hai.",
+  "given": [],
+  "hint": "S + be + a + N",
+  "answers": [
+   "I am a second-year student at university."
+  ],
+  "note": "Danh từ số ít cần 'a'; second-year có gạch nối.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-002",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Tôi học tiếng Anh mỗi tối sau giờ làm.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "I study English every evening after work."
+  ],
+  "note": "Không có 'the' trước tên môn học/ngôn ngữ.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-003",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Công việc của tôi thú vị nhưng khá áp lực.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "My job is interesting but quite stressful."
+  ],
+  "note": "interesting (cho vật) khác interested (cho người).",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-004",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Lớp tôi có ba mươi học viên.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are thirty students in my class."
+  ],
+  "note": "Nhiều người → There are.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-005",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Tôi làm việc cho một công ty IT nhỏ.",
+  "given": [],
+  "hint": "S + V + for + N",
+  "answers": [
+   "I work for a small IT company."
+  ],
+  "note": "work for + công ty; work in/at + nơi chốn.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-006",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Tôi thật sự thích làm việc nhóm.",
+  "given": [],
+  "hint": "enjoy + V-ing",
+  "answers": [
+   "I really enjoy working in a team."
+  ],
+  "note": "enjoy + V-ing, không 'enjoy to work'; 'really' thay cho 'very'.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-007",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Tôi xem phim để cải thiện tiếng Anh.",
+  "given": [],
+  "hint": "S + V + O + to V",
+  "answers": [
+   "I watch films to improve my English."
+  ],
+  "note": "Anh-Anh: films; to V chỉ mục đích.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-008",
+  "cluster": "hoc-tap",
+  "level": 1,
+  "prompt_vi": "Giáo viên khuyến khích chúng tôi nói tiếng Anh trong lớp.",
+  "given": [],
+  "hint": "encourage + O + to V",
+  "answers": [
+   "Our teacher encourages us to speak English in class."
+  ],
+  "note": "encourage + người + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-009",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Tôi đã học tiếng Anh được năm năm.",
+  "given": [],
+  "hint": "have been + V-ing + for",
+  "answers": [
+   "I have been learning English for five years."
+  ],
+  "note": "Việc vẫn đang tiếp diễn → have been + V-ing + for.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-010",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Hiện tôi đang tham gia một khoá tiếng Anh.",
+  "given": [],
+  "hint": "attend a course (present continuous)",
+  "answers": [
+   "I am attending an English course at the moment."
+  ],
+  "note": "attend không đi với 'to': không nói 'attend to a course'.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-011",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Chúng tôi làm việc muộn để kịp hạn chót.",
+  "given": [],
+  "hint": "meet a deadline (past)",
+  "answers": [
+   "We worked late to meet the deadline."
+  ],
+  "note": "meet a deadline = kịp hạn (không 'catch the deadline').",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-012",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Khoá học giúp tôi có thêm kỹ năng mới.",
+  "given": [],
+  "hint": "acquire new skills",
+  "answers": [
+   "The course helped me acquire new skills."
+  ],
+  "note": "help + O + V nguyên mẫu (không cần to).",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-013",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Tôi mất hai tiếng để làm xong bài tập.",
+  "given": [],
+  "hint": "It takes + O + time + to V",
+  "answers": [
+   "It took me two hours to finish my homework."
+  ],
+  "note": "It took me + thời gian + to V; homework không đếm được.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-014",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Tôi đã chịu nhiều áp lực trước kỳ thi.",
+  "given": [],
+  "hint": "be under pressure (past)",
+  "answers": [
+   "I was under a lot of pressure before the exam."
+  ],
+  "note": "under pressure (giới từ 'under', không 'in').",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-015",
+  "cluster": "hoc-tap",
+  "level": 2,
+  "prompt_vi": "Tiếng Anh mở ra nhiều cơ hội nghề nghiệp.",
+  "given": [],
+  "hint": "open up career opportunities",
+  "answers": [
+   "English opens up many career opportunities."
+  ],
+  "note": "English số ít → opens.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-016",
+  "cluster": "hoc-tap",
+  "level": 3,
+  "prompt_vi": "Cân bằng giữa đi làm và đi học rất khó.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is very hard to balance work and study."
+  ],
+  "note": "Không nói 'Is very hard to...' (thiếu It).",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-017",
+  "cluster": "hoc-tap",
+  "level": 3,
+  "prompt_vi": "Luyện tập đều đặn là chìa khoá thành công.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + is",
+  "answers": [
+   "Practising regularly is the key to success."
+  ],
+  "note": "Anh-Anh: practise (động từ); key to + N.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-018",
+  "cluster": "hoc-tap",
+  "level": 3,
+  "prompt_vi": "Tôi thích học với giáo viên hơn tự học online.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer studying with a teacher to studying alone online."
+  ],
+  "note": "prefer V-ing to V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-019",
+  "cluster": "hoc-tap",
+  "level": 3,
+  "prompt_vi": "Bài kiểm tra khó đến nỗi nhiều bạn bị trượt.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "The test was so difficult that many students failed."
+  ],
+  "note": "so + adj + that + S + V.",
+  "source": ""
+ },
+ {
+  "id": "b1-hoc-tap-020",
+  "cluster": "hoc-tap",
+  "level": 3,
+  "prompt_vi": "Tôi chưa đủ tự tin để thuyết trình bằng tiếng Anh.",
+  "given": [],
+  "hint": "adj + enough + to V",
+  "answers": [
+   "I am not confident enough to give presentations in English."
+  ],
+  "note": "give a presentation (không 'make a presentation'); enough sau tính từ.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-001",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Tôi chạy bộ mỗi sáng để giữ dáng.",
+  "given": [],
+  "hint": "S + V + to V (keep fit)",
+  "answers": [
+   "I go jogging every morning to keep fit."
+  ],
+  "note": "go + V-ing cho hoạt động thể thao: go jogging.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-002",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Bóng đá là môn thể thao yêu thích của tôi.",
+  "given": [],
+  "hint": "S + be + N",
+  "answers": [
+   "Football is my favourite sport."
+  ],
+  "note": "Anh-Anh: football, favourite.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-003",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Gần căn hộ tôi có một phòng gym.",
+  "given": [],
+  "hint": "There is + N",
+  "answers": [
+   "There is a gym near my flat."
+  ],
+  "note": "Một vật → There is.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-004",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Tôi chơi cầu lông với bạn vào cuối tuần.",
+  "given": [],
+  "hint": "play + môn thể thao",
+  "answers": [
+   "I play badminton with my friends at weekends."
+  ],
+  "note": "play + môn (không có 'the'); Anh-Anh: at weekends.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-005",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Tôi đi bơi để giải toả căng thẳng.",
+  "given": [],
+  "hint": "S + V + to V",
+  "answers": [
+   "I go swimming to relieve stress."
+  ],
+  "note": "relieve stress = giải toả căng thẳng.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-006",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Tôi tập gym ba lần một tuần.",
+  "given": [],
+  "hint": "work out at the gym",
+  "answers": [
+   "I work out at the gym three times a week."
+  ],
+  "note": "three times a week, không nói 'three times in week'.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-007",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Anh trai tôi chơi bóng đá rất giỏi.",
+  "given": [],
+  "hint": "be good at + N/V-ing",
+  "answers": [
+   "My older brother is very good at football."
+  ],
+  "note": "be good at (không 'good in'); sau at là N/V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-008",
+  "cluster": "the-thao",
+  "level": 1,
+  "prompt_vi": "Bác sĩ khuyên tôi tập thể dục đều đặn.",
+  "given": [],
+  "hint": "advise + O + to V",
+  "answers": [
+   "My doctor advises me to exercise regularly."
+  ],
+  "note": "advise (động từ) khác advice (danh từ).",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-009",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Tôi bắt đầu chơi cầu lông từ năm ngoái.",
+  "given": [],
+  "hint": "take up (past)",
+  "answers": [
+   "I took up badminton last year."
+  ],
+  "note": "take up = bắt đầu chơi một môn; take → took.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-010",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Tôi đã chơi bóng đá từ năm 10 tuổi.",
+  "given": [],
+  "hint": "have + V3 + since",
+  "answers": [
+   "I have played football since I was ten."
+  ],
+  "note": "since + mốc (since I was ten) → hiện tại hoàn thành.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-011",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Chạy bộ giúp tôi tăng sức bền.",
+  "given": [],
+  "hint": "help + O + V",
+  "answers": [
+   "Running helps me build my stamina."
+  ],
+  "note": "help me + V nguyên mẫu (không 'help me to building').",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-012",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Anh ấy bị chấn thương trong trận đấu.",
+  "given": [],
+  "hint": "get injured (past)",
+  "answers": [
+   "He got injured during the match."
+  ],
+  "note": "get injured → got injured; during + N.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-013",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Tối qua chúng tôi đã cổ vũ đội tuyển quốc gia.",
+  "given": [],
+  "hint": "cheer for (past)",
+  "answers": [
+   "We cheered for the national team last night."
+  ],
+  "note": "cheer for + đội; last night → quá khứ đơn.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-014",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Tôi có cảm giác thành tựu sau cuộc đua.",
+  "given": [],
+  "hint": "feel a sense of achievement (past)",
+  "answers": [
+   "I felt a sense of achievement after the race."
+  ],
+  "note": "feel → felt; a sense of achievement = cảm giác thành tựu.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-015",
+  "cluster": "the-thao",
+  "level": 2,
+  "prompt_vi": "Nhân viên văn phòng thường có lối sống ít vận động.",
+  "given": [],
+  "hint": "a sedentary lifestyle",
+  "answers": [
+   "Office workers often have a sedentary lifestyle."
+  ],
+  "note": "often + V nguyên mẫu; chủ ngữ số nhiều → have.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-016",
+  "cluster": "the-thao",
+  "level": 3,
+  "prompt_vi": "Tập thể dục mỗi ngày không dễ.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is not easy to exercise every day.",
+   "It isn't easy to do exercise every day."
+  ],
+  "note": "Phải có 'It' làm chủ ngữ giả: không nói 'Is not easy to...'.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-017",
+  "cluster": "the-thao",
+  "level": 3,
+  "prompt_vi": "Chơi thể thao đồng đội dạy chúng ta hợp tác.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + V-s",
+  "answers": [
+   "Playing team sports teaches us to work together."
+  ],
+  "note": "V-ing chủ ngữ → teaches; teach + O + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-018",
+  "cluster": "the-thao",
+  "level": 3,
+  "prompt_vi": "Tôi thích hoạt động ngoài trời hơn tập trong phòng gym.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer outdoor activities to working out at the gym."
+  ],
+  "note": "prefer A to B; A, B là danh từ hoặc V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-019",
+  "cluster": "the-thao",
+  "level": 3,
+  "prompt_vi": "Hồi đi học, tôi thường chơi bóng rổ sau giờ học.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "I used to play basketball after school."
+  ],
+  "note": "used to + V; after school không có 'the'.",
+  "source": ""
+ },
+ {
+  "id": "b1-the-thao-020",
+  "cluster": "the-thao",
+  "level": 3,
+  "prompt_vi": "Trời nóng quá nên chúng tôi không chạy bộ được.",
+  "given": [],
+  "hint": "too + adj + for sb + to V",
+  "answers": [
+   "It was too hot for us to go running."
+  ],
+  "note": "too = quá (tiêu cực, không làm được); khác 'very'.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-001",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Tôi nghe nhạc mỗi tối.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "I listen to music every evening."
+  ],
+  "note": "listen to + N (không bỏ 'to').",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-002",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Sở thích của tôi là đọc sách.",
+  "given": [],
+  "hint": "My hobby is + V-ing",
+  "answers": [
+   "My hobby is reading books."
+  ],
+  "note": "hobby is + V-ing, không 'My hobby is read'.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-003",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Tôi là fan cuồng của Sơn Tùng.",
+  "given": [],
+  "hint": "a big fan of",
+  "answers": [
+   "I am a big fan of Son Tung."
+  ],
+  "note": "a big fan of + người/thứ gì.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-004",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Khu tôi ở có một rạp chiếu phim mới.",
+  "given": [],
+  "hint": "There is + N",
+  "answers": [
+   "There is a new cinema in my neighbourhood."
+  ],
+  "note": "Anh-Anh: cinema (Mỹ: movie theater).",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-005",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Tôi đi chơi với bạn bè vào cuối tuần.",
+  "given": [],
+  "hint": "hang out with friends",
+  "answers": [
+   "I hang out with my friends at weekends."
+  ],
+  "note": "hang out with + người.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-006",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Bộ phim này hài hước và rất cảm động.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "This film is funny and very moving."
+  ],
+  "note": "Không nói 'This film very funny' (thiếu is).",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-007",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Tôi xem phim để thư giãn sau giờ làm.",
+  "given": [],
+  "hint": "unwind after work",
+  "answers": [
+   "I watch films to unwind after work."
+  ],
+  "note": "unwind = thư giãn; to V chỉ mục đích.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-008",
+  "cluster": "giai-tri",
+  "level": 1,
+  "prompt_vi": "Bạn tôi hay rủ tôi đi xem ca nhạc.",
+  "given": [],
+  "hint": "invite + O + to V",
+  "answers": [
+   "My friend often invites me to go to concerts."
+  ],
+  "note": "invite + người + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-009",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Tôi cày hết cả bộ phim trong một cuối tuần.",
+  "given": [],
+  "hint": "binge-watch (past)",
+  "answers": [
+   "I binge-watched the whole series in one weekend."
+  ],
+  "note": "series có dạng số ít và số nhiều giống nhau.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-010",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Tháng trước tôi đi xem nhạc sống.",
+  "given": [],
+  "hint": "go to a live concert (past)",
+  "answers": [
+   "I went to a live concert last month."
+  ],
+  "note": "go → went; last month → quá khứ đơn.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-011",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Bộ phim có cốt truyện rất cuốn hút.",
+  "given": [],
+  "hint": "have a gripping plot",
+  "answers": [
+   "The film has a really gripping plot."
+  ],
+  "note": "gripping = cuốn hút; The film (số ít) → has.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-012",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Tôi đã đọc cuốn sách này hai lần.",
+  "given": [],
+  "hint": "have + V3",
+  "answers": [
+   "I have read this book twice."
+  ],
+  "note": "read → read → read (quá khứ đọc là /red/).",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-013",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Bộ phim hài làm tôi cười phá lên.",
+  "given": [],
+  "hint": "make + O + V",
+  "answers": [
+   "The comedy made me laugh out loud."
+  ],
+  "note": "make + O + V nguyên mẫu (không có 'to').",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-014",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Tôi đọc sách để giết thời gian trên xe buýt.",
+  "given": [],
+  "hint": "kill time",
+  "answers": [
+   "I read books to kill time on the bus."
+  ],
+  "note": "on the bus (không 'in the bus').",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-015",
+  "cluster": "giai-tri",
+  "level": 2,
+  "prompt_vi": "Tôi dành hàng giờ nghe podcast mỗi tuần.",
+  "given": [],
+  "hint": "spend + time + V-ing",
+  "answers": [
+   "I spend hours listening to podcasts every week."
+  ],
+  "note": "spend + thời gian + V-ing, không 'spend hours to listen'.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-016",
+  "cluster": "giai-tri",
+  "level": 3,
+  "prompt_vi": "Xem phim có phụ đề tiếng Anh giúp tôi học từ mới.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + V-s",
+  "answers": [
+   "Watching films with English subtitles helps me learn new words."
+  ],
+  "note": "V-ing chủ ngữ → helps (số ít).",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-017",
+  "cluster": "giai-tri",
+  "level": 3,
+  "prompt_vi": "Xem phim hành động trên màn ảnh rộng thú vị hơn.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is more exciting to watch action films on the big screen."
+  ],
+  "note": "It is + so sánh hơn + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-018",
+  "cluster": "giai-tri",
+  "level": 3,
+  "prompt_vi": "Tôi thích đọc sách hơn xem TV.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer reading books to watching TV."
+  ],
+  "note": "prefer V-ing to V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-019",
+  "cluster": "giai-tri",
+  "level": 3,
+  "prompt_vi": "Bộ phim cuốn đến nỗi tôi xem hai lần.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "The film was so gripping that I watched it twice."
+  ],
+  "note": "so + adj + that + S + V.",
+  "source": ""
+ },
+ {
+  "id": "b1-giai-tri-020",
+  "cluster": "giai-tri",
+  "level": 3,
+  "prompt_vi": "Hồi nhỏ tôi thường đọc truyện tranh hàng giờ.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "I used to read comics for hours as a child."
+  ],
+  "note": "as a child = hồi nhỏ; used to + V.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-001",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Tôi yêu thiên nhiên và không khí trong lành.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "I love nature and fresh air."
+  ],
+  "note": "nature không có 'the' khi nói chung.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-002",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Ô nhiễm không khí ở Hà Nội rất nghiêm trọng.",
+  "given": [],
+  "hint": "S + be + adj",
+  "answers": [
+   "Air pollution in Hanoi is very serious."
+  ],
+  "note": "pollution không đếm được → is.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-003",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Có một công viên lớn ở trung tâm thị trấn của tôi.",
+  "given": [],
+  "hint": "There is + N",
+  "answers": [
+   "There is a big park in the centre of my town."
+  ],
+  "note": "Anh-Anh: centre.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-004",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Ở quê tôi có rất nhiều cây.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are lots of trees in my hometown."
+  ],
+  "note": "trees số nhiều → There are.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-005",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Tôi mang túi riêng để giảm rác thải nhựa.",
+  "given": [],
+  "hint": "S + V + O + to V",
+  "answers": [
+   "I bring my own bag to reduce plastic waste."
+  ],
+  "note": "my own + N = của riêng tôi.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-006",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Gia đình tôi tái chế nhựa và giấy mỗi tuần.",
+  "given": [],
+  "hint": "S + V-s + O",
+  "answers": [
+   "My family recycles plastic and paper every week."
+  ],
+  "note": "My family (số ít) → recycles.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-007",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Tôi đạp xe đi làm mỗi ngày.",
+  "given": [],
+  "hint": "S + V + to + N",
+  "answers": [
+   "I cycle to work every day.",
+   "I go to work by bike every day."
+  ],
+  "note": "cycle to work, hoặc go to work by bike (by + phương tiện, không 'a').",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-008",
+  "cluster": "thien-nhien",
+  "level": 1,
+  "prompt_vi": "Câu lạc bộ khuyến khích mọi người trồng thêm cây.",
+  "given": [],
+  "hint": "encourage + O + to V",
+  "answers": [
+   "Our club encourages people to plant more trees."
+  ],
+  "note": "Our club số ít → encourages.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-009",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Mùa xuân năm ngoái chúng tôi đi leo núi ở Ba Vì.",
+  "given": [],
+  "hint": "go hiking (past)",
+  "answers": [
+   "We went hiking in Ba Vi last spring."
+  ],
+  "note": "go + V-ing; go → went.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-010",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Câu lạc bộ đã trồng cây ở công viên địa phương.",
+  "given": [],
+  "hint": "plant trees (past)",
+  "answers": [
+   "Our club planted trees in the local park."
+  ],
+  "note": "plant → planted.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-011",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Thời tiết khắc nghiệt ngày càng phổ biến.",
+  "given": [],
+  "hint": "be becoming + more and more + adj",
+  "answers": [
+   "Extreme weather is becoming more and more common."
+  ],
+  "note": "more and more + adj = ngày càng.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-012",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Cắm trại giúp tôi gần gũi thiên nhiên.",
+  "given": [],
+  "hint": "let + O + V",
+  "answers": [
+   "Camping lets me get close to nature."
+  ],
+  "note": "let + O + V nguyên mẫu (không 'to').",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-013",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Tôi chưa bao giờ cắm trại trong rừng.",
+  "given": [],
+  "hint": "have never been + V-ing",
+  "answers": [
+   "I have never been camping in a forest."
+  ],
+  "note": "have been camping/fishing = đã từng đi cắm trại/câu cá.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-014",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Chúng ta đều nên bảo vệ môi trường.",
+  "given": [],
+  "hint": "should + V",
+  "answers": [
+   "We should all protect the environment."
+  ],
+  "note": "should + V nguyên mẫu; 'all' đứng sau should.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-015",
+  "cluster": "thien-nhien",
+  "level": 2,
+  "prompt_vi": "Cuối tuần trước tôi ra biển để thoát khỏi thành phố.",
+  "given": [],
+  "hint": "escape from the city (past)",
+  "answers": [
+   "Last weekend I went to the beach to escape from the city."
+  ],
+  "note": "go → went; to V chỉ mục đích.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-016",
+  "cluster": "thien-nhien",
+  "level": 3,
+  "prompt_vi": "Bảo vệ động vật hoang dã là rất cần thiết.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is essential to protect wildlife."
+  ],
+  "note": "wildlife không đếm được, không thêm -s.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-017",
+  "cluster": "thien-nhien",
+  "level": 3,
+  "prompt_vi": "Hít thở không khí trong lành làm tôi thấy khoẻ hơn.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + make + O + V",
+  "answers": [
+   "Breathing fresh air makes me feel healthier."
+  ],
+  "note": "make + O + feel + adj; V-ing chủ ngữ → makes.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-018",
+  "cluster": "thien-nhien",
+  "level": 3,
+  "prompt_vi": "Tôi thích lên núi hơn đi biển.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer going to the mountains to going to the beach."
+  ],
+  "note": "prefer V-ing to V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-019",
+  "cluster": "thien-nhien",
+  "level": 3,
+  "prompt_vi": "Hồi trước con sông gần nhà tôi rất sạch.",
+  "given": [],
+  "hint": "used to + be",
+  "answers": [
+   "The river near my house used to be very clean."
+  ],
+  "note": "used to be + adj = trước đây từng (nay không còn).",
+  "source": ""
+ },
+ {
+  "id": "b1-thien-nhien-020",
+  "cluster": "thien-nhien",
+  "level": 3,
+  "prompt_vi": "Trời lạnh đến nỗi chúng tôi phải về sớm.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "It was so cold that we had to leave early."
+  ],
+  "note": "have to → had to ở quá khứ.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-001",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Tôi mua sắm online vì nó nhanh.",
+  "given": [],
+  "hint": "S + V + because + S + V",
+  "answers": [
+   "I shop online because it is quick."
+  ],
+  "note": "because nối hai mệnh đề, không đứng riêng thành câu.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-002",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Chiếc áo khoác này là một món hời.",
+  "given": [],
+  "hint": "S + be + a + N",
+  "answers": [
+   "This jacket is a real bargain."
+  ],
+  "note": "a real bargain = món hời.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-003",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Siêu thị có rất nhiều loại sản phẩm.",
+  "given": [],
+  "hint": "S + have + N",
+  "answers": [
+   "Supermarkets have a wide range of products."
+  ],
+  "note": "a wide range of + N số nhiều.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-004",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Cuối phố nhà tôi có một chợ truyền thống.",
+  "given": [],
+  "hint": "There is + N",
+  "answers": [
+   "There is a traditional market at the end of my street."
+  ],
+  "note": "at the end of + N = ở cuối.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-005",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Tôi luôn so sánh giá trước khi mua.",
+  "given": [],
+  "hint": "compare prices",
+  "answers": [
+   "I always compare prices before I buy anything."
+  ],
+  "note": "always đứng trước động từ thường.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-006",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Hầu hết mọi người trả bằng thẻ hoặc mã QR.",
+  "given": [],
+  "hint": "pay by card",
+  "answers": [
+   "Most people pay by card or QR code."
+  ],
+  "note": "pay by card / pay in cash, không có 'a'.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-007",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Đồ ăn ở chợ rẻ hơn ở siêu thị.",
+  "given": [],
+  "hint": "S + be + adj-er + than",
+  "answers": [
+   "Food at the market is cheaper than at the supermarket."
+  ],
+  "note": "cheap → cheaper than, không nói 'more cheap'.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-008",
+  "cluster": "mua-sam",
+  "level": 1,
+  "prompt_vi": "Mẹ tôi hay nhờ tôi đi mua rau.",
+  "given": [],
+  "hint": "ask + O + to V",
+  "answers": [
+   "My mother often asks me to buy vegetables."
+  ],
+  "note": "ask + người + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-009",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Tôi đã để dành tiền mua laptop mới.",
+  "given": [],
+  "hint": "save up for (past)",
+  "answers": [
+   "I saved up for a new laptop."
+  ],
+  "note": "save up for + thứ muốn mua.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-010",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Tôi đã được hoàn tiền cho chiếc điện thoại hỏng.",
+  "given": [],
+  "hint": "get a refund (past)",
+  "answers": [
+   "I got a refund for the broken phone."
+  ],
+  "note": "get → got; a refund for + N.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-011",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Tháng này tôi đang eo hẹp ngân sách.",
+  "given": [],
+  "hint": "be on a tight budget",
+  "answers": [
+   "I am on a tight budget this month.",
+   "I'm on a tight budget this month."
+  ],
+  "note": "on a tight budget (giới từ 'on').",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-012",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Sinh viên không đủ tiền tập ở phòng gym đắt đỏ.",
+  "given": [],
+  "hint": "can't afford",
+  "answers": [
+   "Students can't afford expensive gym memberships."
+  ],
+  "note": "can't afford + N / to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-013",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Tôi mua đôi giày này khi đang giảm giá.",
+  "given": [],
+  "hint": "at a discount / in the sale",
+  "answers": [
+   "I bought these shoes at a discount.",
+   "I bought these shoes in the sale."
+  ],
+  "note": "shoes số nhiều → these; buy → bought.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-014",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Tôi hay đi ngắm đồ vào cuối tuần.",
+  "given": [],
+  "hint": "go window shopping",
+  "answers": [
+   "I often go window shopping at weekends."
+  ],
+  "note": "window shopping = ngắm đồ, không mua.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-015",
+  "cluster": "mua-sam",
+  "level": 2,
+  "prompt_vi": "Tôi chưa bao giờ mua hàng hiệu.",
+  "given": [],
+  "hint": "have never + V3",
+  "answers": [
+   "I have never bought brand-name products."
+  ],
+  "note": "buy → bought → bought.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-016",
+  "cluster": "mua-sam",
+  "level": 3,
+  "prompt_vi": "Mua sắm online tiết kiệm rất nhiều thời gian.",
+  "given": [],
+  "hint": "V-ing làm chủ ngữ + V-s",
+  "answers": [
+   "Shopping online saves a lot of time."
+  ],
+  "note": "V-ing chủ ngữ → saves.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-017",
+  "cluster": "mua-sam",
+  "level": 3,
+  "prompt_vi": "Mua quần áo không thử được thì khá rủi ro.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is risky to buy clothes you can't try on."
+  ],
+  "note": "try on = thử đồ; tân ngữ đứng trước 'on' khi là đại từ.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-018",
+  "cluster": "mua-sam",
+  "level": 3,
+  "prompt_vi": "Tôi thích mua ở chợ hơn ở siêu thị.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer shopping at markets to shopping at supermarkets."
+  ],
+  "note": "prefer V-ing to V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-019",
+  "cluster": "mua-sam",
+  "level": 3,
+  "prompt_vi": "Chiếc điện thoại quá đắt nên tôi không mua được.",
+  "given": [],
+  "hint": "too + adj + for sb + to V",
+  "answers": [
+   "The phone was too expensive for me to buy."
+  ],
+  "note": "Không thêm 'it' ở cuối: ❌ too expensive for me to buy it.",
+  "source": ""
+ },
+ {
+  "id": "b1-mua-sam-020",
+  "cluster": "mua-sam",
+  "level": 3,
+  "prompt_vi": "Hồi trước tôi hay mua đồ theo cảm hứng.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "I used to buy things on impulse."
+  ],
+  "note": "on impulse = theo cảm hứng, bốc đồng.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-001",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Tôi là thành viên của một câu lạc bộ tiếng Anh.",
+  "given": [],
+  "hint": "S + be + a member of",
+  "answers": [
+   "I am a member of an English club."
+  ],
+  "note": "an trước nguyên âm: an English club.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-002",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Câu lạc bộ họp mỗi tối thứ Sáu.",
+  "given": [],
+  "hint": "S + V-s",
+  "answers": [
+   "The club meets every Friday evening."
+  ],
+  "note": "The club số ít → meets.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-003",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Câu lạc bộ có khoảng năm mươi thành viên.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are about fifty members in the club."
+  ],
+  "note": "about = khoảng; members số nhiều → There are.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-004",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Tôi làm tình nguyện ở một trại trẻ mồ côi.",
+  "given": [],
+  "hint": "do volunteer work",
+  "answers": [
+   "I do volunteer work at an orphanage."
+  ],
+  "note": "do volunteer work (không dùng 'make').",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-005",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Phí thành viên khá cao đối với sinh viên.",
+  "given": [],
+  "hint": "S + be + adj + for",
+  "answers": [
+   "The membership fee is quite high for students."
+  ],
+  "note": "fee/price đi với high/low tự nhiên hơn expensive/cheap.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-006",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Câu lạc bộ giúp những người khó khăn trong khu vực.",
+  "given": [],
+  "hint": "help + people in need",
+  "answers": [
+   "The club helps people in need in our area."
+  ],
+  "note": "people in need = người gặp khó khăn.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-007",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Tôi muốn đóng góp lại cho cộng đồng.",
+  "given": [],
+  "hint": "want to + V",
+  "answers": [
+   "I want to give something back to my community."
+  ],
+  "note": "give something back to + N.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-008",
+  "cluster": "cong-dong",
+  "level": 1,
+  "prompt_vi": "Tôi muốn câu lạc bộ tổ chức thêm các buổi workshop.",
+  "given": [],
+  "hint": "would like + O + to V",
+  "answers": [
+   "I would like the club to organise more workshops."
+  ],
+  "note": "would like + O + to V; Anh-Anh: organise.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-009",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Tôi là thành viên câu lạc bộ được hai năm rồi.",
+  "given": [],
+  "hint": "have been + for",
+  "answers": [
+   "I have been a member of the club for two years."
+  ],
+  "note": "be → been; kéo dài tới nay → hiện tại hoàn thành.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-010",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Hơn năm mươi thành viên đã tham gia sự kiện.",
+  "given": [],
+  "hint": "take part in (past)",
+  "answers": [
+   "Over fifty members took part in the event."
+  ],
+  "note": "take part in (không bỏ 'in'); take → took.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-011",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Tháng trước chúng tôi đã quyên góp tiền làm từ thiện.",
+  "given": [],
+  "hint": "raise money for charity",
+  "answers": [
+   "We raised money for charity last month."
+  ],
+  "note": "raise money (không 'collect charity').",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-012",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Chủ nhật tuần trước chúng tôi dọn dẹp công viên.",
+  "given": [],
+  "hint": "clean up the park (past)",
+  "answers": [
+   "We cleaned up the park last Sunday."
+  ],
+  "note": "last Sunday không có 'on' hay 'in'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-013",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Những việc nhỏ có thể tạo ra thay đổi lớn.",
+  "given": [],
+  "hint": "make a difference",
+  "answers": [
+   "Small actions can make a big difference."
+  ],
+  "note": "make a difference (không 'do a difference').",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-014",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Sự kiện đã nâng cao nhận thức về tái chế.",
+  "given": [],
+  "hint": "raise awareness of (past)",
+  "answers": [
+   "The event raised awareness of recycling in our town."
+  ],
+  "note": "raise awareness of + N/V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-015",
+  "cluster": "cong-dong",
+  "level": 2,
+  "prompt_vi": "Mạng xã hội có thể thu hút thêm thành viên trẻ.",
+  "given": [],
+  "hint": "attract young members",
+  "answers": [
+   "Social media can attract more young members to the club."
+  ],
+  "note": "can + V nguyên mẫu.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-016",
+  "cluster": "cong-dong",
+  "level": 3,
+  "prompt_vi": "Giúp đỡ người khác khiến tôi thấy hạnh phúc.",
+  "given": [],
+  "hint": "S + make + O + adj",
+  "answers": [
+   "Helping others makes me happy.",
+   "Helping other people makes me feel happy."
+  ],
+  "note": "make + O + adj (không 'make me to happy').",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-017",
+  "cluster": "cong-dong",
+  "level": 3,
+  "prompt_vi": "Tổ chức một sự kiện gây quỹ sẽ là ý hay.",
+  "given": [],
+  "hint": "It would be + N/adj + to V",
+  "answers": [
+   "It would be a good idea to hold a fundraising event."
+  ],
+  "note": "Đề xuất lịch sự: It would be a good idea to + V.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-018",
+  "cluster": "cong-dong",
+  "level": 3,
+  "prompt_vi": "Tôi rất mong được tham gia sự kiện tiếp theo.",
+  "given": [],
+  "hint": "look forward to + V-ing",
+  "answers": [
+   "I look forward to taking part in the next event.",
+   "I'm looking forward to joining the next event."
+  ],
+  "note": "look forward to + V-ing, không 'to join'.",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-019",
+  "cluster": "cong-dong",
+  "level": 3,
+  "prompt_vi": "Trước đây câu lạc bộ thường họp vào mỗi sáng Chủ nhật.",
+  "given": [],
+  "hint": "used to + V",
+  "answers": [
+   "The club used to meet every Sunday morning."
+  ],
+  "note": "used to + V nguyên mẫu (meet, không meets).",
+  "source": ""
+ },
+ {
+  "id": "b1-cong-dong-020",
+  "cluster": "cong-dong",
+  "level": 3,
+  "prompt_vi": "Phí quá cao nên nhiều sinh viên không tham gia được.",
+  "given": [],
+  "hint": "too + adj + for sb + to V",
+  "answers": [
+   "The fee is too high for many students to join."
+  ],
+  "note": "too + adj + for + người + to V.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-001",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Tôi thường lo lắng trước các kỳ thi.",
+  "given": [],
+  "hint": "S + feel + adj",
+  "answers": [
+   "I often feel nervous before exams."
+  ],
+  "note": "Cần động từ: không nói 'I often nervous'.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-002",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Thử thách lớn nhất của tôi là nói tiếng Anh trôi chảy.",
+  "given": [],
+  "hint": "S + be + V-ing",
+  "answers": [
+   "My biggest challenge is speaking English fluently."
+  ],
+  "note": "Sau 'is' dùng V-ing khi nói về hoạt động.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-003",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Tôi thích thử những điều mới.",
+  "given": [],
+  "hint": "like + V-ing",
+  "answers": [
+   "I like trying new things."
+  ],
+  "note": "like + V-ing/to V đều đúng; không 'I like try'.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-004",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Sống một mình có nhiều thử thách.",
+  "given": [],
+  "hint": "There are + N",
+  "answers": [
+   "There are many challenges when you live alone."
+  ],
+  "note": "Không nói 'Live alone has many challenges'.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-005",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Tôi không bao giờ bỏ cuộc, kể cả khi mọi việc khó khăn.",
+  "given": [],
+  "hint": "S + never + V",
+  "answers": [
+   "I never give up, even when things get hard."
+  ],
+  "note": "never đã mang nghĩa phủ định, không thêm 'don't'.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-006",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Tôi luôn đặt mục tiêu vào đầu mỗi năm.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "I always set goals at the start of each year."
+  ],
+  "note": "set goals = đặt mục tiêu; each + N số ít.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-007",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Bạn bè luôn ủng hộ tôi.",
+  "given": [],
+  "hint": "S + V + O",
+  "answers": [
+   "My friends always support me."
+  ],
+  "note": "always đứng trước động từ thường.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-008",
+  "cluster": "trai-nghiem",
+  "level": 1,
+  "prompt_vi": "Thầy giáo động viên tôi thi Aptis.",
+  "given": [],
+  "hint": "encourage + O + to V",
+  "answers": [
+   "My teacher encourages me to take the Aptis test."
+  ],
+  "note": "take a test (không 'join a test').",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-009",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Đó là một trải nghiệm thật sự đáng nhớ.",
+  "given": [],
+  "hint": "a memorable experience",
+  "answers": [
+   "It was a really memorable experience."
+  ],
+  "note": "Kể chuyện đã qua → was.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-010",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Tôi thật sự tự hào về bản thân.",
+  "given": [],
+  "hint": "be proud of myself (past)",
+  "answers": [
+   "I was really proud of myself."
+  ],
+  "note": "proud of (không 'proud about').",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-011",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Cuối cùng tôi đã đạt được mục tiêu.",
+  "given": [],
+  "hint": "achieve a goal (past)",
+  "answers": [
+   "I finally achieved my goal."
+  ],
+  "note": "finally đứng trước động từ chính.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-012",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Hoá ra đó là một ngày tuyệt vời.",
+  "given": [],
+  "hint": "it turned out to be",
+  "answers": [
+   "It turned out to be a wonderful day."
+  ],
+  "note": "turn out to be = hoá ra là.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-013",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Tôi đã học được bài học quý từ trải nghiệm đó.",
+  "given": [],
+  "hint": "learn a valuable lesson (past)",
+  "answers": [
+   "I learned a valuable lesson from that experience."
+  ],
+  "note": "learn a lesson from + N.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-014",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Tôi suýt bỏ cuộc nhưng vẫn tiếp tục.",
+  "given": [],
+  "hint": "almost + V-ed, but",
+  "answers": [
+   "I almost gave up, but I kept going."
+  ],
+  "note": "give → gave, keep → kept; keep + V-ing.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-015",
+  "cluster": "trai-nghiem",
+  "level": 2,
+  "prompt_vi": "Tôi chưa bao giờ thấy nhẹ nhõm như vậy.",
+  "given": [],
+  "hint": "have never + V3",
+  "answers": [
+   "I have never felt so relieved in my life."
+  ],
+  "note": "feel → felt → felt.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-016",
+  "cluster": "trai-nghiem",
+  "level": 3,
+  "prompt_vi": "Bước ra khỏi vùng an toàn không hề dễ.",
+  "given": [],
+  "hint": "It is + adj + to V",
+  "answers": [
+   "It is not easy to step out of your comfort zone."
+  ],
+  "note": "Không nói 'Step out of comfort zone is not easy'.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-017",
+  "cluster": "trai-nghiem",
+  "level": 3,
+  "prompt_vi": "Vượt qua những khó khăn đó khiến tôi mạnh mẽ hơn.",
+  "given": [],
+  "hint": "S + make + O + adj",
+  "answers": [
+   "Overcoming those difficulties made me stronger."
+  ],
+  "note": "make + O + adj so sánh; không 'made me more strong'.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-018",
+  "cluster": "trai-nghiem",
+  "level": 3,
+  "prompt_vi": "Tôi vui đến nỗi gọi ngay cho bố mẹ.",
+  "given": [],
+  "hint": "so + adj + that",
+  "answers": [
+   "I was so happy that I called my parents immediately."
+  ],
+  "note": "Cảm xúc của người → chủ ngữ là người (I was happy).",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-019",
+  "cluster": "trai-nghiem",
+  "level": 3,
+  "prompt_vi": "Tôi thích chăm chỉ hơn là trông chờ may mắn.",
+  "given": [],
+  "hint": "prefer A to B",
+  "answers": [
+   "I prefer working hard to relying on luck."
+  ],
+  "note": "prefer V-ing to V-ing; rely on + N.",
+  "source": ""
+ },
+ {
+  "id": "b1-trai-nghiem-020",
+  "cluster": "trai-nghiem",
+  "level": 3,
+  "prompt_vi": "Tôi rất mong nhận được kết quả bài thi.",
+  "given": [],
+  "hint": "look forward to + V-ing",
+  "answers": [
+   "I am looking forward to getting my exam results.",
+   "I'm really looking forward to getting my exam results."
+  ],
+  "note": "to ở đây là giới từ → + V-ing.",
+  "source": ""
+ }
+]

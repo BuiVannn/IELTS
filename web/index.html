@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IELTS Practice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap&subset=vietnamese" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#f7f7f9;--surface:#fff;--surface-2:#f2f2f6;--ink:#111827;--ink-2:#374151;--mute:#6b7280;--line:#e5e7eb;--line-2:#d1d5db;
+  --brand:#4338ca;--brand-ink:#fff;--brand-soft:#eef2ff;--brand-line:#c7d2fe;
+  --ok:#15803d;--ok-soft:#dcfce7;--warn:#b45309;--warn-soft:#fef3c7;--bad:#b91c1c;--bad-soft:#fee2e2;
+  --radius:10px;--shadow:0 1px 2px rgba(16,24,40,.05);--shadow-lg:0 12px 32px rgba(16,24,40,.12);
+  --side:240px;--focus:0 0 0 3px rgba(67,56,202,.35);
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0b0d12;--surface:#12151c;--surface-2:#191d26;--ink:#e5e7eb;--ink-2:#cbd5e1;--mute:#9ca3af;--line:#232833;--line-2:#303746;
+  --brand:#818cf8;--brand-ink:#0b0d12;--brand-soft:#1e1b4b;--brand-line:#3730a3;
+  --ok:#4ade80;--ok-soft:#052e16;--warn:#fbbf24;--warn-soft:#3a2a05;--bad:#f87171;--bad-soft:#3b0a0a;
+  --shadow:none;--shadow-lg:0 12px 32px rgba(0,0,0,.5);--focus:0 0 0 3px rgba(129,140,248,.45)}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+button,input,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:none;box-shadow:var(--focus);border-radius:6px}
+[data-lucide],svg.lucide{width:18px;height:18px;stroke-width:1.9;flex:none}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--surface);padding:8px 12px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* ---------- shell ---------- */
+.side{position:fixed;inset:0 auto 0 0;width:var(--side);background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;padding:18px 12px;z-index:20}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;padding:4px 10px 18px}
+.brand .logo{width:30px;height:30px;border-radius:8px;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;font-size:13px;font-weight:700;letter-spacing:.02em}
+.nav a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;color:var(--ink-2);font-weight:500;margin:1px 0}
+.nav a:hover{background:var(--surface-2);text-decoration:none}
+.nav a.on{background:var(--brand-soft);color:var(--brand)}
+.nav .sec{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);padding:14px 10px 4px;font-weight:600}
+.side .count{margin-top:auto;border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;background:var(--surface-2)}
+.side .count b{font-size:22px;display:block;line-height:1.2}
+.content{margin-left:var(--side);min-height:100vh}
+main{max-width:1120px;margin:0 auto;padding:28px 32px 96px}
+.tabbar{display:none}
+@media (max-width:900px){
+  .side{display:none}.content{margin-left:0}main{padding:18px 16px 96px}
+  .tabbar{display:flex;position:fixed;inset:auto 0 0 0;background:var(--surface);border-top:1px solid var(--line);z-index:20;padding-bottom:env(safe-area-inset-bottom)}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 6px;font-size:11px;color:var(--mute);min-height:52px}
+  .tabbar a.on{color:var(--brand)}.tabbar a:hover{text-decoration:none}
+}
+body.focus .side,body.focus .tabbar{display:none}
+body.focus .content{margin-left:0}
+body.focus main{max-width:none;padding:0}
+
+/* ---------- primitives ---------- */
+h1{font-size:24px;line-height:1.25;margin:0 0 4px;letter-spacing:-.01em}
+h2{font-size:17px;margin:0}
+.sub{color:var(--mute);margin:0 0 20px}
+.mute{color:var(--mute)}
+.small{font-size:13px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.pad{padding:18px 20px}
+.row{display:flex;align-items:center;gap:10px}
+.wrap{flex-wrap:wrap}
+.grow{flex:1;min-width:0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.section{margin-top:32px}
+.section-h{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:38px;padding:0 14px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface);font-weight:500;font-size:14px;transition:background .15s,border-color .15s;white-space:nowrap}
+.btn:hover{background:var(--surface-2)}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.ghost{border-color:transparent;background:transparent}
+.btn.ghost:hover{background:var(--surface-2)}
+.btn.icon{width:38px;padding:0}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.badge{display:inline-flex;align-items:center;height:22px;padding:0 8px;border-radius:6px;font-size:12px;font-weight:600;background:var(--surface-2);color:var(--ink-2);white-space:nowrap}
+.badge.key{background:var(--brand-soft);color:var(--brand)}
+.badge.ok{background:var(--ok-soft);color:var(--ok)}
+.badge.warn{background:var(--warn-soft);color:var(--warn)}
+.seg{display:inline-flex;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:3px;gap:2px}
+.seg button{border:0;background:transparent;padding:5px 12px;border-radius:6px;font-size:13px;font-weight:500;color:var(--mute);min-height:30px}
+.seg button.on{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.check{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2);cursor:pointer;user-select:none;min-height:36px}
+.check input{width:16px;height:16px;accent-color:var(--brand)}
+.search{position:relative;flex:1;min-width:200px;max-width:340px}
+.search input{width:100%;height:38px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface);padding:0 12px 0 36px}
+.search [data-lucide],.search svg{position:absolute;left:11px;top:10px;color:var(--mute)}
+.meter{height:6px;border-radius:99px;background:var(--surface-2);overflow:hidden;position:relative}
+.meter i{position:absolute;inset:0 auto 0 0;background:var(--brand);border-radius:99px}
+.meter.target::after{content:"";position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink);left:var(--t)}
+.kpi{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.label{font-size:13px;color:var(--mute);font-weight:500}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;z-index:60;font-size:14px;box-shadow:var(--shadow-lg);max-width:90vw}
+
+/* ---------- list table ---------- */
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:4px 0 8px}
+.group{margin-top:24px}
+.group-h{display:flex;align-items:center;gap:10px;padding:0 4px 8px;flex-wrap:wrap}
+.group-h h2{font-size:15px}
+.rows{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.r{display:grid;grid-template-columns:40px minmax(0,1fr) auto auto 20px;align-items:center;gap:12px;padding:0 14px 0 6px;min-height:52px;border-top:1px solid var(--line);color:inherit}
+.r:first-child{border-top:0}
+.r:hover{background:var(--surface-2);text-decoration:none}
+.r .t{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.r .m{font-size:13px;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.r .sc{font-size:13px;color:var(--mute);text-align:right;min-width:64px;font-variant-numeric:tabular-nums}
+.st{width:40px;height:40px;border:0;background:none;display:grid;place-items:center;color:var(--line-2);border-radius:8px}
+.st:hover{background:var(--surface)}
+.st.done{color:var(--ok)}.st.doing{color:var(--warn)}
+@media (max-width:640px){.r{grid-template-columns:40px minmax(0,1fr) auto 16px}.r .sc{display:none}.toolbar .search{max-width:none;flex-basis:100%}.seg{max-width:100%;overflow-x:auto}}
+
+/* ---------- exam ---------- */
+.fbar{position:sticky;top:0;z-index:15;background:var(--surface);border-bottom:1px solid var(--line);height:60px;display:flex;align-items:center;gap:12px;padding:0 16px}
+.fbar .title{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:280px}
+.steps{display:flex;gap:4px;margin:0 auto}
+.steps button{border:1px solid var(--line);background:var(--surface);height:34px;min-width:34px;padding:0 12px;border-radius:8px;font-size:13px;font-weight:500;color:var(--mute);display:inline-flex;align-items:center;gap:6px}
+.steps button.on{border-color:var(--brand);color:var(--brand);background:var(--brand-soft)}
+.steps button .dot{width:6px;height:6px;border-radius:50%;background:var(--line-2)}
+.steps button .dot.full{background:var(--ok)}
+.timer{font:600 15px "JetBrains Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface)}
+.timer.low{color:var(--bad);border-color:var(--bad)}
+.ebody{display:grid;grid-template-columns:minmax(0,1fr);min-height:calc(100vh - 60px)}
+.ebody.open{grid-template-columns:minmax(0,1fr) 460px}
+.paper{padding:28px 32px 120px;max-width:860px;width:100%;margin:0 auto}
+.phead{margin-bottom:18px}
+.phead .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);font-weight:600}
+.phead h2{font-size:20px;margin:2px 0 4px}
+.instr{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;margin:0 0 16px;color:var(--ink-2)}
+.instr p{margin:.3em 0}
+.instr blockquote{margin:10px 0;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;color:var(--ink)}
+.q{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin:0 0 14px}
+.q label,.q .qt{display:block;font-weight:600;margin-bottom:10px;color:var(--ink)}
+.q .qn{color:var(--mute);font-weight:500;margin-right:6px}
+.q .gloss{color:var(--mute);font-size:14px;margin:-6px 0 10px}
+textarea,.q input{width:100%;background:var(--surface);border:1px solid var(--line-2);border-radius:8px;padding:10px 12px;font-size:16px;line-height:1.6;transition:border-color .15s}
+textarea:focus,.q input:focus,.search input:focus{outline:none;border-color:var(--brand);box-shadow:var(--focus)}
+textarea{min-height:110px;resize:vertical}
+textarea.long{min-height:300px}
+.wc{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:13px;color:var(--mute)}
+.wc .meter{flex:1;max-width:180px}
+.wc b{font-variant-numeric:tabular-nums}
+.wc.ok b{color:var(--ok)}.wc.ok .meter i{background:var(--ok)}
+.wc.low b{color:var(--warn)}.wc.low .meter i{background:var(--warn)}
+.wc.high b{color:var(--bad)}.wc.high .meter i{background:var(--bad)}
+.pnav{display:flex;justify-content:space-between;gap:12px;margin-top:20px}
+.panel{border-left:1px solid var(--line);background:var(--surface);position:sticky;top:60px;height:calc(100vh - 60px);display:none;flex-direction:column}
+.ebody.open .panel{display:flex}
+.panel .ptabs{display:flex;gap:2px;padding:10px 12px;border-bottom:1px solid var(--line);align-items:center}
+.panel .ptabs button{border:0;background:none;padding:6px 10px;border-radius:6px;font-size:13px;font-weight:500;color:var(--mute);min-height:32px}
+.panel .ptabs button.on{background:var(--surface-2);color:var(--ink)}
+.panel .pbody{overflow:auto;padding:16px 18px 40px;flex:1}
+@media (max-width:1180px){
+  .ebody.open{grid-template-columns:minmax(0,1fr)}
+  .panel{position:fixed;top:60px;right:0;width:min(460px,100vw);z-index:30;box-shadow:var(--shadow-lg)}
+}
+@media (max-width:760px){
+  .fbar{height:auto;min-height:60px;flex-wrap:wrap;padding:8px 12px}.fbar .title{max-width:52vw}
+  .steps{order:5;width:100%;overflow-x:auto;margin:0}.paper{padding:18px 14px 120px}
+  .fbar .hide-sm{display:none}
+}
+/* speaking */
+.spk{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px;align-items:start}
+.spk .pics{position:sticky;top:84px;display:grid;gap:10px}
+.spk .pics img{width:100%;border-radius:var(--radius);border:1px solid var(--line);display:block;background:var(--surface-2)}
+.spk .pics .none{border:1px dashed var(--line-2);border-radius:var(--radius);padding:28px;color:var(--mute);text-align:center}
+@media (max-width:900px){.spk{grid-template-columns:1fr}.spk .pics{position:static}}
+.qbig{font-size:19px;font-weight:600;line-height:1.45;margin:4px 0 6px}
+.recorder{display:flex;align-items:center;gap:18px;margin:18px 0}
+.ring{position:relative;width:88px;height:88px;flex:none}
+.ring>svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:5}
+.ring .bg{stroke:var(--surface-2)}.ring .fg{stroke:var(--brand);stroke-linecap:round;transition:stroke-dashoffset .25s linear}
+.ring.rec .fg{stroke:var(--bad)}.ring.prep .fg{stroke:var(--warn)}
+.ring button{position:absolute;inset:10px;border-radius:50%;border:0;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center}
+.ring.rec button{background:var(--bad);color:#fff}
+.ring button svg{width:26px;height:26px}
+.rstate{font-size:14px}.rstate b{display:block;font:600 22px "JetBrains Mono",monospace}
+audio{height:36px;max-width:100%}
+
+/* ---------- markdown ---------- */
+.md{line-height:1.7;overflow-wrap:anywhere}
+.md h1{font-size:22px;margin:0 0 12px}.md h2{font-size:18px;margin:28px 0 10px;padding-top:4px}.md h3{font-size:16px;margin:22px 0 8px}.md h4{font-size:15px;margin:16px 0 6px}
+.md p{margin:.55em 0}
+.md img{max-width:100%;border-radius:8px;border:1px solid var(--line)}
+.md table{border-collapse:collapse;display:block;overflow-x:auto;margin:10px 0;font-size:14px}
+.md th{background:var(--surface-2);text-align:left;font-weight:600}
+.md td,.md th{border:1px solid var(--line);padding:6px 10px;vertical-align:top;overflow-wrap:normal;word-break:normal}
+.md blockquote{margin:10px 0;padding:8px 14px;border-left:3px solid var(--brand-line);background:var(--surface-2);border-radius:0 8px 8px 0}
+.md details{border:1px solid var(--line);border-radius:8px;padding:8px 14px;margin:10px 0;background:var(--surface)}
+.md summary{cursor:pointer;font-weight:600;color:var(--ink-2)}
+.md code{background:var(--surface-2);padding:1px 5px;border-radius:4px;font-size:.92em;font-family:"JetBrains Mono",monospace}
+.md pre{white-space:pre-wrap;background:var(--surface-2);padding:12px 14px;border-radius:8px;border:1px solid var(--line)}.md pre code{padding:0;background:none}
+.md hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+.md ul,.md ol{padding-left:22px}
+.doc{display:grid;grid-template-columns:230px minmax(0,1fr);gap:32px;align-items:start}
+.doc .toc{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto;font-size:13px}
+.doc .toc a{display:block;padding:5px 10px;border-radius:6px;color:var(--ink-2);border-left:2px solid transparent}
+.doc .toc a:hover{background:var(--surface-2);text-decoration:none}
+.doc .toc a.on{color:var(--brand);border-left-color:var(--brand);background:var(--brand-soft)}
+.doc .toc a.h3{padding-left:22px;color:var(--mute)}
+@media (max-width:1000px){.doc{grid-template-columns:1fr}.doc .toc{display:none}}
+.score-head{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:var(--radius);background:var(--brand-soft);margin-bottom:12px}
+.score-head .kpi{color:var(--brand)}
+.skel{height:14px;border-radius:6px;background:linear-gradient(90deg,var(--surface-2),var(--line),var(--surface-2));background-size:200% 100%;animation:sh 1.2s infinite;margin:10px 0}
+@keyframes sh{to{background-position:-200% 0}}
+.pm.rec{border-color:var(--brand)}
+.pm-ic{width:36px;height:36px;border-radius:8px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;flex:none}
+.sel{height:38px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface);padding:0 10px;min-width:160px}
+.pcard{max-width:820px}
+.given{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:10px 0;display:grid;gap:4px}
+.chip-k{display:inline-flex;align-items:center;min-height:26px;padding:2px 10px;border-radius:6px;background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:600}
+.rv{border-top:1px solid var(--line);margin-top:16px;padding-top:14px}
+.ans{padding:8px 12px;border-left:3px solid var(--ok);background:var(--ok-soft);border-radius:0 8px 8px 0;margin:6px 0;color:var(--ink)}
+.add{background:color-mix(in srgb,var(--ok) 28%,transparent);border-radius:3px;padding:0 2px;font-weight:600}
+s.del{color:var(--bad);text-decoration-thickness:2px}
+.note{display:flex;gap:8px;align-items:flex-start;margin-top:10px;padding:10px 12px;border-radius:8px;background:var(--warn-soft);color:var(--ink);font-size:14px}
+.ideas{margin:6px 0;padding-left:20px}.ideas li{margin:4px 0}
+kbd{font:600 11px "JetBrains Mono",monospace;border:1px solid var(--line-2);border-radius:4px;padding:0 4px;color:var(--mute)}
+.btn.on-rec{border-color:var(--bad);color:var(--bad)}
+.fbx .md h4{margin:10px 0 4px}
+.chart{position:relative;height:340px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;margin:12px 0}
+.cue{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px}
+.cue blockquote{border:0;background:none;padding:0;margin:0}
+.crit{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.rlgrid{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) minmax(0,1.3fr) 28px;gap:6px 8px;align-items:center}
+.rlgrid input,.rlgrid select{height:34px;border:1px solid var(--line-2);border-radius:6px;background:var(--surface);padding:0 8px;width:100%;min-width:0}
+.rlgrid .n{font:600 13px "JetBrains Mono",monospace;color:var(--mute);text-align:right}
+.rlgrid .okc{color:var(--ok)}.rlgrid .bad{color:var(--bad)}
+@media (max-width:640px){.rlgrid{grid-template-columns:34px 1fr 1fr 22px}.rlgrid select{grid-column:2/4}}
+@media print{.side,.tabbar,.fbar,.panel,.noprint{display:none!important}.content{margin:0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#app">Bỏ qua điều hướng</a>
+<aside class="side" aria-label="Điều hướng">
+  <div class="brand"><span class="logo">IE</span>IELTS Practice</div>
+  <nav class="nav" id="nav"></nav>
+  <div class="count" id="countdown"></div>
+</aside>
+<div class="content"><main id="app" tabindex="-1"></main></div>
+<nav class="tabbar" id="tabbar" aria-label="Điều hướng"></nav>
+<script>
+const TARGET = {writing: 7, speaking: 7, reading: 7, listening: 7};
+const SKILLS = {listening: 'Listening', reading: 'Reading', writing: 'Writing', speaking: 'Speaking'};
+const CLUSTERS = {education:'Giáo dục', work:'Công việc & sự nghiệp', technology:'Công nghệ', media:'Truyền thông & quảng cáo',
+  environment:'Môi trường', health:'Sức khoẻ & thể thao', urban:'Đô thị & giao thông', family:'Gia đình & các thế hệ',
+  culture:'Văn hoá & toàn cầu hoá', government:'Chính phủ & xã hội', crime:'Tội phạm & pháp luật', economy:'Kinh tế & tiêu dùng',
+  'daily-life':'Đời sống hằng ngày', leisure:'Giải trí & sở thích', travel:'Du lịch & nơi chốn'};
+const QTYPE = {opinion:'Opinion · agree/disagree', discussion:'Discussion · both views', 'two-part':'Two-part / direct questions',
+  'problem-solution':'Problem / cause – solution', 'adv-dis':'Advantages / disadvantages',
+  bar:'Bar chart', line:'Line graph', pie:'Pie chart', table:'Table', mixed:'Mixed charts', process:'Process', map:'Map',
+  person:'Person', place:'Place', object:'Object / media', event:'Event / activity', experience:'Experience'};
+const W_PARTS = {1:['Task 1 · Academic report','Tối thiểu 150 từ · gợi ý 20 phút'], 2:['Task 2 · Essay','Tối thiểu 250 từ · gợi ý 40 phút']};
+const S_PARTS = {1:['Part 1 · Interview','Câu hỏi ngắn · 20–30 giây mỗi câu'], 2:['Part 2 + 3 · Cue card & discussion','1 phút chuẩn bị · nói 2 phút · rồi thảo luận']};
+const SP_LIMIT = {1:40, 2:120, 3:60};
+const W_RANGE = {1:[150,200], 2:[250,320]};
+const W_MIN = {1:20, 2:40};
+const NAV = [['','layout-dashboard','Tổng quan'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['rl','list-checks','Reading & Listening'],['luyen','blocks','Luyện câu'],['thi-thu','timer','Thi thử'],['tai-lieu','book-open','Tài liệu'],['lich-su','line-chart','Lịch sử']];
+const RL_TABLE = {listening: [[39,9],[37,8.5],[35,8],[32,7.5],[30,7],[26,6.5],[23,6],[18,5.5],[16,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5]],
+  reading: [[39,9],[37,8.5],[35,8],[33,7.5],[30,7],[27,6.5],[23,6],[19,5.5],[15,5],[13,4.5],[10,4],[8,3.5],[6,3],[4,2.5]]};
+const rlBand = (skill, raw) => (RL_TABLE[skill].find(([min]) => raw >= min) || [0, raw >= 1 ? 1 : 0])[1];
+const half = x => Math.round(x * 2) / 2;  // làm tròn overall: .25 → .5, .75 → 1
+
+const $ = (s, el=document) => el.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ic = (n, cls='') => `<i data-lucide="${n}" class="${cls}" aria-hidden="true"></i>`;
+const icons = () => window.lucide?.createIcons();
+const app = $('#app');
+let ITEMS = [], ATTEMPTS = [], RLLOG = [];
+function safeGet(k){ try { return localStorage.getItem(k) } catch { return null } }
+function safeSet(k, v){ try { localStorage.setItem(k, v) } catch {} }
+const ui = Object.assign({key:false, hideDone:false, wgroup:'qtype', q:''}, JSON.parse(safeGet('ui2') || '{}'));
+const saveUi = () => safeSet('ui2', JSON.stringify(ui));
+const isKey = x => x.hot === 'true';
+function toast(msg, ms=3200){ const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role','status'); t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), ms); }
+
+async function load(){ [ITEMS, ATTEMPTS, RLLOG] = await Promise.all(['/api/items', '/api/attempts', '/api/rl'].map(u => fetch(u).then(r => r.json()))); }
+async function getText(path){ return (await fetch('/' + path)).text(); }
+const body = t => t.startsWith('---') ? t.split('---').slice(2).join('---') : t;
+const EMOJI = /[\p{Extended_Pictographic}\u{FE0F}\u{200D}]/gu;
+
+/* markdown → DOM: sửa đường dẫn ảnh/link, bỏ emoji ở tiêu đề */
+function md(text, path='web/'){
+  const div = document.createElement('div'); div.className = 'md';
+  div.innerHTML = marked.parse(text);
+  const base = location.origin + '/' + path;
+  div.querySelectorAll('img').forEach(i => { i.src = new URL(i.getAttribute('src'), base).href; i.loading = 'lazy'; i.alt ||= 'Tranh đề'; });
+  // bỏ emoji trang trí (giữ ❌ ✅ vì mang nghĩa sai/đúng)
+  const tw = document.createTreeWalker(div, NodeFilter.SHOW_TEXT);
+  for (let n; (n = tw.nextNode());) n.textContent = n.textContent.replace(EMOJI, m => '❌✅'.includes(m) ? m : '');
+  div.querySelectorAll('h1,h2,h3,h4,summary').forEach(h => { const t = h.firstChild; if (t?.nodeType === 3) t.textContent = t.textContent.replace(/^\s+/, ''); });
+  div.querySelectorAll('a[href]').forEach(a => {
+    const h = a.getAttribute('href');
+    if (/^(https?:|mailto:)/.test(h)) { a.target = '_blank'; a.rel = 'noopener'; return; }
+    if (h.startsWith('#')) { const id = h.slice(1); a.href = 'javascript:void 0'; a.onclick = () => document.getElementById(id)?.scrollIntoView({behavior:'smooth'}); return; }
+    const u = new URL(h, base).pathname.slice(1), it = ITEMS.find(x => x.path === u);
+    a.href = it ? '#/de/' + it.id : u.endsWith('.md') ? '#/doc/' + u : '/' + u;
+  });
+  div.querySelectorAll('code.language-chart').forEach(c => {
+    let spec; try { spec = JSON.parse(c.textContent); } catch { return; }
+    const box = document.createElement('div'); box.className = 'chart'; box.setAttribute('role', 'img');
+    box.setAttribute('aria-label', spec.title || 'Biểu đồ đề bài');
+    const cv = document.createElement('canvas'); box.append(cv); c.closest('pre').replaceWith(box);
+    setTimeout(() => drawChart(cv, spec));
+  });
+  return div;
+}
+/* biểu đồ Task 1: {"type":"bar|line|pie","title","unit","labels":[],"datasets":[{"label","data":[]}]} */
+const SERIES = ['#4338ca', '#d97706', '#0f766e', '#be185d', '#64748b', '#65a30d'];
+function drawChart(cv, c){
+  if (!window.Chart) return;
+  const css = getComputedStyle(document.body), ink = css.getPropertyValue('--ink-2').trim(), grid = css.getPropertyValue('--line').trim();
+  const pie = c.type === 'pie';
+  new Chart(cv, {type: c.type === 'line' ? 'line' : pie ? 'pie' : 'bar',
+    data: {labels: c.labels, datasets: c.datasets.map((d, i) => ({label: d.label, data: d.data,
+      backgroundColor: pie ? SERIES : SERIES[i % SERIES.length], borderColor: pie ? css.getPropertyValue('--surface').trim() : SERIES[i % SERIES.length],
+      borderWidth: pie ? 2 : c.type === 'line' ? 2 : 0, borderRadius: c.type === 'bar' ? 4 : 0, pointRadius: 4, tension: 0}))},
+    options: {responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: {title: {display: !!c.title, text: c.title + (c.unit && !pie ? ` (${c.unit})` : ''), color: ink, font: {size: 14, weight: '600'}},
+        legend: {labels: {color: ink}}, tooltip: {callbacks: {label: x => `${x.dataset.label || x.label}: ${x.formattedValue}${c.unit && c.unit.startsWith('%') ? '%' : ''}`}}},
+      scales: pie ? {} : {x: {ticks: {color: ink}, grid: {display: false}}, y: {beginAtZero: true, ticks: {color: ink}, grid: {color: grid}}}}});
+}
+
+/* ---------- shell & router ---------- */
+function shell(){
+  const cur = location.hash.slice(2);
+  const on = k => k === '' ? cur === '' : cur.startsWith(k.split('/')[0]);
+  $('#nav').innerHTML = '<div class="sec">Luyện tập</div>' + NAV.map(([k, i, l]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${l}</a>`).join('');
+  $('#tabbar').innerHTML = NAV.map(([k, i, l]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${l}</a>`).join('');
+  $('#countdown').innerHTML = `<span class="label">Mục tiêu</span><b>IELTS 7.0+</b><span class="small mute">Academic · chưa chốt ngày thi</span>`;
+}
+window.addEventListener('hashchange', route);
+async function route(){
+  const [, page, a] = location.hash.split('/');
+  stopAll();
+  document.body.classList.toggle('focus', page === 'de' || (page === 'thi-thu' && a === 'run'));
+  shell();
+  window.scrollTo(0, 0);
+  if (page === 'writing') listWriting(+a || 1);
+  else if (page === 'speaking') listSpeaking(+a || 1);
+  else if (page === 'de') await exam(decodeURIComponent(a));
+  else if (page === 'thi-thu') await (a === 'run' ? runMock() : a === 'review' ? reviewMock() : mockHome());
+  else if (page === 'luyen') await (a ? practiceSession(a) : practiceHome());
+  else if (page === 'rl') rlPage(a === 'reading' ? 'reading' : 'listening');
+  else if (page === 'tai-lieu') docsHome();
+  else if (page === 'doc') await docPage(decodeURIComponent(location.hash.slice(6)));
+  else if (page === 'lich-su') history();
+  else home();
+  icons();
+}
+
+/* ---------- tổng quan ---------- */
+const mean = xs => xs.reduce((s, x) => s + x, 0) / xs.length;
+function estBand(skill){  // trung bình 3 lần gần nhất; Writing = (T1 + 2·T2) / 3
+  const last = f => { const xs = ATTEMPTS.filter(a => a.skill === skill && a.band && f(a)).slice(-3).map(a => +a.band); return xs.length ? mean(xs) : null; };
+  if (skill === 'writing') { const t1 = last(a => a.part == 1), t2 = last(a => a.part == 2);
+    return t1 != null && t2 != null ? Math.floor((t1 + 2 * t2) / 3 * 2) / 2 : t2 ?? t1; }
+  if (skill === 'speaking') { const x = last(() => true); return x == null ? null : Math.floor(x * 2) / 2; }
+  const xs = RLLOG.filter(e => e.skill === skill && e.band != null).slice(-3).map(e => +e.band);
+  return xs.length ? half(mean(xs)) : null;
+}
+function recentDrafts(){
+  const out = [];
+  try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (!k.startsWith('draft:')) continue;
+    const d = JSON.parse(localStorage.getItem(k) || '{}'), it = ITEMS.find(x => x.id === k.slice(6));
+    if (it && d._t && it.status !== 'done') out.push({it, t: d._t}); } } catch {}
+  return out.sort((a, b) => b.t - a.t).slice(0, 3).map(x => x.it);
+}
+const bandMeter = (b, t) => `<div class="meter target" style="--t:${t / 9 * 100}%"><i style="width:${(b || 0) / 9 * 100}%;${b >= t ? 'background:var(--ok)' : ''}"></i></div>`;
+function home(){
+  const prog = f => { const xs = ITEMS.filter(f); return [xs.filter(x => x.status === 'done').length, xs.length]; };
+  const bands = Object.fromEntries(Object.keys(SKILLS).map(k => [k, estBand(k)]));
+  const all = Object.values(bands), overall = all.every(x => x != null) ? half(mean(all)) : null;
+  const card = k => { const b = bands[k], t = TARGET[k];
+    return `<div class="card pad"><div class="row"><span class="label grow">${SKILLS[k]}</span>${b == null ? '<span class="badge">Chưa có</span>' : `<span class="badge ${b >= t ? 'ok' : 'warn'}">${b >= t ? 'Đạt' : `Thiếu ${t - b}`}</span>`}</div>
+      <div class="kpi" style="margin:6px 0 10px">${b ?? '—'}</div>${bandMeter(b, t)}</div>`; };
+  const rowsProg = [['Writing Task 1', x => x.skill === 'writing' && x.part == 1, '#/writing/1'], ['Writing Task 2', x => x.skill === 'writing' && x.part == 2, '#/writing/2'],
+    ['Speaking Part 1', x => x.skill === 'speaking' && x.part == 1, '#/speaking/1'], ['Speaking Part 2 + 3', x => x.skill === 'speaking' && x.part == 2, '#/speaking/2']];
+  const next = f => ITEMS.filter(f).sort((a, b) => isKey(b) - isKey(a))[0];
+  const sugg = [next(x => x.skill === 'writing' && x.part == 2 && x.status !== 'done'), next(x => x.skill === 'writing' && x.part == 1 && x.status !== 'done'),
+    next(x => x.skill === 'speaking' && x.part == 2 && x.status !== 'done'), next(x => x.skill === 'speaking' && x.part == 1 && x.status !== 'done')].filter(Boolean);
+  const drafts = recentDrafts();
+  app.innerHTML = `
+    <h1>Tổng quan</h1><p class="sub">IELTS Academic · mục tiêu overall 7.0 (tổng 4 kỹ năng ≥ 27, ví dụ 7 / 7 / 6.5 / 6.5). Band là ước lượng của máy chấm, sai số khoảng ±0.5.</p>
+    <div class="card pad row wrap" style="gap:18px;margin-bottom:16px"><div><div class="label">Overall ước lượng</div><div class="kpi">${overall ?? '—'}</div></div>
+      <div class="grow small mute">${overall == null ? 'Cần có điểm cả 4 kỹ năng: chấm Writing và Speaking, nhập đáp án một đề Reading và Listening.' : `Trung bình 4 kỹ năng, làm tròn theo luật IELTS (.25 lên .5, .75 lên số nguyên).`}</div></div>
+    <div class="grid3" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${Object.keys(SKILLS).map(card).join('')}</div>
+    <a class="card pad row" href="#/luyen" style="margin-top:16px;color:inherit;text-decoration:none"><span class="pm-ic">${ic('blocks')}</span>
+      <div class="grow"><b>Khởi động 20 phút: Luyện câu</b><div class="small mute">Tìm ý 60 giây → bậc thang câu → ghép đoạn. Làm trước khi viết hoặc nói.</div></div>${ic('chevron-right','mute')}</a>
+    ${drafts.length ? `<div class="section"><div class="section-h"><h2>Tiếp tục bài đang làm</h2></div><div class="rows">${drafts.map(row).join('')}</div></div>` : ''}
+    <div class="section"><div class="section-h"><h2>Gợi ý luyện tiếp</h2><span class="small mute">Đề trọng điểm chưa làm</span></div><div class="rows">${sugg.map(row).join('') || '<div class="pad mute">Đã làm hết đề trọng điểm.</div>'}</div></div>
+    <div class="section"><div class="section-h"><h2>Tiến độ kho đề</h2></div><div class="card pad">${rowsProg.map(([l, f, h]) => { const [d, n] = prog(f);
+      return `<a href="${h}" class="row" style="color:inherit;padding:8px 0"><span style="width:150px" class="small">${l}</span><div class="meter grow"><i style="width:${n ? d / n * 100 : 0}%"></i></div><span class="small mute" style="width:56px;text-align:right;font-variant-numeric:tabular-nums">${d}/${n}</span></a>`; }).join('')}</div></div>`;
+  bindStatus();
+}
+const DOCS = [
+  ['research/format-va-band.md', 'ruler', 'Format, thang band & tiêu chí chấm', 'Band descriptors 5–8, ranh giới 6 → 7, bảng quy đổi Reading/Listening'],
+  ['research/xu-huong-de-2026.md', 'trending-up', 'Xu hướng đề 2026', 'Forecast Speaking quý 3/2026, chủ đề Task 2, 7 dạng Task 1'],
+  ['hoc/tu-aptis/chuyen-goc-p4.md', 'mic', 'Chuyện gốc (từ Aptis Part 4)', 'Nền cho cue card Part 2'],
+  ['hoc/tu-aptis/tra-loi-p1.md', 'message-circle', 'Trả lời Part 1 (từ Aptis)', 'Cần nâng lên câu dài, tự nhiên hơn'],
+  ['hoc/tu-aptis/trien-khai-viet.md', 'lightbulb', 'Triển khai ý khi viết (từ Aptis)', ''],
+  ['hoc/tu-aptis/trien-khai-noi.md', 'lightbulb', 'Triển khai ý khi nói (từ Aptis)', ''],
+  ['hoc/tu-aptis/ngu-phap-b2.md', 'spell-check', 'Ngữ pháp B2 (từ Aptis)', 'Nền trước khi lên cấu trúc band 7'],
+  ['INDEX.md', 'list', 'Checklist toàn bộ đề', '']];
+function docsHome(){
+  app.innerHTML = `<h1>Tài liệu</h1><p class="sub">Khảo sát IELTS và tài liệu dùng lại từ đợt ôn Aptis.</p>
+    <div class="rows">${DOCS.map(([p, i, t, m]) => `<a class="r" style="grid-template-columns:40px minmax(0,1fr) 20px" href="#/doc/${p}"><span class="st" style="color:var(--mute)">${ic(i)}</span>
+      <span><div class="t">${t}</div>${m ? `<div class="m">${m}</div>` : ''}</span>${ic('chevron-right','mute')}</a>`).join('')}</div>`;
+}
+
+/* ---------- danh sách ---------- */
+const ST_ICON = {todo:'circle', doing:'circle-dot', done:'circle-check'};
+const partName = x => x.skill === 'writing' ? `Task ${x.part}` : x.part == 1 ? 'Part 1' : 'Part 2 + 3';
+function row(x){
+  const meta = [x.skill === 'writing' ? 'Writing' : 'Speaking', partName(x), QTYPE[x.qtype], CLUSTERS[x.theme]].filter(Boolean).join(' · ');
+  const sc = x.best_score ? `Band ${esc(x.best_score)}` : (+x.attempts ? `${x.attempts} lần` : '');
+  return `<a class="r" href="#/de/${x.id}">
+    <button class="st ${x.status || 'todo'}" data-id="${x.id}" aria-label="Trạng thái: ${x.status}. Bấm để đổi">${ic(ST_ICON[x.status] || 'circle')}</button>
+    <span><div class="t">${esc(x.title)}</div><div class="m">${esc(meta)}</div></span>
+    <span>${isKey(x) ? '<span class="badge key">Trọng điểm</span>' : ''}</span><span class="sc">${sc}</span>${ic('chevron-right','mute')}</a>`;
+}
+function bindStatus(){
+  app.querySelectorAll('.st[data-id]').forEach(b => b.onclick = async e => {
+    e.preventDefault(); e.stopPropagation();
+    const it = ITEMS.find(x => x.id === b.dataset.id), nxt = {todo:'doing', doing:'done', done:'todo'}[it.status] || 'doing';
+    const r = await fetch('/api/status', {method:'POST', body: JSON.stringify({id: it.id, status: nxt})});
+    if (!r.ok) return toast('Không lưu được trạng thái');
+    it.status = nxt; b.className = 'st ' + nxt; b.innerHTML = ic(ST_ICON[nxt]); icons();
+  });
+}
+function toolbar(extra=''){
+  return `<div class="toolbar"><label class="search">${ic('search')}<input id="q" type="search" placeholder="Tìm đề…" value="${esc(ui.q)}" aria-label="Tìm đề"></label>${extra}
+    <label class="check"><input type="checkbox" data-f="key" ${ui.key ? 'checked' : ''}>Chỉ đề trọng điểm</label>
+    <label class="check"><input type="checkbox" data-f="hideDone" ${ui.hideDone ? 'checked' : ''}>Ẩn đề đã xong</label></div>`;
+}
+function bindToolbar(rerender){
+  app.querySelectorAll('[data-f]').forEach(b => b.onchange = () => { ui[b.dataset.f] = b.checked; saveUi(); rerender(); });
+  app.querySelectorAll('[data-g]').forEach(b => b.onclick = () => { ui.wgroup = b.dataset.g; saveUi(); rerender(); });
+  const q = $('#q'); q.oninput = () => { ui.q = q.value; saveUi(); rerender(true); };
+}
+const applyFilters = xs => { const q = ui.q.trim().toLowerCase();
+  return xs.filter(x => (!ui.key || isKey(x)) && (!ui.hideDone || x.status !== 'done') && (!q || [x.title, x.id, CLUSTERS[x.theme], QTYPE[x.qtype]].join(' ').toLowerCase().includes(q))); };
+function groups(xs, key, labels){
+  const g = {};
+  xs.forEach(x => (g[x[key] || 'khac'] ||= []).push(x));
+  const out = Object.entries(g).sort((a, b) => b[1].length - a[1].length).map(([k, arr]) => {
+    arr.sort((a, b) => isKey(b) - isKey(a) || a.title.localeCompare(b.title));
+    const done = arr.filter(x => x.status === 'done').length;
+    return `<section class="group"><div class="group-h"><h2>${esc(labels[k] || (k === 'khac' ? 'Khác' : k))}</h2><span class="small mute">${arr.length} đề · ${arr.filter(isKey).length} trọng điểm · ${done} xong</span></div>
+      <div class="rows">${arr.map(row).join('')}</div></section>`;
+  }).join('');
+  return out || '<div class="card pad mute">Chưa có đề nào khớp bộ lọc.</div>';
+}
+function renderList(html, rerender, keepFocus){
+  if (keepFocus) { $('#listbody').innerHTML = html; icons(); bindStatus(); return; }
+  app.innerHTML = html; bindToolbar(rerender); bindStatus(); icons();
+}
+const tabs = (base, parts, cur, count) => `<div class="seg" role="tablist" style="margin-bottom:12px">${parts.map(([p, l]) => `<button role="tab" class="${p === cur ? 'on' : ''}" onclick="location.hash='#/${base}/${p}'">${l} <span class="mute" style="margin-left:4px">${count(p)}</span></button>`).join('')}</div>`;
+function listWriting(task, keep){
+  const xs = applyFilters(ITEMS.filter(x => x.skill === 'writing' && x.part == task));
+  const key = ui.wgroup === 'theme' ? 'theme' : 'qtype';
+  const list = groups(xs, key, key === 'theme' ? CLUSTERS : QTYPE);
+  if (keep) return renderList(list, null, true);
+  renderList(`<h1>Writing</h1><p class="sub">${W_PARTS[task][0]} · ${W_PARTS[task][1]}. ${task == 1 ? 'Nhóm theo dạng biểu đồ: mỗi dạng một khung overview và ngôn ngữ riêng.' : 'Nhóm theo dạng câu hỏi: mỗi dạng một cách mở bài và bố cục.'}</p>
+    ${tabs('writing', [[1, 'Task 1'], [2, 'Task 2']], task, p => ITEMS.filter(x => x.skill === 'writing' && x.part == p).length)}
+    ${toolbar(`<div class="seg" role="group" aria-label="Nhóm theo">${[['qtype', task == 1 ? 'Dạng biểu đồ' : 'Dạng câu hỏi'], ['theme', 'Chủ đề']].map(([k, l]) => `<button data-g="${k}" class="${key === k ? 'on' : ''}">${l}</button>`).join('')}</div>`)}
+    <div id="listbody">${list}</div>`, k => listWriting(task, k));
+}
+function listSpeaking(part, keep){
+  const xs = applyFilters(ITEMS.filter(x => x.skill === 'speaking' && x.part == part));
+  const list = part == 2 ? groups(xs, 'qtype', QTYPE) : groups(xs, 'theme', CLUSTERS);
+  if (keep) return renderList(list, null, true);
+  renderList(`<h1>Speaking</h1><p class="sub">${S_PARTS[part][0]} · ${S_PARTS[part][1]}.</p>
+    ${tabs('speaking', [[1, 'Part 1'], [2, 'Part 2 + 3']], part, p => ITEMS.filter(x => x.skill === 'speaking' && x.part == p).length)}
+    ${toolbar()}<div id="listbody">${list}</div>`, k => listSpeaking(part, k));
+}
+
+/* ---------- tài liệu ---------- */
+async function docPage(path, anchor, title, subtitle, extra=''){
+  app.innerHTML = '<div class="skel" style="width:40%"></div><div class="skel"></div><div class="skel" style="width:80%"></div>';
+  const d = md(body(await getText(path)), path);
+  const hs = [...d.querySelectorAll('h2,h3')];
+  hs.forEach((h, i) => h.id ||= 's' + i);
+  app.innerHTML = `${title ? `<h1>${title}</h1><p class="sub">${subtitle}</p>${extra}` : `<p class="small"><a href="javascript:history.back()">${ic('arrow-left')} Quay lại</a></p>`}
+    <div class="doc"><nav class="toc card pad" aria-label="Mục lục"><div class="label" style="margin:0 0 6px 10px">Mục lục</div>
+    ${hs.map(h => `<a href="javascript:void 0" data-to="${h.id}" class="${h.tagName.toLowerCase()}">${esc(h.textContent)}</a>`).join('')}</nav><article class="card pad" id="doc"></article></div>`;
+  $('#doc').append(d);
+  const links = [...app.querySelectorAll('.toc a')];
+  links.forEach(a => a.onclick = () => document.getElementById(a.dataset.to).scrollIntoView({behavior:'smooth'}));
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.dataset.to === e.target.id)); }), {rootMargin:'0px 0px -75% 0px'});
+  hs.forEach(h => io.observe(h));
+  if (anchor) { const el = document.getElementById(anchor); if (el) { el.closest('details')?.setAttribute('open', ''); setTimeout(() => el.scrollIntoView(), 50); } }
+}
+
+/* ---------- lịch sử ---------- */
+const critText = c => { try { return Object.entries(typeof c === 'string' ? JSON.parse(c) : c || {}).map(([k, v]) => `${k} ${v}`).join(' · '); } catch { return ''; } };
+function history(){
+  const title = id => id === 'MOCK-speaking' ? 'Thi thử Speaking' : ITEMS.find(x => x.id === id)?.title || id;
+  const rows = [...ATTEMPTS].reverse();
+  const fmt = d => (d || '').replace(/_(\d\d)(\d\d)\d\d$/, ' $1:$2');
+  const chips = (xs, t) => xs.map(b => `<span class="badge ${+b >= t ? 'ok' : 'warn'}">${esc(b)}</span>`).join(ic('arrow-right','mute')) || '<span class="mute">Chưa có</span>';
+  app.innerHTML = `<h1>Lịch sử</h1><p class="sub">Mỗi lần chấm được lưu cùng nhận xét đầy đủ. Mục tiêu mỗi kỹ năng: band 7.</p>
+    <div class="grid2">${Object.keys(SKILLS).map(s => { const xs = ['writing', 'speaking'].includes(s) ? ATTEMPTS.filter(a => a.skill === s && a.band).map(a => a.band) : RLLOG.filter(e => e.skill === s).map(e => e.band);
+      return `<div class="card pad"><div class="row"><span class="label grow">${SKILLS[s]} · ${xs.length} lần</span></div><div class="row wrap" style="margin-top:10px;gap:6px">${chips(xs.slice(-8), TARGET[s])}</div></div>`; }).join('')}</div>
+    <div class="section"><div class="section-h"><h2>Writing & Speaking</h2></div><div class="rows">${rows.map(a => `<a class="r" href="#/doc/${esc(a.file)}" style="grid-template-columns:120px minmax(0,1fr) auto 20px;padding-left:14px">
+      <span class="small mute">${esc(fmt(a.date))}</span><span><div class="t">${esc(title(a.id))}</div><div class="m">${esc(critText(a.criteria))}</div></span>
+      <span class="sc"><b>${esc(a.band || '—')}</b></span>${ic('chevron-right','mute')}</a>`).join('') || '<div class="pad mute">Chưa chấm lần nào.</div>'}</div></div>
+    <div class="section"><div class="section-h"><h2>Reading & Listening</h2></div><div class="rows">${[...RLLOG].reverse().map(e => `<a class="r" href="#/rl/${e.skill}" style="grid-template-columns:120px minmax(0,1fr) auto 20px;padding-left:14px">
+      <span class="small mute">${esc((e.t || '').replace('T', ' ').slice(0, 16))}</span><span><div class="t">${SKILLS[e.skill]} · ${esc(e.source || '')}</div></span>
+      <span class="sc"><b>${esc(e.band)}</b> · ${esc(e.raw)}/40</span>${ic('chevron-right','mute')}</a>`).join('') || '<div class="pad mute">Chưa nhập đề nào.</div>'}</div></div>`;
+}
+
+/* ---------- làm bài ---------- */
+let timerInt = null, stopRec = null;
+function stopAll(){ clearInterval(timerInt); timerInt = null; stopRec?.(); stopRec = null; dictStop?.(); try { speechSynthesis.cancel(); } catch {} }
+function countdown(sec, onTick, done){
+  clearInterval(timerInt);
+  const end = Date.now() + sec * 1000;
+  const tick = () => { const s = Math.max(0, Math.round((end - Date.now()) / 1000)); onTick(s);
+    if (!s) { clearInterval(timerInt); timerInt = null; done?.(); } };
+  tick(); timerInt = setInterval(tick, 250);
+}
+const mmss = s => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+const wc = t => (t.trim().match(/\S+/g) || []).length;
+function download(name, content, type){ const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([content], {type})); a.download = name; a.click(); }
+
+async function exam(id){
+  const it = ITEMS.find(x => x.id === id);
+  if (!it) { app.innerHTML = '<div class="paper">Không tìm thấy đề.</div>'; return; }
+  const text = body(await getText(it.path));
+  const main = text.split(/^## Bài mẫu/m)[0];
+  const draftKey = 'draft:' + id, draft = JSON.parse(safeGet(draftKey) || '{}');
+  const saveDraft = () => { draft._t = Date.now(); safeSet(draftKey, JSON.stringify(draft)); };
+  const W = it.skill === 'writing';
+  const back = (W ? '#/writing/' : '#/speaking/') + it.part;
+
+  app.innerHTML = `
+    <div class="fbar">
+      <a class="btn ghost icon" href="${back}" aria-label="Quay lại danh sách">${ic('arrow-left')}</a>
+      <div style="min-width:0"><div class="title">${esc(it.title)}</div>
+        <div class="small mute hide-sm">${W ? `Writing Task ${it.part} · ${W_MIN[it.part]} phút` : `Speaking ${partName(it)}`}${isKey(it) ? ' · Trọng điểm' : ''}</div></div>
+      <div class="steps" id="steps" role="tablist"></div>
+      <span id="tm"></span>
+      <button class="btn hide-sm" data-panel="sample">${ic('file-text')}Bài mẫu</button>
+      <button class="btn ghost icon" id="more" aria-label="Thêm tuỳ chọn">${ic('ellipsis')}</button>
+      <button class="btn primary" id="grade">${ic('sparkles')}<span>Nộp & chấm</span></button>
+    </div>
+    <div class="ebody" id="ebody">
+      <div class="paper" id="paper"></div>
+      <aside class="panel" id="panel" aria-label="Công cụ">
+        <div class="ptabs">${[['sample','Bài mẫu'],['result','Kết quả'],['tools','Tuỳ chọn']].map(([k, l]) => `<button data-tab="${k}">${l}</button>`).join('')}
+          <button class="btn ghost icon" id="pclose" style="margin-left:auto;height:32px;width:32px" aria-label="Đóng">${ic('x')}</button></div>
+        <div class="pbody" id="pbody"></div>
+      </aside>
+    </div>`;
+
+  /* panel bên phải */
+  const panelState = {tab: null, result: draft._feedback ? {feedback: draft._feedback, result: draft._result || {}} : null, grading: false};
+  const openPanel = async tab => {
+    panelState.tab = tab; $('#ebody').classList.add('open');
+    document.querySelectorAll('[data-tab]').forEach(b => b.classList.toggle('on', b.dataset.tab === tab));
+    const pb = $('#pbody'); pb.innerHTML = '';
+    if (tab === 'sample') {
+      const s = text.split(/^## Bài mẫu/m).slice(1).join('## Bài mẫu');
+      pb.append(s.trim() ? md('## Bài mẫu' + s, it.path) : md('_Đề này chưa có bài mẫu trong nguồn._'));
+      pb.querySelectorAll('details').forEach(d => d.open = true);
+      pb.insertAdjacentHTML('afterbegin', '<p class="small mute" style="margin-top:0">Chỉ tham khảo ý và cụm từ — bài học thuộc bị chấm 0 điểm.</p>');
+    } else if (tab === 'result') {
+      if (panelState.grading) pb.innerHTML = `<div class="row">${ic('loader-circle')}<b>Claude đang chấm…</b></div><p class="small mute">Thường mất 1–3 phút. Bạn có thể tiếp tục đọc lại bài.</p><div class="skel"></div><div class="skel" style="width:70%"></div><div class="skel"></div>`;
+      else if (!panelState.result) pb.innerHTML = '<p class="mute">Chưa chấm. Làm bài rồi bấm <b>Nộp & chấm</b>.</p>';
+      else { const r = panelState.result, mine = ATTEMPTS.filter(a => a.id === id && a.band);
+        pb.insertAdjacentHTML('beforeend', bandHead(r.result, TARGET[it.skill]));
+        if (mine.length > 1) pb.insertAdjacentHTML('beforeend', `<div class="small" style="margin:-4px 0 12px"><span class="mute">Các lần chấm đề này: </span>${mine.map(a => `<a href="#/doc/${esc(a.file)}" title="${esc(a.date)}">${esc(a.band)}</a>`).join(' → ')}</div>`);
+        pb.append(md(r.feedback.replace(/```json[\s\S]*?```\s*$/, ''))); }
+    } else if (tab === 'tools') {
+      pb.innerHTML = `<div class="label">Tải bài làm</div><div class="row wrap" style="margin:8px 0 20px">
+        <button class="btn" data-dl="md">${ic('file-down')}Markdown</button><button class="btn" data-dl="doc">${ic('file-type')}Word</button><button class="btn" data-dl="pdf">${ic('printer')}PDF</button></div>
+        <div class="label">Làm lại</div><p class="small mute">Xoá nháp của đề này để làm lại từ đầu (lịch sử chấm vẫn giữ).</p>
+        <button class="btn" id="reset">${ic('rotate-ccw')}Xoá nháp & làm lại</button>`;
+      pb.querySelectorAll('[data-dl]').forEach(b => b.onclick = () => exportAs(b.dataset.dl));
+      $('#reset').onclick = () => { if (confirm('Xoá bài làm nháp của đề này?')) { safeSet(draftKey, '{}'); exam(id).then(icons); } };
+    }
+    icons();
+  };
+  document.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => openPanel(b.dataset.tab));
+  document.querySelectorAll('[data-panel]').forEach(b => b.onclick = () => panelState.tab === b.dataset.panel ? closePanel() : openPanel(b.dataset.panel));
+  const closePanel = () => { panelState.tab = null; $('#ebody').classList.remove('open'); };
+  $('#pclose').onclick = closePanel;
+  $('#more').onclick = () => openPanel('tools');
+
+  const qs = W ? parseWriting(main, +it.part) : parseSpeaking(main, +it.part);
+  const ctl = W ? renderWriting(qs, draft, saveDraft, it.path) : renderSpeaking(qs, draft, saveDraft, +it.part, main, it.path);
+
+  const answers = () => ctl.groups.map(q => ({label: q.label, question: q.text, text: draft[q.key] || '', seconds: draft[q.key + ':sec'], limit: q.limit}));
+  $('#grade').onclick = async () => {
+    const ans = answers().filter(a => a.text.trim());
+    if (!ans.length) return toast('Chưa có câu trả lời nào để chấm.');
+    const btn = $('#grade'); btn.disabled = true; btn.querySelector('span').textContent = 'Đang chấm…';
+    panelState.grading = true; openPanel('result');
+    try {
+      const r = await fetch('/api/grade', {method:'POST', body: JSON.stringify({id, answers: answers()})}).then(r => r.json());
+      if (r.error) throw new Error(r.error);
+      draft._feedback = r.feedback; draft._result = r.result; saveDraft();
+      panelState.result = r; await load(); toast('Đã chấm xong và lưu vào lịch sử.');
+    } catch (e) { toast('Lỗi chấm: ' + e.message, 6000); }
+    panelState.grading = false; btn.disabled = false; btn.querySelector('span').textContent = 'Nộp & chấm';
+    if (location.hash.includes(id)) openPanel('result');
+  };
+  const exportText = () => `# ${it.title} (${id})\n\n` + ctl.groups.map(q => `## ${q.label}\n\n**${q.text}**\n\n${draft[q.key] || '_(chưa làm)_'}\n`).join('\n')
+    + (draft._feedback ? `\n---\n\n# Nhận xét\n\n${draft._feedback}\n` : '');
+  const exportAs = kind => {
+    const fname = id + '-' + new Date().toISOString().slice(0, 10), html = marked.parse(exportText());
+    if (kind === 'md') download(fname + '.md', exportText(), 'text/markdown');
+    if (kind === 'doc') download(fname + '.doc', `<html><head><meta charset="utf-8"></head><body style="font-family:Calibri,Arial">${html}</body></html>`, 'application/msword');
+    if (kind === 'pdf') { const w = window.open(''); w.document.write(`<html><head><meta charset="utf-8"><title>${esc(fname)}</title></head><body style="font-family:Arial;max-width:760px;margin:auto;line-height:1.6">${html}</body></html>`); w.document.close(); w.print(); }
+  };
+  if (panelState.result && innerWidth > 1180) openPanel('result');
+}
+
+function bandHead(res, T){
+  const b = res?.band; if (b == null) return '<p class="mute small">Không đọc được band từ nhận xét (thiếu khối json).</p>';
+  return `<div class="score-head"><div class="kpi">${b}<span class="small mute">/9</span></div>
+    <div class="grow"><div class="row wrap" style="gap:6px"><b>Band ước lượng</b><span class="badge ${b >= T ? 'ok' : 'warn'}">${b >= T ? 'Đạt mục tiêu 7' : `Còn thiếu ${T - b} band`}</span></div>
+      <div class="crit">${Object.entries(res.criteria || {}).map(([k, v]) => `<span class="badge ${v >= T ? 'ok' : ''}">${esc(k)} ${esc(v)}</span>`).join('')}</div>
+      <div class="small mute" style="margin-top:6px">Trung bình tiêu chí ${res.raw != null ? (+res.raw).toFixed(2) : '—'}, làm tròn xuống nửa band · sai số máy chấm khoảng ±0.5</div></div></div>`;
+}
+
+/* ---- writing ---- */
+function parseWriting(main, task){
+  const intro = (main.split(/^## Đề\s*$/m)[1] ?? main).split(/^## /m)[0];
+  const prompt = (intro.match(/^>.*$/gm) || []).map(l => l.replace(/^>\s?/, '')).join(' ').replace(/\s+/g, ' ').trim();
+  return [{part: task, key: 't' + task, label: `Writing Task ${task}`, text: prompt || `Writing Task ${task}`, range: W_RANGE[task], intro}];
+}
+function renderWriting(qs, draft, saveDraft, path){
+  const q = qs[0], paper = $('#paper');
+  paper.innerHTML = `<div class="phead"><div class="kicker">Writing · Task ${q.part}</div><h2>${W_PARTS[q.part][0]}</h2><div class="small mute">${W_PARTS[q.part][1]} · không có kiểm tra chính tả, như thi máy</div></div>`;
+  const d = md(q.intro, path); d.classList.add('instr'); paper.append(d);
+  const box = document.createElement('div'); box.className = 'q';
+  box.innerHTML = `<label for="f1">Bài viết của bạn</label>
+    <textarea id="f1" spellcheck="false" autocomplete="off" style="min-height:${q.part == 2 ? 480 : 340}px"></textarea>
+    <div class="wc"><span><b>0</b> từ · tối thiểu ${q.range[0]}</span><div class="meter"><i></i></div><span class="mute" id="wnote"></span></div>`;
+  paper.append(box);
+  const inp = box.querySelector('textarea'), w = box.querySelector('.wc');
+  inp.value = draft[q.key] || '';
+  const upd = () => { const c = wc(inp.value), [lo, hi] = q.range;
+    w.className = 'wc ' + (!c ? '' : c < lo ? 'low' : 'ok'); w.querySelector('b').textContent = c;
+    w.querySelector('.meter i').style.width = Math.min(100, c / lo * 100) + '%';
+    $('#wnote').textContent = c > hi ? 'Dài hơn mức cần — không bị trừ điểm nhưng tốn thời gian' : c && c < lo ? `Thiếu ${lo - c} từ — sẽ bị trừ điểm` : ''; };
+  inp.oninput = () => { draft[q.key] = inp.value; saveDraft(); upd(); };
+  upd();
+  $('#steps').innerHTML = '';
+  const min = W_MIN[q.part];
+  $('#tm').innerHTML = `<button class="timer" id="tbtn" title="Bấm để bắt đầu đếm ${min} phút">${ic('timer')}<span>${min}:00</span></button>`;
+  $('#tbtn').onclick = () => countdown(min * 60, s => { $('#tbtn span').textContent = mmss(s); $('#tbtn').classList.toggle('low', s <= 180); }, () => toast(`Hết ${min} phút — nộp bài để chấm.`, 6000));
+  return {groups: qs};
+}
+
+/* ---- speaking ---- */
+function parseSpeaking(main, part){
+  const lines = main.split('\n'), qs = []; let inD = 0;
+  lines.forEach((l, i) => {
+    inD += (l.match(/<details/g) || []).length - (l.match(/<\/details>/g) || []).length;
+    if (inD > 0) return;
+    const m = l.match(/^\*\*Q(\d+)\.\*\*\s*(.+)/) || l.match(/^\*\*(\d+)\.\s*(.+?)\*\*/);
+    if (!m) return;
+    const g = (lines[i + 1] || '').trim().match(/^\*([^*].*)\*$/);
+    qs.push({key: 'q' + m[1], text: m[2].replace(/\*\((dịch|dựng|bổ sung|nguồn)[^)]*\)\*/g, '').replace(/\*\*/g, '').trim(),
+      gloss: g ? g[1].replace(/\*\((dịch|dựng|bổ sung|nguồn)[^)]*\)\*/g, '') : '', label: `Part ${part == 1 ? 1 : 3} — Q${m[1]}`, limit: SP_LIMIT[part == 1 ? 1 : 3]});
+  });
+  return qs;
+}
+const cueCard = main => ((main.split(/^## Cue card\s*$/m)[1] || '').split(/^## /m)[0]).trim();
+const cueTitle = cue => (cue.match(/\*\*(.+?)\*\*/) || [, 'Cue card'])[1];
+const cuePlain = cue => cue.replace(/^>\s?/gm, '').replace(/[*#]/g, '').replace(/\s+/g, ' ').trim();
+function renderSpeaking(qs, draft, saveDraft, part, main, path){
+  const paper = $('#paper'); paper.style.maxWidth = '1180px';
+  const cue = cueCard(main);
+  const groups = part == 2 ? [{key: 'cue', label: 'Part 2 — Cue card', text: cuePlain(cue), limit: SP_LIMIT[2], prep: 60, list: [{text: cueTitle(cue)}]}, ...qs.map(q => ({...q, list: [q]}))]
+    : qs.map(q => ({...q, list: [q]}));
+  paper.innerHTML = `<div class="phead"><div class="kicker">Speaking</div><h2>${S_PARTS[part][0]}</h2><div class="small mute">${S_PARTS[part][1]} · Dùng Chrome/Edge để tự chuyển giọng nói thành chữ.</div></div>
+    <div class="spk"><div class="pics" id="pics"></div><div id="qarea"></div></div>`;
+  const pics = $('#pics');
+  if (cue) { const c = md(cue, path); c.classList.add('cue'); pics.append(c); }
+  else { pics.hidden = true; $('.spk').style.gridTemplateColumns = '1fr'; }
+
+  let cur = 0;
+  const steps = $('#steps');
+  steps.innerHTML = groups.length > 1 ? groups.map((g, i) => `<button role="tab" data-i="${i}">${g.key === 'cue' ? 'Part 2' : `${part == 2 ? 'P3 · ' : ''}Câu ${part == 2 ? i : i + 1}`}<span class="dot"></span></button>`).join('') : '';
+  const dots = () => groups.forEach((g, i) => { const d = steps.querySelector(`[data-i="${i}"] .dot`); if (d) d.className = 'dot' + ((draft[g.key] || '').trim() ? ' full' : ''); });
+  const show = i => {
+    stopAll(); cur = i; const g = groups[i];
+    steps.querySelectorAll('[data-i]').forEach(b => b.classList.toggle('on', +b.dataset.i === i));
+    const C = 2 * Math.PI * 40;
+    $('#qarea').innerHTML = `<div class="q" style="padding:20px 22px">
+      <div class="label">${g.prep ? 'Part 2 · chuẩn bị 1 phút, rồi nói 1–2 phút' : `${esc(g.label)} · tối đa ${g.limit} giây`}</div>
+      ${g.list.map(q => `<div class="qbig">${esc(q.text)}</div>${q.gloss ? `<div class="gloss">${esc(q.gloss)}</div>` : ''}`).join('')}
+      <div class="recorder">
+        <div class="ring" id="ring"><svg viewBox="0 0 88 88"><circle class="bg" cx="44" cy="44" r="40"/><circle class="fg" cx="44" cy="44" r="40" stroke-dasharray="${C}" stroke-dashoffset="0"/></svg>
+          <button id="recbtn" aria-label="Bắt đầu ghi âm">${ic('mic')}</button></div>
+        <div class="rstate"><b id="rtime">${mmss(g.limit)}</b><span id="rlabel" class="mute">${g.prep ? 'Bấm để chuẩn bị 1 phút, sau đó tự ghi âm' : 'Bấm để bắt đầu trả lời'}</span></div>
+      </div>
+      <audio controls hidden id="audio"></audio>
+      <label class="label" for="tr" style="display:block;margin:12px 0 6px">Lời bạn nói (sửa lại nếu máy nghe sai)</label>
+      <textarea id="tr" placeholder="Chữ sẽ hiện ở đây khi bạn nói. Không có micro thì gõ trực tiếp."></textarea>
+      <div class="wc" id="twc"></div>
+      <div class="pnav"><button class="btn" id="prev">${ic('arrow-left')}Câu trước</button><button class="btn primary" id="next">Câu tiếp${ic('arrow-right')}</button></div></div>`;
+    const ta = $('#tr'), twc = $('#twc');
+    const upd = () => { const n = wc(ta.value), sec = draft[g.key + ':sec'];
+      twc.innerHTML = `<span><b>${n}</b> từ${sec ? ` · ${sec} giây · khoảng ${Math.round(n / sec * 60)} từ/phút <span class="mute">(nói tự nhiên thường 110–160)</span>` : ''}</span>`; };
+    ta.value = draft[g.key] || ''; upd();
+    ta.oninput = () => { draft[g.key] = ta.value; saveDraft(); upd(); dots(); };
+    $('#prev').disabled = i === 0; $('#next').hidden = i === groups.length - 1;
+    $('#prev').onclick = () => show(i - 1); $('#next').onclick = () => show(i + 1);
+    const ring = $('#ring'), fg = ring.querySelector('.fg');
+    const setRing = (s, total, cls, label) => { fg.style.strokeDashoffset = C * (1 - s / total); ring.className = 'ring ' + cls; $('#rtime').textContent = mmss(s); if (label) $('#rlabel').textContent = label; };
+    let state = 'idle';
+    $('#recbtn').onclick = async () => {
+      if (state === 'rec') return stopRec?.();
+      if (state === 'prep') { state = 'idle'; return start(); }
+      if (g.prep) { state = 'prep'; $('#recbtn').innerHTML = ic('play'); icons();
+        countdown(60, s => setRing(s, 60, 'prep', 'Chuẩn bị — ghi ý chính ra giấy. Bấm để nói luôn.'), () => { state = 'idle'; start(); }); return; }
+      start();
+    };
+    const start = async () => {
+      const ok = await record(g, ta, draft, saveDraft, () => { state = 'idle'; $('#recbtn').innerHTML = ic('mic'); icons(); setRing(0, 1, '', 'Đã ghi xong — nghe lại, sửa chữ rồi sang câu tiếp.'); upd(); dots(); });
+      if (!ok) return;
+      state = 'rec'; $('#recbtn').innerHTML = ic('square'); icons();
+      countdown(g.limit, s => setRing(s, g.limit, 'rec', 'Đang ghi âm — bấm để dừng'), () => stopRec?.());
+    };
+    icons(); window.scrollTo(0, 0);
+  };
+  steps.querySelectorAll('[data-i]').forEach(b => b.onclick = () => show(+b.dataset.i));
+  show(0); dots();
+  $('#tm').innerHTML = '';
+  return {groups};
+}
+async function record(g, ta, draft, saveDraft, onDone){
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({audio: true}); }
+  catch { toast('Không mở được micro — hãy cho phép quyền micro, hoặc gõ câu trả lời.', 5000); return false; }
+  const chunks = [], mr = new MediaRecorder(stream), t0 = Date.now(), audio = $('#audio');
+  mr.ondataavailable = e => chunks.push(e.data);
+  mr.onstop = () => { audio.src = URL.createObjectURL(new Blob(chunks, {type: mr.mimeType})); audio.hidden = false; stream.getTracks().forEach(t => t.stop()); };
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  let rec, finalText = '', live = true;
+  if (SR) {
+    rec = new SR(); rec.lang = 'en-US'; rec.continuous = true; rec.interimResults = true;
+    rec.onresult = e => { let interim = '';
+      for (let i = e.resultIndex; i < e.results.length; i++) { const r = e.results[i]; r.isFinal ? finalText += r[0].transcript.trim() + ' ' : interim += r[0].transcript; }
+      ta.value = (finalText + interim).trim(); };
+    rec.onend = () => { if (live) try { rec.start() } catch {} };  // Chrome tự dừng khi im lặng → bật lại
+    rec.start();
+  } else toast('Trình duyệt không hỗ trợ chuyển giọng nói thành chữ — nghe lại bản ghi và tự gõ.', 5000);
+  mr.start();
+  stopRec = () => {
+    if (!live) return; live = false; stopRec = null;
+    rec?.stop(); if (mr.state !== 'inactive') mr.stop(); clearInterval(timerInt); timerInt = null;
+    draft[g.key] = ta.value; draft[g.key + ':sec'] = Math.round((Date.now() - t0) / 1000); saveDraft(); onDone();
+  };
+  return true;
+}
+
+/* ---------- luyện câu ---------- */
+const PCLUSTERS = {
+  'con-nguoi':'Con người & gia đình','nha-cua':'Nhà cửa & sinh hoạt','an-uong':'Ăn uống','du-lich':'Du lịch & giao thông',
+  'cong-nghe':'Công nghệ & truyền thông','hoc-tap':'Học tập & công việc','the-thao':'Sức khỏe & thể thao','giai-tri':'Giải trí & nghệ thuật',
+  'thien-nhien':'Thiên nhiên & môi trường','mua-sam':'Mua sắm & tiền bạc','cong-dong':'Cộng đồng & CLB','trai-nghiem':'Trải nghiệm & cảm xúc'};
+const PMODES = {
+  'bac1': {title:'Bậc 1 · Câu lõi', desc:'Ý tiếng Việt đơn giản + khung câu → viết 1 câu ngắn đúng ngữ pháp.', icon:'box', per:10},
+  'bac2': {title:'Bậc 2 · Mở rộng câu', desc:'Thêm lý do, thời gian, ví dụ vào câu lõi để câu dài và có ý.', icon:'move-horizontal', per:10},
+  'bac3': {title:'Bậc 3 · Nối câu', desc:'Gộp 2–3 câu đơn thành 1 câu bằng từ nối bắt buộc.', icon:'link-2', per:10},
+  'bac4': {title:'Bậc 4 · Dịch ngược', desc:'Dịch câu mẫu B2 từ tiếng Việt về tiếng Anh, so với câu gốc.', icon:'repeat-2', per:10},
+  'bac5': {title:'Bậc 5 · Ghép đoạn', desc:'Biến 3 ý thành một đoạn hoàn chỉnh: nền cho body Task 2 và câu trả lời Part 3.', icon:'align-left', per:4},
+  'y-tuong': {title:'Tìm ý 60 giây', desc:'Câu hỏi đề thật: 60 giây ghi 3 ý bằng từ khóa, rồi so với ý mẫu.', icon:'lightbulb', per:5}};
+const LENS = {'loi-ich':['Sức khỏe','Tiền','Thời gian','Mối quan hệ','Kỹ năng'], 'tranh':['Ai','Ở đâu','Làm gì','Đoán','Cảm xúc'],
+  'ke-chuyen':['Khi nào, ở đâu','Chuyện gì','Cảm xúc','Bài học','Câu hỏi trừu tượng'], 'clb':['Hoạt động','Thời gian, địa điểm','Ai tham gia','Chi phí','Lợi ích']};
+const B5_WORDS = {W3:[35,40], W4:[45,60], S1:[40,55], S2:[60,80], S3:[60,80], S4:[130,160]};
+const PDATA = {};
+let PLOG = [];
+async function pdata(mode){ return PDATA[mode] ||= await fetch(`/luyen-cau/${mode}.json`).then(r => r.ok ? r.json() : []).catch(() => []); }
+async function loadPlog(){ PLOG = await fetch('/api/practice-log').then(r => r.json()).catch(() => []); }
+function pstate(){  // trạng thái mới nhất của từng câu
+  const last = {};
+  PLOG.forEach(e => { last[e.id] = e; });
+  const review = new Set(Object.values(last).filter(e => e.mark === 'review' || (e.mark === 'ai' && e.score != null && e.score < 2)).map(e => e.id));
+  return {seen: new Set(PLOG.map(e => e.id)), review, last};
+}
+const today = () => new Date().toISOString().slice(0, 10);
+
+async function practiceHome(){
+  app.innerHTML = '<div class="skel" style="width:30%"></div><div class="skel"></div>';
+  await loadPlog();
+  const data = Object.fromEntries(await Promise.all(Object.keys(PMODES).map(async m => [m, await pdata(m)])));
+  const st = pstate();
+  const nToday = PLOG.filter(e => (e.t || '').startsWith(today()) && e.mark !== 'ai').length;
+  const stat = m => { const xs = data[m], seen = xs.filter(x => st.seen.has(x.id)).length, rev = xs.filter(x => st.review.has(x.id)).length;
+    const marked = xs.filter(x => st.last[x.id]), ok = marked.filter(x => !st.review.has(x.id)).length;
+    return {n: xs.length, seen, rev, rate: marked.length ? Math.round(ok / marked.length * 100) : null}; };
+  const stats = Object.fromEntries(Object.keys(PMODES).map(m => [m, stat(m)]));
+  const rec = ['bac1','bac2','bac3','bac4','bac5'].find(m => stats[m].n && (stats[m].seen < 30 || (stats[m].rate ?? 0) < 80)) || 'bac5';
+  const card = m => { const p = PMODES[m], s = stats[m];
+    return `<div class="card pad pm ${m === rec ? 'rec' : ''}">
+      <div class="row"><span class="pm-ic">${ic(p.icon)}</span><div class="grow"><b>${p.title}</b>${m === rec ? ' <span class="badge key">Nên luyện</span>' : ''}<div class="small mute">${p.desc}</div></div></div>
+      <div class="meter" style="margin:14px 0 6px"><i style="width:${s.n ? s.seen / s.n * 100 : 0}%"></i></div>
+      <div class="row small mute"><span class="grow">${s.seen}/${s.n} câu đã làm${s.rate != null ? ` · đúng ${s.rate}%` : ''}</span>${s.rev ? `<span class="badge warn">${s.rev} cần ôn</span>` : ''}</div>
+      <div class="row" style="margin-top:12px"><a class="btn primary" href="#/luyen/${m}">${ic('play')}Lượt ${p.per} câu</a>${s.n ? '' : '<span class="small mute">Đang soạn nội dung…</span>'}</div></div>`; };
+  app.innerHTML = `<h1>Luyện câu</h1><p class="sub">Luyện từ dễ đến khó: dựng câu → mở rộng → nối câu → dịch ngược → ghép đoạn. Mỗi câu tự kiểm tra ngay, cuối lượt Claude chữa cả lượt.</p>
+    <div class="card pad row wrap" style="gap:16px;margin-bottom:8px"><div class="grow"><div class="label">Lịch 25 phút mỗi ngày, trước khi làm đề</div>
+      <div>1. Tìm ý 60 giây (5 câu) · 2. ${PMODES[rec].title} (10 câu) · 3. Bậc 5 Ghép đoạn (2–4 đoạn)</div></div>
+      <div style="text-align:right"><div class="kpi">${nToday}</div><div class="small mute">câu hôm nay</div></div></div>
+    <div class="toolbar"><label class="small mute" for="pc">Chủ đề</label><select id="pc" class="sel"><option value="">Tất cả chủ đề</option>${Object.entries(PCLUSTERS).map(([k, l]) => `<option value="${k}" ${ui.pc === k ? 'selected' : ''}>${l}</option>`).join('')}</select>
+      <label class="small mute" for="pl">Mức</label><select id="pl" class="sel"><option value="">Tự động (dễ trước)</option>${[1,2,3].map(l => `<option value="${l}" ${ui.pl == l ? 'selected' : ''}>Mức ${l}</option>`).join('')}</select></div>
+    <div class="section-h" style="margin-top:20px"><h2>Tìm ý</h2></div><div class="grid2">${card('y-tuong')}</div>
+    <div class="section-h" style="margin-top:28px"><h2>Bậc thang câu</h2></div><div class="grid2">${['bac1','bac2','bac3','bac4','bac5'].map(card).join('')}</div>`;
+  $('#pc').onchange = e => { ui.pc = e.target.value; saveUi(); };
+  $('#pl').onchange = e => { ui.pl = e.target.value; saveUi(); };
+}
+
+function pickItems(mode, xs){
+  const st = pstate(), per = PMODES[mode].per;
+  let pool = xs.filter(x => (!ui.pc || x.cluster === ui.pc) && (!ui.pl || x.level == ui.pl));
+  if (!pool.length) pool = xs;
+  const shuf = a => a.map(v => [Math.random(), v]).sort((a, b) => a[0] - b[0]).map(v => v[1]);
+  const rev = shuf(pool.filter(x => st.review.has(x.id))).slice(0, Math.ceil(per / 2));
+  const fresh = shuf(pool.filter(x => !st.seen.has(x.id))).sort((a, b) => a.level - b.level);
+  const old = shuf(pool.filter(x => st.seen.has(x.id) && !st.review.has(x.id)));
+  return [...rev, ...fresh, ...old].filter((x, i, a) => a.indexOf(x) === i).slice(0, per);
+}
+async function practiceSession(mode){
+  if (!PMODES[mode]) return practiceHome();
+  const key = 'psess:' + mode;
+  let S = JSON.parse(safeGet(key) || 'null');
+  const xs = await pdata(mode);
+  if (!xs.length) { app.innerHTML = `<div class="card pad">Nội dung ${PMODES[mode].title} chưa sẵn sàng. <a href="#/luyen">Quay lại</a></div>`; return; }
+  await loadPlog();
+  if (!S || S.done && S.reviewed) S = null;
+  if (!S) { S = {mode, ids: pickItems(mode, xs).map(x => x.id), i: 0, ans: {}}; }
+  const save = () => safeSet(key, JSON.stringify(S));
+  const byId = Object.fromEntries(xs.map(x => [x.id, x]));
+  const items = S.ids.map(id => byId[id]).filter(Boolean);
+  save();
+  if (S.i >= items.length) return practiceSummary(mode, S, items, save, key);
+  const it = items[S.i], a = S.ans[it.id] ||= {text: ''};
+  const p = PMODES[mode];
+  const lens = mode === 'y-tuong' ? LENS[it.kind] || [] : [];
+  const range = mode === 'bac5' ? B5_WORDS[it.part] || [35, 60] : null;
+  app.innerHTML = `
+    <div class="row wrap" style="margin-bottom:14px"><a class="btn ghost" href="#/luyen">${ic('arrow-left')}Luyện câu</a><b class="grow">${p.title}</b>
+      <span class="small mute">Câu ${S.i + 1}/${items.length}</span></div>
+    <div class="meter" style="margin-bottom:18px"><i style="width:${S.i / items.length * 100}%"></i></div>
+    <div class="card pad pcard">
+      <div class="row wrap small mute" style="gap:8px"><span>${PCLUSTERS[it.cluster] || ''}</span><span>· Mức ${it.level}</span>${it.part ? `<span class="badge">${it.part}</span>` : ''}
+        ${pstate().review.has(it.id) ? '<span class="badge warn">Ôn lại</span>' : ''}${mode === 'y-tuong' ? '<span class="timer" id="ytm" style="margin-left:auto">01:00</span>' : ''}</div>
+      ${it.prompt_vi ? `<div class="qbig">${esc(it.prompt_vi)}</div>` : ''}
+      ${it.question ? `<div class="qbig">${esc(it.question)}</div>` : ''}
+      ${(it.given || []).length ? `<div class="given">${it.given.map(g => `<div>${esc(g)}</div>`).join('')}</div>` : ''}
+      ${it.hint ? `<div class="row wrap" style="gap:6px;margin:10px 0"><span class="small mute">${mode === 'bac3' ? 'Bắt buộc dùng' : 'Khung gợi ý'}</span><span class="chip-k">${esc(it.hint)}</span></div>` : ''}
+      ${mode === 'bac5' ? `<div class="row wrap" style="gap:6px;margin:10px 0"><span class="small mute">3 ý</span>${it.ideas_vi.map((x, k) => `<span class="chip-k">${k + 1}. ${esc(x)}</span>`).join('')}</div>` : ''}
+      ${lens.length ? `<div class="row wrap" style="gap:6px;margin:10px 0"><span class="small mute">Gợi ý nghĩ theo</span>${lens.map(x => `<span class="chip-k">${x}</span>`).join('')}</div>` : ''}
+      <label class="label" for="pa" style="display:block;margin:14px 0 6px">${mode === 'y-tuong' ? 'Ghi 3 ý (mỗi dòng 1 ý, từ khóa tiếng Việt hoặc Anh)' : 'Câu trả lời của bạn'}</label>
+      <textarea id="pa" class="${mode === 'bac5' ? 'long' : ''}" style="${mode === 'bac5' ? '' : 'min-height:80px'}" spellcheck="false" placeholder="${mode === 'y-tuong' ? 'Ý 1…\nÝ 2…\nÝ 3…' : 'Gõ hoặc bấm Nói để trả lời bằng giọng.'}"></textarea>
+      <div class="row wrap" style="margin-top:8px"><span class="wc grow" id="pwc"></span>
+        <button class="btn" id="mic" aria-label="Nói để nhập">${ic('mic')}<span>Nói</span></button>
+        <button class="btn primary" id="chk">${ic('check')}Kiểm tra</button></div>
+      <div id="reveal"></div>
+    </div>
+    <p class="small mute" style="margin-top:10px">Phím tắt: <b>${mode === 'y-tuong' || mode === 'bac5' ? 'Ctrl/⌘ + Enter' : 'Enter'}</b> kiểm tra · sau khi kiểm tra: <b>1</b> mình làm đúng · <b>2</b> cần ôn lại</p>`;
+  const ta = $('#pa'), wcEl = $('#pwc');
+  ta.value = a.text;
+  const upd = () => { const n = wc(ta.value); wcEl.innerHTML = range ? `<b>${n}</b> từ · yêu cầu ${range[0]}–${range[1]}` : `<b>${n}</b> từ`;
+    if (range) wcEl.className = 'wc grow ' + wcState(n, range); };
+  upd(); ta.focus();
+  ta.oninput = () => { a.text = ta.value; save(); upd(); };
+  const multi = mode === 'y-tuong' || mode === 'bac5';
+  ta.onkeydown = e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey || (!e.shiftKey && !multi))) { e.preventDefault(); reveal(); } };
+  $('#mic').onclick = () => dictate($('#mic'), ta, () => { a.text = ta.value; a.spoken = true; save(); upd(); });
+  if (mode === 'y-tuong' && !a.checked) countdown(60, s => { const t = $('#ytm'); if (t) { t.textContent = mmss(s); t.classList.toggle('low', s <= 10); } }, () => toast('Hết 60 giây — bấm Kiểm tra để so với ý mẫu.'));
+  const mark = async m => {
+    a.mark = m; S.i++; save(); stopAll();
+    fetch('/api/practice-log', {method:'POST', body: JSON.stringify({entries: [{id: it.id, mode, mark: m}]})});
+    practiceSession(mode).then(icons);
+  };
+  const reveal = () => {
+    stopAll(); a.checked = true; save();
+    const box = $('#reveal');
+    let html = '<div class="rv">';
+    if (mode === 'y-tuong') html += `<div class="label">Ý mẫu</div><ul class="ideas">${it.ideas.map(x => `<li><b>${esc(x.vi)}</b><div class="small mute">${esc(x.en)}</div></li>`).join('')}</ul>`;
+    else { const best = bestMatch(ta.value, it.answers);
+      html += `<div class="label">Đáp án mẫu</div>${it.answers.map(x => `<div class="ans">${x === best.ans ? diffHtml(best.ans, ta.value) : esc(x)}</div>`).join('')}`;
+      if (ta.value.trim()) html += `<div class="small mute" style="margin-top:6px">Câu của bạn: ${userDiff(best.ans, ta.value)}</div><div class="small mute">Chữ <span class="add">tô xanh</span> là phần câu mẫu có mà bạn thiếu; chữ <s class="del">gạch</s> là phần bạn viết khác câu mẫu (chưa chắc là sai).</div>`; }
+    if (it.note) html += `<div class="note">${ic('info')}<span>${esc(it.note)}</span></div>`;
+    html += `<div class="row wrap" style="margin-top:14px"><button class="btn" id="m-ok">${ic('circle-check')}Mình làm đúng <kbd>1</kbd></button><button class="btn" id="m-rv">${ic('rotate-ccw')}Cần ôn lại <kbd>2</kbd></button></div></div>`;
+    box.innerHTML = html; icons();
+    $('#m-ok').onclick = () => mark('ok'); $('#m-rv').onclick = () => mark('review');
+    $('#m-ok').focus();
+  };
+  $('#chk').onclick = reveal;
+  document.onkeydown = e => { if (!location.hash.startsWith('#/luyen/') || document.activeElement === ta) return;
+    if (e.key === '1' && $('#m-ok')) mark('ok'); if (e.key === '2' && $('#m-rv')) mark('review'); };
+  if (a.checked) reveal();
+}
+function practiceSummary(mode, S, items, save, key){
+  const p = PMODES[mode];
+  const ok = items.filter(it => S.ans[it.id]?.mark === 'ok').length;
+  const fb = S.feedback ? splitFeedback(S.feedback) : null;
+  app.innerHTML = `
+    <div class="row wrap" style="margin-bottom:14px"><a class="btn ghost" href="#/luyen">${ic('arrow-left')}Luyện câu</a><b class="grow">${p.title} · Kết thúc lượt</b></div>
+    <div class="card pad row wrap" style="gap:18px"><div><div class="kpi">${ok}/${items.length}</div><div class="small mute">tự đánh giá đúng</div></div>
+      ${S.result?.max ? `<div><div class="kpi" style="color:var(--brand)">${S.result.total}/${S.result.max}</div><div class="small mute">Claude chấm</div></div>` : ''}
+      <div class="grow"></div>
+      <button class="btn primary" id="ai" ${S.reviewed ? 'hidden' : ''}>${ic('sparkles')}<span>Claude chữa cả lượt</span></button>
+      <button class="btn" id="again">${ic('refresh-cw')}Lượt mới</button></div>
+    ${fb?.summary ? `<div class="card pad md" style="margin-top:14px" id="sum"></div>` : ''}
+    <div class="section rows" style="overflow:visible">${items.map((it, n) => { const a = S.ans[it.id] || {};
+      return `<div class="pad" style="border-top:1px solid var(--line)"><div class="row small mute" style="gap:8px"><b style="color:var(--ink)">Câu ${n + 1}</b>
+        ${a.mark === 'ok' ? '<span class="badge ok">Đúng</span>' : a.mark === 'review' ? '<span class="badge warn">Cần ôn</span>' : ''}<span class="grow"></span><span>${PCLUSTERS[it.cluster] || ''}</span></div>
+        <div style="margin:6px 0">${esc(it.prompt_vi || it.question || '')}${it.hint ? ` <span class="chip-k">${esc(it.hint)}</span>` : ''}</div>
+        <div class="given" style="margin:6px 0">${esc(a.text || '(bỏ trống)').replace(/\n/g, '<br>')}</div>
+        <div class="fbx" data-n="${n + 1}"></div></div>`; }).join('')}</div>`;
+  if (fb) { fb.items.forEach((t, n) => { const el = app.querySelector(`.fbx[data-n="${n + 1}"]`); if (el && t) el.append(md(t)); });
+    if (fb.summary) $('#sum').append(md(fb.summary)); }
+  $('#again').onclick = () => { safeSet(key, 'null'); practiceSession(mode).then(icons); };
+  $('#ai').onclick = async () => {
+    const b = $('#ai'); b.disabled = true; b.querySelector('span').textContent = 'Claude đang chữa… (20–60 giây)';
+    try {
+      const payload = items.map(it => ({...it, text: S.ans[it.id]?.text || '', spoken: S.ans[it.id]?.spoken,
+        answers: mode === 'y-tuong' ? it.ideas.map(x => `${x.vi} — ${x.en}`) : it.answers}));
+      const r = await fetch('/api/check', {method:'POST', body: JSON.stringify({mode, items: payload})}).then(r => r.json());
+      if (r.error) throw new Error(r.error);
+      S.feedback = r.feedback; S.result = r.result; S.reviewed = true; save();
+      await loadPlog(); practiceSummary(mode, S, items, save, key); icons();
+    } catch (e) { toast('Lỗi chấm: ' + e.message, 6000); b.disabled = false; b.querySelector('span').textContent = 'Claude chữa cả lượt'; }
+  };
+}
+function splitFeedback(f){
+  f = f.replace(/```json[\s\S]*?```\s*$/, '');
+  const parts = f.split(/^(?=### Câu \d+)/m), items = [];
+  let summary = '';
+  parts.forEach(pt => { const m = pt.match(/^### Câu (\d+)/); if (!m) return;
+    const [itemPart, rest] = pt.split(/^(?=## Tổng kết)/m); items[+m[1] - 1] = itemPart.replace(/^### /, '#### '); if (rest) summary = rest; });
+  if (!summary) summary = (f.match(/^## Tổng kết[\s\S]*/m) || [''])[0];
+  return {items, summary};
+}
+/* so khớp từ (LCS) để tô chỗ khác nhau */
+const toks = s => (s.toLowerCase().match(/[a-z0-9']+/g) || []);
+function lcs(a, b){ const d = Array.from({length: a.length + 1}, () => new Array(b.length + 1).fill(0));
+  for (let i = a.length - 1; i >= 0; i--) for (let j = b.length - 1; j >= 0; j--) d[i][j] = a[i] === b[j] ? d[i + 1][j + 1] + 1 : Math.max(d[i + 1][j], d[i][j + 1]);
+  const keepA = new Set(), keepB = new Set(); let i = 0, j = 0;
+  while (i < a.length && j < b.length) { if (a[i] === b[j]) { keepA.add(i++); keepB.add(j++); } else if (d[i + 1][j] >= d[i][j + 1]) i++; else j++; }
+  return {n: d[0][0], keepA, keepB}; }
+function bestMatch(user, answers){ const u = toks(user); let best = {ans: answers[0], n: -1};
+  answers.forEach(x => { const r = lcs(toks(x), u); if (r.n > best.n) best = {ans: x, n: r.n}; }); return best; }
+function markWords(text, keep, cls, tag){ let k = 0;
+  return esc(text).replace(/[A-Za-z0-9']+/g, w => keep.has(k++) ? w : `<${tag} class="${cls}">${w}</${tag}>`); }
+function diffHtml(ans, user){ if (!user.trim()) return esc(ans); return markWords(ans, lcs(toks(ans), toks(user)).keepA, 'add', 'span'); }
+function userDiff(ans, user){ return markWords(user, lcs(toks(ans), toks(user)).keepB, 'del', 's'); }
+/* nói → chữ (Chrome/Edge) */
+let dictStop = null;
+function dictate(btn, ta, onUpdate){
+  if (dictStop) return dictStop();
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) return toast('Trình duyệt không hỗ trợ nhận giọng nói — dùng Chrome hoặc Edge.');
+  const rec = new SR(); rec.lang = 'en-US'; rec.continuous = true; rec.interimResults = true;
+  const base = ta.value ? ta.value.trimEnd() + ' ' : ''; let fin = '', live = true;
+  rec.onresult = e => { let inter = ''; for (let i = e.resultIndex; i < e.results.length; i++) { const r = e.results[i]; r.isFinal ? fin += r[0].transcript.trim() + ' ' : inter += r[0].transcript; }
+    ta.value = (base + fin + inter).trim(); onUpdate(); };
+  rec.onend = () => { if (live) try { rec.start() } catch {} };
+  rec.start(); btn.classList.add('on-rec'); btn.querySelector('span').textContent = 'Dừng';
+  dictStop = () => { live = false; rec.stop(); btn.classList.remove('on-rec'); btn.querySelector('span').textContent = 'Nói'; dictStop = null; onUpdate(); };
+}
+
+/* ---------- thi thử Speaking 12 phút ---------- */
+const MOCK_KEY = 'mock:speaking';
+const MOCK_AUDIO = {};
+let mockStream = null;
+const getMock = () => JSON.parse(safeGet(MOCK_KEY) || 'null');
+const setMock = m => safeSet(MOCK_KEY, JSON.stringify(m));
+function beep(){ try { const c = new AudioContext(), o = c.createOscillator(), g = c.createGain(); o.frequency.value = 880; g.gain.value = .15; o.connect(g); g.connect(c.destination); o.start(); o.stop(c.currentTime + .25); } catch {} }
+function speak(text){ return new Promise(res => { if (!ui.mockTts || !window.speechSynthesis) return res();
+  let done = false; const fin = () => { if (!done) { done = true; res(); } };
+  const u = new SpeechSynthesisUtterance(text); u.lang = 'en-GB'; u.rate = .95; u.onend = fin; u.onerror = fin;
+  speechSynthesis.cancel(); speechSynthesis.speak(u); setTimeout(fin, 25000); }); }
+const pick = a => a[Math.floor(Math.random() * a.length)];
+
+async function mockHome(){
+  ui.mockTts ??= true;
+  const m = getMock(), past = ATTEMPTS.filter(a => a.id === 'MOCK-speaking').reverse();
+  app.innerHTML = `<h1>Thi thử Speaking</h1><p class="sub">Đúng format IELTS: Part 1 → Part 2 (cue card) → Part 3, khoảng 13 phút, bốc đề ngẫu nhiên từ kho. Câu hỏi hiện ra là ghi âm luôn, không dừng được — như phòng thi. Xong bài, Claude chấm theo 4 tiêu chí.</p>
+    ${m && !m.result && m.i >= m.steps.length ? `<div class="card pad row wrap" style="border-color:var(--warn);margin-bottom:16px"><div class="grow"><b>Bạn có 1 bài thi chưa chấm</b><div class="small mute">Bắt đầu lúc ${esc(new Date(m.startedAt).toLocaleString('vi-VN'))}</div></div><a class="btn primary" href="#/thi-thu/review">Xem lại & chấm</a></div>` : ''}
+    <div class="grid2" style="align-items:start">
+      <div class="card pad"><div class="label" style="margin-bottom:8px">Cấu trúc bài thi</div>
+        <div class="md"><table><tr><th>Part</th><th>Nội dung</th><th>Thời gian</th></tr>
+        <tr><td>1</td><td>9 câu hỏi ngắn, 3 chủ đề</td><td>35 giây / câu</td></tr>
+        <tr><td>2</td><td>Cue card</td><td>Chuẩn bị 1 phút · nói tối đa 2 phút</td></tr>
+        <tr><td>3</td><td>4 câu thảo luận theo chủ đề Part 2</td><td>60 giây / câu</td></tr></table></div>
+        <p class="small mute">Part 2 cố nói đủ 1 phút 40 giây trở lên. Part 3 trả lời 3–5 câu: quan điểm → lý do → ví dụ.</p></div>
+      <div class="card pad"><div class="label" style="margin-bottom:8px">Chuẩn bị</div>
+        <label class="check"><input type="checkbox" id="o-tts" ${ui.mockTts ? 'checked' : ''}>Máy đọc câu hỏi (giống giám khảo)</label>
+        <label class="check"><input type="checkbox" id="o-key" ${ui.mockKey ? 'checked' : ''}>Chỉ bốc đề trọng điểm (forecast)</label>
+        <div class="row wrap" style="margin:12px 0"><button class="btn" id="miccheck">${ic('mic')}Kiểm tra micro (3 giây)</button><audio controls hidden id="micaudio"></audio></div>
+        <p class="small mute">Dùng Chrome hoặc Edge, đeo tai nghe để máy đọc câu hỏi không lọt vào micro.</p>
+        <button class="btn primary" id="start" style="height:44px;width:100%">${ic('play')}Bắt đầu thi (~13 phút)</button></div></div>
+    ${past.length ? `<div class="section"><div class="section-h"><h2>Các lần thi thử</h2></div><div class="rows">${past.map(a => `<a class="r" href="#/doc/${esc(a.file)}" style="grid-template-columns:160px minmax(0,1fr) auto 20px;padding-left:14px">
+      <span class="small mute">${esc((a.date || '').replace('_', ' '))}</span><span class="m">${esc(critText(a.criteria))}</span><span class="sc"><b>${esc(a.band || '—')}</b></span>${ic('chevron-right','mute')}</a>`).join('')}</div></div>` : ''}`;
+  $('#o-tts').onchange = e => { ui.mockTts = e.target.checked; saveUi(); };
+  $('#o-key').onchange = e => { ui.mockKey = e.target.checked; saveUi(); };
+  $('#miccheck').onclick = async () => {
+    try { const st = await navigator.mediaDevices.getUserMedia({audio: true}), mr = new MediaRecorder(st), ch = [];
+      mr.ondataavailable = e => ch.push(e.data); mr.onstop = () => { const a = $('#micaudio'); a.src = URL.createObjectURL(new Blob(ch)); a.hidden = false; a.play(); st.getTracks().forEach(t => t.stop()); };
+      mr.start(); toast('Đang thu 3 giây — nói thử một câu…', 3000); setTimeout(() => mr.stop(), 3000);
+    } catch { toast('Không mở được micro — kiểm tra quyền micro của trình duyệt.', 5000); }
+  };
+  $('#start').onclick = async () => {
+    if (m && m.i < m.steps.length && !confirm('Có bài thi đang làm dở. Bỏ bài đó và thi bài mới?')) return;
+    const b = $('#start'); b.disabled = true;
+    try { mockStream = await navigator.mediaDevices.getUserMedia({audio: true}); }
+    catch { b.disabled = false; return toast('Cần quyền micro để thi.', 5000); }
+    const mk = await buildMock();
+    if (!mk) { b.disabled = false; mockStream.getTracks().forEach(t => t.stop()); mockStream = null; return toast('Kho chưa đủ đề Part 1 và cue card để thi thử.', 5000); }
+    setMock(mk); location.hash = '#/thi-thu/run';
+  };
+}
+const shuffle = a => a.map(v => [Math.random(), v]).sort((x, y) => x[0] - y[0]).map(v => v[1]);
+async function buildMock(){
+  const pool = part => { const xs = ITEMS.filter(x => x.skill === 'speaking' && x.part == part), k = xs.filter(isKey);
+    return ui.mockKey && k.length >= 3 ? k : xs; };
+  const load = async it => { const t = body(await getText(it.path)); return {it, main: t.split(/^## Bài mẫu/m)[0]}; };
+  const steps = [];
+  const topics = shuffle(pool(1)).slice(0, 3);
+  for (const it of topics) { const {main} = await load(it);
+    shuffle(parseSpeaking(main, 1)).slice(0, topics.length < 3 ? 4 : 3).forEach(q => steps.push({part: 1, examId: it.id, title: it.title, question: q.text, limit: 35})); }
+  let got = null;
+  for (const it of shuffle(pool(2))) { const x = await load(it); if (cueCard(x.main)) { got = x; break; } }
+  if (!steps.length || !got) return null;
+  const cue = cueCard(got.main), base = {examId: got.it.id, title: got.it.title, path: got.it.path, cue};
+  steps.push({...base, part: 2, question: cueTitle(cue), limit: 120, prep: 60});
+  parseSpeaking(got.main, 2).slice(0, 4).forEach(q => steps.push({...base, part: 3, question: q.text, limit: 60}));
+  return {startedAt: Date.now(), steps, i: 0, ans: {}};
+}
+const MOCK_PARTS = {1: 'Interview', 2: 'Long turn · cue card', 3: 'Discussion'};
+async function runMock(){
+  const m = getMock();
+  if (!m) { location.hash = '#/thi-thu'; return; }
+  if (m.i >= m.steps.length) { location.hash = '#/thi-thu/review'; return; }
+  if (!mockStream) {  // tải lại trang giữa bài → cần bấm để tiếp tục (trình duyệt yêu cầu thao tác)
+    app.innerHTML = `<div class="paper"><div class="card pad"><b>Bài thi đang dừng ở câu ${m.i + 1}/${m.steps.length}.</b><p class="mute">Trang đã tải lại nên cần bấm để tiếp tục.</p>
+      <div class="row"><button class="btn primary" id="resume">${ic('play')}Tiếp tục thi</button><a class="btn" href="#/thi-thu/review">Nộp bài luôn</a></div></div></div>`;
+    $('#resume').onclick = async () => { try { mockStream = await navigator.mediaDevices.getUserMedia({audio: true}); runMock().then(icons); } catch { toast('Cần quyền micro.'); } };
+    return;
+  }
+  const s = m.steps[m.i], C = 2 * Math.PI * 40;
+  app.innerHTML = `
+    <div class="fbar"><b>IELTS Speaking · Thi thử</b><div class="steps">${[1,2,3].map(p => `<button class="${p === s.part ? 'on' : ''}" tabindex="-1">Part ${p}</button>`).join('')}</div>
+      <span class="small mute hide-sm">Câu ${m.i + 1}/${m.steps.length}</span><button class="btn" id="quit">${ic('square')}Dừng thi</button></div>
+    <div class="paper" style="max-width:1180px"><div class="meter" style="margin-bottom:20px"><i style="width:${m.i / m.steps.length * 100}%"></i></div>
+      <div class="spk"><div class="pics" id="pics"></div>
+      <div class="q" style="padding:22px">
+        <div class="kicker" style="font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);font-weight:600">Part ${s.part} · ${MOCK_PARTS[s.part]}</div>
+        <div class="qbig">${esc(s.question)}</div>
+        <div class="recorder"><div class="ring" id="ring"><svg viewBox="0 0 88 88"><circle class="bg" cx="44" cy="44" r="40"/><circle class="fg" cx="44" cy="44" r="40" stroke-dasharray="${C}" stroke-dashoffset="0"/></svg>
+          <button id="rb" aria-label="Trạng thái" tabindex="-1">${ic('volume-2')}</button></div>
+          <div class="rstate"><b id="rt">--:--</b><span id="rl" class="mute">Đang đọc câu hỏi…</span></div></div>
+        <div class="row wrap"><button class="btn" id="skip" hidden>${ic('skip-forward')}<span>Bắt đầu nói ngay</span></button><button class="btn" id="early" hidden>${ic('skip-forward')}Xong, sang câu tiếp</button></div>
+        <div class="small mute" id="live" style="margin-top:12px;min-height:3em"></div></div></div></div>`;
+  const pics = $('#pics');
+  if (s.part === 2 && s.cue) { const c = md(s.cue, s.path); c.classList.add('cue'); pics.append(c); }
+  else if (s.part === 3) pics.innerHTML = `<div class="none">${ic('messages-square')}<div class="small" style="margin-top:6px">Thảo luận theo chủ đề: ${esc(s.title)}</div></div>`;
+  else { pics.hidden = true; $('.spk').style.gridTemplateColumns = '1fr'; }
+  icons();
+  const ring = $('#ring'), fg = ring.querySelector('.fg');
+  const setRing = (sec, total, cls, label) => { fg.style.strokeDashoffset = C * (1 - sec / total); ring.className = 'ring ' + cls; $('#rt').textContent = mmss(sec); $('#rl').textContent = label; };
+  let alive = true;
+  $('#quit').onclick = () => { if (!confirm('Dừng bài thi? Phần đã nói vẫn được giữ để chấm.')) return; alive = false; stopAll(); m.i = m.steps.length; setMock(m); location.hash = '#/thi-thu/review'; };
+  await speak(s.part === 2 ? `Now I'm going to give you a topic. ${s.question}. You have one minute to prepare.` : s.question);
+  if (!alive || !location.hash.startsWith('#/thi-thu/run')) return;
+  if (s.prep) {
+    $('#skip').hidden = false; $('#rb').innerHTML = ic('pencil'); icons();
+    await new Promise(res => { $('#skip').onclick = () => { stopAll(); res(); };
+      countdown(s.prep, sec => setRing(sec, s.prep, 'prep', 'Chuẩn bị — ghi từ khóa ra giấy'), res); });
+    $('#skip').hidden = true;
+    if (!alive || !location.hash.startsWith('#/thi-thu/run')) return;
+  }
+  $('#rb').innerHTML = ic('mic'); icons();
+  beep();
+  const r = await mockRecord(s.limit, txt => { $('#live').textContent = txt; }, sec => setRing(sec, s.limit, 'rec', 'Đang ghi âm — hãy nói'), () => { $('#early').hidden = false; $('#early').onclick = () => stopRec?.(); });
+  if (!alive) return;
+  m.ans[m.i] = {text: r.text, seconds: r.seconds}; MOCK_AUDIO[m.i] = r.url; m.i++; setMock(m);
+  if (location.hash.startsWith('#/thi-thu/run')) runMock().then(icons);
+}
+function mockRecord(limit, onText, onTick, onStart){
+  return new Promise(res => {
+    const chunks = [], mr = new MediaRecorder(mockStream), t0 = Date.now();
+    let text = '', live = true, rec;
+    mr.ondataavailable = e => chunks.push(e.data);
+    const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SR) { rec = new SR(); rec.lang = 'en-US'; rec.continuous = true; rec.interimResults = true; let fin = '';
+      rec.onresult = e => { let inter = ''; for (let i = e.resultIndex; i < e.results.length; i++) { const x = e.results[i]; x.isFinal ? fin += x[0].transcript.trim() + ' ' : inter += x[0].transcript; }
+        text = (fin + inter).trim(); onText(text); };
+      rec.onend = () => { if (live) try { rec.start() } catch {} };
+      try { rec.start(); } catch {} }
+    mr.onstop = () => res({text, seconds: Math.round((Date.now() - t0) / 1000), url: URL.createObjectURL(new Blob(chunks, {type: mr.mimeType}))});
+    mr.start(); onStart();
+    stopRec = () => { if (!live) return; live = false; stopRec = null; clearInterval(timerInt); timerInt = null; rec?.stop(); setTimeout(() => mr.state !== 'inactive' && mr.stop(), 400); };
+    countdown(limit, onTick, () => stopRec?.());
+  });
+}
+function reviewMock(){
+  const m = getMock();
+  if (!m) { location.hash = '#/thi-thu'; return; }
+  mockStream?.getTracks().forEach(t => t.stop()); mockStream = null;
+  const totalSec = Object.values(m.ans).reduce((s, a) => s + (a.seconds || 0), 0);
+  app.innerHTML = `
+    <div class="row wrap" style="margin-bottom:14px"><a class="btn ghost" href="#/thi-thu">${ic('arrow-left')}Thi thử</a><b class="grow">Thi thử IELTS Speaking · ${esc(new Date(m.startedAt).toLocaleString('vi-VN'))}</b></div>
+    <div class="card pad row wrap" style="gap:18px"><div><div class="kpi">${Object.keys(m.ans).length}/${m.steps.length}</div><div class="small mute">câu đã nói</div></div>
+      <div><div class="kpi">${mmss(totalSec)}</div><div class="small mute">tổng thời gian nói</div></div><div class="grow"></div>
+      ${m.result ? '' : `<button class="btn primary" id="grade">${ic('sparkles')}<span>Nộp & Claude chấm toàn diện</span></button>`}
+      <button class="btn" id="new">${ic('refresh-cw')}Thi bài mới</button></div>
+    <p class="small mute">Kiểm tra phần chữ máy nghe được — sửa những chỗ máy nghe sai (đừng sửa lỗi ngữ pháp của bạn) rồi mới nộp.</p>
+    <div id="mres"></div>
+    <div class="rows">${m.steps.map((s, i) => { const a = m.ans[i] || {}, n = wc(a.text || '');
+      return `<div class="pad" style="border-top:1px solid var(--line)"><div class="row small mute" style="gap:8px"><span class="badge key">Part ${s.part}</span><span class="grow">${esc(s.title || '')}</span>
+        <span>${a.seconds || 0}s · ${n} từ${a.seconds ? ` · ~${Math.round(n / a.seconds * 60)} từ/phút` : ''}</span></div>
+        <div style="font-weight:600;margin:6px 0">${esc(s.question)}</div>
+        ${MOCK_AUDIO[i] ? `<audio controls src="${MOCK_AUDIO[i]}"></audio>` : ''}
+        <textarea data-i="${i}" ${m.result ? 'readonly' : ''} style="margin-top:6px">${esc(a.text || '')}</textarea></div>`; }).join('')}</div>`;
+  app.querySelectorAll('textarea[data-i]').forEach(t => t.oninput = () => { (m.ans[t.dataset.i] ||= {}).text = t.value; setMock(m); });
+  $('#new').onclick = () => { if (m.result || confirm('Bỏ bài thi này (chưa chấm)?')) { safeSet(MOCK_KEY, 'null'); location.hash = '#/thi-thu'; } };
+  const show = r => { const box = $('#mres'); box.innerHTML = '';
+    const c = document.createElement('div'); c.className = 'card pad'; c.style.margin = '14px 0';
+    c.innerHTML = bandHead(r.result, TARGET.speaking);
+    c.append(md(r.feedback.replace(/```json[\s\S]*?```\s*$/, ''))); box.append(c); };
+  if (m.result) show(m.result);
+  $('#grade') && ($('#grade').onclick = async () => {
+    const b = $('#grade'); b.disabled = true; b.querySelector('span').textContent = 'Claude đang chấm cả bài… (1–3 phút)';
+    const items = m.steps.map((s, i) => ({part: s.part, exam_id: s.examId, label: `Câu ${i + 1}`, question: s.question, limit: s.limit, text: m.ans[i]?.text || '', seconds: m.ans[i]?.seconds || 0}));
+    try { const r = await fetch('/api/mock-grade', {method:'POST', body: JSON.stringify({items})}).then(r => r.json());
+      if (r.error) throw new Error(r.error);
+      m.result = r; setMock(m); await load(); reviewMock(); icons(); toast('Đã chấm xong và lưu vào lịch sử.');
+    } catch (e) { toast('Lỗi chấm: ' + e.message, 6000); b.disabled = false; b.querySelector('span').textContent = 'Nộp & Claude chấm toàn diện'; }
+  });
+}
+
+/* ---------- Reading & Listening: nhập đáp án sách Cambridge của bạn, tự chấm ---------- */
+const RL_TYPES = {
+  listening: ['Form / note / table completion', 'Sentence completion', 'Multiple choice', 'Matching', 'Map / plan labelling', 'Flow-chart / diagram', 'Short answer'],
+  reading: ['True / False / Not Given', 'Yes / No / Not Given', 'Matching headings', 'Matching information', 'Matching features', 'Matching sentence endings',
+    'Multiple choice', 'Sentence completion', 'Summary / note / table completion', 'Diagram label', 'Short answer']};
+const RL_ALIAS = {t: 'true', f: 'false', ng: 'not given', y: 'yes', n: 'no'};
+const normAns = x => { const v = String(x || '').toLowerCase().trim().replace(/[.,;:!?"'’]+$/, '').replace(/\s+/g, ' ').trim(); return RL_ALIAS[v] || v; };
+const isRight = (ans, key) => !!normAns(ans) && String(key || '').split('/').map(normAns).filter(Boolean).includes(normAns(ans));
+function rlPage(skill){
+  const dkey = 'rl:' + skill, D = JSON.parse(safeGet(dkey) || 'null') || {source: '', rows: Array.from({length: 40}, () => ({a: '', k: '', t: ''}))};
+  const save = () => safeSet(dkey, JSON.stringify(D));
+  const past = RLLOG.filter(e => e.skill === skill).reverse();
+  app.innerHTML = `<h1>Reading & Listening</h1><p class="sub">Làm đề trong sách Cambridge của bạn (bấm giờ như thi thật), rồi nhập đáp án của bạn và đáp án đúng ở đây. Web tự chấm, quy ra band và thống kê bạn mất điểm ở dạng câu nào.</p>
+    ${tabs('rl', [['listening', 'Listening'], ['reading', 'Reading']], skill, k => RLLOG.filter(e => e.skill === k).length)}
+    <div class="card pad">
+      <div class="row wrap" style="gap:10px;margin-bottom:12px"><label class="small mute" for="src">Đề</label>
+        <input id="src" class="sel" style="flex:1;min-width:200px" placeholder="Ví dụ: Cambridge 18 · Test 2" value="${esc(D.source)}">
+        <span class="small mute">${skill === 'listening' ? '40 câu · ~30 phút, nghe 1 lần' : '40 câu · 60 phút'}</span></div>
+      <div class="row wrap small" style="gap:8px;margin-bottom:14px;padding:10px 12px;background:var(--surface-2);border-radius:8px">
+        <span class="mute">Gán dạng câu cho câu</span><input id="from" type="number" min="1" max="40" class="sel" style="width:70px;min-width:0" value="1">
+        <span class="mute">đến</span><input id="to" type="number" min="1" max="40" class="sel" style="width:70px;min-width:0" value="10">
+        <select id="bulk" class="sel">${RL_TYPES[skill].map(t => `<option>${t}</option>`).join('')}</select><button class="btn" id="apply">Gán</button>
+        <span class="mute">· Đáp án đúng có nhiều cách viết: ngăn bằng <code>/</code>. T/F/NG gõ tắt được.</span></div>
+      <div class="rlgrid small mute" style="margin-bottom:6px"><span></span><span>Bạn trả lời</span><span>Đáp án đúng</span><span>Dạng câu</span><span></span></div>
+      <div class="rlgrid" id="grid">${D.rows.map((r, i) => `<span class="n">${i + 1}</span>
+        <input data-i="${i}" data-f="a" value="${esc(r.a)}" aria-label="Câu ${i + 1}: bạn trả lời" autocomplete="off" spellcheck="false">
+        <input data-i="${i}" data-f="k" value="${esc(r.k)}" aria-label="Câu ${i + 1}: đáp án đúng" autocomplete="off" spellcheck="false">
+        <select data-i="${i}" data-f="t" aria-label="Câu ${i + 1}: dạng câu"><option value="">—</option>${RL_TYPES[skill].map(t => `<option ${r.t === t ? 'selected' : ''}>${t}</option>`).join('')}</select>
+        <span id="m${i}"></span>`).join('')}</div>
+      <div class="row wrap" style="margin-top:16px;gap:10px"><button class="btn primary" id="score">${ic('check-check')}Chấm & lưu</button><button class="btn" id="clear">${ic('rotate-ccw')}Xoá để nhập đề mới</button><span class="grow"></span><span class="small mute" id="live"></span></div>
+      <div id="rlres"></div></div>
+    ${past.length ? `<div class="section"><div class="section-h"><h2>Các lần đã chấm</h2></div><div class="rows">${past.map(e => `<div class="r" style="grid-template-columns:130px minmax(0,1fr) auto;padding-left:14px">
+      <span class="small mute">${esc((e.t || '').replace('T', ' ').slice(0, 16))}</span><span class="t">${esc(e.source || '(không tên)')}</span><span class="sc"><b>${esc(e.band)}</b> · ${esc(e.raw)}/40</span></div>`).join('')}</div></div>` : ''}`;
+  const live = () => { const filled = D.rows.filter(r => r.k.trim()).length, raw = D.rows.filter(r => isRight(r.a, r.k)).length;
+    $('#live').textContent = filled ? `${raw}/${filled} câu đúng (đã nhập đáp án ${filled}/40)` : '';
+    D.rows.forEach((r, i) => { const m = $('#m' + i); m.innerHTML = !r.k.trim() ? '' : isRight(r.a, r.k) ? ic('check', 'okc') : ic('x', 'bad'); }); icons(); };
+  app.querySelectorAll('#grid [data-i]').forEach(el => el.oninput = el.onchange = () => { D.rows[+el.dataset.i][el.dataset.f] = el.value; save(); if (el.dataset.f !== 't') live(); });
+  $('#src').oninput = e => { D.source = e.target.value; save(); };
+  $('#apply').onclick = () => { const a = Math.max(1, +$('#from').value), b = Math.min(40, +$('#to').value), t = $('#bulk').value;
+    for (let i = a - 1; i < b; i++) D.rows[i].t = t; save(); rlPage(skill); icons(); };
+  $('#clear').onclick = () => { if (confirm('Xoá toàn bộ đáp án đang nhập?')) { safeSet(dkey, 'null'); rlPage(skill); icons(); } };
+  $('#score').onclick = async () => {
+    const keyed = D.rows.filter(r => r.k.trim()).length;
+    if (keyed < 40 && !confirm(`Mới nhập đáp án đúng cho ${keyed}/40 câu. Câu chưa có đáp án tính là sai. Vẫn chấm?`)) return;
+    const rows = D.rows.map((r, i) => ({n: i + 1, ans: r.a, key: r.k, type: r.t, ok: isRight(r.a, r.k)}));
+    const raw = rows.filter(r => r.ok).length, band = rlBand(skill, raw), byType = {};
+    rows.forEach(r => { const t = r.type || 'Chưa gán dạng'; (byType[t] ||= [0, 0])[1]++; if (r.ok) byType[t][0]++; });
+    const res = await fetch('/api/rl', {method: 'POST', body: JSON.stringify({skill, source: D.source, raw, band, rows})}).then(r => r.json()).catch(e => ({error: e.message}));
+    if (res.error) return toast('Không lưu được: ' + res.error, 5000);
+    await load();
+    $('#rlres').innerHTML = `<div class="score-head" style="margin-top:16px"><div class="kpi">${band}<span class="small mute">/9</span></div><div class="grow"><b>${raw}/40 câu đúng</b>
+      <span class="badge ${band >= TARGET[skill] ? 'ok' : 'warn'}" style="margin-left:6px">${band >= TARGET[skill] ? 'Đạt mục tiêu 7' : `Cần thêm ${30 - raw > 0 ? 30 - raw : 0} câu để chạm band 7`}</span>
+      <div class="small mute">Bảng quy đổi xấp xỉ; mỗi đề thật hiệu chỉnh riêng nên có thể lệch ±1 câu.</div></div></div>
+      <div class="md"><table><tr><th>Dạng câu</th><th>Đúng</th><th>Tỉ lệ</th></tr>${Object.entries(byType).sort((a, b) => a[1][0] / a[1][1] - b[1][0] / b[1][1]).map(([t, [ok, n]]) =>
+        `<tr><td>${esc(t)}</td><td>${ok}/${n}</td><td>${Math.round(ok / n * 100)}%</td></tr>`).join('')}</table></div>
+      <p class="small mute">Dạng có tỉ lệ thấp nhất nằm trên cùng: luyện riêng dạng đó trước.</p>`;
+    toast(`Đã lưu: ${raw}/40 · band ${band}`);
+  };
+  live();
+}
+
+load().then(route).catch(e => { app.innerHTML = `<div class="card pad">Không tải được dữ liệu. Chạy <code>python3 server.py</code> rồi mở <a href="http://localhost:8766">localhost:8766</a>.<br><span class="mute small">${esc(e.message)}</span></div>`; });
+</script>
+</body>
+</html>
