@@ -213,7 +213,7 @@ audio{height:36px;max-width:100%}
 .doc .toc a:hover{background:var(--surface-2);text-decoration:none}
 .doc .toc a.on{color:var(--brand);border-left-color:var(--brand);background:var(--brand-soft)}
 .doc .toc a.h3{padding-left:22px;color:var(--mute)}
-@media (max-width:1000px){.doc{grid-template-columns:1fr}.doc .toc{display:none}}
+@media (max-width:1000px){.doc{grid-template-columns:minmax(0,1fr)}.doc .toc{display:none}}
 .score-head{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:var(--radius);background:var(--brand-soft);margin-bottom:12px}
 .score-head .kpi{color:var(--brand)}
 .skel{height:14px;border-radius:6px;background:linear-gradient(90deg,var(--surface-2),var(--line),var(--surface-2));background-size:200% 100%;animation:sh 1.2s infinite;margin:10px 0}
@@ -348,6 +348,7 @@ textarea.essay{font:17px/1.75 var(--read)}
 .vt .en{font:16px var(--read)}
 .stg{font-size:11.5px;font-weight:600;padding:1px 8px;border-radius:999px;white-space:nowrap}
 .stg.new{background:var(--surface-2);color:var(--ink-2)}.stg.recall{background:var(--warn-soft);color:var(--warn)}.stg.used{background:var(--brand-soft);color:var(--brand)}.stg.active{background:var(--ok-soft);color:var(--ok)}
+#lbody>section{min-width:0}
 .form3{display:grid;grid-template-columns:1fr 1fr 1.4fr auto;gap:8px}
 .form3 input{height:38px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface);padding:0 10px;min-width:0}
 @media (max-width:760px){.form3{grid-template-columns:1fr}}
@@ -379,7 +380,7 @@ const S_PARTS = {1:['Part 1 · Interview','Câu hỏi ngắn · 20–30 giây m�
 const SP_LIMIT = {1:40, 2:120, 3:60};
 const W_RANGE = {1:[150,200], 2:[250,320]};
 const W_MIN = {1:20, 2:40};
-const NAV = [['','layout-dashboard','Tổng quan'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['reading','book-open-check','Reading'],['tu-vung','sparkles','Từ chủ động','Từ'],['thi-thu','timer','Thi thử'],
+const NAV = [['','layout-dashboard','Tổng quan'],['hoc','graduation-cap','Học'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['reading','book-open-check','Reading'],['tu-vung','sparkles','Từ chủ động','Từ'],['thi-thu','timer','Thi thử'],
   ['tien-do','calendar-days','Tiến độ'],['lich-su','history','Lịch sử'],['tai-lieu','book-open','Tài liệu']];
 const NAV_SEC = {'writing/1': 'Luyện', 'tien-do': 'Theo dõi'};
 const S_KEYS = ['writing', 'speaking', 'reading', 'vocab', 'listening'];
@@ -445,7 +446,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const ic = (n, cls='') => `<i data-lucide="${n}" class="${cls}" aria-hidden="true"></i>`;
 const icons = () => window.lucide?.createIcons();
 const app = $('#app');
-let ITEMS = [], ATTEMPTS = [], RLLOG = [], STUDY = {}, STATE = {settings: {}, checks: {}, freezes: []}, VOCAB = [];
+let ITEMS = [], ATTEMPTS = [], RLLOG = [], STUDY = {}, STATE = {settings: {}, checks: {}, freezes: [], lessons: {}}, VOCAB = [], LESSONS = [];
 function safeGet(k){ try { return localStorage.getItem(k) } catch { return null } }
 function safeSet(k, v){ try { localStorage.setItem(k, v) } catch {} }
 const ui = Object.assign({key:false, hideDone:false, wgroup:'qtype', q:''}, JSON.parse(safeGet('ui2') || '{}'));
@@ -453,7 +454,7 @@ const saveUi = () => safeSet('ui2', JSON.stringify(ui));
 const isKey = x => x.hot === 'true';
 function toast(msg, ms=3200){ const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role','status'); t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), ms); }
 
-async function load(){ [ITEMS, ATTEMPTS, RLLOG, STUDY, STATE, VOCAB] = await Promise.all(['/api/items', '/api/attempts', '/api/rl', '/api/study', '/api/state', '/api/vocab'].map(u => fetch(u).then(r => r.json()))); }
+async function load(){ [ITEMS, ATTEMPTS, RLLOG, STUDY, STATE, VOCAB, LESSONS] = await Promise.all(['/api/items', '/api/attempts', '/api/rl', '/api/study', '/api/state', '/api/vocab', '/api/lessons'].map(u => fetch(u).then(r => r.json()))); }
 async function api(url, data){ const r = await fetch(url, {method: 'POST', body: JSON.stringify(data)}).then(r => r.json()); if (r.error) throw new Error(r.error); return r; }
 const todayIso = () => iso(new Date());
 const set = () => STATE.settings;
@@ -544,7 +545,8 @@ async function route(){
   const [, page, a] = location.hash.split('/');
   stopAll(); flushStudy(); CHARTS.forEach(c => c.destroy()); CHARTS = [];
   track.skill = page === 'de' ? ITEMS.find(x => x.id === decodeURIComponent(a))?.skill || null : page === 'reading' ? 'reading'
-    : page === 'tu-vung' ? 'vocab' : page === 'thi-thu' && a === 'run' ? 'speaking' : null;
+    : page === 'tu-vung' ? 'vocab' : page === 'thi-thu' && a === 'run' ? 'speaking' : page === 'chu-de' ? 'vocab'
+    : page === 'bai' ? LESSON_SKILL[LESSONS.find(l => l.id === a)?.skill] || null : null;
   document.body.classList.toggle('focus', page === 'de' || (page === 'thi-thu' && a === 'run'));
   shell();
   window.scrollTo(0, 0);
@@ -558,6 +560,8 @@ async function route(){
   else if (page === 'lich-su') history();
   else if (page === 'tien-do') progressPage();
   else if (page === 'tu-vung') vocabPage();
+  else if (page === 'hoc') hocPage();
+  else if (page === 'bai' || page === 'chu-de') await lessonPage(decodeURIComponent(a));
   else home();
   icons();
 }
@@ -593,11 +597,13 @@ const dueCount = d => VOCAB.filter(c => c.due <= d).length;
 const nextItem = f => ITEMS.filter(x => f(x) && x.status !== 'done').sort((a, b) => isKey(b) - isKey(a))[0] || ITEMS.filter(f)[0];
 const doneOn = (d, f) => ATTEMPTS.some(a => dayOf(a) === d && f(a));
 /* hạn mức ngày theo lịch tuần (0 = CN) */
-const PLAN = {1: ['vocab', 'w2', 's1'], 2: ['vocab', 's2', 'reading'], 3: ['vocab', 'w1', 's1'], 4: ['vocab', 's2', 'reading'], 5: ['vocab', 'w2', 's1'], 6: ['vocab', 'mock', 'reading'], 0: ['vocab', 'review', 'listening']};
+const PLAN = {1: ['learn', 'vocab', 'w2', 's1'], 2: ['learn', 'vocab', 's2', 'reading'], 3: ['learn', 'vocab', 'w1', 's1'], 4: ['learn', 'vocab', 's2', 'reading'], 5: ['learn', 'vocab', 'w2', 's1'], 6: ['vocab', 'mock', 'reading'], 0: ['vocab', 'review', 'listening']};
 function task(k, d){
   const link = (f, fb) => { const it = nextItem(f); return it ? '#/de/' + it.id : fb; };
   const due = dueCount(d);
+  const learnt = Object.entries(STATE.lessons || {}).find(([, v]) => v.date === d), sug = learnt ? LESSONS.find(l => l.id === learnt[0]) : suggestLessons(1)[0];
   return {
+    learn: () => ({label: sug ? `Học: ${sug.title}` : 'Học 1 bài', href: sug ? '#/bai/' + sug.id : '#/hoc', est: 15, auto: !!learnt}),
     vocab: () => ({label: VOCAB.length ? (due ? `Ôn ${due} cụm từ chủ động đến hạn` : 'Ôn từ chủ động · hết cụm đến hạn') : 'Từ chủ động · kho trống, chấm 1 bài để thu hoạch cụm', href: '#/tu-vung', est: 12,
       auto: VOCAB.some(c => c.last === d) && !due}),
     w1: () => ({label: 'Writing Task 1 · 20 phút', href: link(x => x.skill === 'writing' && x.part == 1, '#/writing/1'), est: 25, auto: doneOn(d, a => a.skill === 'writing' && a.part == 1)}),
@@ -660,9 +666,11 @@ function home(){
   const focus = weak ? `<div class="card pad focusc"><div><div class="k">Tập trung tuần này · ${SKILLS[weak[0]]} ${weak[1]} đang thấp nhất (${weak[2]})</div>
       <div style="font-size:17px;font-weight:600;margin:4px 0">${esc(CRIT_TIP[weak[1]] || CRIT_TIP[weak[1] === 'TA/TR' ? 'TA/TR' : 'LR'])}</div>
       <div class="small mute">Lấy từ trung bình 3 bài gần nhất. Ô viền vàng trong bảng bên dưới là tiêu chí đang kéo điểm xuống.</div></div>
-      ${wItem ? `<a class="btn primary" href="#/de/${wItem.id}">Làm bài${ic('arrow-right')}</a>` : ''}</div>`
+      <div class="row wrap" style="gap:8px">${(l => l ? `<a class="btn" href="#/bai/${l.id}">${ic('graduation-cap')}Học: ${esc(l.title)}</a>` : '')(suggestLessons(1, [weak[1] === 'TA/TR' ? 'TR' : weak[1]], [])[0])}
+      ${wItem ? `<a class="btn primary" href="#/de/${wItem.id}">Làm bài${ic('arrow-right')}</a>` : ''}</div></div>`
     : `<div class="card pad focusc"><div><div class="k">Bắt đầu</div><div style="font-size:17px;font-weight:600;margin:4px 0">Làm 1 bài Writing Task 2 và 1 chủ đề Speaking Part 1 để web biết bạn đang yếu tiêu chí nào.</div>
-      <div class="small mute">Mỗi lần chấm, các cụm từ nên học được đưa vào kho Từ chủ động.</div></div><a class="btn primary" href="#/writing/2">Chọn đề${ic('arrow-right')}</a></div>`;
+      <div class="small mute">Mới bắt đầu IELTS: học trước bài tổng quan của từng phần (khoảng 1 giờ), rồi làm bài chấm đầu tiên.</div></div>
+      <div class="row wrap" style="gap:8px"><a class="btn" href="#/hoc">${ic('graduation-cap')}Vào Học</a><a class="btn primary" href="#/writing/2">Chọn đề${ic('arrow-right')}</a></div></div>`;
   const hmRow = (lab, rows, skill) => `<span class="rh">${lab}</span>${rows ? rows.map(([k, v]) => `<span class="c ${cls5(v)} ${weak && weak[0] === skill && weak[1] === k ? 'weak' : ''}" title="${k}: ${v ?? '—'}">${k} ${v ?? '–'}</span>`).join('')
     : '<span class="c span">Chưa có bài chấm</span>'}<span class="tot">${estBand(skill) ?? '—'}</span>`;
   const rl = RLLOG.filter(e => e.skill === 'reading'), byT = {};
@@ -865,7 +873,8 @@ function progressPage(){
   app.innerHTML = `<h1>Tiến độ</h1><p class="sub">Giờ học được web tự đếm khi bạn đang làm bài (tab ẩn hoặc 2 phút không thao tác thì ngừng). Listening ghi tay ở Tổng quan.</p>
     <div class="card pad kv" style="gap:32px"><div><b>${streakOf(STUDY, FZ, minS, t)}</b><span>ngày liên tiếp</span></div><div><b>${Math.max(streakOf(STUDY, FZ, minS, t), bestStreak(STUDY, FZ, minS, t))}</b><span>kỷ lục</span></div>
       <div><b>${(totalSec / 3600).toFixed(1).replace('.', ',')}h</b><span>tổng giờ học</span></div><div><b>${ATTEMPTS.length + RLLOG.length}</b><span>bài đã chấm</span></div>
-      <div><b>${VOCAB.filter(c => c.stage === 'active').length}</b><span>cụm chủ động</span></div></div>
+      <div><b>${VOCAB.filter(c => c.stage === 'active').length}</b><span>cụm chủ động</span></div>
+      <div><b>${Object.keys(STATE.lessons || {}).filter(id => LESSONS.some(l => l.id === id && l.kind === 'lesson')).length}/${LESSONS.filter(l => l.kind === 'lesson').length}</b><span>bài học đã học</span></div></div>
     <div class="section grid2" style="align-items:start;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">${calendar()}${runup()}</div>
     <div class="section"><div class="section-h"><h2>Thống kê</h2><span class="small mute">Rê chuột lên cột, điểm để xem số liệu</span></div>
       <div class="grid2">
@@ -1029,6 +1038,114 @@ function dictate(ta, btn){  // chuyển giọng nói thành chữ cho bài ôn t
   dictStop = () => rec.stop(); btn.querySelector('span').textContent = 'Dừng'; rec.start(); track.last = Date.now();
 }
 
+/* ---------- học: bài học theo kỹ năng và theo chủ đề ---------- */
+const HOC_GROUPS = [['Nền tảng', 'blocks', 'Ngữ pháp band 7, paraphrase, collocation: dùng cho cả 4 kỹ năng'], ['Task 2', 'pen-line', 'Writing Task 2: 5 dạng đề, phát triển ý, mạch lạc'],
+  ['Task 1', 'chart-column', 'Writing Task 1: 7 dạng biểu đồ, overview, ngôn ngữ số liệu'], ['Speaking', 'mic', 'Part 1, 2, 3, từ nối, phát âm'],
+  ['Reading', 'book-open-check', '11 dạng câu, skimming, scanning, paraphrase'], ['Listening', 'headphones', '4 section, bẫy câu nhiễu, chính tả số và tên']];
+const LESSON_SKILL = {writing: 'writing', speaking: 'speaking', reading: 'reading', listening: 'listening', 'nen-tang': 'writing'};
+const lessonsOf = g => LESSONS.filter(l => l.kind === 'lesson' && l.group === g).sort((a, b) => +a.order - +b.order);
+const lessonDone = id => !!STATE.lessons?.[id];
+const crits = l => (l.crit || '').split(',').filter(Boolean);
+const PHRASE_RE = /^- \*\*([^*]+)\*\* — ([^—]+?) — (.+)$/gm;
+const normEn = s => String(s || '').toLowerCase().replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();
+const inVocab = en => VOCAB.some(c => normEn(c.en) === normEn(en));
+/* gợi ý bài học: theo tiêu chí yếu và nhãn lỗi nhiều nhất của các bài chấm gần đây, bỏ bài đã học */
+function suggestLessons(n = 3, crit = null, errs = null){
+  if (!crit) { const w = [...(critAvg('writing') || []).map(([k, v]) => [k === 'TA/TR' ? 'TR' : k, v]), ...(critAvg('speaking') || [])].filter(x => x[1] != null).sort((a, b) => a[1] - b[1]);
+    crit = w.slice(0, 2).map(x => x[0]); }
+  if (!errs) { const tot = {}; ATTEMPTS.slice(-5).forEach(a => Object.entries(jsonish(a.errors)).forEach(([k, v]) => tot[k] = (tot[k] || 0) + (+v || 0)));
+    errs = Object.entries(tot).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]).slice(0, 2).map(([k]) => k); }
+  const score = l => (crits(l).some(c => crit.includes(c)) ? 2 : 0) + ((l.errors || '').split(',').some(e => errs.includes(e)) ? 2 : 0) - (+l.order || 0) / 100;
+  const pool = LESSONS.filter(l => l.kind === 'lesson' && !lessonDone(l.id));
+  return pool.sort((a, b) => score(b) - score(a) || HOC_GROUPS.findIndex(g => g[0] === a.group) - HOC_GROUPS.findIndex(g => g[0] === b.group)).slice(0, n);
+}
+const lessonRow = l => `<a class="r" href="#/bai/${l.id}" style="grid-template-columns:40px minmax(0,1fr) auto 20px">
+  <span class="st ${lessonDone(l.id) ? 'done' : ''}">${ic(lessonDone(l.id) ? 'circle-check' : 'circle')}</span>
+  <span><div class="t">${esc(l.title)}</div><div class="m">${esc(l.summary || '')}</div></span>
+  <span class="sc">${crits(l).map(c => `<span class="badge">${c}</span>`).join(' ')} ${l.minutes}′</span>${ic('chevron-right', 'mute')}</a>`;
+function hocPage(){
+  ui.hocTab ||= 'skill';
+  const all = LESSONS.filter(l => l.kind === 'lesson'), done = all.filter(l => lessonDone(l.id)).length, sug = suggestLessons();
+  const topics = Object.fromEntries(LESSONS.filter(l => l.kind === 'topic').map(l => [l.id, l]));
+  const body = ui.hocTab === 'skill' ? HOC_GROUPS.map(([g, i, d]) => { const ls = lessonsOf(g);
+      return `<section class="group"><div class="group-h">${ic(i)}<h2>${g}</h2><span class="small mute">${ls.length ? `${ls.filter(l => lessonDone(l.id)).length}/${ls.length} bài · ` : ''}${d}</span></div>
+        ${ls.length ? `<div class="rows">${ls.map(lessonRow).join('')}</div>` : '<div class="card pad small mute">Sắp có (đợt 2).</div>'}</section>`; }).join('')
+    : `<div class="grid3" style="margin-top:16px">${Object.entries(CLUSTERS).sort((a, b) => !!topics[b[0]] - !!topics[a[0]]).map(([k, name]) => { const t = topics[k], n = ITEMS.filter(x => x.theme === k).length;
+      return t ? `<a class="card pad" href="#/chu-de/${k}" style="color:inherit;display:grid;gap:4px"><div class="row"><b class="grow">${esc(name)}</b>${lessonDone(k) ? ic('circle-check', 'okc') : ''}</div>
+          <span class="small mute">${esc(t.summary || '')}</span><span class="small" style="color:var(--brand)">${n} đề trong kho · cụm từ, ý tưởng Task 2, Speaking</span></a>`
+        : `<div class="card pad" style="opacity:.6;display:grid;gap:4px"><b>${esc(name)}</b><span class="small mute">Sắp có (đợt 3) · ${n} đề trong kho</span></div>`; }).join('')}</div>`;
+  app.innerHTML = `<h1>Học</h1><p class="sub">Bài học ngắn 10–15 phút. Mỗi bài có phần cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (đưa thẳng vào kho Từ chủ động) và 3–5 câu kiểm tra nhanh. Học xong thì làm đề cùng dạng.</p>
+    <div class="card pad focusc"><div><div class="k">Nên học tiếp · ${done}/${all.length} bài đã học</div>
+      <div class="rows" style="margin-top:8px">${sug.map(lessonRow).join('') || '<div class="pad mute">Đã học hết các bài hiện có.</div>'}</div>
+      <div class="small mute" style="margin-top:6px">${ATTEMPTS.length ? 'Chọn theo tiêu chí và lỗi đang kéo điểm xuống ở các bài chấm gần đây.' : 'Chưa có bài chấm, nên gợi ý theo thứ tự nền tảng → Task 2 → Speaking.'}</div></div></div>
+    <div class="section"><div class="seg" role="tablist">${[['skill', 'Theo kỹ năng'], ['topic', 'Theo chủ đề']].map(([k, l]) => `<button role="tab" data-ht="${k}" class="${ui.hocTab === k ? 'on' : ''}">${l}</button>`).join('')}</div>${body}</div>`;
+  app.querySelectorAll('[data-ht]').forEach(b => b.onclick = () => { ui.hocTab = b.dataset.ht; saveUi(); hocPage(); icons(); });
+}
+const splitSecs = text => { const p = body(text).split(/^## (.+)$/m), out = {}; for (let i = 1; i < p.length; i += 2) out[p[i].trim()] = p[i + 1]; return out; };
+function phraseList(text, src, theme){
+  const ps = [...text.matchAll(PHRASE_RE)].map(m => ({en: m[1].trim(), vi: m[2].trim(), ex: m[3].trim()}));
+  const box = document.createElement('div');
+  const render = () => { box.innerHTML = `<div class="row wrap" style="margin-bottom:8px"><span class="small mute grow">Bấm + để đưa cụm vào kho Từ chủ động: web sẽ cho bạn ôn và gợi ý dùng nó khi làm bài.</span>
+      ${ps.some(p => !inVocab(p.en)) ? `<button class="btn" data-addall>${ic('list-plus')}Thêm tất cả</button>` : ''}</div>
+    <div class="rows">${ps.map((p, i) => `<div class="pad" style="border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center">
+      <div><div style="font:600 17px var(--read)">${esc(p.en)} <span class="small mute" style="font:13px var(--ui)">· ${esc(p.vi)}</span></div><div class="small" style="color:var(--ink-2);font-family:var(--read);font-size:15px">${esc(p.ex)}</div></div>
+      ${inVocab(p.en) ? `<span class="badge ok">${ic('check')}Trong kho</span>` : `<button class="btn" data-add="${i}" aria-label="Thêm ${esc(p.en)} vào kho">${ic('plus')}</button>`}</div>`).join('')}</div>`; icons();
+    const add = async xs => { try { for (const p of xs) if (!inVocab(p.en)) await api('/api/vocab', {action: 'add', ...p, src, theme}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast(`Đã thêm ${xs.length} cụm vào kho Từ chủ động.`); render(); } catch (e) { toast(e.message); } };
+    box.querySelectorAll('[data-add]').forEach(b => b.onclick = () => add([ps[+b.dataset.add]]));
+    box.querySelector('[data-addall]') && (box.querySelector('[data-addall]').onclick = () => add(ps.filter(p => !inVocab(p.en)))); };
+  render(); return box;
+}
+function quizView(text, onDone){
+  const qs = text.trim().split(/^\d+\.\s/m).slice(1).map(q => ({q: q.split('\n')[0].trim(), why: [...q.matchAll(/^\s+> (.+)$/gm)].map(m => m[1]).join(' '),
+    opts: shuffle([...q.matchAll(/^\s+- \[( |x)\] (.+)$/gm)].map(m => ({t: m[2].trim(), ok: m[1] === 'x'})))}));
+  const ans = {}, box = document.createElement('div'); box.style.display = 'grid'; box.style.gap = '12px';
+  const render = () => {
+    box.innerHTML = qs.map((q, i) => `<div class="q" style="margin:0"><div class="qt"><span class="qn">${i + 1}.</span>${marked.parseInline(esc(q.q))}</div>
+      <div style="display:grid;gap:6px">${q.opts.map((o, j) => { const picked = ans[i] === j, shown = ans[i] != null;
+        return `<button class="btn" data-q="${i}" data-o="${j}" ${shown ? 'disabled' : ''} style="justify-content:flex-start;height:auto;min-height:40px;padding:8px 12px;white-space:normal;text-align:left;opacity:1;${shown && o.ok ? 'border-color:var(--ok);background:var(--ok-soft);color:var(--ok)' : picked ? 'border-color:var(--bad);background:var(--bad-soft);color:var(--bad)' : ''}">${shown && o.ok ? ic('check') : picked ? ic('x') : ''}${marked.parseInline(esc(o.t))}</button>`; }).join('')}</div>
+      ${ans[i] != null ? `<p class="small" style="margin:8px 0 0;color:var(--ink-2)">${marked.parseInline(esc(q.why))}</p>` : ''}</div>`).join('')
+      + (Object.keys(ans).length === qs.length ? `<div class="score-head" style="margin:0"><div class="kpi">${qs.filter((q, i) => q.opts[ans[i]].ok).length}/${qs.length}</div><div>câu đúng${qs.every((q, i) => q.opts[ans[i]].ok) ? '. Đã nắm bài.' : '. Xem lại phần giải thích các câu sai.'}</div></div>` : '');
+    icons();
+    box.querySelectorAll('[data-q]').forEach(b => b.onclick = () => { ans[+b.dataset.q] = +b.dataset.o; render();
+      if (Object.keys(ans).length === qs.length) onDone(`${qs.filter((q, i) => q.opts[ans[i]].ok).length}/${qs.length}`); });
+  };
+  render(); return box;
+}
+async function lessonPage(id){
+  const l = LESSONS.find(x => x.id === id);
+  if (!l) { app.innerHTML = '<div class="card pad">Không tìm thấy bài học.</div>'; return; }
+  const S = splitSecs(await getText(l.path)), topic = l.kind === 'topic';
+  const order = topic ? ['Cụm từ', 'Kho ý tưởng Task 2', 'Speaking dự đoán', 'Từ vựng Reading & Listening'] : ['Cần nhớ', 'Ví dụ chuẩn', 'Lỗi hay gặp', 'Cụm nên học', 'Kiểm tra nhanh'];
+  const sibs = topic ? [] : lessonsOf(l.group), k = sibs.findIndex(x => x.id === id), nxt = sibs[k + 1];
+  const prac = !topic && l.qtype ? nextItem(x => x.skill === l.skill && x.qtype === l.qtype) : !topic && l.skill === 'speaking' && l.part ? nextItem(x => x.skill === 'speaking' && x.part == l.part) : null;
+  const items = topic ? ITEMS.filter(x => x.theme === id) : [];
+  app.innerHTML = `<p class="small" style="margin:0 0 8px"><a href="#/hoc">${ic('arrow-left')} Học</a></p>
+    <div class="phead" style="margin-bottom:16px"><div class="kicker" style="font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);font-weight:600">${topic ? 'Chủ đề' : esc(l.group)}${l.minutes ? ` · ${l.minutes} phút` : ''}</div>
+      <h1>${esc(l.title)}</h1><p class="sub" style="margin:0">${esc(l.summary || '')}</p>
+      <div class="row wrap" style="margin-top:8px;gap:6px">${crits(l).map(c => `<span class="badge">${c}</span>`).join('')}</div></div>
+    <div class="doc"><nav class="toc card pad" aria-label="Mục lục"><div class="label" style="margin:0 0 6px 10px">Mục lục</div>
+      ${order.filter(n => S[n] != null).map((n, i) => `<a href="javascript:void 0" data-to="ls${i}">${n}</a>`).join('')}${items.length ? '<a href="javascript:void 0" data-to="ls-de">Đề cùng chủ đề</a>' : ''}</nav>
+      <article style="display:grid;gap:16px;min-width:0" id="lbody"></article></div>`;
+  const art = $('#lbody');
+  order.filter(n => S[n] != null).forEach((n, i) => {
+    const sec = document.createElement('section'); sec.className = 'card pad'; sec.id = 'ls' + i;
+    sec.innerHTML = `<h2 style="font-size:18px;margin-bottom:8px">${n}</h2>`;
+    if (/^Cụm/.test(n)) sec.append(phraseList(S[n], id, topic ? id : ''));
+    else if (n === 'Kiểm tra nhanh') sec.append(quizView(S[n], async score => { try { STATE = await api('/api/state', {lesson: {id, quiz: score}}); markBtn(); } catch (e) { toast(e.message); } }));
+    else sec.append(md(n === 'Lỗi hay gặp' ? diffLines(S[n]) : S[n], l.path));
+    art.append(sec);
+  });
+  if (items.length) art.insertAdjacentHTML('beforeend', `<section class="card pad" id="ls-de"><h2 style="font-size:18px;margin-bottom:8px">Đề cùng chủ đề trong kho</h2><div class="rows">${items.map(row).join('')}</div></section>`);
+  art.insertAdjacentHTML('beforeend', `<div class="card pad row wrap" style="gap:10px"><button class="btn" id="mark"></button><span class="grow"></span>
+    ${prac ? `<a class="btn primary" href="#/de/${prac.id}">${ic('pen-line')}Luyện đề dạng này</a>` : ''}${nxt ? `<a class="btn" href="#/bai/${nxt.id}">Bài tiếp: ${esc(nxt.title)}${ic('arrow-right')}</a>` : ''}</div>`);
+  const markBtn = () => { const d = lessonDone(id); $('#mark').innerHTML = d ? `${ic('circle-check')}Đã học${STATE.lessons[id].quiz ? ` · kiểm tra ${STATE.lessons[id].quiz}` : ''}` : `${ic('circle')}Đánh dấu đã học`;
+    $('#mark').classList.toggle('primary', !d); icons(); };
+  $('#mark').onclick = async () => { try { STATE = await api('/api/state', {lesson: {id, done: !lessonDone(id)}}); markBtn(); } catch (e) { toast(e.message); } };
+  markBtn(); bindStatus();
+  const links = [...app.querySelectorAll('.toc a')];
+  links.forEach(a => a.onclick = () => document.getElementById(a.dataset.to).scrollIntoView({behavior: 'smooth'}));
+}
+
 /* ---------- lịch sử ---------- */
 const critText = c => { try { return Object.entries(typeof c === 'string' ? JSON.parse(c) : c || {}).map(([k, v]) => `${k} ${v}`).join(' · '); } catch { return ''; } };
 function history(){
@@ -1108,6 +1225,9 @@ async function exam(id){
       else if (!panelState.result) pb.innerHTML = '<p class="mute">Chưa chấm. Làm bài rồi bấm <b>Nộp & chấm</b>.</p>';
       else { const r = panelState.result, mine = ATTEMPTS.filter(a => a.id === id && a.band);
         pb.insertAdjacentHTML('beforeend', bandHead(r.result, TARGET[it.skill]));
+        const cr = Object.entries(r.result.criteria || {}).filter(([, v]) => v < 7).sort((a, b) => a[1] - b[1]).map(([k]) => k === 'TA' ? 'TR' : k),
+          er = Object.entries(r.result.errors || {}).filter(([, v]) => v > 1).sort((a, b) => b[1] - a[1]).map(([k]) => k), sl = suggestLessons(2, cr, er);
+        if (sl.length) pb.insertAdjacentHTML('beforeend', `<div class="small" style="margin:-4px 0 12px"><span class="mute">Nên học: </span>${sl.map(l => `<a href="#/bai/${l.id}">${esc(l.title)}</a>`).join(' · ')}</div>`);
         if (mine.length > 1) pb.insertAdjacentHTML('beforeend', `<div class="small" style="margin:-4px 0 12px"><span class="mute">Các lần chấm đề này: </span>${mine.map(a => `<a href="#/doc/${esc(a.file)}" title="${esc(a.date)}">${esc(a.band)}</a>`).join(' → ')}</div>`);
         pb.append(feedbackView(r.feedback)); }
     } else if (tab === 'tools') {

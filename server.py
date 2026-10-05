@@ -283,6 +283,7 @@ def read_state():
     st["settings"] = {**DEFAULT_SETTINGS, **st.get("settings", {})}
     st.setdefault("checks", {})
     st.setdefault("freezes", [])
+    st.setdefault("lessons", {})
     return st
 
 
@@ -306,6 +307,16 @@ def update_state(data):
             keys = set(st["checks"].get(c["date"], []))
             keys.add(c["key"]) if c.get("done") else keys.discard(c["key"])
             st["checks"][c["date"]] = sorted(keys)
+        if "lesson" in data:  # {"id", "done", "quiz"}: đánh dấu đã học bài, điểm kiểm tra nhanh
+            ls = data["lesson"]
+            if not re.fullmatch(r"[a-z0-9-]+", str(ls.get("id"))) or not (ROOT / "hoc/bai" / f"{ls.get('id')}.md").exists() and not (ROOT / "hoc/chu-de" / f"{ls.get('id')}.md").exists():
+                raise ValueError("không có bài học này")
+            lessons = st.setdefault("lessons", {})
+            if ls.get("done") is False:
+                lessons.pop(ls["id"], None)
+            else:
+                cur = lessons.get(ls["id"], {})
+                lessons[ls["id"]] = {"date": cur.get("date") or today(), "quiz": ls.get("quiz", cur.get("quiz", ""))}
         if "freeze" in data:  # {"date", "on"}
             d = data["freeze"]["date"]
             date.fromisoformat(d)
@@ -393,7 +404,7 @@ def vocab_action(data):
     with LOCK:
         a = data.get("action")
         if a == "add":
-            n = add_cards([data], "manual", data.get("theme"))
+            n = add_cards([data], data.get("src") or "manual", data.get("theme"))
             if not n:
                 raise ValueError("cụm trống hoặc đã có trong kho")
             return {"ok": True}
@@ -425,6 +436,15 @@ def check_sentence(phrases, sentence):
     out = parse_json_block(run_claude(VOCAB_RUBRIC, prompt, model="haiku"))
     if "ok" not in out:
         raise RuntimeError("Không đọc được kết quả chấm câu")
+    return out
+
+
+def lesson_list():
+    out = []
+    for d in ("hoc/bai", "hoc/chu-de"):
+        for p in sorted((ROOT / d).glob("*.md")):
+            m = frontmatter(p) or {}
+            out.append({**m, "id": p.stem, "path": p.relative_to(ROOT).as_posix(), "kind": m.get("kind") or "lesson"})
     return out
 
 
@@ -469,6 +489,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_json(read_state())
         elif self.path == "/api/vocab":
             self.send_json(vocab_list())
+        elif self.path == "/api/lessons":
+            self.send_json(lesson_list())
         else:
             super().do_GET()
 

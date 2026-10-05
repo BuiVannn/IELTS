@@ -10,6 +10,7 @@ Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Nút **Nộp &
 
 | Màn | Nội dung |
 |---|---|
+| Học | Bài học 10–15 phút theo kỹ năng (Nền tảng, Task 2, Speaking; Task 1, Reading, Listening ở đợt sau) và trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
 | Writing | Task 1 (biểu đồ vẽ từ khối ```chart) và Task 2; đồng hồ 20/40 phút; đếm từ theo mốc 150/250; chấm 4 tiêu chí |
 | Speaking | Part 1; Part 2 cue card (1 phút chuẩn bị, 2 phút nói) + Part 3; chấm FC/LR/GRA/P (P là ước lượng) |
 | Reading | Nhập đáp án đề Cambridge của bạn → tự chấm, quy ra band, thống kê theo dạng câu. (Listening tự ôn ngoài web.) |
@@ -34,6 +35,8 @@ on_ielts/
 ├── speaking/part1/S1-*.md    ← 1 chủ đề Part 1 (nhiều câu)
 ├── speaking/part2/S2-*.md    ← 1 cue card + câu hỏi Part 3
 ├── research/                 ← format & band, xu hướng đề 2026
+├── hoc/bai/*.md              ← bài học kỹ năng (quy ước: hoc/QUY-UOC.md, kiểm tra: tools/validate_hoc.py)
+├── hoc/chu-de/*.md           ← trang học theo chủ đề
 ├── hoc/tu-aptis/             ← tài liệu dùng lại từ đợt Aptis
 ├── attempts/                 ← bài đã chấm (mỗi lần một file .md, kèm nhãn lỗi)
 │   ├── _log/study.jsonl      ← giờ học theo ngày · _log/state.json: cài đặt, check-in, ngày nghỉ phép
@@ -73,6 +76,7 @@ Sau khi thêm/sửa đề: `python3 tools/build_index.py`.
 
 ```bash
 node tools/test_scoring.mjs        # chấm Reading, làm tròn band, chuỗi ngày, tô câu sửa, nhận cụm đích
+python3 tools/validate_hoc.py       # định dạng bài học
 python3 tools/test_server.py       # ôn giãn cách, giai đoạn từ, thu hoạch từ, ngày nghỉ phép, giờ học
 python3 tools/calibrate.py         # so máy chấm Writing với band giám khảo trên bài mẫu chính thức
 ```

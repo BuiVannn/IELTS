@@ -48,4 +48,12 @@ for bad in [("music", 60), ("writing", 0), ("writing", 99999)]:
     except ValueError:
         pass
 assert server.clean_errors({"article": "2", "tense": -1, "x": 5})["article"] == 2
+st = server.update_state({"lesson": {"id": "w2-opinion", "quiz": "3/4"}})
+assert st["lessons"]["w2-opinion"]["quiz"] == "3/4"
+assert "w2-opinion" not in server.update_state({"lesson": {"id": "w2-opinion", "done": False}})["lessons"]
+try:
+    server.update_state({"lesson": {"id": "../../server"}})
+    raise AssertionError("phải chặn id bài học lạ")
+except ValueError:
+    pass
 print("server OK")
