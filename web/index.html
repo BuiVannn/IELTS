@@ -82,6 +82,14 @@ body.mini .today{grid-template-columns:1fr;justify-items:center;padding:8px 0;bo
 .content{margin-left:var(--side);min-height:100vh}
 main{max-width:1120px;margin:0 auto;padding:28px 32px 96px}
 .tabbar{display:none}
+.clock{position:fixed;right:16px;bottom:16px;z-index:25;display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);box-shadow:0 2px 10px rgb(0 0 0/.08);font-size:12px;color:var(--mute)}
+.clock b{font:600 14px var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.clock i{width:8px;height:8px;border-radius:50%;background:var(--line-2)}
+.clock.on i{background:var(--brand);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.clock.on i{animation:none}}
+@media (max-width:900px){.clock{bottom:calc(76px + env(safe-area-inset-bottom))}.clock span{display:none}}
+body.focus .clock{bottom:16px}
 @media (max-width:900px){
   .side{display:none}.content{margin-left:0}main{padding:18px 16px 96px}
   .tabbar{display:flex;position:fixed;inset:auto 0 0 0;background:var(--surface);border-top:1px solid var(--line);z-index:20;padding-bottom:env(safe-area-inset-bottom)}
@@ -401,6 +409,7 @@ textarea.essay{font:17px/1.75 var(--read)}
   <div class="today" id="countdown"></div>
 </aside>
 <div class="content"><main id="app" tabindex="-1"></main></div>
+<div id="clock" class="clock" role="timer" aria-live="off" hidden></div>
 <nav class="tabbar" id="tabbar" aria-label="Điều hướng"></nav>
 <script>
 const TARGET = {writing: 7, speaking: 7, reading: 7};
@@ -505,9 +514,22 @@ const fmtMin = sec => sec >= 3600 ? `${(sec / 3600).toFixed(1).replace('.', ',')
 const track = {skill: null, sec: 0, last: Date.now()};
 ['keydown', 'pointerdown', 'pointermove', 'wheel', 'input'].forEach(e => addEventListener(e, () => track.last = Date.now(), {passive: true}));
 setInterval(() => {
-  if (track.skill && document.visibilityState === 'visible' && (Date.now() - track.last < 120000 || timerInt)) track.sec++;
+  track.on = !!track.skill && document.visibilityState === 'visible' && (Date.now() - track.last < 120000 || !!timerInt);
+  if (track.on) track.sec++;
   if (track.sec >= 60) flushStudy();
+  tickClock();
 }, 1000);
+const fmtClock = s => { const h = Math.floor(s / 3600), m = Math.floor(s / 60) % 60, x = String(s % 60).padStart(2, '0');
+  return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; };
+/* đồng hồ học hôm nay chạy từng giây: thanh bên + chip nổi (hiện cả khi thanh bên ẩn: điện thoại, chế độ làm bài) */
+function tickClock(){
+  const sec = daySec(STUDY, todayIso()) + track.sec, goal = (set().daily_min || 75) * 60, C = 2 * Math.PI * 18;
+  const live = $('#tdLive'); if (live) live.textContent = fmtClock(sec);
+  $('#tdRing')?.setAttribute('stroke-dashoffset', C * (1 - Math.min(1, sec / goal)));
+  const c = $('#clock'); c.hidden = !track.skill; if (c.hidden) return;
+  c.classList.toggle('on', track.on);
+  c.innerHTML = `<i></i><b>${fmtClock(sec)}</b><span>${track.on ? 'đang tính giờ' : 'tạm dừng · thao tác để tiếp tục'}</span>`;
+}
 function flushStudy(beacon){
   if (!track.sec || !track.skill) return;
   const d = todayIso(), body = JSON.stringify({skill: track.skill, sec: track.sec});
@@ -578,8 +600,8 @@ function shell(){
   $('#tabbar').innerHTML = NAV.map(([k, i, l, sh]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${sh || l}</a>`).join('');
   const left = ex ? Math.round((new Date(ex + 'T00:00') - new Date(t + 'T00:00')) / 864e5) : null, sec = daySec(STUDY, t), goal = set().daily_min * 60, C = 2 * Math.PI * 18;
   $('#countdown').innerHTML = `<svg class="rg" viewBox="0 0 44 44" role="img" aria-label="Hôm nay ${Math.round(sec / 60)}/${set().daily_min} phút"><circle cx="22" cy="22" r="18" stroke="var(--line)"/>
-      <circle cx="22" cy="22" r="18" stroke="var(--brand)" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - Math.min(1, sec / goal))}"/></svg>
-    <div class="tx"><span><b>${Math.round(sec / 60)}</b>/${set().daily_min} phút hôm nay</span><span class="fl">${ic('flame')}${st} ngày liên tiếp</span>
+      <circle id="tdRing" cx="22" cy="22" r="18" stroke="var(--brand)" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - Math.min(1, sec / goal))}"/></svg>
+    <div class="tx"><span><b id="tdLive">${fmtClock(sec + track.sec)}</b> / ${set().daily_min} phút hôm nay</span><span class="fl">${ic('flame')}${st} ngày liên tiếp</span>
       <span>${left != null && left >= 0 ? `Còn ${left} ngày tới ngày thi` : 'Chưa chốt ngày thi'}</span></div>`;
   $('#countdown').title = `Hôm nay ${Math.round(sec / 60)}/${set().daily_min} phút · ${st} ngày liên tiếp`;
   $('#tog').innerHTML = ic(document.body.classList.contains('mini') ? 'panel-left-open' : 'panel-left-close');
@@ -595,6 +617,10 @@ $('#nav').addEventListener('pointerover', e => { const a = e.target.closest('a[d
   const r = a.getBoundingClientRect(); sideTip.textContent = a.dataset.tip; sideTip.hidden = false; sideTip.style.left = r.right + 10 + 'px'; sideTip.style.top = r.top + r.height / 2 - 13 + 'px'; });
 $('#nav').addEventListener('pointerout', () => sideTip.hidden = true);
 window.addEventListener('hashchange', route);
+/* tải lại trang (F5) vẫn về đúng chỗ đang đọc: nhớ vị trí cuộn trong tab này */
+history.scrollRestoration = 'manual';
+let scrollSave, firstRoute = true;
+addEventListener('scroll', () => { clearTimeout(scrollSave); scrollSave = setTimeout(() => { try { sessionStorage.setItem('scroll', JSON.stringify({h: location.hash, y: scrollY})); } catch {} }, 200); }, {passive: true});
 async function route(){
   const [, page, a] = location.hash.split('/');
   stopAll(); flushStudy(); CHARTS.forEach(c => c.destroy()); CHARTS = [];
@@ -618,6 +644,8 @@ async function route(){
   else if (page === 'bai' || page === 'chu-de') await lessonPage(decodeURIComponent(a));
   else home();
   icons();
+  if (firstRoute) { firstRoute = false; let sv = null; try { sv = JSON.parse(sessionStorage.getItem('scroll')); } catch {}
+    if (sv?.h === location.hash && sv.y) requestAnimationFrame(() => window.scrollTo(0, sv.y)); }
 }
 
 /* ---------- tổng quan ---------- */
