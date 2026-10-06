@@ -1,5 +1,7 @@
 """Web luyện IELTS Academic — chạy: python3 server.py  → mở http://localhost:8766
 Stdlib only. Chấm Writing/Speaking bằng Claude Code CLI local (`claude -p`)."""
+import base64
+import hmac
 import json
 import math
 import mimetypes
@@ -457,7 +459,35 @@ def vocab_list():
     return cards
 
 
+PASS_FILE = ROOT / ".matkhau"
+
+
+def authorized(headers):
+    """Máy mình (localhost) vào thẳng; qua Cloudflare Tunnel (có Cf-Connecting-IP) phải nhập mật khẩu trong .matkhau."""
+    if "Cf-Connecting-IP" not in headers:
+        return True
+    pw = PASS_FILE.read_text().strip() if PASS_FILE.exists() else ""
+    if not pw:
+        return False
+    try:
+        given = base64.b64decode(headers.get("Authorization", "")[6:]).decode().split(":", 1)[1]
+    except Exception:
+        return False
+    return hmac.compare_digest(given.encode(), pw.encode())
+
+
 class Handler(SimpleHTTPRequestHandler):
+    def parse_request(self):
+        if not super().parse_request():
+            return False
+        if authorized(self.headers):
+            return True
+        self.send_response(401)
+        self.send_header("WWW-Authenticate", 'Basic realm="IELTS"')
+        self.send_header("Content-Length", "0")
+        self.end_headers()
+        return False
+
     def send_json(self, data, code=200):
         body = json.dumps(data, ensure_ascii=False).encode()
         self.send_response(code)

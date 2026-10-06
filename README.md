@@ -81,3 +81,11 @@ python3 tools/validate_hoc.py       # định dạng bài học
 python3 tools/test_server.py       # ôn giãn cách, giai đoạn từ, thu hoạch từ, ngày nghỉ phép, giờ học
 python3 tools/calibrate.py         # so máy chấm Writing với band giám khảo trên bài mẫu chính thức
 ```
+
+## Mở từ điện thoại / máy khác (Cloudflare Tunnel)
+
+Cần Mac bật và `python3 server.py` đang chạy.
+
+1. Đặt mật khẩu một lần: `echo 'mat-khau-cua-ban' > .matkhau` (file này không lên git).
+2. Chạy `./tunnel.sh` → in ra link `https://….trycloudflare.com/web/`. Link đổi mỗi lần chạy; Ctrl+C để tắt.
+3. Mở link, nhập mật khẩu (tên đăng nhập gõ gì cũng được). Truy cập qua tunnel mà chưa có `.matkhau` sẽ bị chặn hết; `localhost` vẫn vào thẳng.

@@ -56,4 +56,12 @@ try:
     raise AssertionError("phải chặn id bài học lạ")
 except ValueError:
     pass
+import base64
+server.PASS_FILE = tmp / ".matkhau"
+basic = lambda pw: {"Cf-Connecting-IP": "1.2.3.4", "Authorization": "Basic " + base64.b64encode(f"u:{pw}".encode()).decode()}
+assert server.authorized({})  # localhost
+assert not server.authorized(basic("x"))  # tunnel mà chưa đặt mật khẩu → chặn
+server.PASS_FILE.write_text("bi-mat\n")
+assert server.authorized(basic("bi-mat")) and not server.authorized(basic("sai"))
+assert not server.authorized({"Cf-Connecting-IP": "1.2.3.4"})
 print("server OK")
