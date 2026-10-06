@@ -33,3 +33,16 @@ eq(diffLines('- ❌ `Art help students` → ✅ `Art helps students` — chia đ
 eq(diffLines('1. ❌ *a big amount of*\n→ ✅ *a large amount of*\n— collocation'), '1. <span class="fix">a <del>big</del> <ins>large</ins> amount of</span> <span class="why">collocation</span>', 'sửa lỗi xuống dòng, in nghiêng');
 eq(diffLines('- ❌ a well-known fact → ✅ a widely known fact'), '- <span class="fix">a <del>well-known</del> <ins>widely known</ins> fact</span>', 'gạch nối trong câu');
 console.log('scoring OK');
+
+/* chấm đề Reading trên web: completion nhiều cách viết, mcq2 thứ tự nào cũng được, làm 1 passage chỉ chấm passage đó */
+const code3 = ['RL_ALIAS', 'normAns', 'isRight', 'RT_TYPE', 'rtNums', 'rtScore'].map(grab).join('\n');
+const {rtScore} = new Function(code3 + '\nreturn {rtScore};')();
+const T = {passages: [{groups: [{type: 'tfng', questions: [{n: 1}]}, {type: 'mcq2', questions: [{n: [2, 3]}]}]}, {groups: [{type: 'sentence', questions: [{n: 4}]}]}],
+  answers: {1: 'NOT GIVEN', 2: 'B', 3: 'D', 4: 'riser pipe/a riser pipe'}};
+const ok = rows => rows.filter(r => r.ok).map(r => r.n).join();
+eq(ok(rtScore(T, 0, {1: 'not given', 2: 'D,B', 4: 'A riser pipe.'})), '1,2,3,4', 'đủ đúng');
+eq(ok(rtScore(T, 0, {2: 'B,C'})), '2', 'mcq2 đúng 1/2');
+eq(rtScore(T, 2, {4: 'x'}).length, 1, 'chỉ passage 2');
+eq(rtScore(T, 0, {}).find(r => r.n === 2).type, 'Multiple choice', 'gắn dạng câu');
+
+console.log('reading web OK');

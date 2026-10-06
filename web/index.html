@@ -399,6 +399,74 @@ textarea.essay{font:17px/1.75 var(--read)}
 .form3 input{height:38px;border:1px solid var(--line-2);border-radius:8px;background:var(--surface);padding:0 10px;min-width:0}
 @media (max-width:760px){.form3{grid-template-columns:1fr}}
 @media print{.side,.tabbar,.fbar,.panel,.noprint{display:none!important}.content{margin:0}}
+/* Reading thi trên máy */
+.rtl{display:grid;gap:14px}
+.rtc{display:grid;gap:12px}
+.rtp{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.rtp li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;align-items:center;padding:8px 10px;border:1px solid var(--line);border-radius:9px}
+.rtp li .small{grid-column:1}.rtp li .btn{grid-row:1/3;grid-column:2}
+.btn.sm{height:32px;padding:0 10px;font-size:13px}
+.rt{position:fixed;inset:0;display:flex;flex-direction:column;background:var(--paper);z-index:30}
+.rt-top{display:flex;align-items:center;gap:10px;padding:8px 16px;border-bottom:1px solid var(--line);background:var(--surface)}
+.rt .timer{white-space:nowrap;flex:none}.rt-top .btn{flex:none}
+.rt-title{min-width:0;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rt-score{font-size:14px}.rt-score b{font:600 20px var(--mono);color:var(--brand)}
+.rt-part{display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--surface-2);border-bottom:1px solid var(--line);font-size:14px}
+.rt-tg{margin-left:auto;display:none}
+.rt-sumres{display:flex;flex-wrap:wrap;gap:6px 14px;padding:8px 16px;font-size:12.5px;border-bottom:1px solid var(--line);background:var(--surface)}
+.rt-split{display:grid;grid-template-columns:minmax(0,1fr) 6px minmax(0,1fr);min-height:0;flex:1}
+.rt-pass,.rt-qs{overflow:auto;padding:20px 24px 40px;min-width:0}
+.rt-pass{font-size:16px;line-height:1.75;color:var(--ink)}
+.rt-pass h2{font-size:21px;margin:0 0 14px}
+.rt-pass p{margin:0 0 14px}.rt-intro{font-style:italic;color:var(--ink-2)}
+.rt-lab{display:inline-block;min-width:22px;margin-right:8px;font-weight:700}
+.rt-drag{background:var(--line);cursor:col-resize;touch-action:none}.rt-drag:hover{background:var(--brand)}
+mark.rt-mark{background:#FFE58A;color:inherit;cursor:pointer;border-radius:2px}
+mark.ev{background:#FFD24D;color:#1a1a1a;outline:2px solid #E0A800;border-radius:2px}
+.rt-hl{position:fixed;z-index:40;display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:8px;border:0;background:var(--ink);color:var(--paper);font:600 13px var(--ui);cursor:pointer}
+.rt-hl svg{width:15px;height:15px}
+.rt-g{margin-bottom:28px}
+.rt-g h3{font-size:16px;margin:0 0 6px}
+.rt-ins{font-size:14px;color:var(--ink-2);margin:0 0 8px}
+.rt-q{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.rt-q p{margin:0 0 6px;font-size:15px;line-height:1.6}
+.rt-n{min-width:28px;height:26px;padding:0 6px;border-radius:6px;border:1.5px solid var(--ink-2);display:grid;place-items:center;font:600 13px var(--mono)}
+.rt-rad{display:grid;gap:4px}
+.rt-rad label{display:flex;gap:8px;align-items:flex-start;font-size:14.5px;padding:5px 8px;border-radius:7px;cursor:pointer}
+.rt-rad label:hover{background:var(--surface-2)}
+.rt-rad input{margin-top:4px;accent-color:var(--brand)}
+.rt-sel{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:15px}
+.rt-in{font:15px var(--ui);height:32px;padding:0 8px;border:1.5px solid var(--line-2);border-radius:6px;background:var(--surface);color:var(--ink);min-width:0;width:150px;vertical-align:middle}
+select.rt-in{width:auto;min-width:72px}
+.rt-in:focus{outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
+.rt-in:disabled{opacity:1;background:var(--surface-2)}
+.rt-opts{border:1px solid var(--line);border-radius:9px;padding:10px 12px;margin:6px 0 10px;display:grid;gap:4px;font-size:14.5px;background:var(--surface)}
+.rt-opts>div{display:grid;grid-template-columns:34px minmax(0,1fr);gap:6px}
+.rt-opts.cols{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.rt-sum{border:1px solid var(--line);border-radius:9px;padding:12px 16px;background:var(--surface);font-size:15px;line-height:2.1}
+.rt-sum h4{margin:4px 0;font-size:15px;line-height:1.5}.rt-sum p{margin:0}.rt-sum .li{padding-left:16px;text-indent:-12px}.rt-sum .li::before{content:'•  '}
+.rt-tab{border-collapse:collapse;width:100%;font-size:14px;line-height:1.6}.rt-tab th,.rt-tab td{border:1px solid var(--line-2);padding:6px 8px;text-align:left;vertical-align:top}.rt-tab th{background:var(--surface-2)}
+.rt-tab .rt-in{width:110px}
+.rt-mk{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.rt-mk svg{width:13px;height:13px}.rt-mk.ok{background:var(--ok-soft);color:var(--ok)}.rt-mk.no{background:var(--bad-soft);color:var(--bad)}
+.rt-why{font-size:13.5px;line-height:1.55;color:var(--ink-2);background:var(--surface-2);border-radius:8px;padding:8px 10px;margin-top:6px}
+.rt-why .lnk{display:inline-flex;align-items:center;gap:4px;border:0;background:none;color:var(--brand);font:600 13px var(--ui);cursor:pointer;padding:0}
+.rt-why .lnk svg{width:13px;height:13px}
+.rt-nav{display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--line);background:var(--surface);overflow-x:auto}
+.rt-pn{display:flex;align-items:center;gap:8px;flex:none}
+.rt-pl{border:0;background:none;font:700 13px var(--ui);color:var(--ink);cursor:pointer;padding:6px}
+.rt-nums{display:flex;gap:3px}
+.rt-nums button{min-width:30px;height:30px;border-radius:6px;border:1px solid var(--line-2);background:var(--surface);font:600 12px var(--mono);color:var(--ink);cursor:pointer}
+.rt-nums button.a{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.rt-nums button.ok{background:var(--ok-soft);color:var(--ok);border-color:var(--ok)}
+.rt-nums button.no{background:var(--bad-soft);color:var(--bad);border-color:var(--bad)}
+@media (max-width:900px){
+  .rt-split{grid-template-columns:minmax(0,1fr)!important}.rt-drag{display:none}
+  .rt .rt-qs{display:none}.rt.showq .rt-qs{display:block}.rt.showq .rt-pass{display:none}
+  .rt-tg{display:flex}.rt-part>span:not(.rt-tg){display:none}
+  .rt-pass,.rt-qs{padding:16px 16px 32px}.hide-s{display:none}
+  .rt-top{padding:8px 10px}
+}
 </style>
 </head>
 <body>
@@ -494,7 +562,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const ic = (n, cls='') => `<i data-lucide="${n}" class="${cls}" aria-hidden="true"></i>`;
 const icons = () => window.lucide?.createIcons();
 const app = $('#app');
-let ITEMS = [], ATTEMPTS = [], RLLOG = [], STUDY = {}, STATE = {settings: {}, checks: {}, freezes: [], lessons: {}}, VOCAB = [], LESSONS = [];
+let READING = [], ITEMS = [], ATTEMPTS = [], RLLOG = [], STUDY = {}, STATE = {settings: {}, checks: {}, freezes: [], lessons: {}}, VOCAB = [], LESSONS = [];
 function safeGet(k){ try { return localStorage.getItem(k) } catch { return null } }
 function safeSet(k, v){ try { localStorage.setItem(k, v) } catch {} }
 const ui = Object.assign({key:false, hideDone:false, wgroup:'qtype', q:''}, JSON.parse(safeGet('ui2') || '{}'));
@@ -502,7 +570,7 @@ const saveUi = () => safeSet('ui2', JSON.stringify(ui));
 const isKey = x => x.hot === 'true';
 function toast(msg, ms=3200){ const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role','status'); t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), ms); }
 
-async function load(){ [ITEMS, ATTEMPTS, RLLOG, STUDY, STATE, VOCAB, LESSONS] = await Promise.all(['/api/items', '/api/attempts', '/api/rl', '/api/study', '/api/state', '/api/vocab', '/api/lessons'].map(u => fetch(u).then(r => r.json()))); }
+async function load(){ [ITEMS, ATTEMPTS, RLLOG, STUDY, STATE, VOCAB, LESSONS, READING] = await Promise.all(['/api/items', '/api/attempts', '/api/rl', '/api/study', '/api/state', '/api/vocab', '/api/lessons', '/api/reading'].map(u => fetch(u).then(r => r.json()))); }
 async function api(url, data){ const r = await fetch(url, {method: 'POST', body: JSON.stringify(data)}).then(r => r.json()); if (r.error) throw new Error(r.error); return r; }
 const todayIso = () => iso(new Date());
 const set = () => STATE.settings;
@@ -628,14 +696,14 @@ async function route(){
   track.skill = page === 'de' ? ITEMS.find(x => x.id === decodeURIComponent(a))?.skill || null : page === 'reading' ? 'reading'
     : page === 'tu-vung' ? 'vocab' : page === 'thi-thu' && a === 'run' ? 'speaking' : page === 'chu-de' ? 'vocab'
     : page === 'bai' ? LESSON_SKILL[LESSONS.find(l => l.id === a)?.skill] || null : null;
-  document.body.classList.toggle('focus', page === 'de' || (page === 'thi-thu' && a === 'run'));
+  document.body.classList.toggle('focus', page === 'de' || (page === 'thi-thu' && a === 'run') || (page === 'reading' && !!a && a !== 'nhap'));
   shell();
   window.scrollTo(0, 0);
   if (page === 'writing') listWriting(+a || 1);
   else if (page === 'speaking') listSpeaking(+a || 1);
   else if (page === 'de') await exam(decodeURIComponent(a));
   else if (page === 'thi-thu') await (a === 'run' ? runMock() : a === 'review' ? reviewMock() : mockHome());
-  else if (page === 'reading') rlPage('reading');
+  else if (page === 'reading') await (a === 'nhap' ? rlPage('reading') : a ? readingTest(decodeURIComponent(a), location.hash.split('/')[3]) : readingHome());
   else if (page === 'tai-lieu') docsHome();
   else if (page === 'doc') await docPage(decodeURIComponent(location.hash.slice(6)));
   else if (page === 'lich-su') history();
@@ -693,7 +761,7 @@ function task(k, d){
     w2: () => ({label: 'Writing Task 2 · 40 phút', href: link(x => x.skill === 'writing' && x.part == 2, '#/writing/2'), est: 45, auto: doneOn(d, a => a.skill === 'writing' && a.part == 2)}),
     s1: () => ({label: 'Speaking Part 1 · 1 chủ đề, dùng từ đích', href: link(x => x.skill === 'speaking' && x.part == 1, '#/speaking/1'), est: 10, auto: doneOn(d, a => a.skill === 'speaking' && a.part == 1)}),
     s2: () => ({label: 'Speaking Part 2 + 3 · 1 cue card', href: link(x => x.skill === 'speaking' && x.part == 2, '#/speaking/2'), est: 15, auto: doneOn(d, a => a.skill === 'speaking' && a.part == 2)}),
-    reading: () => ({label: 'Reading · 1 passage hoặc 1 đề Cambridge, nhập đáp án', href: '#/reading', est: 25, auto: RLLOG.some(e => dayOf(e) === d)}),
+    reading: () => ({label: 'Reading · 1 passage 20 phút làm trên web', href: '#/reading', est: 25, auto: RLLOG.some(e => dayOf(e) === d)}),
     mock: () => ({label: 'Thi thử Speaking · 13 phút', href: '#/thi-thu', est: 20, auto: doneOn(d, a => a.id === 'MOCK-speaking')}),
     review: () => ({label: 'Xem lại lỗi lặp lại trong tuần', href: '#/tien-do', est: 15, auto: false}),
     listening: () => ({label: 'Listening tự ôn ngoài web (ghi phút)', href: null, est: 30, auto: (STUDY[d]?.listening || 0) > 0}),
@@ -1749,7 +1817,7 @@ function rlPage(skill){
   const dkey = 'rl:' + skill, D = JSON.parse(safeGet(dkey) || 'null') || {source: '', rows: Array.from({length: 40}, () => ({a: '', k: '', t: ''}))};
   const save = () => safeSet(dkey, JSON.stringify(D));
   const past = RLLOG.filter(e => e.skill === skill).reverse();
-  app.innerHTML = `<h1>Reading</h1><p class="sub">Làm đề trong sách Cambridge của bạn (bấm giờ ngay trên trang này để thời gian làm bài được tính vào giờ học), rồi nhập đáp án của bạn và đáp án đúng ở đây. Làm 1 passage cũng được: chỉ nhập các câu đã làm. Web tự chấm, quy ra band và thống kê bạn mất điểm ở dạng câu nào.</p>
+  app.innerHTML = `<p class="small" style="margin:0 0 8px"><a href="#/reading">${ic('arrow-left')} Reading</a></p><h1>Nhập đáp án đề sách giấy</h1><p class="sub">Làm đề trong sách Cambridge của bạn (bấm giờ ngay trên trang này để thời gian làm bài được tính vào giờ học), rồi nhập đáp án của bạn và đáp án đúng ở đây. Làm 1 passage cũng được: chỉ nhập các câu đã làm. Web tự chấm, quy ra band và thống kê bạn mất điểm ở dạng câu nào.</p>
     <div class="card pad">
       <div class="row wrap" style="gap:10px;margin-bottom:12px"><label class="small mute" for="src">Đề</label>
         <input id="src" class="sel" style="flex:1;min-width:200px" placeholder="Ví dụ: Cambridge 18 · Test 2" value="${esc(D.source)}">
@@ -1798,6 +1866,175 @@ function rlPage(skill){
     toast(`Đã lưu: ${raw}/40 · band ${band}`);
   };
   live();
+}
+
+/* ---------- Reading thi trên máy: đề reading/de/*.json, giao diện như computer-delivered IELTS ---------- */
+const RT_TYPE = {tfng: 'True / False / Not Given', ynng: 'Yes / No / Not Given', headings: 'Matching headings', 'match-info': 'Matching information',
+  'match-features': 'Matching features', endings: 'Matching sentence endings', mcq: 'Multiple choice', mcq2: 'Multiple choice',
+  sentence: 'Sentence completion', summary: 'Summary / note / table completion', short: 'Short answer'};
+const RT_RANGE = [[1, 13], [14, 26], [27, 40]];
+const rtNums = q => Array.isArray(q.n) ? q.n : [q.n];
+const rtKey = (id, part) => `rt:${id}:${part || 'all'}`;
+function rtLoad(id, part){ try { return JSON.parse(safeGet(rtKey(id, part))) || null; } catch { return null; } }
+/* chấm: completion so khớp normAns với mọi cách viết; mcq2 = giao 2 tập chữ cái, thứ tự nào cũng được */
+const rtScore = (T, part, A) => {
+  const rows = [];
+  T.passages.forEach((p, pi) => { if (part && pi !== part - 1) return;
+    p.groups.forEach(g => g.questions.forEach(q => {
+      if (g.type === 'mcq2') { const [n1, n2] = rtNums(q), keys = [T.answers[n1], T.answers[n2]], got = (A[n1] || '').split(',').filter(Boolean);
+        const hit = got.filter(x => keys.includes(x)).length;
+        [n1, n2].forEach((n, i) => rows.push({n, ans: got[i] || '', key: T.answers[n], type: RT_TYPE[g.type], ok: i < hit}));
+      } else rtNums(q).forEach(n => rows.push({n, ans: A[n] || '', key: T.answers[n], type: RT_TYPE[g.type], ok: isRight(A[n], T.answers[n])}));
+    })); });
+  return rows.sort((a, b) => a.n - b.n);
+};
+function readingHome(){
+  const last = id => RLLOG.filter(e => e.test === id).at(-1);
+  app.innerHTML = `<h1>Reading</h1><p class="sub">Làm đề trực tiếp như thi trên máy: bài đọc bên trái, câu hỏi bên phải, đồng hồ đếm ngược, nộp là chấm ngay kèm giải thích từng câu và chỗ có đáp án trong bài. Mới học: làm từng passage 20 phút. Gần thi: làm cả đề 60 phút liền.</p>
+    <div class="section"><div class="rtl">${READING.map(t => { const l = last(t.id);
+      return `<div class="card pad rtc"><div class="row" style="justify-content:space-between;align-items:baseline"><h2 style="margin:0">${esc(t.title)}</h2>${l ? `<span class="badge ${l.band >= 7 ? 'ok' : 'warn'}">Lần gần nhất: ${esc(l.band)} · ${esc(l.raw)}/${esc(l.keyed || 40)}</span>` : '<span class="small mute">Chưa làm</span>'}</div>
+        <ol class="rtp">${t.passages.map((p, i) => { const lp = RLLOG.filter(e => e.test === t.id && e.part == i + 1).at(-1);
+          return `<li><span><b>Passage ${i + 1}</b> · ${esc(p)}</span><span class="small mute">${t.types[i].map(x => RT_TYPE[x]).filter((x, j, a) => a.indexOf(x) === j).join(' · ')}</span>
+            <a class="btn sm" href="#/reading/${t.id}/${i + 1}">${lp ? `${lp.raw}/${lp.keyed} · làm lại` : '20′'}</a></li>`; }).join('')}</ol>
+        <a class="btn primary" href="#/reading/${t.id}">${ic('timer')}Làm cả đề · 60 phút · 40 câu</a></div>`; }).join('') || '<div class="card pad mute">Chưa có đề nào trong reading/de/.</div>'}</div></div>
+    <div class="section"><a class="btn ghost" href="#/reading/nhap">${ic('notebook-pen')}Làm đề sách giấy (Cambridge)? Nhập đáp án để chấm</a></div>`;
+}
+async function readingTest(id, part){
+  part = +part || 0;
+  const T = await fetch(`/reading/de/${encodeURIComponent(id)}.json`).then(r => r.ok ? r.json() : null);
+  if (!T) { app.innerHTML = '<div class="card pad">Không tìm thấy đề.</div>'; return; }
+  const parts = part ? [part - 1] : [0, 1, 2], sec = part ? 20 * 60 : 60 * 60;
+  let D = rtLoad(id, part) || {ans: {}, left: sec, done: null};
+  const save = () => safeSet(rtKey(id, part), JSON.stringify(D));
+  let cur = parts[0], showQ = false;
+  const qNums = pi => { const [a, b] = RT_RANGE[pi]; return Array.from({length: b - a + 1}, (_, i) => a + i); };
+  const done = () => D.done;
+  const res = () => done() && Object.fromEntries(D.done.rows.map(r => [r.n, r]));
+  const field = (n, html) => { const r = res()?.[n]; if (!r) return html; const mk = `<span class="rt-mk ${r.ok ? 'ok' : 'no'}">${ic(r.ok ? 'check' : 'x')}</span>`;
+    return html.startsWith('<p>') ? '<p>' + mk + html.slice(3) : mk + html; };
+  const ans = n => esc(D.ans[n] || '');
+  const ro = () => done() ? 'disabled' : '';
+  const inputGap = (n, opts) => opts?.length ? `<select class="rt-in" data-n="${n}" id="q${n}" ${ro()} aria-label="Câu ${n}"><option value="">${n}</option>${opts.map(o => `<option ${D.ans[n] === o.key ? 'selected' : ''}>${esc(o.key)}</option>`).join('')}</select>`
+    : `<input class="rt-in" data-n="${n}" id="q${n}" value="${ans(n)}" placeholder="${n}" autocomplete="off" spellcheck="false" autocapitalize="off" ${ro()} aria-label="Câu ${n}">`;
+  const review = n => { const r = res()?.[n]; if (!r) return ''; const e = T.explain[n] || {};
+    return `<div class="rt-why"><b>${r.ok ? 'Đúng' : `Đáp án: ${esc(String(r.key).split('/').join(' / '))}`}</b>${!r.ok && r.ans ? ` <span class="mute">(bạn: ${esc(r.ans)})</span>` : ''} · ${esc(e.why || '')}
+      ${e.quote ? ` <button class="lnk" data-ev="${n}">${ic('search')}Xem trong bài</button>` : ''}</div>`; };
+  const optList = g => g.options?.length && !(g.type === 'match-info') ? `<div class="rt-opts">${g.type === 'headings' ? '<b>List of Headings</b>' : ''}${g.options.map(o => `<div><b>${esc(o.key)}</b><span>${esc(o.text)}</span></div>`).join('')}</div>` : '';
+  const radios = (n, vals) => `<div class="rt-rad">${vals.map(([v, l]) => `<label><input type="radio" name="r${n}" value="${esc(v)}" data-n="${n}" ${D.ans[n] === v ? 'checked' : ''} ${ro()}><span>${l ? `<b>${esc(v)}</b> ${esc(l)}` : esc(v)}</span></label>`).join('')}</div>`;
+  const gapText = (txt, g) => esc(txt).replace(/\{(\d+)\}/g, (_, n) => field(+n, inputGap(+n, g.options)));
+  function groupHtml(g){
+    const ns = g.questions.flatMap(rtNums), lim = g.limit && !(g.instructions || '').toUpperCase().includes(g.limit) ? `<p class="rt-ins">Write <b>${esc(g.limit)}</b> from the passage for each answer.</p>` : '';
+    let body = '';
+    if (g.type === 'tfng' || g.type === 'ynng') body = g.questions.map(q => `<div class="rt-q" id="w${q.n}"><span class="rt-n">${q.n}</span><div>${field(q.n, `<p>${esc(q.text)}</p>`)}${radios(q.n, (g.type === 'tfng' ? ['TRUE', 'FALSE', 'NOT GIVEN'] : ['YES', 'NO', 'NOT GIVEN']).map(v => [v]))}${review(q.n)}</div></div>`).join('');
+    else if (['headings', 'match-info', 'match-features', 'endings'].includes(g.type)) body = optList(g) + g.questions.map(q => `<div class="rt-q" id="w${q.n}"><span class="rt-n">${q.n}</span><div><div class="rt-sel">${field(q.n, `<span>${esc(q.text)}</span>`)}${inputGap(q.n, g.options)}</div>${review(q.n)}</div></div>`).join('');
+    else if (g.type === 'mcq') body = g.questions.map(q => `<div class="rt-q" id="w${q.n}"><span class="rt-n">${q.n}</span><div>${field(q.n, `<p>${esc(q.text)}</p>`)}${radios(q.n, q.options.map(o => [o.key, o.text]))}${review(q.n)}</div></div>`).join('');
+    else if (g.type === 'mcq2') body = g.questions.map(q => { const [n1, n2] = rtNums(q), got = (D.ans[n1] || '').split(',');
+      return `<div class="rt-q" id="w${n1}"><span class="rt-n">${n1}–${n2}</span><div><p>${esc(q.text)}</p><div class="rt-rad">${q.options.map(o => `<label><input type="checkbox" value="${esc(o.key)}" data-m2="${n1},${n2}" ${got.includes(o.key) ? 'checked' : ''} ${ro()}><span><b>${esc(o.key)}</b> ${esc(o.text)}</span></label>`).join('')}</div>${review(n1)}${review(n2)}</div></div>`; }).join('');
+    else if (g.type === 'sentence') body = g.questions.map(q => `<div class="rt-q" id="w${q.n}"><span class="rt-n">${q.n}</span><div><p>${field(q.n, esc(q.text).replace('___', inputGap(q.n)))}</p>${review(q.n)}</div></div>`).join('');
+    else if (g.type === 'short') body = g.questions.map(q => `<div class="rt-q" id="w${q.n}"><span class="rt-n">${q.n}</span><div><p>${esc(q.text)}</p>${field(q.n, inputGap(q.n))}${review(q.n)}</div></div>`).join('');
+    else if (g.type === 'summary') {
+      const box = g.options?.length ? `<div class="rt-opts cols">${g.options.map(o => `<div><b>${esc(o.key)}</b><span>${esc(o.text)}</span></div>`).join('')}</div>` : '';
+      const sheet = g.table ? `<table class="rt-tab">${g.table.map((row, i) => `<tr>${row.map(c => i ? `<td>${gapText(c, g)}</td>` : `<th>${esc(c)}</th>`).join('')}</tr>`).join('')}</table>`
+        : (g.text || '').split('\n').map(l => l.startsWith('## ') ? `<h4>${esc(l.slice(3))}</h4>` : l.startsWith('- ') ? `<p class="li">${gapText(l.slice(2), g)}</p>` : l.trim() ? `<p>${gapText(l, g)}</p>` : '').join('');
+      body = `<div class="rt-sum">${g.title ? `<h4>${esc(g.title)}</h4>` : ''}${sheet}</div>${box}${done() ? ns.map(n => `<div class="rt-q" id="w${n}"><span class="rt-n">${n}</span><div>${review(n)}</div></div>`).join('') : ns.map(n => `<span id="w${n}"></span>`).join('')}`;
+    }
+    return `<section class="rt-g"><h3>Questions ${ns[0]}–${ns.at(-1)}</h3><p class="rt-ins">${esc(g.instructions)}</p>${g.note ? `<p class="rt-ins"><i>${esc(g.note)}</i></p>` : ''}${lim}${body}</section>`;
+  }
+  const isAns = n => { if (D.ans[n]?.trim()) return true; const m2 = T.passages.flatMap(p => p.groups).filter(g => g.type === 'mcq2').flatMap(g => g.questions).find(q => rtNums(q).includes(n));
+    if (!m2) return false; const [n1, n2] = rtNums(m2), got = (D.ans[n1] || '').split(',').filter(Boolean); return got.length > (n === n1 ? 0 : 1); };
+  function nav(){
+    return parts.map(pi => { const ns = qNums(pi), k = ns.filter(isAns).length;
+      return `<div class="rt-pn ${pi === cur ? 'on' : ''}"><button class="rt-pl" data-part="${pi}">Part ${pi + 1}</button>${pi === cur ? `<span class="rt-nums">${ns.map(n => { const r = res()?.[n];
+        return `<button data-go="${n}" class="${r ? (r.ok ? 'ok' : 'no') : isAns(n) ? 'a' : ''}" aria-label="Câu ${n}">${n}</button>`; }).join('')}</span>` : `<span class="small mute">${done() ? `${ns.filter(n => res()[n]?.ok).length} / ${ns.length} đúng` : `${k} / ${ns.length}`}</span>`}</div>`; }).join('')
+      + `<span class="grow"></span><button class="btn icon" id="rtprev" aria-label="Câu trước">${ic('arrow-left')}</button><button class="btn icon primary" id="rtnext" aria-label="Câu sau">${ic('arrow-right')}</button>`;
+  }
+  function draw(){
+    const P = T.passages[cur], [a, b] = RT_RANGE[cur], S = D.done;
+    app.innerHTML = `<div class="rt ${showQ ? 'showq' : ''}">
+      <header class="rt-top"><a href="#/reading" class="btn ghost sm">${ic('x')}<span class="hide-s">Thoát</span></a><b class="rt-title">${esc(T.title)}${part ? ` · Passage ${part}` : ''}</b><span class="grow"></span>
+        ${S ? `<span class="rt-score"><b>${S.band}</b> band · ${S.raw}/${S.keyed} câu đúng</span><button class="btn sm" id="rtagain">${ic('rotate-ccw')}Làm lại</button>`
+          : `<span class="timer" id="rtt"></span><button class="btn primary sm" id="rtsub">${ic('send')}Nộp bài</button>`}</header>
+      <div class="rt-part"><b>Part ${cur + 1}</b><span>Read the text and answer questions ${a}–${b}.</span>
+        <span class="seg rt-tg" role="group"><button data-v="p" class="${showQ ? '' : 'on'}">Bài đọc</button><button data-v="q" class="${showQ ? 'on' : ''}">Câu hỏi</button></span></div>
+      ${S && cur === parts[0] ? `<div class="rt-sumres">${Object.entries(S.byType).sort((x, y) => x[1][0] / x[1][1] - y[1][0] / y[1][1]).map(([t, [ok, n]]) => `<span class="${ok / n >= .75 ? 'okc' : 'bad'}">${esc(t)} <b>${ok}/${n}</b></span>`).join('')}</div>` : ''}
+      <div class="rt-split" id="rtsplit"><article class="rt-pass" id="rtpass"><h2>${esc(P.title)}</h2>${P.intro ? `<p class="rt-intro">${esc(P.intro)}</p>` : ''}
+        ${P.paragraphs.map((x, i) => `<p data-pi="${i}">${x.label ? `<b class="rt-lab">${esc(x.label)}</b>` : ''}${esc(x.text)}</p>`).join('')}</article>
+        <div class="rt-drag" id="rtdrag" role="separator" aria-label="Kéo để đổi độ rộng"></div>
+        <div class="rt-qs" id="rtqs">${P.groups.map(groupHtml).join('')}</div></div>
+      <footer class="rt-nav">${nav()}</footer></div>
+      <button class="rt-hl" id="rthl" hidden>${ic('highlighter')}Tô sáng</button>`;
+    icons(); bind();
+    const sp = +safeGet('rt:split'); if (sp) $('#rtsplit').style.gridTemplateColumns = `minmax(0,${sp}fr) 6px minmax(0,${1 - sp}fr)`;
+  }
+  const setAns = (n, v) => { D.ans[n] = v; save(); $('.rt-nav').innerHTML = nav(); icons(); bindNav(); };
+  function go(n){ const pi = RT_RANGE.findIndex(([a, b]) => n >= a && n <= b); if (!parts.includes(pi)) return;
+    if (pi !== cur) { cur = pi; draw(); }
+    showQ = true; $('.rt').classList.add('showq'); const el = $('#q' + n) || app.querySelector(`[data-n="${n}"]`) || $('#w' + n) || app.querySelector(`[data-m2^="${n},"]`) || app.querySelector(`[data-m2$=",${n}"]`);
+    el?.scrollIntoView({block: 'center', behavior: 'smooth'}); el?.focus?.({preventScroll: true}); }
+  function bindNav(){
+    app.querySelectorAll('[data-go]').forEach(b => b.onclick = () => go(+b.dataset.go));
+    app.querySelectorAll('[data-part]').forEach(b => b.onclick = () => { cur = +b.dataset.part; draw(); });
+    const all = parts.flatMap(qNums), here = () => { const f = document.activeElement?.dataset?.n; return +f || qNums(cur)[0]; };
+    $('#rtprev').onclick = () => { const i = all.indexOf(here()); if (i > 0) go(all[i - 1]); };
+    $('#rtnext').onclick = () => { const i = all.indexOf(here()); if (i < all.length - 1) go(all[i + 1]); };
+  }
+  function bind(){
+    bindNav();
+    app.querySelectorAll('.rt-tg button').forEach(b => b.onclick = () => { showQ = b.dataset.v === 'q'; draw(); });
+    if (!done()) {
+      app.querySelectorAll('input.rt-in, select.rt-in').forEach(el => el.oninput = el.onchange = () => setAns(el.dataset.n, el.value));
+      app.querySelectorAll('input[type=radio][data-n]').forEach(el => el.onchange = () => setAns(el.dataset.n, el.value));
+      app.querySelectorAll('[data-m2]').forEach(el => el.onchange = () => { const [n1] = el.dataset.m2.split(','), boxes = [...app.querySelectorAll(`[data-m2="${el.dataset.m2}"]`)];
+        if (boxes.filter(x => x.checked).length > 2) { el.checked = false; return toast('Chỉ chọn HAI đáp án.'); }
+        setAns(n1, boxes.filter(x => x.checked).map(x => x.value).join(',')); });
+      $('#rtsub').onclick = () => { const left = parts.flatMap(qNums).filter(n => !isAns(n)).length;
+        if (!confirm(left ? `Còn ${left} câu chưa trả lời. Nộp bài?` : 'Nộp bài và chấm điểm?')) return; submit(); };
+    } else {
+      $('#rtagain').onclick = () => { if (!confirm('Xoá bài làm và kết quả để làm lại từ đầu?')) return; D = {ans: {}, left: sec, done: null}; save(); start(); };
+      app.querySelectorAll('[data-ev]').forEach(b => b.onclick = () => showEv(+b.dataset.ev));
+    }
+    /* kéo thanh giữa để đổi độ rộng hai cột (nhớ lựa chọn) */
+    $('#rtdrag').onpointerdown = e => { const sp = $('#rtsplit'), box = sp.getBoundingClientRect(); e.target.setPointerCapture(e.pointerId);
+      e.target.onpointermove = m => { const f = Math.min(.75, Math.max(.25, (m.clientX - box.left) / box.width)); sp.style.gridTemplateColumns = `minmax(0,${f}fr) 6px minmax(0,${1 - f}fr)`; safeSet('rt:split', f); };
+      e.target.onpointerup = () => e.target.onpointermove = null; };
+    /* bôi đen chữ trong bài đọc → nút Tô sáng; bấm vào chỗ đã tô để bỏ */
+    const pass = $('#rtpass'), hl = $('#rthl');
+    pass.onpointerup = () => setTimeout(() => { const s = getSelection(); if (s.isCollapsed || !pass.contains(s.anchorNode)) return hl.hidden = true;
+      const r = s.getRangeAt(0).getBoundingClientRect(); hl.hidden = false; hl.style.left = Math.max(8, r.left + r.width / 2 - 50) + 'px'; hl.style.top = Math.max(8, r.top - 44) + 'px'; }, 0);
+    hl.onpointerdown = e => { e.preventDefault(); const s = getSelection(); try { const m = document.createElement('mark'); m.className = 'rt-mark'; s.getRangeAt(0).surroundContents(m); } catch { toast('Chỉ tô được trong một đoạn.'); }
+      s.removeAllRanges(); hl.hidden = true; };
+    pass.onclick = e => { const m = e.target.closest('mark.rt-mark'); if (m) m.replaceWith(...m.childNodes); };
+  }
+  function showEv(n){
+    const q = (T.explain[n] || {}).quote, pi = RT_RANGE.findIndex(([a, b]) => n >= a && n <= b);
+    if (pi !== cur) { cur = pi; draw(); }
+    app.querySelectorAll('mark.ev').forEach(m => m.replaceWith(...m.childNodes));
+    const norm = s => s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"');
+    for (const p of app.querySelectorAll('#rtpass p[data-pi]')) {
+      const tn = [...p.childNodes].find(x => x.nodeType === 3 && norm(x.textContent).includes(norm(q))); if (!tn) continue;
+      const i = norm(tn.textContent).indexOf(norm(q)), r = document.createRange(); r.setStart(tn, i); r.setEnd(tn, i + q.length);
+      const m = document.createElement('mark'); m.className = 'ev'; r.surroundContents(m);
+      showQ = false; $('.rt').classList.remove('showq'); m.scrollIntoView({block: 'center', behavior: 'smooth'}); return;
+    }
+  }
+  async function submit(){
+    stopAll();
+    const rows = rtScore(T, part, D.ans), raw = rows.filter(r => r.ok).length, keyed = rows.length, band = rlBand('reading', Math.round(raw / keyed * 40)), byType = {};
+    rows.forEach(r => { (byType[r.type] ||= [0, 0])[1]++; if (r.ok) byType[r.type][0]++; });
+    D.done = {raw, keyed, band, rows, byType}; save();
+    const r = await fetch('/api/rl', {method: 'POST', body: JSON.stringify({skill: 'reading', source: T.title + (part ? ` · Passage ${part}` : ''), test: id, part, raw, keyed, band, rows})}).then(r => r.json()).catch(e => ({error: e.message}));
+    if (r.error) toast('Chưa lưu được vào lịch sử: ' + r.error, 5000);
+    RLLOG = await fetch('/api/rl').then(r => r.json()).catch(() => RLLOG);
+    cur = parts[0]; showQ = false; draw(); toast(`${raw}/${keyed} câu đúng · band ${band}${part ? ' (quy đổi tương đương)' : ''}`, 5000);
+  }
+  function start(){
+    if (!D.done) { draw();  // đồng hồ lưu số giây còn lại: rời trang thì tạm dừng, quay lại làm tiếp
+      countdown(D.left ?? sec, s => { if (s !== D.left) { D.left = s; save(); } const el = $('#rtt'); if (!el) return;
+        el.textContent = s >= 60 ? `${Math.ceil(s / 60)} phút` : `${s} giây`; el.className = 'timer' + (s <= 300 ? ' low' : s <= 600 ? ' warn' : ''); },
+        () => { if (!D.done) { toast('Hết giờ: bài đã được nộp tự động.', 6000); submit(); } });
+    } else draw();
+  }
+  start();
 }
 
 load().then(route).catch(e => { app.innerHTML = `<div class="card pad">Không tải được dữ liệu. Chạy <code>python3 server.py</code> rồi mở <a href="http://localhost:8766">localhost:8766</a>.<br><span class="mute small">${esc(e.message)}</span></div>`; });

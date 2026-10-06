@@ -224,8 +224,18 @@ def save_rl(entry):
     """Một lần làm Reading (đáp án chấm ở trình duyệt)."""
     if entry.get("skill") != "reading":
         raise ValueError("chỉ lưu kết quả Reading")
-    append_jsonl(RL_LOG, [{k: entry.get(k) for k in ("skill", "source", "raw", "band", "rows")}])
+    append_jsonl(RL_LOG, [{k: entry.get(k) for k in ("skill", "source", "raw", "keyed", "band", "rows", "test", "part")}])
     return {"ok": True}
+
+
+def reading_tests():
+    """Đề Reading làm trên web (reading/de/*.json): chỉ trả mục lục, đề đầy đủ tải tĩnh từ /reading/de/<id>.json."""
+    out = []
+    for p in sorted((ROOT / "reading/de").glob("*.json")):
+        t = json.loads(p.read_text())
+        out.append({"id": t["id"], "title": t["title"], "passages": [x["title"] for x in t["passages"]],
+                    "types": [sorted({g["type"] for g in x["groups"]}) for x in t["passages"]]})
+    return out
 
 
 def list_attempts():
@@ -526,6 +536,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_json(vocab_list())
         elif self.path == "/api/lessons":
             self.send_json(lesson_list())
+        elif self.path == "/api/reading":
+            self.send_json(reading_tests())
         else:
             super().do_GET()
 

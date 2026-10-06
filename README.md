@@ -13,7 +13,7 @@ Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Muốn có ico
 | Học | 51 bài học 10–15 phút theo kỹ năng (Nền tảng, Task 1, Task 2, Speaking, Reading, Listening) và 15 trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
 | Writing | Task 1 (biểu đồ vẽ từ khối ```chart) và Task 2; đồng hồ 20/40 phút; đếm từ theo mốc 150/250; chấm 4 tiêu chí |
 | Speaking | Part 1; Part 2 cue card (1 phút chuẩn bị, 2 phút nói) + Part 3; chấm FC/LR/GRA/P (P là ước lượng) |
-| Reading | Nhập đáp án đề Cambridge của bạn → tự chấm, quy ra band, thống kê theo dạng câu. (Listening tự ôn ngoài web.) |
+| Reading | Đề làm trực tiếp như thi trên máy (`reading/de/*.json`, 3 passage · 40 câu · 60 phút, hoặc 1 passage 20 phút): bài đọc trái, câu hỏi phải, kéo đổi độ rộng, tô sáng, đồng hồ, thanh số câu. Nộp → band, thống kê theo dạng câu, giải thích từng câu và tô chỗ có đáp án trong bài. Vẫn nhập được đáp án đề sách giấy. (Listening tự ôn ngoài web.) |
 | Thi thử | Speaking Part 1 → 2 → 3, khoảng 13 phút, bốc đề ngẫu nhiên |
 | Tổng quan | Đọc mỗi ngày (1 quote hoặc truyện ngắn, xoay vòng 120 bài trong `hoc/doc-moi-ngay.json`), Chuỗi ngày học, phút học hôm nay/tuần, hạn mức 3 việc mỗi ngày (tự đánh dấu khi làm xong), ghi tay phút Listening, 2 ngày nghỉ phép/tháng, tiêu chí yếu nhất, bảng band theo tiêu chí |
 | Từ chủ động | Kho cụm tự thu từ mỗi lần chấm; ôn giãn cách 1→2→4→8→16 ngày với 4 kiểu bài (gợi nhớ ngược, điền câu, tự đặt câu, nói); “từ đích” hiện khi làm bài, máy chấm kiểm tra đã dùng đúng chưa; dùng đúng ở 3 bài khác nhau = chủ động |
@@ -76,6 +76,7 @@ Sau khi thêm/sửa đề: `python3 tools/build_index.py`.
 ## Kiểm tra
 
 ```bash
+python3 tools/validate_reading.py  # cấu trúc đề Reading, đáp án có nguyên văn trong bài (quy ước: reading/QUY-UOC.md)
 node tools/test_scoring.mjs        # chấm Reading, làm tròn band, chuỗi ngày, tô câu sửa, nhận cụm đích
 python3 tools/validate_hoc.py       # định dạng bài học
 python3 tools/test_server.py       # ôn giãn cách, giai đoạn từ, thu hoạch từ, ngày nghỉ phép, giờ học

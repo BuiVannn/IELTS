@@ -1,0 +1,687 @@
+{
+  "id": "test-04",
+  "title": "Reading Test 4",
+  "passages": [
+    {
+      "title": "The secret of Roman concrete",
+      "intro": "",
+      "paragraphs": [
+        {
+          "label": "",
+          "text": "Across the Mediterranean, structures built by Roman engineers two thousand years ago are still standing. The dome of the Pantheon in Rome, completed around 128 AD, remains the largest unreinforced concrete dome in the world, and harbour walls built along the coasts of Italy have survived centuries of pounding waves. Modern concrete, by contrast, often begins to crack and crumble within fifty to a hundred years, particularly when it is exposed to seawater. For engineers, the contrast has long been both an embarrassment and a puzzle: how did builders without modern chemistry produce a material that outlasts our own?"
+        },
+        {
+          "label": "",
+          "text": "Roman concrete, or opus caementicium, was not a single recipe but a family of mixtures. Its basic ingredients were lime, made by heating limestone, water, and volcanic ash, which builders packed together with chunks of rock or broken brick. The most prized ash came from the area around the Bay of Naples, near the town of Pozzuoli, and the Romans shipped it hundreds of kilometres for important projects. Writers of the period, including the architect Vitruvius, praised this ash for its ability to make mortar set hard even under water, although they had no way of understanding the chemistry behind it."
+        },
+        {
+          "label": "",
+          "text": "For much of the twentieth century, scientists assumed that the volcanic ash was the whole story. The ash contains silica and alumina, which react with lime to form a strong binding compound. This kind of reaction, known as a pozzolanic reaction after Pozzuoli, is also used in some modern cements. Yet this explanation could not fully account for the extraordinary durability of Roman marine structures. In fact, modern engineers deliberately avoid exposing concrete to seawater for long periods, because salt attacks the steel reinforcing bars inside and causes them to rust and expand, splitting the concrete apart."
+        },
+        {
+          "label": "",
+          "text": "A significant step forward came when a team led by the geologist Dr Helen Carver examined drill cores taken from ancient Roman piers along the Italian coast. Using powerful X-ray imaging, the team found that seawater seeping through the concrete had slowly dissolved parts of the volcanic ash. This allowed new minerals to grow in the spaces between the particles, including a rare, plate-shaped crystal called aluminous tobermorite. Rather than weakening the material, the seawater had made it stronger over time, as the interlocking crystals reinforced the structure. 'The Romans created a rock-like material that thrives in open chemical exchange with the sea,' Carver wrote. Tobermorite is extremely difficult to produce in a laboratory, where it typically requires temperatures of around 200 degrees Celsius."
+        },
+        {
+          "label": "",
+          "text": "A second mystery concerned small white lumps, a few millimetres across, scattered throughout many samples of Roman concrete. These lime clasts had traditionally been dismissed as evidence of careless mixing or poor-quality materials. However, a group of materials scientists headed by Professor Luca Ferrante has argued that the lumps were neither accidental nor a defect. Their analysis suggested that the Romans had mixed quicklime, a highly reactive form of lime, directly with the ash and water, rather than first combining lime with water to make a paste, as had generally been believed. This process, known as hot mixing, releases a great deal of heat, and it leaves behind lime clasts that are brittle and rich in calcium."
+        },
+        {
+          "label": "",
+          "text": "According to Ferrante, these clasts give the concrete a remarkable capacity to repair itself. When a tiny crack forms, it tends to travel through the clasts because they are weaker than the surrounding material. If water then enters the crack, it dissolves some of the calcium, which recrystallises as calcium carbonate and fills the gap. To test the idea, the team prepared samples of concrete made with and without hot mixing, deliberately cracked them, and then ran water through the cracks. Within two weeks, the cracks in the hot-mixed samples had completely sealed and water could no longer flow through, while the cracks in the other samples remained open."
+        },
+        {
+          "label": "",
+          "text": "These findings have attracted interest well beyond archaeology. The production of Portland cement, the key ingredient of modern concrete, is responsible for around eight per cent of global carbon dioxide emissions, largely because limestone must be heated to about 1,450 degrees Celsius. Roman lime was produced at far lower temperatures, and a concrete that lasts for centuries would need to be replaced far less often, reducing emissions over a building's lifetime. Several start-up companies are now experimenting with mixtures that copy Roman techniques, and one has proposed a Roman-style recipe for sea walls designed to protect coastal towns from rising sea levels."
+        },
+        {
+          "label": "",
+          "text": "Nevertheless, researchers warn against seeing Roman concrete as a simple replacement for the modern material. Roman concrete is considerably weaker under compression than Portland cement, and it gains strength slowly, over months or even years rather than weeks. The Romans compensated for this by building massive, thick walls and avoiding the slender columns and long spans common in modern architecture. Moreover, because it contains no steel, Roman concrete performs poorly when it is pulled or bent. Most engineers therefore expect the ancient techniques to be combined with modern ones rather than to replace them: for example, by adding lime clasts to conventional mixtures to give them a degree of self-healing ability."
+        }
+      ],
+      "groups": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in Reading Passage 1?\n\nIn boxes 1–6 on your answer sheet, choose\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+          "questions": [
+            {
+              "n": 1,
+              "text": "Modern concrete is particularly likely to deteriorate when it is in contact with seawater."
+            },
+            {
+              "n": 2,
+              "text": "Roman builders always used volcanic ash that was found close to the building site."
+            },
+            {
+              "n": 3,
+              "text": "Vitruvius recorded the exact proportions of lime and ash that builders should use."
+            },
+            {
+              "n": 4,
+              "text": "The pozzolanic reaction takes its name from a place."
+            },
+            {
+              "n": 5,
+              "text": "Dr Carver's team was the first to use X-ray imaging to study ancient building materials."
+            },
+            {
+              "n": 6,
+              "text": "Aluminous tobermorite is easy to make under laboratory conditions."
+            }
+          ]
+        },
+        {
+          "type": "summary",
+          "instructions": "Complete the notes below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "limit": "NO MORE THAN TWO WORDS",
+          "title": "Lime clasts and self-healing concrete",
+          "text": "## Lime clasts\n- formerly seen as a sign of careless mixing or poor materials\n- Ferrante: the Romans probably added {7} straight to the ash and water, without first making a paste\n- this method, called {8}, produces a lot of heat\n## How the concrete repairs itself\n- cracks pass through the clasts, as these are {9} than the material around them\n- water dissolves calcium, which then forms {10} and fills the crack\n- experiment: cracks in hot-mixed samples were completely sealed within {11}",
+          "questions": [
+            {
+              "n": 7
+            },
+            {
+              "n": 8
+            },
+            {
+              "n": 9
+            },
+            {
+              "n": 10
+            },
+            {
+              "n": 11
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 12,
+              "text": "Why does the writer mention the temperature at which limestone is heated to make Portland cement?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "to explain why modern concrete is stronger than Roman concrete"
+                },
+                {
+                  "key": "B",
+                  "text": "to show why making modern cement releases so much carbon dioxide"
+                },
+                {
+                  "key": "C",
+                  "text": "to explain why tobermorite does not form in modern concrete"
+                },
+                {
+                  "key": "D",
+                  "text": "to suggest that Roman lime was more expensive to produce"
+                }
+              ]
+            },
+            {
+              "n": 13,
+              "text": "According to the final paragraph, how did the Romans deal with the limitations of their concrete?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "by adding metal bars to strengthen it"
+                },
+                {
+                  "key": "B",
+                  "text": "by making their walls very large and thick"
+                },
+                {
+                  "key": "C",
+                  "text": "by leaving it for several years before it was used"
+                },
+                {
+                  "key": "D",
+                  "text": "by building tall, narrow columns to support it"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rebuilding coral reefs",
+      "intro": "",
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Coral reefs cover less than one per cent of the ocean floor, yet they support roughly a quarter of all known marine species and provide food, income and coastal protection for hundreds of millions of people. They are also in serious trouble. Since the 1950s, the world has lost around half of its living coral cover, and rising sea temperatures are now the greatest threat. When water becomes too warm, corals expel the tiny algae that live in their tissues and supply them with most of their energy; the corals turn white, a process known as bleaching, and if the heat persists they starve. In response, a global movement to actively rebuild damaged reefs has grown rapidly over the past two decades."
+        },
+        {
+          "label": "B",
+          "text": "The most widely used technique is known as coral gardening. Small fragments are cut from healthy colonies and grown in underwater nurseries, where they hang from ropes or from tree-like frames made of plastic piping. Raised off the seabed, the fragments are protected from sediment and from predators such as snails, and within a year or two they are large enough to be fixed back onto the reef with cement or cable ties. The method was pioneered in the Caribbean, where it was used mainly for fast-growing branching species such as staghorn coral, which can extend by more than ten centimetres a year. Volunteer divers with no scientific background can be trained to maintain nurseries, and this has made gardening popular with dive centres as well as conservation groups."
+        },
+        {
+          "label": "C",
+          "text": "Gardening works less well for the massive, boulder-like corals that form the structural backbone of many reefs, since these may grow only a few millimetres annually. A solution emerged by chance. While working at a laboratory in Florida, Professor Kenji Watanabe accidentally broke a piece of brain coral into tiny fragments when moving it between tanks. Returning to the tank some weeks later, he found that the fragments had grown far faster than an intact colony would have done. The technique that followed, now called microfragmentation, involves cutting corals into pieces about one centimetre across and attaching them close to one another on a hard surface. As they grow, the separate pieces fuse together into a single colony, reaching in two or three years a size that would normally take decades."
+        },
+        {
+          "label": "D",
+          "text": "Both gardening and microfragmentation, however, produce clones: every fragment is genetically identical to its parent. A reef made up of clones is vulnerable, because a disease or heatwave that kills one colony is likely to kill them all. For this reason, some scientists are turning to the corals' own reproduction. Many species release their eggs and sperm on a single night each year, in an event known as mass spawning. Researchers collect this material from the surface of the water, and the resulting larvae are raised in floating pools before being released onto damaged areas. The approach creates genetically diverse offspring, but the young corals face enormous losses: in the wild, fewer than one in a thousand settling larvae is thought to survive its first year. To address this, the Coral Futures Foundation has developed small ceramic 'seeding units' which are placed in the pools so that larvae settle on them; the units are then wedged into cracks in the reef, a method which the foundation reports has greatly increased the proportion of young corals surviving their first year."
+        },
+        {
+          "label": "E",
+          "text": "A more radical idea is to help corals adapt to warmer seas. Under an approach sometimes called assisted evolution, researchers identify colonies that survived recent heatwaves and breed them together in the hope of producing more heat-tolerant offspring. Others are experimenting with the symbiotic algae living inside coral tissue, cultivating strains that cope better with high temperatures. Early results are encouraging, but Dr Sofia Lindqvist urges caution. Selecting corals for a single trait, she argues, may come at a cost: colonies bred for heat tolerance could grow more slowly or become more susceptible to disease, and releasing them in large numbers could reduce the natural diversity of wild populations."
+        },
+        {
+          "label": "F",
+          "text": "Whatever the method, restoration faces a basic problem of scale. Estimates of the cost vary from around US$10,000 to more than US$1 million per hectare, depending on the location and technique. Yet the Great Barrier Reef alone covers about 344,000 square kilometres, and the total area restored worldwide so far amounts to only a tiny fraction of that. Restored sites are also exposed to the same threats that damaged them in the first place: in several projects, carefully planted corals died during the next marine heatwave. Dr Amara Okafor, a marine ecologist, goes further, warning that well-publicised restoration projects may give governments and companies an excuse to delay cutting greenhouse gas emissions, which she describes as 'the only real solution'."
+        },
+        {
+          "label": "G",
+          "text": "Few scientists, however, believe that restoration is pointless. Most now see it as a way of buying time: keeping key species and genetic diversity alive until, they hope, global temperatures are stabilised. On a local scale, restored reefs can also bring real benefits, attracting visitors to coastal communities and helping to reduce wave energy before it reaches the shore. To succeed, though, restoration must be combined with other measures, such as improving water quality and controlling overfishing, so that the corals which are replanted have a reasonable chance of survival."
+        }
+      ],
+      "groups": [
+        {
+          "type": "match-info",
+          "instructions": "Reading Passage 2 has seven paragraphs, A–G.\n\nWhich paragraph contains the following information?\n\nWrite the correct letter, A–G, in boxes 14–18 on your answer sheet.",
+          "note": "You may use any letter more than once.",
+          "options": [
+            {
+              "key": "A",
+              "text": ""
+            },
+            {
+              "key": "B",
+              "text": ""
+            },
+            {
+              "key": "C",
+              "text": ""
+            },
+            {
+              "key": "D",
+              "text": ""
+            },
+            {
+              "key": "E",
+              "text": ""
+            },
+            {
+              "key": "F",
+              "text": ""
+            },
+            {
+              "key": "G",
+              "text": ""
+            }
+          ],
+          "questions": [
+            {
+              "n": 14,
+              "text": "an account of a discovery that was made by accident"
+            },
+            {
+              "n": 15,
+              "text": "a range of figures for the expense of restoring reefs"
+            },
+            {
+              "n": 16,
+              "text": "a description of the structures used to grow coral fragments"
+            },
+            {
+              "n": 17,
+              "text": "an explanation of why a lack of genetic variety is a weakness"
+            },
+            {
+              "n": 18,
+              "text": "a reference to the involvement of non-scientists in restoration work"
+            }
+          ]
+        },
+        {
+          "type": "sentence",
+          "instructions": "Complete the sentences below.\n\nChoose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "limit": "NO MORE THAN TWO WORDS",
+          "questions": [
+            {
+              "n": 19,
+              "text": "Coral gardening was first developed in the ___, mainly with species that grow quickly."
+            },
+            {
+              "n": 20,
+              "text": "In microfragmentation, small pieces of coral gradually join to form a single ___."
+            },
+            {
+              "n": 21,
+              "text": "Larvae produced from material gathered during mass spawning are raised in ___."
+            },
+            {
+              "n": 22,
+              "text": "Some researchers are growing strains of the ___ found inside corals that are better able to cope with heat."
+            }
+          ]
+        },
+        {
+          "type": "match-features",
+          "instructions": "Look at the following statements (Questions 23–26) and the list of people and organisations below.\n\nMatch each statement with the correct person or organisation, A–D.",
+          "note": "You may use any letter more than once.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Dr Amara Okafor"
+            },
+            {
+              "key": "B",
+              "text": "Professor Kenji Watanabe"
+            },
+            {
+              "key": "C",
+              "text": "the Coral Futures Foundation"
+            },
+            {
+              "key": "D",
+              "text": "Dr Sofia Lindqvist"
+            }
+          ],
+          "questions": [
+            {
+              "n": 23,
+              "text": "Young corals are more likely to survive if they settle on objects before being moved to the reef."
+            },
+            {
+              "n": 24,
+              "text": "Restoration work might encourage those in power to postpone the most important action."
+            },
+            {
+              "n": 25,
+              "text": "Improving one characteristic of a coral may have negative effects on others."
+            },
+            {
+              "n": 26,
+              "text": "Coral that has been broken into small pieces can grow surprisingly quickly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Machines and work: lessons from history",
+      "intro": "",
+      "paragraphs": [
+        {
+          "label": "",
+          "text": "Every few decades, a wave of anxiety about machines and jobs sweeps through the industrialised world. In the early nineteenth century, English textile workers known as Luddites broke into factories and smashed the new mechanised looms. In 1930, the economist John Maynard Keynes warned of a 'new disease' he called technological unemployment. In the 1960s, the United States government set up a national commission to examine whether automation would leave millions without work. Today, the same fears have returned in response to artificial intelligence. What is striking is that each generation tends to regard its own worries as entirely without precedent. And because earlier fears did not come true, it is tempting to dismiss the current one as yet another false alarm. That, I will argue, is too comfortable a conclusion."
+        },
+        {
+          "label": "",
+          "text": "Consider the Luddites themselves. They are usually remembered as ignorant opponents of progress, and their name is still used as an insult for anyone who resists new technology. Yet most were skilled craftsmen, and their objection was not to machinery as such but to the way factory owners used it to cut wages and replace trained workers with cheap, unskilled labour. In the short run, their fears were well founded: the earnings of hand-loom weavers fell by more than half in the three decades after 1800, and many families were reduced to poverty. In the long run, of course, the textile industry employed far more people than before, as cheaper cloth created vast new markets. But the long run was of little comfort to a weaver who had lost his livelihood in 1812."
+        },
+        {
+          "label": "",
+          "text": "The optimistic case, which remains the view of most economists, rests on what is called the 'lump of labour fallacy': the mistaken belief that there is a fixed quantity of work to be shared out. Automation, the argument goes, lowers the cost of goods, which raises real incomes, and people spend that extra income on other products and services, creating demand for workers elsewhere. Entirely new occupations also appear. In 1900, around 40 per cent of the American workforce was employed in agriculture; today the figure is below two per cent, yet the country did not experience permanent mass unemployment. 'Every previous prediction of the end of work has failed,' observes the economist Professor Richard Haldane, 'and there is no reason to think this time will be different.'"
+        },
+        {
+          "label": "",
+          "text": "Not all economists share this confidence. Dr Elena Marsh argues that earlier machines mainly replaced human muscle, so workers could move into jobs that required thinking, communication and judgement. Today's technologies, she points out, are increasingly able to perform exactly these cognitive tasks, which may leave displaced workers with nowhere to go. A related but more cautious position is taken by Professor Tomas Brandt, who argues that automation replaces particular tasks rather than whole jobs. In his view, whether employment rises or falls depends on a race between two forces: the elimination of old tasks and the creation of new ones. His research suggests that since the late 1980s, new tasks have been appearing more slowly than old ones have been automated, which may help to explain why wages for many workers in rich countries have barely grown."
+        },
+        {
+          "label": "",
+          "text": "Even when the optimists are right about the eventual outcome, the transition can be long and painful. Economic historians have noted that in Britain between roughly 1790 and 1840, output per worker rose steadily while average wages hardly changed, a period sometimes known as 'Engels' pause', after the writer Friedrich Engels, who documented the condition of the working class at the time. Moreover, the people who lose their jobs are rarely the ones who fill the new positions. A middle-aged weaver did not become a railway engineer; the new jobs went largely to his children or to younger workers from elsewhere."
+        },
+        {
+          "label": "",
+          "text": "In my view, the optimists and the pessimists share a common mistake: they treat technology as an external force whose consequences are determined in advance, as if the only question were how many jobs it will destroy. This has led to an obsession with forecasting. One widely cited study estimated that nearly half of all jobs in the United States were at high risk of automation; another, using different methods, put the figure at under ten per cent. Such enormous differences should make us sceptical of the whole exercise. The effects of a technology depend far more on the choices made by firms and governments: which technologies are developed, how they are introduced, and how the gains are shared. Particularly damaging, I believe, is what some economists call 'so-so automation': machines such as self-service checkouts, which replace workers while delivering only small improvements in productivity. These offer the worst of both worlds, since jobs disappear but little new wealth is created to generate demand elsewhere."
+        },
+        {
+          "label": "",
+          "text": "Policy, then, matters more than prediction. Governments can invest in education and retraining, fund research into technologies that complement human skills rather than replace them, and provide income support for those caught in the transition. None of this is guaranteed to work. But history does not tell us that everything will turn out well, nor that disaster awaits. What it does show is that the benefits of technological change are not automatically shared. The Luddites were defeated not because they misunderstood the machines, but because they had no political power to influence how those machines were used. That, rather than any forecast, is the lesson we should take from them."
+        }
+      ],
+      "groups": [
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the views of the writer in Reading Passage 3?\n\nIn boxes 27–32 on your answer sheet, choose\nYES if the statement agrees with the views of the writer\nNO if the statement contradicts the views of the writer\nNOT GIVEN if it is impossible to say what the writer thinks about this",
+          "questions": [
+            {
+              "n": 27,
+              "text": "People in each period tend to believe that their concerns about automation are new."
+            },
+            {
+              "n": 28,
+              "text": "The Luddites were opposed to the use of any new machinery."
+            },
+            {
+              "n": 29,
+              "text": "The Luddites received widespread support from the general public."
+            },
+            {
+              "n": 30,
+              "text": "Estimates of the proportion of jobs threatened by automation have been broadly similar."
+            },
+            {
+              "n": 31,
+              "text": "Technologies that bring only modest gains in productivity are especially harmful."
+            },
+            {
+              "n": 32,
+              "text": "Income support for displaced workers is more effective than retraining."
+            }
+          ]
+        },
+        {
+          "type": "endings",
+          "instructions": "Complete each sentence with the correct ending, A–G, below.",
+          "options": [
+            {
+              "key": "A",
+              "text": "the amount of work available in an economy is essentially fixed."
+            },
+            {
+              "key": "B",
+              "text": "new tasks are created faster than existing ones are automated."
+            },
+            {
+              "key": "C",
+              "text": "they replace entire occupations rather than individual tasks."
+            },
+            {
+              "key": "D",
+              "text": "lower prices eventually lead to more jobs in other parts of the economy."
+            },
+            {
+              "key": "E",
+              "text": "rising output per worker does not necessarily bring higher wages."
+            },
+            {
+              "key": "F",
+              "text": "workers who lose their jobs usually move into the new positions created."
+            },
+            {
+              "key": "G",
+              "text": "they are able to do the mental work that displaced workers once turned to."
+            }
+          ],
+          "questions": [
+            {
+              "n": 33,
+              "text": "Economists who reject the 'lump of labour' idea argue that"
+            },
+            {
+              "n": 34,
+              "text": "Elena Marsh believes modern technologies differ from earlier machines because"
+            },
+            {
+              "n": 35,
+              "text": "Tomas Brandt claims that whether automation increases or reduces employment depends on whether"
+            },
+            {
+              "n": 36,
+              "text": "The period known as 'Engels' pause' shows that"
+            }
+          ]
+        },
+        {
+          "type": "summary",
+          "instructions": "Complete the summary using the list of words, A–I, below.",
+          "title": "The writer's conclusion",
+          "options": [
+            {
+              "key": "A",
+              "text": "forecasts"
+            },
+            {
+              "key": "B",
+              "text": "political influence"
+            },
+            {
+              "key": "C",
+              "text": "external"
+            },
+            {
+              "key": "D",
+              "text": "gradually"
+            },
+            {
+              "key": "E",
+              "text": "decisions"
+            },
+            {
+              "key": "F",
+              "text": "technical knowledge"
+            },
+            {
+              "key": "G",
+              "text": "automatically"
+            },
+            {
+              "key": "H",
+              "text": "unpredictable"
+            },
+            {
+              "key": "I",
+              "text": "economic"
+            }
+          ],
+          "text": "According to the writer, optimists and pessimists alike wrongly view technology as an {37} force whose results are fixed in advance. In fact, what a technology does to work depends mainly on the {38} of businesses and governments. History shows that the rewards of technological change are not {39} shared, and the Luddites lost because they lacked {40}, not because they misunderstood the new machines.",
+          "questions": [
+            {
+              "n": 37
+            },
+            {
+              "n": 38
+            },
+            {
+              "n": 39
+            },
+            {
+              "n": 40
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {
+    "1": "TRUE",
+    "2": "FALSE",
+    "3": "NOT GIVEN",
+    "4": "TRUE",
+    "5": "NOT GIVEN",
+    "6": "FALSE",
+    "7": "quicklime",
+    "8": "hot mixing",
+    "9": "weaker",
+    "10": "calcium carbonate",
+    "11": "two weeks/2 weeks",
+    "12": "B",
+    "13": "B",
+    "14": "C",
+    "15": "F",
+    "16": "B",
+    "17": "D",
+    "18": "B",
+    "19": "Caribbean/the Caribbean",
+    "20": "colony",
+    "21": "floating pools",
+    "22": "symbiotic algae/algae/tiny algae",
+    "23": "C",
+    "24": "A",
+    "25": "D",
+    "26": "B",
+    "27": "YES",
+    "28": "NO",
+    "29": "NOT GIVEN",
+    "30": "NO",
+    "31": "YES",
+    "32": "NOT GIVEN",
+    "33": "D",
+    "34": "G",
+    "35": "B",
+    "36": "E",
+    "37": "C",
+    "38": "E",
+    "39": "G",
+    "40": "B"
+  },
+  "explain": {
+    "1": {
+      "quote": "often begins to crack and crumble within fifty to a hundred years, particularly when it is exposed to seawater",
+      "why": "'deteriorate' = 'crack and crumble'; 'in contact with seawater' = 'exposed to seawater'; 'particularly' khớp 'particularly likely'."
+    },
+    "2": {
+      "quote": "the Romans shipped it hundreds of kilometres for important projects",
+      "why": "Bài nói người La Mã chở tro đi hàng trăm km, trái với 'always ... close to the building site'."
+    },
+    "3": {
+      "quote": "Writers of the period, including the architect Vitruvius, praised this ash for its ability to make mortar set hard even under water",
+      "why": "Bài chỉ nói Vitruvius ca ngợi tro núi lửa, không nhắc tới việc ông ghi tỉ lệ vôi và tro."
+    },
+    "4": {
+      "quote": "known as a pozzolanic reaction after Pozzuoli",
+      "why": "'after Pozzuoli' = đặt theo tên Pozzuoli, một thị trấn gần vịnh Naples, tức 'named after a place'."
+    },
+    "5": {
+      "quote": "Using powerful X-ray imaging, the team found that seawater seeping through the concrete had slowly dissolved parts of the volcanic ash.",
+      "why": "Bài có nói nhóm dùng X-quang nhưng không hề nói họ là người đầu tiên dùng kỹ thuật này."
+    },
+    "6": {
+      "quote": "Tobermorite is extremely difficult to produce in a laboratory",
+      "why": "'extremely difficult to produce' trái ngược với 'easy to make' trong phòng thí nghiệm."
+    },
+    "7": {
+      "quote": "the Romans had mixed quicklime, a highly reactive form of lime, directly with the ash and water",
+      "why": "'added ... straight to' = 'mixed ... directly with'; chất được trộn là quicklime."
+    },
+    "8": {
+      "quote": "This process, known as hot mixing, releases a great deal of heat",
+      "why": "'called' = 'known as'; 'produces a lot of heat' = 'releases a great deal of heat'."
+    },
+    "9": {
+      "quote": "it tends to travel through the clasts because they are weaker than the surrounding material",
+      "why": "'the material around them' = 'the surrounding material'; chỗ trống cần tính từ so sánh: weaker."
+    },
+    "10": {
+      "quote": "it dissolves some of the calcium, which recrystallises as calcium carbonate and fills the gap",
+      "why": "'forms' = 'recrystallises as'; 'fills the crack' = 'fills the gap'."
+    },
+    "11": {
+      "quote": "Within two weeks, the cracks in the hot-mixed samples had completely sealed",
+      "why": "'completely sealed within' khớp nguyên ý; thời gian là two weeks."
+    },
+    "12": {
+      "quote": "is responsible for around eight per cent of global carbon dioxide emissions, largely because limestone must be heated to about 1,450 degrees Celsius",
+      "why": "Nhiệt độ được nêu để giải thích ('largely because') vì sao xi măng Portland thải nhiều CO2. Không so sánh độ bền hay giá."
+    },
+    "13": {
+      "quote": "The Romans compensated for this by building massive, thick walls",
+      "why": "'compensated for this' = cách xử lý điểm yếu; 'massive, thick walls' = 'very large and thick'. D sai: họ tránh cột mảnh; A sai: không có thép."
+    },
+    "14": {
+      "quote": "A solution emerged by chance.",
+      "why": "Đoạn C: Watanabe vô tình làm vỡ san hô ('by chance', 'accidentally') và phát hiện mảnh nhỏ lớn nhanh."
+    },
+    "15": {
+      "quote": "Estimates of the cost vary from around US$10,000 to more than US$1 million per hectare",
+      "why": "'a range of figures for the expense' = chi phí từ 10.000 đến hơn 1 triệu USD mỗi hecta (đoạn F)."
+    },
+    "16": {
+      "quote": "where they hang from ropes or from tree-like frames made of plastic piping",
+      "why": "Đoạn B mô tả cấu trúc vườn ươm: dây thừng và khung hình cây bằng ống nhựa để nuôi mảnh san hô."
+    },
+    "17": {
+      "quote": "A reef made up of clones is vulnerable, because a disease or heatwave that kills one colony is likely to kill them all.",
+      "why": "'lack of genetic variety' = rạn toàn bản sao (clones); 'weakness' = 'vulnerable', có giải thích 'because'."
+    },
+    "18": {
+      "quote": "Volunteer divers with no scientific background can be trained to maintain nurseries",
+      "why": "'non-scientists' = 'volunteer divers with no scientific background' (đoạn B)."
+    },
+    "19": {
+      "quote": "The method was pioneered in the Caribbean, where it was used mainly for fast-growing branching species",
+      "why": "'first developed' = 'pioneered'; 'species that grow quickly' = 'fast-growing species'."
+    },
+    "20": {
+      "quote": "the separate pieces fuse together into a single colony",
+      "why": "'join to form' = 'fuse together into'; danh từ sau 'a single' là colony."
+    },
+    "21": {
+      "quote": "the resulting larvae are raised in floating pools before being released onto damaged areas",
+      "why": "'material gathered during mass spawning' = trứng và tinh trùng thu được; ấu trùng 'raised in floating pools'."
+    },
+    "22": {
+      "quote": "Others are experimenting with the symbiotic algae living inside coral tissue, cultivating strains that cope better with high temperatures.",
+      "why": "'growing strains' = 'cultivating strains'; 'cope with heat' = 'cope better with high temperatures'; thứ được nuôi là symbiotic algae."
+    },
+    "23": {
+      "quote": "a method which the foundation reports has greatly increased the proportion of young corals surviving their first year",
+      "why": "Quỹ cho ấu trùng bám lên 'seeding units' rồi mới gắn vào rạn; 'more likely to survive' = 'increased the proportion ... surviving'."
+    },
+    "24": {
+      "quote": "may give governments and companies an excuse to delay cutting greenhouse gas emissions",
+      "why": "Okafor: 'those in power' = governments and companies; 'postpone' = 'delay'; việc quan trọng nhất = cắt giảm khí thải."
+    },
+    "25": {
+      "quote": "Selecting corals for a single trait, she argues, may come at a cost",
+      "why": "Lindqvist: chọn một đặc tính (chịu nhiệt) có thể khiến san hô lớn chậm hơn hoặc dễ bệnh hơn, tức tác động xấu tới đặc tính khác."
+    },
+    "26": {
+      "quote": "he found that the fragments had grown far faster than an intact colony would have done",
+      "why": "Watanabe: mảnh vỡ nhỏ lớn nhanh hơn nhiều so với tập đoàn nguyên vẹn, tức 'surprisingly quickly'."
+    },
+    "27": {
+      "quote": "each generation tends to regard its own worries as entirely without precedent",
+      "why": "'without precedent' = 'new'; 'each generation' = 'people in each period'. Tác giả khẳng định điều này."
+    },
+    "28": {
+      "quote": "their objection was not to machinery as such but to the way factory owners used it",
+      "why": "Tác giả nói Luddites không phản đối máy móc nói chung mà phản đối cách dùng nó, trái với 'any new machinery'."
+    },
+    "29": {
+      "quote": "They are usually remembered as ignorant opponents of progress",
+      "why": "Bài nói về cách Luddites được nhớ tới và lý do họ phản đối, nhưng không nói công chúng có ủng hộ họ hay không."
+    },
+    "30": {
+      "quote": "Such enormous differences should make us sceptical of the whole exercise.",
+      "why": "Hai ước tính gần một nửa và dưới 10%: tác giả gọi là 'enormous differences', trái với 'broadly similar'."
+    },
+    "31": {
+      "quote": "Particularly damaging, I believe, is what some economists call 'so-so automation'",
+      "why": "'so-so automation' = máy thay người nhưng tăng năng suất ít ('modest gains'); 'particularly damaging' = 'especially harmful'."
+    },
+    "32": {
+      "quote": "Governments can invest in education and retraining",
+      "why": "Tác giả liệt kê cả đào tạo lại và hỗ trợ thu nhập nhưng không so sánh hiệu quả của hai biện pháp này."
+    },
+    "33": {
+      "quote": "Automation, the argument goes, lowers the cost of goods, which raises real incomes, and people spend that extra income on other products and services, creating demand for workers elsewhere.",
+      "why": "'lower prices' = 'lowers the cost of goods'; 'more jobs in other parts' = 'demand for workers elsewhere'. A là chính ngộ nhận họ bác bỏ."
+    },
+    "34": {
+      "quote": "Today's technologies, she points out, are increasingly able to perform exactly these cognitive tasks",
+      "why": "'mental work' = 'cognitive tasks' (thinking, judgement) mà công nhân bị thay thế trước đây chuyển sang."
+    },
+    "35": {
+      "quote": "whether employment rises or falls depends on a race between two forces: the elimination of old tasks and the creation of new ones",
+      "why": "Việc làm tăng hay giảm phụ thuộc vào cuộc đua giữa tạo nhiệm vụ mới và loại bỏ nhiệm vụ cũ. C sai: Brandt nói thay 'tasks' chứ không phải cả nghề."
+    },
+    "36": {
+      "quote": "output per worker rose steadily while average wages hardly changed",
+      "why": "'rising output per worker' khớp nguyên ý; 'does not necessarily bring higher wages' = 'average wages hardly changed'."
+    },
+    "37": {
+      "quote": "they treat technology as an external force whose consequences are determined in advance",
+      "why": "'fixed in advance' = 'determined in advance'; tính từ trước 'force' là external. 'unpredictable' trái nghĩa với 'fixed'."
+    },
+    "38": {
+      "quote": "The effects of a technology depend far more on the choices made by firms and governments",
+      "why": "'decisions' = 'choices'; 'businesses' = 'firms'. 'forecasts' sai vì tác giả hoài nghi việc dự báo."
+    },
+    "39": {
+      "quote": "the benefits of technological change are not automatically shared",
+      "why": "'rewards' = 'benefits'; trạng từ giữ nguyên: automatically."
+    },
+    "40": {
+      "quote": "because they had no political power to influence how those machines were used",
+      "why": "'lacked political influence' = 'had no political power'. 'technical knowledge' sai: họ là thợ lành nghề, không hiểu sai máy móc."
+    }
+  }
+}

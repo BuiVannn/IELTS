@@ -1,0 +1,718 @@
+{
+ "id": "test-01",
+ "title": "Reading Test 1",
+ "passages": [
+  {
+   "title": "The development of the lighthouse",
+   "intro": "",
+   "paragraphs": [
+    {
+     "label": "",
+     "text": "For as long as people have travelled by sea, the coastline has been both a destination and a danger. Long before any purpose-built tower existed, sailors relied on fires lit on hilltops and headlands to guide them home after dark. These beacons were simple and cheap to build, but they had serious drawbacks. A fire on open ground could be extinguished by rain or obscured by its own smoke, and it required a constant supply of fuel, which on many treeless coasts had to be brought in by boat."
+    },
+    {
+     "label": "",
+     "text": "The most famous early answer to these problems was the Pharos of Alexandria, completed in Egypt around 280 BC. Ancient writers described a tower of three stages, the lowest square, the middle octagonal and the top cylindrical, with a fire burning at its summit. Estimates of its height vary, but most historians place it somewhere between 100 and 130 metres, which would have made it one of the tallest structures in the ancient world. The Pharos stood for more than 1,500 years before a series of earthquakes finally reduced it to ruins."
+    },
+    {
+     "label": "",
+     "text": "The Romans built a number of lighthouses along the trade routes of their empire, among them a tower at Dover on the south coast of Britain, part of which still stands today. After the collapse of Roman authority, however, construction largely stopped, and for several centuries the lighting of coasts was left to monasteries and local communities. It was not until trade expanded again in the late Middle Ages that ports in Italy and northern Europe began to invest in towers once more, often paying for them through fees charged to every ship that entered the harbour."
+    },
+    {
+     "label": "",
+     "text": "Building a tower on a headland was one thing; building one on a rock in open water was quite another. The Eddystone reef, some fourteen kilometres off the English port of Plymouth, illustrates the difficulty. The first lighthouse there, a wooden structure completed in 1698, was swept away in a great storm only five years later, taking its designer with it. A second tower, also largely of timber, survived for nearly half a century until it was destroyed by fire. The engineer John Smeaton, commissioned to build a third in the 1750s, took a different approach. He shaped his tower like the trunk of an oak tree, wide at the base and narrowing towards the top, and built it from blocks of granite that were cut so that each locked into its neighbours, much like the pieces of a puzzle. He also experimented with a type of lime mortar that would set under water. Smeaton's tower stood for over 120 years, and it was eventually dismantled not because the tower itself had failed but because the rock beneath it was being worn away by the sea."
+    },
+    {
+     "label": "",
+     "text": "Equally important was the quality of the light itself. For most of the eighteenth century, towers were lit by candles or by open coal fires, and much of the light they produced was simply wasted, escaping upwards into the sky or being absorbed by soot on the windows. In the 1780s the Swiss scientist Aimé Argand invented an oil lamp with a hollow circular wick, which allowed air to reach both the inside and the outside of the flame. The result was a light that burned far more brightly and produced much less smoke. When Argand lamps were combined with curved metal mirrors, known as reflectors, which concentrated the light into a beam, a lighthouse could for the first time be seen at a considerable distance."
+    },
+    {
+     "label": "",
+     "text": "The decisive breakthrough, however, came from France. In 1822 the physicist Augustin Fresnel presented a new kind of lens made up of concentric rings of glass prisms arranged around a central bull's-eye. A conventional lens large enough to gather a lighthouse's light would have been impossibly thick and heavy, but Fresnel's design achieved the same effect with a fraction of the material. Whereas reflectors captured perhaps half of the light from a lamp, the new lens could direct over 80 per cent of it towards the horizon. A lighthouse fitted with a Fresnel lens could be visible from more than 30 kilometres away, and within a few decades the design had been adopted by lighthouse authorities around the world."
+    },
+    {
+     "label": "",
+     "text": "As the number of lighthouses grew, a new problem emerged: sailors needed to know not only that they were near land but exactly which light they were looking at. The solution was to give each lighthouse its own signature. Some towers were painted in distinctive patterns of stripes or bands so that they could be recognised by day, while at night their lights were made to flash in a particular rhythm. This was achieved by rotating the lens assembly, which in larger lighthouses could weigh several tonnes. To reduce friction, engineers floated the entire assembly on a bath of mercury, allowing it to be turned by a simple clockwork mechanism that the keeper wound by hand every few hours."
+    },
+    {
+     "label": "",
+     "text": "Keeping the light burning was the work of the lighthouse keeper, a job that combined routine maintenance with long periods of isolation. Keepers trimmed wicks, polished lenses and recorded weather conditions, and on remote rock stations they might spend weeks at a time without returning to shore. During the twentieth century, electricity replaced oil, and automatic equipment gradually made the keeper unnecessary. Today, satellite navigation means that ships rarely depend on lighthouses to find their way, yet many authorities continue to maintain them, both as a back-up in case electronic systems fail and because, for small vessels in particular, a visible light remains the simplest way to identify a dangerous stretch of coast."
+    }
+   ],
+   "groups": [
+    {
+     "type": "tfng",
+     "instructions": "Do the following statements agree with the information given in Reading Passage 1? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, NOT GIVEN if there is no information on this.",
+     "questions": [
+      {
+       "n": 1,
+       "text": "Beacon fires on high ground could be put out by bad weather."
+      },
+      {
+       "n": 2,
+       "text": "Historians agree on the precise height of the Pharos of Alexandria."
+      },
+      {
+       "n": 3,
+       "text": "Monasteries were paid for keeping lights burning along the coast."
+      },
+      {
+       "n": 4,
+       "text": "The person who designed the first Eddystone lighthouse died when it was destroyed."
+      },
+      {
+       "n": 5,
+       "text": "Smeaton's lighthouse was removed because of weaknesses in its construction."
+      },
+      {
+       "n": 6,
+       "text": "The Argand lamp was first installed in a lighthouse on the English coast."
+      },
+      {
+       "n": 7,
+       "text": "Fresnel's lens needed more glass than a traditional lens doing the same job."
+      }
+     ]
+    },
+    {
+     "type": "summary",
+     "instructions": "Complete the notes below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.",
+     "limit": "ONE WORD AND/OR A NUMBER",
+     "title": "Improvements in lighthouse technology",
+     "text": "## The Argand lamp (1780s)\n- a hollow, circular {8} allowed air to reach the flame from inside and outside\n- gave a brighter light with less smoke\n- light was concentrated into a beam by curved metal {9}\n## The Fresnel lens (1822)\n- made of rings of glass {10} around a central bull's-eye\n- sent more than {11} per cent of the light towards the horizon\n## Identifying individual lighthouses\n- towers painted with stripes or bands so that they could be recognised during the {12}\n- lens assembly floated on {13} so that it could be rotated easily",
+     "questions": [
+      {
+       "n": 8
+      },
+      {
+       "n": 9
+      },
+      {
+       "n": 10
+      },
+      {
+       "n": 11
+      },
+      {
+       "n": 12
+      },
+      {
+       "n": 13
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bees in the city",
+   "intro": "",
+   "paragraphs": [
+    {
+     "label": "A",
+     "text": "Over the past two decades, beekeeping has become an unexpectedly fashionable urban pastime. Hives have appeared on the roofs of office blocks, hotels and museums, and in several large European cities the number of registered colonies has more than doubled since the early 2000s. Much of this enthusiasm springs from widespread concern about the decline of bees, and many new beekeepers regard their hives as a small contribution to reversing it. Companies, too, have been quick to install rooftop hives as a visible sign of their environmental credentials. Yet a growing number of ecologists have begun to ask whether this boom is helping bees at all, or whether it might even be doing harm."
+    },
+    {
+     "label": "B",
+     "text": "Part of the problem lies in a common misunderstanding. The honeybee, Apis mellifera, is just one of around 20,000 bee species worldwide, and in most regions it is not under any threat of extinction. It is a managed animal, bred and kept by humans in much the same way as livestock, and its global numbers have actually risen over the past fifty years. The species that are declining are mostly wild bees: bumblebees, mining bees, mason bees and hundreds of others that nest alone in the ground, in hollow plant stems or in old walls. 'Keeping honeybees to save bees,' observes the ecologist Dr Helen Marsh, 'is a little like keeping chickens to save wild birds.'"
+    },
+    {
+     "label": "C",
+     "text": "The concern is that honeybees and wild bees depend on the same limited resource: the nectar and pollen of flowering plants. A single strong honeybee colony may contain 50,000 workers in summer and can collect many kilograms of pollen in a season. In a 2019 study of thirty sites across one European capital, Professor Luca Bernardi's team counted the hives within a one-kilometre radius of each site and estimated how much pollen the surrounding green space could produce. In the most densely kept districts, they calculated, honeybees alone would need more pollen than the local flowers supplied, leaving nothing at all for other insects. Bernardi stresses that his figures are only estimates, but argues that in some neighbourhoods the city has simply run out of room for more hives."
+    },
+    {
+     "label": "D",
+     "text": "Direct evidence that honeybees push out wild species is harder to obtain, but it is accumulating. Researchers in Switzerland led by Dr Anna Kessler monitored wild bee populations in urban parks over six years, during which the number of hives in the city rose sharply. They found that the abundance of wild bees fell in parks where hive density increased, and that the decline was steepest among large-bodied species such as bumblebees, which need the most food. Kessler is careful not to overstate the result. 'Cities change in many ways at once,' she points out, 'and we cannot rule out other factors, such as new building on nearby land.' Nevertheless, she believes the pattern is strong enough to justify limiting the number of new hives in some areas."
+    },
+    {
+     "label": "E",
+     "text": "There is also the question of disease. Honeybees kept at high density can act as reservoirs for viruses and parasites, some of which are capable of passing to wild species when bees of different kinds visit the same flowers. Deformed wing virus, once thought to affect only honeybees, has now been detected in more than a dozen wild bee species. How serious this transmission is for wild populations remains unclear, but it adds another reason to think carefully before placing hives in an area that is already crowded."
+    },
+    {
+     "label": "F",
+     "text": "Not all researchers share these concerns to the same degree. Dr Samuel Okafor, who studies pollinators in North American cities, argues that the debate has focused too heavily on honeybees and too little on the state of urban habitats themselves. In his surveys, the strongest predictor of wild bee diversity was not the number of hives nearby but the variety of flowering plants and the availability of bare soil for nesting. 'A city with plenty of flowers can support both,' he says. 'The real enemy of wild bees is the neatly mown lawn.' Okafor also points out that urban areas often contain more wild bee species than the intensively farmed countryside that surrounds them, suggesting that cities could become important refuges."
+    },
+    {
+     "label": "G",
+     "text": "For city authorities, the practical lessons are becoming clearer. Rather than encouraging more hives, several cities now recommend planting native wildflowers, cutting the grass in parks and along roadsides less often, and leaving patches of bare ground and dead wood where solitary bees can nest. In Paris, planners have begun to map hive locations so that new ones can be directed away from areas where wild bees are already struggling. Some campaigners have also suggested that companies wishing to support pollinators should pay for the creation of flower-rich habitat instead of installing hives on their roofs. As Marsh puts it, 'If you want to help bees, the best thing you can do is plant something.'"
+    }
+   ],
+   "groups": [
+    {
+     "type": "headings",
+     "instructions": "Reading Passage 2 has seven paragraphs, A–G. Choose the correct heading for each paragraph from the list of headings below.",
+     "options": [
+      {
+       "key": "i",
+       "text": "Calculating whether there is enough food to go round"
+      },
+      {
+       "key": "ii",
+       "text": "Practical ways of helping pollinators in urban areas"
+      },
+      {
+       "key": "iii",
+       "text": "A popular movement is called into question"
+      },
+      {
+       "key": "iv",
+       "text": "Why honeybees pollinate crops more effectively than wild bees"
+      },
+      {
+       "key": "v",
+       "text": "A possible threat to the health of wild bees"
+      },
+      {
+       "key": "vi",
+       "text": "The rising income from honey produced in cities"
+      },
+      {
+       "key": "vii",
+       "text": "Confusion about which bees need protecting"
+      },
+      {
+       "key": "viii",
+       "text": "How the first rooftop hives were introduced"
+      },
+      {
+       "key": "ix",
+       "text": "The quality of habitat as the deciding factor"
+      },
+      {
+       "key": "x",
+       "text": "Evidence of competition, though other causes are possible"
+      }
+     ],
+     "questions": [
+      {
+       "n": 14,
+       "text": "Paragraph A"
+      },
+      {
+       "n": 15,
+       "text": "Paragraph B"
+      },
+      {
+       "n": 16,
+       "text": "Paragraph C"
+      },
+      {
+       "n": 17,
+       "text": "Paragraph D"
+      },
+      {
+       "n": 18,
+       "text": "Paragraph E"
+      },
+      {
+       "n": 19,
+       "text": "Paragraph F"
+      },
+      {
+       "n": 20,
+       "text": "Paragraph G"
+      }
+     ]
+    },
+    {
+     "type": "match-features",
+     "instructions": "Look at the following statements (Questions 21–23) and the list of researchers below. Match each statement with the correct researcher, A, B, C or D. NB You may use any letter more than once.",
+     "options": [
+      {
+       "key": "A",
+       "text": "Dr Helen Marsh"
+      },
+      {
+       "key": "B",
+       "text": "Professor Luca Bernardi"
+      },
+      {
+       "key": "C",
+       "text": "Dr Anna Kessler"
+      },
+      {
+       "key": "D",
+       "text": "Dr Samuel Okafor"
+      }
+     ],
+     "questions": [
+      {
+       "n": 21,
+       "text": "Towns and cities may support a wider range of wild bees than nearby agricultural land."
+      },
+      {
+       "n": 22,
+       "text": "Changes other than the number of hives may have contributed to a fall in wild bee numbers."
+      },
+      {
+       "n": 23,
+       "text": "People who wish to help bees would do better to grow plants than to keep hives."
+      }
+     ]
+    },
+    {
+     "type": "sentence",
+     "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+     "limit": "NO MORE THAN TWO WORDS",
+     "questions": [
+      {
+       "n": 24,
+       "text": "Unlike most wild bees, the honeybee is a ___ species that is bred and looked after by people."
+      },
+      {
+       "n": 25,
+       "text": "Bernardi's team compared the number of hives with the amount of ___ that local green space could provide."
+      },
+      {
+       "n": 26,
+       "text": "Deformed wing virus has been found in over ___ species of wild bee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Too much choice? The psychology of decision overload",
+   "intro": "",
+   "paragraphs": [
+    {
+     "label": "",
+     "text": "In the early 2000s, a single experiment carried out in a delicatessen in Toronto did more than almost any other piece of research to shape popular thinking about consumer choice. Shoppers passing a tasting table were offered samples from either six or thirty varieties of olive oil. The larger display attracted more attention: 62 per cent of passers-by stopped at it, compared with 41 per cent for the smaller one. When it came to buying, however, the pattern was dramatically reversed. Only 4 per cent of those who had stopped at the extensive display went on to purchase a bottle, whereas 27 per cent of those who had seen the limited selection did so. The finding appeared to challenge a basic assumption of economics, namely that additional options can never make a rational person worse off, since he or she is always free to ignore the ones that are not wanted."
+    },
+    {
+     "label": "",
+     "text": "The researchers, Dr Miriam Hale and Dr Tomas Reyes, called the phenomenon 'choice overload', and they proposed a straightforward explanation. When the number of alternatives becomes large, comparing them demands more mental effort than most people are willing to invest, and many prefer to postpone the decision or avoid it altogether. Even those who do choose, Hale and Reyes suggested, may end up less content, because a wide range makes it easier to imagine that a better option was missed. In a follow-up study, participants who picked a herbal tea from a selection of thirty rated it as less enjoyable than those who picked the same tea from a selection of six."
+    },
+    {
+     "label": "",
+     "text": "The idea spread rapidly beyond academic journals. Business consultants advised retailers to cut their product ranges, and some did so with apparent success; one European chain of household stores reported that sales rose by 10 per cent after it reduced the number of varieties of several products by a quarter. Policy makers, too, took notice. Workplace pension schemes that offered employees dozens of investment funds were found to have lower participation rates than those offering only a few, and some governments responded by introducing simplified default options. The psychologist Daniel Ostrow went further still, arguing in a widely read book that the sheer abundance of choice in modern societies was a significant cause of anxiety and unhappiness."
+    },
+    {
+     "label": "",
+     "text": "Yet as the concept became more influential, cracks began to appear in the evidence. Several research groups attempted to repeat the original findings and failed. In 2010 a team led by the German psychologist Karl Brenner gathered the results of fifty experiments on choice overload, involving more than 5,000 participants, and combined them in a single statistical analysis. The average effect, they concluded, was virtually zero. Some studies had found that large assortments discouraged choosing, but a roughly equal number had found the opposite: that people were more likely to choose, and more satisfied with what they chose, when the range was wide."
+    },
+    {
+     "label": "",
+     "text": "This did not settle the matter. Defenders of choice overload argued that averaging across so many different studies concealed an important truth: that overload occurs only under particular conditions. A subsequent analysis by Ruth Adeyemi and her colleagues set out to identify those conditions. It found that the effect was reliable when the options were difficult to compare, for example because each differed from the others on many features at once, when people had no clear preference before they began, and when they were under pressure to decide quickly. Where these conditions were absent, a large range caused no difficulty and was often welcomed. On this view, the question is not whether choice is good or bad, but when it becomes a burden."
+    },
+    {
+     "label": "",
+     "text": "In my view, this more nuanced account is the right one, but it has implications that the enthusiasts for simplification have been slow to accept. If overload depends on circumstances, then the blanket advice to reduce options is misguided. A shop that cuts its range may lose customers who knew exactly what they wanted and can no longer find it; experienced buyers, who arrive with clear preferences, tend to benefit from a large selection. The success stories that circulate in the business press are also less persuasive than they seem. Companies rarely publicise the occasions when cutting a range led to falling sales, and so we hear mainly about the cases that worked."
+    },
+    {
+     "label": "",
+     "text": "Nor am I convinced by the broader claim that abundant choice is making modern people unhappy. Surveys do show that people sometimes regret their decisions or feel overwhelmed, but it is a considerable leap from these momentary feelings to a general decline in well-being. Indeed, in countries where consumer choice has expanded most rapidly, reported life satisfaction has, if anything, tended to rise. It would be equally mistaken, though, to conclude that choice is never a problem. For decisions that are both complex and consequential, such as selecting a pension or a medical treatment, the evidence that people struggle is strong, and the case for designing the options with great care is compelling."
+    },
+    {
+     "label": "",
+     "text": "What matters most, I would suggest, is not the number of options but the way they are presented. Grouping products into clear categories, offering a sensible default, or allowing people to narrow the range step by step can make even a very large selection manageable. Many online retailers already work in this way, and their customers seldom complain of being overwhelmed by the millions of items on offer. The lesson of two decades of research, therefore, is not that less is more, but that structure is more. The olive oil experiment told us something real, but what it told us was about a particular situation, not about human nature as a whole."
+    }
+   ],
+   "groups": [
+    {
+     "type": "mcq",
+     "instructions": "Choose the correct letter, A, B, C or D.",
+     "questions": [
+      {
+       "n": 27,
+       "text": "What was unexpected about the results of the delicatessen experiment?",
+       "options": [
+        {
+         "key": "A",
+         "text": "More shoppers stopped at the small display than at the large one."
+        },
+        {
+         "key": "B",
+         "text": "The large display drew more interest but resulted in fewer sales."
+        },
+        {
+         "key": "C",
+         "text": "Most shoppers who tasted the oils went on to buy a bottle."
+        },
+        {
+         "key": "D",
+         "text": "Shoppers preferred the cheaper oils on the smaller display."
+        }
+       ]
+      },
+      {
+       "n": 28,
+       "text": "According to Hale and Reyes, people who choose from a large range may feel less satisfied because",
+       "options": [
+        {
+         "key": "A",
+         "text": "they have spent too much effort comparing the alternatives."
+        },
+        {
+         "key": "B",
+         "text": "they find it easier to believe they could have chosen better."
+        },
+        {
+         "key": "C",
+         "text": "products in large ranges tend to be of lower quality."
+        },
+        {
+         "key": "D",
+         "text": "they cannot remember all of the options they considered."
+        }
+       ]
+      },
+      {
+       "n": 29,
+       "text": "The writer mentions the European chain of household stores as an example of",
+       "options": [
+        {
+         "key": "A",
+         "text": "a business that lost customers by reducing its range."
+        },
+        {
+         "key": "B",
+         "text": "research that cast doubt on the idea of choice overload."
+        },
+        {
+         "key": "C",
+         "text": "a reported advantage of offering fewer products."
+        },
+        {
+         "key": "D",
+         "text": "a company that consulted psychologists before changing its strategy."
+        }
+       ]
+      },
+      {
+       "n": 30,
+       "text": "What did Brenner's team conclude from their analysis?",
+       "options": [
+        {
+         "key": "A",
+         "text": "On average, the number of options made almost no difference."
+        },
+        {
+         "key": "B",
+         "text": "Large assortments usually encourage people to make a choice."
+        },
+        {
+         "key": "C",
+         "text": "Choice overload is stronger than earlier studies had suggested."
+        },
+        {
+         "key": "D",
+         "text": "The original studies had involved too few participants."
+        }
+       ]
+      },
+      {
+       "n": 31,
+       "text": "According to Adeyemi's analysis, choice overload is most likely to occur when",
+       "options": [
+        {
+         "key": "A",
+         "text": "people already know which option they prefer."
+        },
+        {
+         "key": "B",
+         "text": "the number of options is greater than thirty."
+        },
+        {
+         "key": "C",
+         "text": "people have plenty of time to reach a decision."
+        },
+        {
+         "key": "D",
+         "text": "the options differ from one another in a number of ways."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "ynng",
+     "instructions": "Do the following statements agree with the claims of the writer in Reading Passage 3? Write YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, NOT GIVEN if it is impossible to say what the writer thinks about this.",
+     "questions": [
+      {
+       "n": 32,
+       "text": "Reducing the number of products on offer is generally good advice for retailers."
+      },
+      {
+       "n": 33,
+       "text": "Customers who know what they want may lose out when a shop narrows its range."
+      },
+      {
+       "n": 34,
+       "text": "There is clear evidence that greater consumer choice has made people less happy overall."
+      },
+      {
+       "n": 35,
+       "text": "People often find it hard to make important decisions that involve many complicated factors."
+      },
+      {
+       "n": 36,
+       "text": "People who shop online are generally more satisfied with their purchases than those who shop in stores."
+      }
+     ]
+    },
+    {
+     "type": "summary",
+     "instructions": "Complete the summary using the list of words, A–I, below.",
+     "title": "Research on choice overload",
+     "options": [
+      {
+       "key": "A",
+       "text": "significant"
+      },
+      {
+       "key": "B",
+       "text": "presentation"
+      },
+      {
+       "key": "C",
+       "text": "decision"
+      },
+      {
+       "key": "D",
+       "text": "universal"
+      },
+      {
+       "key": "E",
+       "text": "price"
+      },
+      {
+       "key": "F",
+       "text": "conditional"
+      },
+      {
+       "key": "G",
+       "text": "negligible"
+      },
+      {
+       "key": "H",
+       "text": "quality"
+      },
+      {
+       "key": "I",
+       "text": "mistake"
+      }
+     ],
+     "text": "Early studies suggested that offering a large number of options could discourage people from making a {37} and could also reduce their satisfaction. However, when Brenner's team combined the results of many experiments, the overall effect turned out to be {38}. Later research indicated that overload is real but {39}: it arises when options are hard to compare, when preferences are unclear and when time is short. The writer concludes that the {40} of options matters more than how many there are.",
+     "questions": [
+      {
+       "n": 37
+      },
+      {
+       "n": 38
+      },
+      {
+       "n": 39
+      },
+      {
+       "n": 40
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "answers": {
+  "1": "TRUE",
+  "2": "FALSE",
+  "3": "NOT GIVEN",
+  "4": "TRUE",
+  "5": "FALSE",
+  "6": "NOT GIVEN",
+  "7": "FALSE",
+  "8": "wick",
+  "9": "mirrors/reflectors",
+  "10": "prisms",
+  "11": "80",
+  "12": "day",
+  "13": "mercury",
+  "14": "iii",
+  "15": "vii",
+  "16": "i",
+  "17": "x",
+  "18": "v",
+  "19": "ix",
+  "20": "ii",
+  "21": "D",
+  "22": "C",
+  "23": "A",
+  "24": "managed",
+  "25": "pollen",
+  "26": "a dozen/dozen",
+  "27": "B",
+  "28": "B",
+  "29": "C",
+  "30": "A",
+  "31": "D",
+  "32": "NO",
+  "33": "YES",
+  "34": "NO",
+  "35": "YES",
+  "36": "NOT GIVEN",
+  "37": "C",
+  "38": "G",
+  "39": "F",
+  "40": "B"
+ },
+ "explain": {
+  "1": {
+   "quote": "A fire on open ground could be extinguished by rain or obscured by its own smoke",
+   "why": "'put out by bad weather' = 'extinguished by rain'. Lửa trên đất trống có thể bị mưa dập tắt, nên câu đúng."
+  },
+  "2": {
+   "quote": "Estimates of its height vary, but most historians place it somewhere between 100 and 130 metres",
+   "why": "Bài nói ước tính chiều cao 'vary' (khác nhau), chỉ đưa ra khoảng 100–130 m, trái với 'agree on the precise height'."
+  },
+  "3": {
+   "quote": "the lighting of coasts was left to monasteries and local communities",
+   "why": "Bài chỉ nói việc thắp đèn bờ biển do tu viện và cộng đồng địa phương lo; không nói họ có được trả tiền hay không. Phí tàu thuyền là chuyện của các cảng thời Trung cổ muộn."
+  },
+  "4": {
+   "quote": "was swept away in a great storm only five years later, taking its designer with it",
+   "why": "'taking its designer with it' = người thiết kế chết cùng ngọn hải đăng khi bị bão cuốn đi."
+  },
+  "5": {
+   "quote": "it was eventually dismantled not because the tower itself had failed but because the rock beneath it was being worn away by the sea",
+   "why": "Tháp bị tháo dỡ không phải vì bản thân tháp hỏng mà vì đá bên dưới bị biển bào mòn, trái với 'weaknesses in its construction'."
+  },
+  "6": {
+   "quote": "In the 1780s the Swiss scientist Aimé Argand invented an oil lamp with a hollow circular wick",
+   "why": "Bài nói Argand phát minh đèn và đèn được ghép với gương phản xạ, nhưng không nói lần đầu lắp ở hải đăng nào hay ở bờ biển Anh."
+  },
+  "7": {
+   "quote": "Fresnel's design achieved the same effect with a fraction of the material",
+   "why": "'a fraction of the material' = dùng ít vật liệu hơn nhiều so với thấu kính thường, trái với 'needed more glass'."
+  },
+  "8": {
+   "quote": "an oil lamp with a hollow circular wick, which allowed air to reach both the inside and the outside of the flame",
+   "why": "'hollow, circular ___ allowed air to reach the flame from inside and outside' khớp 'hollow circular wick, which allowed air to reach both the inside and the outside'."
+  },
+  "9": {
+   "quote": "combined with curved metal mirrors, known as reflectors, which concentrated the light into a beam",
+   "why": "'concentrated into a beam by curved metal ___' → mirrors (còn gọi là reflectors, chấp nhận cả hai)."
+  },
+  "10": {
+   "quote": "concentric rings of glass prisms arranged around a central bull's-eye",
+   "why": "'rings of glass ___ around a central bull's-eye' = 'concentric rings of glass prisms arranged around a central bull's-eye'."
+  },
+  "11": {
+   "quote": "the new lens could direct over 80 per cent of it towards the horizon",
+   "why": "'more than ___ per cent ... towards the horizon' = 'over 80 per cent of it towards the horizon'. Không phải 30 (đó là số km)."
+  },
+  "12": {
+   "quote": "so that they could be recognised by day",
+   "why": "'recognised during the ___' = 'recognised by day'; ban đêm thì dùng nhịp chớp đèn."
+  },
+  "13": {
+   "quote": "engineers floated the entire assembly on a bath of mercury",
+   "why": "'floated on ___ so that it could be rotated easily' = thả nổi trên bể thủy ngân để giảm ma sát."
+  },
+  "14": {
+   "quote": "Yet a growing number of ecologists have begun to ask whether this boom is helping bees at all, or whether it might even be doing harm.",
+   "why": "Đoạn A mô tả nuôi ong đô thị thành mốt, rồi các nhà sinh thái học đặt câu hỏi liệu nó có giúp ích không → 'a popular trend questioned'."
+  },
+  "15": {
+   "quote": "The species that are declining are mostly wild bees",
+   "why": "Đoạn B chỉ ra hiểu lầm: ong mật không bị đe doạ, loài suy giảm là ong hoang dã → nhầm lẫn về loài ong nào cần bảo vệ."
+  },
+  "16": {
+   "quote": "estimated how much pollen the surrounding green space could produce",
+   "why": "Đoạn C: nhóm Bernardi đếm tổ ong và ước tính lượng phấn hoa có sẵn để xem có đủ thức ăn không → 'calculating whether there is enough food'."
+  },
+  "17": {
+   "quote": "Kessler is careful not to overstate the result.",
+   "why": "Đoạn D: Kessler thấy ong hoang dã giảm khi mật độ tổ tăng (dấu hiệu cạnh tranh) nhưng thừa nhận có thể do yếu tố khác như xây dựng mới."
+  },
+  "18": {
+   "quote": "Honeybees kept at high density can act as reservoirs for viruses and parasites",
+   "why": "Đoạn E nói về bệnh: virus và ký sinh trùng có thể lây từ ong mật sang ong hoang dã → nguy cơ cho sức khoẻ ong hoang dã."
+  },
+  "19": {
+   "quote": "the strongest predictor of wild bee diversity was not the number of hives nearby but the variety of flowering plants and the availability of bare soil for nesting",
+   "why": "Đoạn F: Okafor cho rằng yếu tố quyết định là môi trường sống (hoa, đất trống), không phải số tổ ong → habitat là yếu tố then chốt."
+  },
+  "20": {
+   "quote": "For city authorities, the practical lessons are becoming clearer.",
+   "why": "Đoạn G liệt kê việc nên làm: trồng hoa dại bản địa, cắt cỏ ít hơn, bản đồ tổ ong ở Paris → các bước thực tế giúp loài thụ phấn."
+  },
+  "21": {
+   "quote": "urban areas often contain more wild bee species than the intensively farmed countryside that surrounds them",
+   "why": "Okafor: đô thị thường có nhiều loài ong hoang dã hơn vùng nông nghiệp thâm canh xung quanh = 'wider range ... than nearby farmland'."
+  },
+  "22": {
+   "quote": "we cannot rule out other factors, such as new building on nearby land",
+   "why": "Kessler thừa nhận không loại trừ được yếu tố khác (xây dựng mới) = 'other changes may have contributed to the decline'."
+  },
+  "23": {
+   "quote": "If you want to help bees, the best thing you can do is plant something.",
+   "why": "Marsh: muốn giúp ong thì tốt nhất là trồng cây; kèm phép so sánh nuôi gà để cứu chim hoang dã → trồng cây hơn nuôi ong."
+  },
+  "24": {
+   "quote": "It is a managed animal, bred and kept by humans in much the same way as livestock",
+   "why": "'looked after by people' = 'bred and kept by humans'; 'a ___ species' cần tính từ → managed."
+  },
+  "25": {
+   "quote": "estimated how much pollen the surrounding green space could produce",
+   "why": "'the amount of ___ that local green space could provide' = 'how much pollen the surrounding green space could produce'. Nhóm này chỉ ước tính phấn hoa, không phải mật hoa."
+  },
+  "26": {
+   "quote": "has now been detected in more than a dozen wild bee species",
+   "why": "'found in over ___ wild bee species' = 'detected in more than a dozen wild bee species'."
+  },
+  "27": {
+   "quote": "Only 4 per cent of those who had stopped at the extensive display went on to purchase a bottle, whereas 27 per cent of those who had seen the limited selection did so.",
+   "why": "Quầy 30 loại thu hút nhiều người dừng hơn (62% so với 41%) nhưng tỉ lệ mua lại thấp hơn nhiều (4% so với 27%). A ngược số liệu; C, D bài không nói."
+  },
+  "28": {
+   "quote": "a wide range makes it easier to imagine that a better option was missed",
+   "why": "Kém hài lòng vì dễ tưởng tượng mình đã bỏ lỡ lựa chọn tốt hơn. A (tốn công so sánh) là lý do trì hoãn quyết định, không phải lý do kém hài lòng."
+  },
+  "29": {
+   "quote": "one European chain of household stores reported that sales rose by 10 per cent after it reduced the number of varieties of several products by a quarter",
+   "why": "Chuỗi cửa hàng được nêu như một 'success' của việc cắt giảm mặt hàng: doanh số tăng 10%. Đây là lợi ích được báo cáo, không phải nghiên cứu phản bác."
+  },
+  "30": {
+   "quote": "The average effect, they concluded, was virtually zero.",
+   "why": "'virtually zero' = quy mô lựa chọn hầu như không tạo khác biệt trung bình. B, C quá mức hoặc ngược; D bài không nói."
+  },
+  "31": {
+   "quote": "each differed from the others on many features at once",
+   "why": "Hiệu ứng đáng tin khi các lựa chọn khó so sánh, ví dụ mỗi cái khác nhau ở nhiều đặc điểm. A, C ngược điều kiện; B (trên 30 lựa chọn) bài không nói."
+  },
+  "32": {
+   "quote": "then the blanket advice to reduce options is misguided",
+   "why": "Tác giả cho rằng lời khuyên chung chung 'giảm lựa chọn' là sai lầm ('misguided'), trái với 'generally sound advice'."
+  },
+  "33": {
+   "quote": "A shop that cuts its range may lose customers who knew exactly what they wanted and can no longer find it",
+   "why": "Khách biết rõ mình muốn gì có thể không tìm được hàng khi cửa hàng cắt giảm → bị thiệt, khớp với câu hỏi."
+  },
+  "34": {
+   "quote": "it is a considerable leap from these momentary feelings to a general decline in well-being",
+   "why": "Tác giả không tin lựa chọn nhiều làm con người bất hạnh; mức hài lòng còn có xu hướng tăng. Trái với 'clear evidence ... reduced happiness'."
+  },
+  "35": {
+   "quote": "For decisions that are both complex and consequential, such as selecting a pension or a medical treatment, the evidence that people struggle is strong",
+   "why": "'important decisions that involve many complicated factors' = 'complex and consequential'; 'have difficulty' = 'struggle'. Tác giả đồng ý."
+  },
+  "36": {
+   "quote": "Many online retailers already work in this way, and their customers seldom complain of being overwhelmed",
+   "why": "Tác giả chỉ nói khách mua online ít than bị choáng ngợp; không so sánh mức hài lòng giữa mua online và mua tại cửa hàng."
+  },
+  "37": {
+   "quote": "many prefer to postpone the decision or avoid it altogether",
+   "why": "Quá nhiều lựa chọn khiến người ta trì hoãn hoặc né tránh quyết định → 'discourage people from making a decision'."
+  },
+  "38": {
+   "quote": "The average effect, they concluded, was virtually zero.",
+   "why": "'virtually zero' = negligible (không đáng kể). 'significant' sai nghĩa."
+  },
+  "39": {
+   "quote": "overload occurs only under particular conditions",
+   "why": "Quá tải chỉ xảy ra trong những điều kiện nhất định → conditional (có điều kiện), không phải universal."
+  },
+  "40": {
+   "quote": "What matters most, I would suggest, is not the number of options but the way they are presented.",
+   "why": "'the way they are presented' = presentation (cách trình bày). 'quality' và 'price' không được nhắc tới."
+  }
+ }
+}

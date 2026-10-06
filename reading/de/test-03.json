@@ -1,0 +1,676 @@
+{
+ "id": "test-03",
+ "title": "Reading Test 3",
+ "passages": [
+  {
+   "title": "Salt: a short history of a valuable mineral",
+   "intro": "",
+   "paragraphs": [
+    {
+     "label": "",
+     "text": "Today salt is so cheap and so widely available that few people give it a second thought. In most countries a kilogram costs less than a cup of coffee, and a salt cellar sits on almost every kitchen table in the world. Yet for most of human history salt was a precious commodity, fought over, taxed and traded across vast distances. Its value came not from its taste alone but from a simple chemical fact: salt draws moisture out of food, and in doing so prevents the growth of the bacteria that cause decay. Before the invention of refrigeration, salting was one of the few reliable ways of keeping meat and fish edible through the long winter months."
+    },
+    {
+     "label": "",
+     "text": "The earliest evidence of deliberate salt production comes from Europe and China. At Poiana Slatinei in present-day Romania, archaeologists have found the remains of a site where, around 6000 BCE, people boiled water from a salt spring in clay pots until only the crystals remained. In northern China, salt was being gathered from the shores of Lake Yuncheng several thousand years ago, and the lake became so important to successive rulers that it was guarded by soldiers. Communities that controlled a reliable source of salt tended to grow wealthy, since their neighbours had little choice but to trade with them."
+    },
+    {
+     "label": "",
+     "text": "There were essentially three ways of obtaining salt, and the method chosen depended on local geography. In hot, dry coastal regions, seawater was let into shallow ponds and left for the sun and wind to evaporate, leaving a crust of crystals that could be raked up by hand. This was the cheapest method, but it worked only where there was little rain for several months of the year. Inland, people either mined rock salt, the remains of ancient seas now buried deep underground, or pumped up brine, water heavily saturated with salt, and boiled it over fires. Boiling required enormous quantities of fuel, and in parts of medieval England whole forests were cut down to keep the salt pans burning."
+    },
+    {
+     "label": "",
+     "text": "Salt also shaped the way people were paid and governed. It is often claimed that Roman soldiers received their wages in salt and that the English word 'salary' derives from this practice. Historians now consider the first part of this story doubtful: there is no ancient document that describes soldiers being paid in salt itself. More probably, the Latin word salarium referred to an allowance given to soldiers so that they could buy salt and other essentials. What is certain is that the Romans built one of their earliest roads, the Via Salaria, specifically to carry salt from the coast to the city and the surrounding region."
+    },
+    {
+     "label": "",
+     "text": "Governments were quick to recognise that a product everyone needed was an ideal thing to tax. In China, a state monopoly on salt established in the seventh century BCE provided a large share of the government's revenue for more than two thousand years. In France, a much-resented salt tax known as the gabelle required every member of a household above the age of eight to buy a fixed minimum quantity of salt each year from royal warehouses, at a price set by the Crown. The burden fell unevenly: in some provinces salt cost up to twenty times more than in others, which encouraged widespread smuggling. Anger at the gabelle was one of the grievances that fuelled the French Revolution, and the tax was abolished in 1790, although it was later reintroduced by Napoleon."
+    },
+    {
+     "label": "",
+     "text": "Perhaps the most famous protest against a salt tax took place in India. Under British rule, Indians were forbidden to collect or sell salt themselves and were obliged to buy it, heavily taxed, from government sources. In 1930 Mohandas Gandhi led a growing crowd of followers on a 24-day march of around 390 kilometres to the coastal village of Dandi, where he picked up a handful of natural salt from the shore in open defiance of the law. The act itself was small, but it attracted the attention of newspapers around the world and inspired similar acts of civil disobedience across the country."
+    },
+    {
+     "label": "",
+     "text": "In the nineteenth and twentieth centuries salt gradually lost its strategic importance. Geologists discovered huge underground deposits in many countries, new drilling techniques made extraction cheaper, and the spread of canning and, later, refrigeration meant that food no longer needed to be preserved with salt. Today only a small fraction of the salt produced worldwide ends up on our plates. Around 40 per cent is used by the chemical industry, mainly to manufacture chlorine and sodium hydroxide, and in cold countries vast amounts are spread on roads each winter to stop ice from forming. Ironically, the problem facing health authorities now is not a shortage of salt but an excess of it: most adults consume roughly twice the five grams a day recommended by the World Health Organization, much of it hidden in bread, sauces and processed foods."
+    }
+   ],
+   "groups": [
+    {
+     "type": "tfng",
+     "instructions": "Do the following statements agree with the information given in Reading Passage 1?\nIn boxes 1–6 on your answer sheet, write\nTRUE if the statement agrees with the information\nFALSE if the statement contradicts the information\nNOT GIVEN if there is no information on this",
+     "questions": [
+      {
+       "n": 1,
+       "text": "Before refrigeration existed, there were only a small number of dependable ways to stop food from going bad."
+      },
+      {
+       "n": 2,
+       "text": "Chinese rulers fought several wars to gain control of Lake Yuncheng."
+      },
+      {
+       "n": 3,
+       "text": "Obtaining salt by evaporating seawater cost more than the other methods of production."
+      },
+      {
+       "n": 4,
+       "text": "Rock salt was generally considered to be of better quality than salt made from brine."
+      },
+      {
+       "n": 5,
+       "text": "Ancient written records confirm that Roman soldiers were paid in salt."
+      },
+      {
+       "n": 6,
+       "text": "Under the gabelle, the price of salt differed from one part of France to another."
+      }
+     ]
+    },
+    {
+     "type": "sentence",
+     "limit": "ONE WORD ONLY",
+     "instructions": "Complete the sentences below.\nChoose ONE WORD ONLY from the passage for each answer.",
+     "questions": [
+      {
+       "n": 7,
+       "text": "In parts of medieval England, so much ___ was needed for boiling brine that entire forests disappeared."
+      },
+      {
+       "n": 8,
+       "text": "The Via Salaria was among the first ___ that the Romans constructed."
+      },
+      {
+       "n": 9,
+       "text": "Gandhi's protest at Dandi was reported in ___ in many countries."
+      },
+      {
+       "n": 10,
+       "text": "Nowadays, approximately 40 per cent of salt goes to the ___ industry."
+      }
+     ]
+    },
+    {
+     "type": "short",
+     "limit": "NO MORE THAN TWO WORDS AND/OR A NUMBER",
+     "instructions": "Answer the questions below.\nChoose NO MORE THAN TWO WORDS AND/OR A NUMBER from the passage for each answer.",
+     "questions": [
+      {
+       "n": 11,
+       "text": "What did people at Poiana Slatinei take water from in order to produce salt?"
+      },
+      {
+       "n": 12,
+       "text": "Above what age did each member of a French household have to buy a minimum amount of salt every year?"
+      },
+      {
+       "n": 13,
+       "text": "Approximately what distance did Gandhi and his followers cover on their way to Dandi?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sleep and the learning brain",
+   "intro": "Reading Passage 2 has seven paragraphs, A–G.",
+   "paragraphs": [
+    {
+     "label": "A",
+     "text": "For much of the twentieth century, sleep was regarded by scientists as little more than a period of rest, a time when the brain, like a factory at night, simply shut down. Memories were thought to be formed while we were awake and attentive; the hours spent asleep merely gave the body a chance to recover. The discovery in the 1950s of rapid eye movement (REM) sleep, during which brain activity closely resembles that of waking, began to undermine this view. Yet it is only in the past three decades that researchers have assembled convincing evidence that sleep plays an active role in one of the brain's most important tasks: turning fragile new experiences into durable long-term memories, a process known as consolidation."
+    },
+    {
+     "label": "B",
+     "text": "As early as 1924, two American psychologists noticed that people who slept after memorising lists of nonsense syllables forgot fewer of them than people who stayed awake for the same length of time. Their explanation, however, was a passive one. Sleep, they suggested, simply protected memories from interference: a sleeping person is not taking in new information that might overwrite what has just been learned. On this account, sleep helps memory in much the same way that a quiet room helps concentration, by keeping disturbances out rather than by doing any work of its own. The interference theory remained popular for decades, partly because it was so difficult to test any alternative."
+    },
+    {
+     "label": "C",
+     "text": "The alternative that has gained ground since the 1990s is that the sleeping brain actively rehearses the day's events. In experiments in which rats ran through a maze, cells in the hippocampus, a small curved structure deep in the brain that is essential for forming new memories, fired in a particular sequence as the animals passed each location. When the rats later slept, the same cells fired again in the same order, but up to twenty times faster, as if the animal were replaying its route at high speed. Most of this replay occurred not during REM sleep but during slow-wave sleep, the deepest stage, which dominates the first half of the night. The prevailing interpretation is that the hippocampus acts as a temporary store, and that replay during deep sleep gradually transfers information to the cortex, the brain's outer layer, where it can be kept for years."
+    },
+    {
+     "label": "D",
+     "text": "Perhaps the most striking evidence that replay matters comes from experiments in which researchers try to trigger it deliberately. In a study led by Ines Morandi at the University of Turin, 48 volunteers first learned the positions of 50 pictures on a computer screen; each picture was presented together with a characteristic sound, such as a miaow accompanying an image of a cat. The volunteers then took a 90-minute afternoon nap in the laboratory while their brain waves were monitored. Once a participant entered slow-wave sleep, the team quietly played the sounds linked to half of the pictures, at a volume too low to wake them. On waking, the volunteers were tested again on the locations of all the pictures. They placed the cued pictures significantly more accurately than the others, even though none of them reported having heard anything during the nap. Morandi argues that the sounds acted as reminders, prompting the brain to replay those particular memories in preference to others."
+    },
+    {
+     "label": "E",
+     "text": "If slow-wave sleep is chiefly responsible for storing facts and events, REM sleep appears to make a different contribution. Some researchers believe that during REM sleep the brain does not simply preserve memories but reorganises them, linking new information with older knowledge in unexpected ways. At the University of Leeds, Daniel Okafor asked volunteers to solve a series of number puzzles that contained a hidden rule allowing them to be completed much faster. Among those who were allowed a full night's sleep before a second attempt, 59 per cent discovered the rule, compared with 23 per cent of those who had stayed awake. Participants whose sleep included the most REM showed the greatest improvement, leading Okafor to suggest that this stage of sleep encourages the kind of flexible thinking needed for insight."
+    },
+    {
+     "label": "F",
+     "text": "The practical implications of this research are considerable, particularly for students. The common habit of staying up all night to revise before an examination appears to be self-defeating: in one brain-imaging study, a single night without sleep reduced activity in the hippocampus during learning, and volunteers' ability to remember new material the following day fell by roughly a third. Sleep after learning seems to be as important as sleep before it, since material studied in the evening benefits from the consolidation that takes place overnight. Some educationalists have used such findings to argue that secondary schools should begin lessons later in the morning, because teenagers' natural sleep patterns shift towards later bedtimes during adolescence, making early starts especially damaging."
+    },
+    {
+     "label": "G",
+     "text": "Nevertheless, many questions remain open. Most laboratory studies have involved small groups of healthy young adults, and it is not clear how far their results apply to the population as a whole. Older people, for example, spend far less time in slow-wave sleep than the young, and it has been suggested that this may contribute to the memory problems often associated with ageing; whether artificially deepening their sleep would improve their memory is still uncertain. Companies have already begun to market headbands that claim to enhance deep sleep using gentle sounds, but most scientists regard such products as premature. As Morandi puts it, 'We know that sleep and memory are intimately connected. We are only just beginning to understand how.'"
+    }
+   ],
+   "groups": [
+    {
+     "type": "headings",
+     "instructions": "Reading Passage 2 has seven paragraphs, A–G.\nChoose the correct heading for each paragraph from the list of headings below.",
+     "options": [
+      {
+       "key": "i",
+       "text": "A separate contribution from another stage of sleep"
+      },
+      {
+       "key": "ii",
+       "text": "Why some people need less sleep than others"
+      },
+      {
+       "key": "iii",
+       "text": "An early observation and a passive explanation"
+      },
+      {
+       "key": "iv",
+       "text": "Prompting the sleeping brain to strengthen chosen memories"
+      },
+      {
+       "key": "v",
+       "text": "How dreams reveal forgotten experiences"
+      },
+      {
+       "key": "vi",
+       "text": "Evidence that the brain revisits earlier activity"
+      },
+      {
+       "key": "vii",
+       "text": "Lessons for learners and schools"
+      },
+      {
+       "key": "viii",
+       "text": "A long-standing assumption starts to be challenged"
+      },
+      {
+       "key": "ix",
+       "text": "Products proven to boost memory during sleep"
+      },
+      {
+       "key": "x",
+       "text": "Limits to what is currently known"
+      }
+     ],
+     "questions": [
+      {
+       "n": 14,
+       "text": "Paragraph A"
+      },
+      {
+       "n": 15,
+       "text": "Paragraph B"
+      },
+      {
+       "n": 16,
+       "text": "Paragraph C"
+      },
+      {
+       "n": 17,
+       "text": "Paragraph D"
+      },
+      {
+       "n": 18,
+       "text": "Paragraph E"
+      },
+      {
+       "n": 19,
+       "text": "Paragraph F"
+      },
+      {
+       "n": 20,
+       "text": "Paragraph G"
+      }
+     ]
+    },
+    {
+     "type": "summary",
+     "limit": "NO MORE THAN TWO WORDS",
+     "instructions": "Complete the flow-chart below.\nChoose NO MORE THAN TWO WORDS from the passage for each answer.",
+     "text": "## Morandi's sound-cue experiment\nVolunteers learned where 50 pictures appeared on a screen; each picture was accompanied by a {21}.\n↓\nVolunteers had a 90-minute nap while their brain waves were monitored.\n↓\nWhen a volunteer reached {22} sleep, the sounds for half of the pictures were played.\n↓\nThe sounds were played at a low {23} so that the volunteers stayed asleep.\n↓\nAfter the nap, volunteers were tested: they located the {24} pictures more accurately than the rest.",
+     "questions": [
+      {
+       "n": 21
+      },
+      {
+       "n": 22
+      },
+      {
+       "n": 23
+      },
+      {
+       "n": 24
+      }
+     ]
+    },
+    {
+     "type": "mcq2",
+     "instructions": "Choose TWO letters, A–E.",
+     "questions": [
+      {
+       "n": [
+        25,
+        26
+       ],
+       "text": "Which TWO of the following statements about the research are made in the passage?",
+       "options": [
+        {
+         "key": "A",
+         "text": "Cells in the hippocampus of sleeping rats repeated an earlier pattern at a higher speed."
+        },
+        {
+         "key": "B",
+         "text": "Most of the replay seen in rats took place during REM sleep."
+        },
+        {
+         "key": "C",
+         "text": "Volunteers in Morandi's study were not aware of the sounds played while they slept."
+        },
+        {
+         "key": "D",
+         "text": "None of Okafor's volunteers who stayed awake discovered the hidden rule."
+        },
+        {
+         "key": "E",
+         "text": "Older adults gain more than young adults from having their sleep deepened."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Can money buy happiness? The economics of well-being",
+   "intro": "",
+   "paragraphs": [
+    {
+     "label": "",
+     "text": "Few questions in economics have provoked as much argument as whether rising incomes make people happier. For most of the discipline's history, the answer was simply assumed. Economists measured welfare by what people bought, on the reasonable grounds that individuals would not choose to spend money on things that left them worse off. Growth in national income was therefore treated as a good proxy for growth in well-being. It was only when researchers began asking people directly how satisfied they were with their lives that this assumption came under serious scrutiny, and the results have divided the profession ever since."
+    },
+    {
+     "label": "",
+     "text": "The first major challenge came in the 1970s from the American economist Harold Brennan. Examining a quarter of a century of American survey data, Brennan found something puzzling. Within any given year, richer Americans reported being happier than poorer ones. Yet over the period as a whole, as average income rose by more than 60 per cent, the proportion of people describing themselves as 'very happy' barely moved. Brennan's explanation was that people judge their circumstances relative to those around them and to their own expectations, both of which rise along with income. If everyone becomes richer at the same time, nobody feels any better off. For governments, he concluded, the pursuit of growth was largely a treadmill: a great deal of effort for very little lasting gain."
+    },
+    {
+     "label": "",
+     "text": "For two decades Brennan's paradox was widely accepted, but in the 2000s it was challenged by researchers with access to far larger data sets. Sofia Lindgren, working with surveys covering more than 130 countries, argued that the paradox was largely an illusion created by the limited data available to Brennan. When many countries were compared, she found a strong and consistent relationship between average income and life satisfaction, and no point at which the relationship disappeared. The key, Lindgren argued, is that happiness rises with the proportional rather than the absolute increase in income: an extra thousand dollars matters enormously to a family earning five thousand, and very little to one earning a hundred thousand."
+    },
+    {
+     "label": "",
+     "text": "Part of the disagreement turns on what exactly is being measured. The economist Kenji Mori has drawn a distinction between two kinds of well-being. The first is how people evaluate their lives when asked to reflect on them as a whole; the second is the quality of their everyday emotional experience, meaning how often they feel joy, stress or sadness. Analysing daily reports from almost half a million American households, Mori found that life evaluation continued to rise with income at every level he examined, but that emotional well-being stopped improving once household income reached around $90,000 a year. Beyond that point, more money appeared to make people think their lives were going better without making them feel any better from day to day. Mori himself has been cautious about the figure, pointing out that it varies with local living costs."
+    },
+    {
+     "label": "",
+     "text": "Other researchers have focused less on how much money people have than on how it compares with what others have. Amara Osei, an economist at the University of Edinburgh, studied pay records and well-being surveys from British workplaces and found that employees' job satisfaction was more closely linked to how their pay compared with that of colleagues than to the pay itself. Osei argues that because status is a contest that not everyone can win, policies aimed at raising incomes across the board are bound to disappoint. She has proposed higher taxes on luxury consumption, on the grounds that much spending on expensive goods is an attempt to outdo others which imposes costs on everyone else."
+    },
+    {
+     "label": "",
+     "text": "A further line of research suggests that the effect of money depends largely on how it is spent. Paul Delacroix gave participants small sums of money and instructed some to spend it on themselves and others to spend it on someone else. By the end of the day, those who had spent the money on others reported better moods, even though, when asked in advance, most participants had predicted the opposite. Delacroix's other studies indicate that purchases of experiences, such as holidays or concerts, bring more lasting satisfaction than purchases of material goods, partly because experiences are less easily compared with what other people own."
+    },
+    {
+     "label": "",
+     "text": "It seems to me that the debate has been hampered by a tendency to treat 'happiness' as a single quantity, when the evidence plainly shows that it is not. Mori's distinction resolves much of the apparent conflict between Brennan and Lindgren: money does seem to improve how people judge their lives, while doing comparatively little for their moment-to-moment feelings once basic needs are met. That said, I am not persuaded that Lindgren's findings justify the conclusion, often drawn by politicians, that growth should remain the overriding goal of economic policy. Cross-country comparisons reveal correlation, not cause; rich countries also tend to have more stable governments, better health care and greater personal freedom, and these may account for much of their citizens' greater satisfaction. Osei's work, meanwhile, is a useful reminder that a policy which raises one person's income may lower the satisfaction of another."
+    },
+    {
+     "label": "",
+     "text": "None of this means that well-being surveys should replace conventional economic statistics. Self-reported happiness is influenced by factors as trivial as the weather on the day of the survey. But surveys capture something that income figures miss entirely, and several governments now publish official well-being measures alongside figures for national output. This seems to me a sensible compromise. The real lesson of fifty years of research is not that money is irrelevant to happiness, but that it is a far less reliable route to it than either economists or the rest of us have tended to assume."
+    }
+   ],
+   "groups": [
+    {
+     "type": "match-features",
+     "instructions": "Look at the following statements (Questions 27–31) and the list of researchers below.\nMatch each statement with the correct researcher, A–E.",
+     "note": "You may use any letter more than once.",
+     "options": [
+      {
+       "key": "A",
+       "text": "Harold Brennan"
+      },
+      {
+       "key": "B",
+       "text": "Sofia Lindgren"
+      },
+      {
+       "key": "C",
+       "text": "Kenji Mori"
+      },
+      {
+       "key": "D",
+       "text": "Amara Osei"
+      },
+      {
+       "key": "E",
+       "text": "Paul Delacroix"
+      }
+     ],
+     "questions": [
+      {
+       "n": 27,
+       "text": "People are often mistaken about which use of money will improve their mood."
+      },
+      {
+       "n": 28,
+       "text": "An earlier conclusion was the result of insufficient evidence."
+      },
+      {
+       "n": 29,
+       "text": "Certain kinds of spending could reasonably be taxed more heavily."
+      },
+      {
+       "n": 30,
+       "text": "Income may influence how people assess their lives without changing how they feel each day."
+      },
+      {
+       "n": 31,
+       "text": "The benefits of higher income can be cancelled out by people's rising expectations."
+      }
+     ]
+    },
+    {
+     "type": "ynng",
+     "instructions": "Do the following statements agree with the claims of the writer in Reading Passage 3?\nIn boxes 32–37 on your answer sheet, write\nYES if the statement agrees with the claims of the writer\nNO if the statement contradicts the claims of the writer\nNOT GIVEN if it is impossible to say what the writer thinks about this",
+     "questions": [
+      {
+       "n": 32,
+       "text": "Treating happiness as one single measure has made the debate harder to resolve."
+      },
+      {
+       "n": 33,
+       "text": "Mori's research contradicts the findings of both Brennan and Lindgren."
+      },
+      {
+       "n": 34,
+       "text": "Lindgren's research provides good reason to make economic growth the main aim of policy."
+      },
+      {
+       "n": 35,
+       "text": "Osei's proposals would be difficult for governments to put into practice."
+      },
+      {
+       "n": 36,
+       "text": "Well-being surveys are too unreliable to be of any real use."
+      },
+      {
+       "n": 37,
+       "text": "Governments that publish well-being figures alongside economic output figures are taking a reasonable approach."
+      }
+     ]
+    },
+    {
+     "type": "mcq",
+     "instructions": "Choose the correct letter, A, B, C or D.",
+     "questions": [
+      {
+       "n": 38,
+       "text": "According to the first paragraph, why did economists traditionally treat national income as a measure of well-being?",
+       "options": [
+        {
+         "key": "A",
+         "text": "Surveys had shown a close link between income and happiness."
+        },
+        {
+         "key": "B",
+         "text": "They believed people's spending choices showed what was good for them."
+        },
+        {
+         "key": "C",
+         "text": "Governments needed a simple figure to compare countries."
+        },
+        {
+         "key": "D",
+         "text": "They considered happiness to be impossible to measure."
+        }
+       ]
+      },
+      {
+       "n": 39,
+       "text": "What does Mori say about the income level of $90,000?",
+       "options": [
+        {
+         "key": "A",
+         "text": "It is the point at which life evaluation stops rising."
+        },
+        {
+         "key": "B",
+         "text": "It applies equally to every part of the United States."
+        },
+        {
+         "key": "C",
+         "text": "It is likely to differ depending on the cost of living in an area."
+        },
+        {
+         "key": "D",
+         "text": "It has since been confirmed by studies in other countries."
+        }
+       ]
+      },
+      {
+       "n": 40,
+       "text": "What is the writer's main conclusion in the final paragraph?",
+       "options": [
+        {
+         "key": "A",
+         "text": "Money has no real effect on how happy people are."
+        },
+        {
+         "key": "B",
+         "text": "Money is a less dependable source of happiness than is usually believed."
+        },
+        {
+         "key": "C",
+         "text": "Official statistics on national output should be replaced by well-being surveys."
+        },
+        {
+         "key": "D",
+         "text": "Economists have been more realistic about money and happiness than the public."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "answers": {
+  "1": "TRUE",
+  "2": "NOT GIVEN",
+  "3": "FALSE",
+  "4": "NOT GIVEN",
+  "5": "FALSE",
+  "6": "TRUE",
+  "7": "fuel",
+  "8": "roads",
+  "9": "newspapers",
+  "10": "chemical",
+  "11": "salt spring",
+  "12": "eight/8",
+  "13": "390 kilometres/390 km/390 kilometers",
+  "14": "viii",
+  "15": "iii",
+  "16": "vi",
+  "17": "iv",
+  "18": "i",
+  "19": "vii",
+  "20": "x",
+  "21": "sound/characteristic sound",
+  "22": "slow-wave/slow wave/deep",
+  "23": "volume",
+  "24": "cued",
+  "25": "A",
+  "26": "C",
+  "27": "E",
+  "28": "B",
+  "29": "D",
+  "30": "C",
+  "31": "A",
+  "32": "YES",
+  "33": "NO",
+  "34": "NO",
+  "35": "NOT GIVEN",
+  "36": "NO",
+  "37": "YES",
+  "38": "B",
+  "39": "C",
+  "40": "B"
+ },
+ "explain": {
+  "1": {
+   "quote": "salting was one of the few reliable ways of keeping meat and fish edible",
+   "why": "\"one of the few reliable ways\" = \"only a small number of dependable ways\"; \"keeping meat and fish edible\" = giữ thực phẩm không hỏng."
+  },
+  "2": {
+   "quote": "the lake became so important to successive rulers that it was guarded by soldiers",
+   "why": "Bài chỉ nói hồ được binh lính canh giữ, không hề nhắc tới chiến tranh để giành quyền kiểm soát hồ."
+  },
+  "3": {
+   "quote": "This was the cheapest method",
+   "why": "Bài nói làm bay hơi nước biển là cách RẺ NHẤT, ngược với \"cost more than the other methods\"."
+  },
+  "4": {
+   "quote": "Inland, people either mined rock salt",
+   "why": "Bài chỉ nêu hai cách lấy muối trong đất liền (đào muối mỏ, đun nước muối), không so sánh chất lượng giữa chúng."
+  },
+  "5": {
+   "quote": "there is no ancient document that describes soldiers being paid in salt itself",
+   "why": "Bài nói KHÔNG có tài liệu cổ nào mô tả việc trả lương bằng muối, trái với \"ancient written records confirm\"."
+  },
+  "6": {
+   "quote": "in some provinces salt cost up to twenty times more than in others",
+   "why": "\"in some provinces ... twenty times more than in others\" = giá muối khác nhau giữa các vùng (\"differed from one part of France to another\")."
+  },
+  "7": {
+   "quote": "Boiling required enormous quantities of fuel, and in parts of medieval England whole forests were cut down",
+   "why": "\"enormous quantities of fuel\" = \"so much fuel\"; \"whole forests were cut down\" = \"entire forests disappeared\"."
+  },
+  "8": {
+   "quote": "the Romans built one of their earliest roads, the Via Salaria",
+   "why": "\"one of their earliest roads\" = \"among the first roads\"; cần danh từ số nhiều sau \"among the first\"."
+  },
+  "9": {
+   "quote": "it attracted the attention of newspapers around the world",
+   "why": "\"attracted the attention of newspapers around the world\" = được báo chí \"in many countries\" đưa tin."
+  },
+  "10": {
+   "quote": "Around 40 per cent is used by the chemical industry",
+   "why": "\"Around 40 per cent\" = \"approximately 40 per cent\"; \"is used by\" = \"goes to\". Chỗ trống cần tính từ trước \"industry\"."
+  },
+  "11": {
+   "quote": "people boiled water from a salt spring in clay pots",
+   "why": "\"boiled water from a salt spring\": người ở Poiana Slatinei lấy nước từ suối muối để đun lấy muối."
+  },
+  "12": {
+   "quote": "required every member of a household above the age of eight to buy a fixed minimum quantity of salt each year",
+   "why": "\"above the age of eight\" khớp câu hỏi \"Above what age\"; \"fixed minimum quantity\" = \"minimum amount\"."
+  },
+  "13": {
+   "quote": "a 24-day march of around 390 kilometres to the coastal village of Dandi",
+   "why": "\"around 390 kilometres\" = \"approximately what distance\". Chú ý không nhầm với 24 ngày (thời gian, không phải quãng đường)."
+  },
+  "14": {
+   "quote": "began to undermine this view",
+   "why": "Đoạn A: quan niệm lâu đời (ngủ chỉ là nghỉ ngơi) bắt đầu bị lung lay = \"long-standing assumption starts to be challenged\"."
+  },
+  "15": {
+   "quote": "Their explanation, however, was a passive one",
+   "why": "Đoạn B: phát hiện năm 1924 (early observation) và lời giải thích thụ động (sleep chỉ chặn nhiễu) = heading iii."
+  },
+  "16": {
+   "quote": "the same cells fired again in the same order",
+   "why": "Đoạn C: tế bào hippocampus của chuột phát lại đúng chuỗi hoạt động khi ngủ = \"brain revisits earlier activity\"."
+  },
+  "17": {
+   "quote": "experiments in which researchers try to trigger it deliberately",
+   "why": "Đoạn D: dùng âm thanh kích hoạt có chủ đích việc phát lại một nửa số ký ức được chọn = \"prompting ... chosen memories\"."
+  },
+  "18": {
+   "quote": "REM sleep appears to make a different contribution",
+   "why": "Đoạn E: giấc REM có vai trò khác (tái tổ chức ký ức, giúp insight) = \"separate contribution from another stage\". Không nói gì về giấc mơ (bẫy v)."
+  },
+  "19": {
+   "quote": "The practical implications of this research are considerable, particularly for students",
+   "why": "Đoạn F: hệ quả thực tiễn cho học sinh (không thức trắng ôn thi) và trường học (vào học muộn hơn) = heading vii."
+  },
+  "20": {
+   "quote": "Nevertheless, many questions remain open",
+   "why": "Đoạn G: nhiều câu hỏi chưa có lời đáp = \"limits to what is currently known\". Bẫy ix sai vì sản phẩm bị coi là \"premature\"."
+  },
+  "21": {
+   "quote": "each picture was presented together with a characteristic sound",
+   "why": "\"presented together with\" = \"accompanied by\"; mỗi bức tranh đi kèm một âm thanh đặc trưng."
+  },
+  "22": {
+   "quote": "Once a participant entered slow-wave sleep",
+   "why": "\"entered slow-wave sleep\" = \"reached ___ sleep\"; đoạn C cho biết slow-wave là giai đoạn ngủ sâu nhất."
+  },
+  "23": {
+   "quote": "at a volume too low to wake them",
+   "why": "\"a volume too low to wake them\" = \"a low volume so that the volunteers stayed asleep\"."
+  },
+  "24": {
+   "quote": "They placed the cued pictures significantly more accurately than the others",
+   "why": "\"placed ... more accurately than the others\" = \"located ... more accurately than the rest\"; tranh được phát âm thanh gợi nhắc = cued."
+  },
+  "25": {
+   "quote": "the same cells fired again in the same order, but up to twenty times faster",
+   "why": "A đúng: phát lại cùng thứ tự nhưng nhanh hơn tới 20 lần. B sai: replay chủ yếu ở slow-wave, không phải REM."
+  },
+  "26": {
+   "quote": "none of them reported having heard anything during the nap",
+   "why": "C đúng: không ai nghe thấy gì = không nhận biết âm thanh. D sai (23% vẫn tìm ra quy luật); E không được khẳng định (\"still uncertain\")."
+  },
+  "27": {
+   "quote": "when asked in advance, most participants had predicted the opposite",
+   "why": "Delacroix: người tham gia đoán trước sai (tưởng tiêu cho mình sẽ vui hơn) = \"often mistaken about which use of money will improve their mood\"."
+  },
+  "28": {
+   "quote": "the paradox was largely an illusion created by the limited data available to Brennan",
+   "why": "Lindgren cho rằng nghịch lý của Brennan do dữ liệu hạn chế = \"earlier conclusion ... insufficient evidence\"."
+  },
+  "29": {
+   "quote": "She has proposed higher taxes on luxury consumption",
+   "why": "Osei đề xuất đánh thuế cao hơn vào tiêu dùng xa xỉ = \"certain kinds of spending could ... be taxed more heavily\"."
+  },
+  "30": {
+   "quote": "more money appeared to make people think their lives were going better without making them feel any better from day to day",
+   "why": "Mori: tiền cải thiện đánh giá cuộc sống nhưng không cải thiện cảm xúc hằng ngày = \"assess their lives without changing how they feel each day\"."
+  },
+  "31": {
+   "quote": "people judge their circumstances relative to those around them and to their own expectations, both of which rise along with income",
+   "why": "Brennan: kỳ vọng tăng theo thu nhập nên giàu hơn mà không thấy khá hơn = lợi ích bị kỳ vọng tăng triệt tiêu."
+  },
+  "32": {
+   "quote": "the debate has been hampered by a tendency to treat 'happiness' as a single quantity",
+   "why": "\"hampered by\" = \"made harder\"; \"a single quantity\" = \"one single measure\". Tác giả đồng ý."
+  },
+  "33": {
+   "quote": "Mori's distinction resolves much of the apparent conflict between Brennan and Lindgren",
+   "why": "Tác giả cho rằng nghiên cứu của Mori dung hoà mâu thuẫn giữa Brennan và Lindgren, không phải mâu thuẫn với cả hai."
+  },
+  "34": {
+   "quote": "I am not persuaded that Lindgren's findings justify the conclusion, often drawn by politicians, that growth should remain the overriding goal of economic policy",
+   "why": "\"not persuaded ... justify\" = tác giả KHÔNG cho rằng nghiên cứu của Lindgren đủ cơ sở để đặt tăng trưởng làm mục tiêu chính."
+  },
+  "35": {
+   "quote": "Osei's work, meanwhile, is a useful reminder that a policy which raises one person's income may lower the satisfaction of another",
+   "why": "Tác giả chỉ khen nghiên cứu của Osei là lời nhắc hữu ích, không nói gì về việc đề xuất thuế của bà khó hay dễ thực hiện."
+  },
+  "36": {
+   "quote": "But surveys capture something that income figures miss entirely",
+   "why": "Tác giả thừa nhận khảo sát có hạn chế nhưng khẳng định chúng nắm bắt điều số liệu thu nhập bỏ sót, tức vẫn có giá trị."
+  },
+  "37": {
+   "quote": "This seems to me a sensible compromise",
+   "why": "\"sensible compromise\" = \"reasonable approach\": tác giả tán thành việc công bố chỉ số hạnh phúc cùng số liệu sản lượng."
+  },
+  "38": {
+   "quote": "on the reasonable grounds that individuals would not choose to spend money on things that left them worse off",
+   "why": "Người ta không tự chọn tiêu tiền vào thứ làm mình tệ hơn = lựa chọn chi tiêu phản ánh điều tốt cho họ. A sai: khảo sát xuất hiện sau."
+  },
+  "39": {
+   "quote": "pointing out that it varies with local living costs",
+   "why": "\"varies with local living costs\" = \"differ depending on the cost of living in an area\". D sai: mốc này áp dụng cho cảm xúc, không phải đánh giá cuộc sống."
+  },
+  "40": {
+   "quote": "it is a far less reliable route to it than either economists or the rest of us have tended to assume",
+   "why": "\"far less reliable route\" = \"less dependable source\"; \"tended to assume\" = \"usually believed\". A sai vì \"not that money is irrelevant\"."
+  }
+ }
+}
