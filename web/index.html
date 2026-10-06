@@ -64,8 +64,9 @@ a:hover{text-decoration:underline}
 .today{margin-top:10px;border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--surface-2);display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center}
 .today svg.rg{width:44px;height:44px;transform:rotate(-90deg)}
 .today .rg circle{fill:none;stroke-width:5}
-.today .tx{display:grid;gap:1px;font-size:12px;color:var(--mute);white-space:nowrap}
-.today .tx b{font:600 14px var(--mono);color:var(--ink)}
+.today .tx{display:grid;gap:1px;font-size:12px;color:var(--mute);white-space:nowrap;min-width:0}
+.today .tx>*{overflow:hidden;text-overflow:ellipsis}
+.today .tx b{font:600 17px/1.2 var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
 .today .tx .fl{display:inline-flex;align-items:center;gap:4px;color:var(--ink-2)}
 .today .tx .fl svg{width:14px;height:14px;color:var(--sS)}
 /* thu gọn: chỉ còn icon */
@@ -601,7 +602,7 @@ function shell(){
   const left = ex ? Math.round((new Date(ex + 'T00:00') - new Date(t + 'T00:00')) / 864e5) : null, sec = daySec(STUDY, t), goal = set().daily_min * 60, C = 2 * Math.PI * 18;
   $('#countdown').innerHTML = `<svg class="rg" viewBox="0 0 44 44" role="img" aria-label="Hôm nay ${Math.round(sec / 60)}/${set().daily_min} phút"><circle cx="22" cy="22" r="18" stroke="var(--line)"/>
       <circle id="tdRing" cx="22" cy="22" r="18" stroke="var(--brand)" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C * (1 - Math.min(1, sec / goal))}"/></svg>
-    <div class="tx"><span><b id="tdLive">${fmtClock(sec + track.sec)}</b> / ${set().daily_min} phút hôm nay</span><span class="fl">${ic('flame')}${st} ngày liên tiếp</span>
+    <div class="tx"><b id="tdLive">${fmtClock(sec + track.sec)}</b><span>hôm nay · mục tiêu ${set().daily_min}′</span><span class="fl">${ic('flame')}${st} ngày liên tiếp</span>
       <span>${left != null && left >= 0 ? `Còn ${left} ngày tới ngày thi` : 'Chưa chốt ngày thi'}</span></div>`;
   $('#countdown').title = `Hôm nay ${Math.round(sec / 60)}/${set().daily_min} phút · ${st} ngày liên tiếp`;
   $('#tog').innerHTML = ic(document.body.classList.contains('mini') ? 'panel-left-open' : 'panel-left-close');
@@ -1123,7 +1124,7 @@ function vocabCard(){
     const keyNext = e => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); next(); } };
     setTimeout(() => document.addEventListener('keydown', keyNext), 0);
     $('#vnext').onclick = next; $('#vnext').focus();
-    $('#vover') && ($('#vover').onclick = async () => { if (!retry) { await save; await api('/api/vocab', {action: 'review', id: c.id, ok: true}); S.ok++; } S.q.splice(S.q.lastIndexOf(c), 1); S.retry.delete(c.id); next(); });
+    $('#vover') && ($('#vover').onclick = async () => { if (!retry) { await save; await api('/api/vocab', {action: 'review', id: c.id, ok: true, undo: true}); S.ok++; } S.q.splice(S.q.lastIndexOf(c), 1); S.retry.delete(c.id); next(); });
     await save; VOCAB = await fetch('/api/vocab').then(r => r.json());
   };
   const norm = x => x.toLowerCase().replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();

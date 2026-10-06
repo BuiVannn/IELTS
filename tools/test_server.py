@@ -64,4 +64,8 @@ assert not server.authorized(basic("x"))  # tunnel mà chưa đặt mật khẩu
 server.PASS_FILE.write_text("bi-mat\n")
 assert server.authorized(basic("bi-mat")) and not server.authorized(basic("sai"))
 assert not server.authorized({"Cf-Connecting-IP": "1.2.3.4"})
+c = server.review_card({"box": 2, "due": "2026-11-01", "reviews": 3, "lapses": 0}, False, "2026-11-05")
+assert c["box"] == 1 and c["lapses"] == 1
+c.update(c.pop("prev")); server.review_card(c, True, "2026-11-05")  # hoàn tác lần sai rồi chấm đúng
+assert c["box"] == 3 and c["lapses"] == 0 and c["reviews"] == 4
 print("server OK")

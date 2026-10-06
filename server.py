@@ -393,6 +393,7 @@ def harvest(result, src_id, theme):
 def review_card(card, ok, day=None):
     """Leitner: đúng → lên 1 hộp, chờ LEITNER[hộp] ngày; sai → về hộp 1, ôn lại ngày mai. Từ chủ động: 30 ngày."""
     d = date.fromisoformat(day or today())
+    card["prev"] = {k: card.get(k) for k in ("box", "due", "reviews", "lapses", "last")}  # để "Tôi đúng, chỉ khác cách viết" hoàn tác lần chấm sai
     card["reviews"] = card.get("reviews", 0) + 1
     card["last"] = d.isoformat()
     if ok:
@@ -417,6 +418,8 @@ def vocab_action(data):
         if not card:
             raise ValueError("không thấy cụm từ")
         if a == "review":
+            if data.get("undo") and card.get("prev"):
+                card.update(card.pop("prev"))
             review_card(card, bool(data.get("ok")))
         elif a == "edit":
             for k in ("en", "vi", "ex"):
