@@ -594,6 +594,7 @@ const fmtClock = s => { const h = Math.floor(s / 3600), m = Math.floor(s / 60) %
 function tickClock(){
   const sec = daySec(STUDY, todayIso()) + track.sec, goal = (set().daily_min || 75) * 60, C = 2 * Math.PI * 18;
   const live = $('#tdLive'); if (live) live.textContent = fmtClock(sec);
+  if (sec === (set().min_day || 15) * 60) { flushStudy(); shell(); icons(); }  // vừa đủ phút tối thiểu: chuỗi ngày tăng ngay, không cần tải lại
   $('#tdRing')?.setAttribute('stroke-dashoffset', C * (1 - Math.min(1, sec / goal)));
   const c = $('#clock'); c.hidden = !track.skill; if (c.hidden) return;
   c.classList.toggle('on', track.on);
