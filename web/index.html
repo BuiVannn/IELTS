@@ -1110,22 +1110,25 @@ function vocabCard(){
     ${c.from || c.src ? `<p class="small mute" style="margin:0">Nguồn: ${c.from ? `bạn từng viết “${esc(c.from)}” · ` : ''}${esc(ITEMS.find(x => x.id === c.src)?.title || c.src)}</p>` : ''}
   </div></div>`;
   icons();
-  const inp = $('#va'); inp.focus();
+  const inp = $('#va'), btns = $('#vbtns'); inp.focus();
+  let done = false;  // mỗi thẻ chỉ chấm 1 lần: bấm Enter 2 lần / bấm "Không nhớ" khi đang chấm câu không được chấm lại hay ghi đè nút của thẻ sau
   const finish = async (ok, html) => {
+    if (done) return; done = true; inp.readOnly = true;
     $('#vres').innerHTML = html;
-    if (!retry) { if (ok) S.ok++; try { const r = await api('/api/vocab', {action: 'review', id: c.id, ok}); Object.assign(c, r.card); } catch (e) { toast(e.message); } }
     if (!ok && !retry) { S.retry.add(c.id); S.q.push(c); }
-    $('#vbtns').innerHTML = `<button class="btn primary" id="vnext">Tiếp · Enter${ic('arrow-right')}</button>${!ok ? '<button class="btn ghost" id="vover">Tôi đúng, chỉ khác cách viết</button>' : ''}`; icons();
+    if (!retry && ok) S.ok++;
+    const save = retry ? null : api('/api/vocab', {action: 'review', id: c.id, ok}).then(r => Object.assign(c, r.card)).catch(e => toast(e.message));
+    btns.innerHTML = `<button class="btn primary" id="vnext">Tiếp · Enter${ic('arrow-right')}</button>${!ok ? '<button class="btn ghost" id="vover">Tôi đúng, chỉ khác cách viết</button>' : ''}`; icons();
     const next = () => { document.removeEventListener('keydown', keyNext); S.i++; vocabCard(); };
     const keyNext = e => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); next(); } };
     setTimeout(() => document.addEventListener('keydown', keyNext), 0);
     $('#vnext').onclick = next; $('#vnext').focus();
-    $('#vover') && ($('#vover').onclick = async () => { if (!retry) { await api('/api/vocab', {action: 'review', id: c.id, ok: true}); S.ok++; } S.q.pop(); S.retry.delete(c.id); next(); });
-    VOCAB = await fetch('/api/vocab').then(r => r.json());
+    $('#vover') && ($('#vover').onclick = async () => { if (!retry) { await save; await api('/api/vocab', {action: 'review', id: c.id, ok: true}); S.ok++; } S.q.splice(S.q.lastIndexOf(c), 1); S.retry.delete(c.id); next(); });
+    await save; VOCAB = await fetch('/api/vocab').then(r => r.json());
   };
   const norm = x => x.toLowerCase().replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();
   const check = async () => {
-    const v = inp.value.trim(); if (!v) return;
+    const v = inp.value.trim(); if (!v || done || $('#vcheck').disabled) return;
     if (mode === 'recall' || mode === 'cloze') {
       const ok = norm(v) === norm(c.en) || near(norm(v), norm(c.en));
       return finish(ok, `<div class="res ${ok ? 'ok' : 'no'}">${ok ? 'Đúng' : 'Chưa đúng'}<b>${esc(c.en)}</b>${c.ex ? `<span class="small" style="color:var(--ink-2)">${esc(c.ex)}</span>` : ''}</div>`);
