@@ -1,0 +1,252 @@
+[
+ {
+  "id": "edu-001",
+  "q": "university",
+  "p": "higher education institution",
+  "vi": "trường đại học",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Each higher education institution in the study reported a sharp rise in applications from overseas students.",
+  "src": ""
+ },
+ {
+  "id": "edu-002",
+  "q": "teacher",
+  "p": "educator",
+  "vi": "giáo viên, nhà giáo",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Many educators argue that creativity should be valued as highly as academic achievement.",
+  "src": ""
+ },
+ {
+  "id": "edu-003",
+  "q": "student",
+  "p": "learner",
+  "vi": "người học, học sinh",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Adult learners often bring valuable work experience into the classroom.",
+  "src": ""
+ },
+ {
+  "id": "edu-004",
+  "q": "compulsory",
+  "p": "required by law",
+  "vi": "bắt buộc (theo luật)",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "In most European countries, attendance at school is required by law until the age of sixteen.",
+  "src": ""
+ },
+ {
+  "id": "edu-005",
+  "q": "curriculum",
+  "p": "what is taught in schools",
+  "vi": "chương trình học",
+  "kind": "structure",
+  "topic": "education",
+  "ex": "Parents increasingly want a say in what is taught in schools, particularly in history and science.",
+  "src": ""
+ },
+ {
+  "id": "edu-006",
+  "q": "practical",
+  "p": "hands-on",
+  "vi": "thực hành",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Hands-on activities such as building models help children grasp abstract scientific concepts.",
+  "src": ""
+ },
+ {
+  "id": "edu-007",
+  "q": "learn independently",
+  "p": "independent learning",
+  "vi": "tự học",
+  "kind": "word-form",
+  "topic": "education",
+  "ex": "Universities expect a high degree of independent learning, which many first-year students find challenging.",
+  "src": ""
+ },
+ {
+  "id": "edu-008",
+  "q": "drop out",
+  "p": "fail to complete their studies",
+  "vi": "bỏ học",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Students from low-income families are more likely to fail to complete their studies for financial reasons.",
+  "src": ""
+ },
+ {
+  "id": "edu-009",
+  "q": "graduate",
+  "p": "obtain a degree",
+  "vi": "tốt nghiệp, lấy bằng",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Those who obtain a degree typically earn considerably more over their lifetime than non-graduates.",
+  "src": ""
+ },
+ {
+  "id": "edu-010",
+  "q": "tuition fees",
+  "p": "the cost of studying",
+  "vi": "học phí",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "The cost of studying abroad has deterred many talented applicants from developing countries.",
+  "src": ""
+ },
+ {
+  "id": "edu-011",
+  "q": "online course",
+  "p": "distance learning",
+  "vi": "học từ xa, học trực tuyến",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Distance learning allows working adults to gain qualifications without giving up their jobs.",
+  "src": ""
+ },
+ {
+  "id": "edu-012",
+  "q": "academic performance",
+  "p": "how well students do at school",
+  "vi": "kết quả học tập",
+  "kind": "structure",
+  "topic": "education",
+  "ex": "Researchers examined whether sleep patterns affect how well students do at school.",
+  "src": ""
+ },
+ {
+  "id": "edu-013",
+  "q": "exam results",
+  "p": "test scores",
+  "vi": "kết quả thi",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Schools in the region saw test scores improve after the introduction of smaller classes.",
+  "src": ""
+ },
+ {
+  "id": "edu-014",
+  "q": "memorise",
+  "p": "learn by heart",
+  "vi": "học thuộc lòng",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Pupils were once expected to learn by heart long passages of poetry and multiplication tables.",
+  "src": ""
+ },
+ {
+  "id": "edu-015",
+  "q": "reading and writing skills",
+  "p": "literacy",
+  "vi": "khả năng đọc viết",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Early literacy is strongly linked to later success across the whole curriculum.",
+  "src": ""
+ },
+ {
+  "id": "edu-016",
+  "q": "maths skills",
+  "p": "numeracy",
+  "vi": "khả năng tính toán",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Employers have complained that many school leavers lack basic numeracy and cannot handle simple calculations.",
+  "src": ""
+ },
+ {
+  "id": "edu-017",
+  "q": "enrol",
+  "p": "sign up for",
+  "vi": "đăng ký học",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "More mature students than ever now sign up for evening classes at local colleges.",
+  "src": ""
+ },
+ {
+  "id": "edu-018",
+  "q": "scholarship",
+  "p": "a grant to cover study costs",
+  "vi": "học bổng",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "She was awarded a grant to cover study costs, which allowed her to attend a leading university.",
+  "src": ""
+ },
+ {
+  "id": "edu-019",
+  "q": "badly behaved",
+  "p": "disruptive",
+  "vi": "quậy phá, gây mất trật tự",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "A single disruptive pupil can significantly reduce the amount of learning that takes place in a lesson.",
+  "src": ""
+ },
+ {
+  "id": "edu-020",
+  "q": "class size",
+  "p": "pupil-to-teacher ratio",
+  "vi": "sĩ số lớp",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Finland maintains a low pupil-to-teacher ratio, which allows staff to give individual attention.",
+  "src": ""
+ },
+ {
+  "id": "edu-021",
+  "q": "job-related courses",
+  "p": "vocational training",
+  "vi": "đào tạo nghề",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Vocational training in plumbing and electrical work has become an attractive alternative to university.",
+  "src": ""
+ },
+ {
+  "id": "edu-022",
+  "q": "educate children",
+  "p": "the education of children",
+  "vi": "giáo dục trẻ em",
+  "kind": "word-form",
+  "topic": "education",
+  "ex": "The education of children in rural areas has long been hampered by a shortage of qualified staff.",
+  "src": ""
+ },
+ {
+  "id": "edu-023",
+  "q": "assess students",
+  "p": "student assessment",
+  "vi": "đánh giá học sinh",
+  "kind": "word-form",
+  "topic": "education",
+  "ex": "Continuous student assessment through coursework is replacing final examinations in many institutions.",
+  "src": ""
+ },
+ {
+  "id": "edu-024",
+  "q": "half of the students",
+  "p": "50 per cent of the student body",
+  "vi": "một nửa số sinh viên",
+  "kind": "number",
+  "topic": "education",
+  "ex": "Nearly 50 per cent of the student body now comes from outside the country.",
+  "src": ""
+ },
+ {
+  "id": "edu-025",
+  "q": "not compulsory",
+  "p": "optional",
+  "vi": "không bắt buộc, tự chọn",
+  "kind": "opposite",
+  "topic": "education",
+  "ex": "Music lessons are optional after the age of fourteen, so many pupils abandon the subject.",
+  "src": ""
+ }
+]

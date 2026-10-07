@@ -1,0 +1,2072 @@
+[
+ {
+  "id": "td-001",
+  "q": "put out",
+  "p": "extinguished",
+  "vi": "dập tắt",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "A fire on open ground could be extinguished by rain or obscured by its own smoke, and it required a constant supply of fuel.",
+  "src": "test-01#1"
+ },
+ {
+  "id": "td-002",
+  "q": "disagree about",
+  "p": "estimates of its height vary",
+  "vi": "ý kiến/ước tính khác nhau",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Estimates of its height vary, but most historians place it somewhere between 100 and 130 metres, which would have made it one of the tallest structures in the ancient world.",
+  "src": "test-01#2"
+ },
+ {
+  "id": "td-003",
+  "q": "remove",
+  "p": "dismantled",
+  "vi": "dỡ bỏ, tháo dỡ",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Smeaton's tower stood for over 120 years, and it was eventually dismantled not because the tower itself had failed but because the rock beneath it was being worn away by the sea.",
+  "src": "test-01#5"
+ },
+ {
+  "id": "td-004",
+  "q": "far less",
+  "p": "a fraction of",
+  "vi": "ít hơn nhiều, một phần nhỏ",
+  "kind": "number",
+  "topic": "general",
+  "ex": "A conventional lens large enough to gather a lighthouse's light would have been impossibly thick and heavy, but Fresnel's design achieved the same effect with a fraction of the material.",
+  "src": "test-01#7"
+ },
+ {
+  "id": "td-005",
+  "q": "mirror",
+  "p": "reflectors",
+  "vi": "gương phản xạ",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "When Argand lamps were combined with curved metal mirrors, known as reflectors, which concentrated the light into a beam, a lighthouse could for the first time be seen at a considerable distance.",
+  "src": "test-01#9"
+ },
+ {
+  "id": "td-006",
+  "q": "more than",
+  "p": "over",
+  "vi": "hơn, trên",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Whereas reflectors captured perhaps half of the light from a lamp, the new lens could direct over 80 per cent of it towards the horizon.",
+  "src": "test-01#11"
+ },
+ {
+  "id": "td-007",
+  "q": "during the day",
+  "p": "by day",
+  "vi": "vào ban ngày",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Some towers were painted in distinctive patterns of stripes or bands so that they could be recognised by day, while at night their lights were made to flash in a particular rhythm.",
+  "src": "test-01#12"
+ },
+ {
+  "id": "td-008",
+  "q": "call into question",
+  "p": "begun to ask whether",
+  "vi": "đặt dấu hỏi, nghi ngờ",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Yet a growing number of ecologists have begun to ask whether this boom is helping bees at all, or whether it might even be doing harm.",
+  "src": "test-01#14"
+ },
+ {
+  "id": "td-009",
+  "q": "calculate",
+  "p": "estimated",
+  "vi": "tính toán, ước tính",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Professor Bernardi's team counted the hives near each site and estimated how much pollen the surrounding green space could produce.",
+  "src": "test-01#16"
+ },
+ {
+  "id": "td-010",
+  "q": "deciding factor",
+  "p": "strongest predictor",
+  "vi": "yếu tố quyết định",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "In his surveys, the strongest predictor of wild bee diversity was not the number of hives nearby but the variety of flowering plants and the availability of bare soil for nesting.",
+  "src": "test-01#19"
+ },
+ {
+  "id": "td-011",
+  "q": "towns and cities",
+  "p": "urban areas",
+  "vi": "khu đô thị",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Okafor points out that urban areas often contain more wild bee species than the intensively farmed countryside that surrounds them.",
+  "src": "test-01#21"
+ },
+ {
+  "id": "td-012",
+  "q": "agricultural land",
+  "p": "farmed countryside",
+  "vi": "đất nông nghiệp",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Okafor points out that urban areas often contain more wild bee species than the intensively farmed countryside that surrounds them.",
+  "src": "test-01#21"
+ },
+ {
+  "id": "td-013",
+  "q": "other causes are possible",
+  "p": "cannot rule out other factors",
+  "vi": "không loại trừ nguyên nhân khác",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Cities change in many ways at once, she points out, and we cannot rule out other factors, such as new building on nearby land.",
+  "src": "test-01#22"
+ },
+ {
+  "id": "td-014",
+  "q": "would do better to",
+  "p": "the best thing you can do",
+  "vi": "tốt hơn hết là nên",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "As Marsh puts it, if you want to help bees, the best thing you can do is plant something rather than keep a hive.",
+  "src": "test-01#23"
+ },
+ {
+  "id": "td-015",
+  "q": "looked after by people",
+  "p": "kept by humans",
+  "vi": "được con người chăm nuôi",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "It is a managed animal, bred and kept by humans in much the same way as livestock, and its global numbers have actually risen over the past fifty years.",
+  "src": "test-01#24"
+ },
+ {
+  "id": "td-016",
+  "q": "the amount of",
+  "p": "how much",
+  "vi": "lượng, bao nhiêu",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The researchers counted the hives within a one-kilometre radius and estimated how much pollen the surrounding green space could produce.",
+  "src": "test-01#25"
+ },
+ {
+  "id": "td-017",
+  "q": "over twelve",
+  "p": "more than a dozen",
+  "vi": "hơn mười hai",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Deformed wing virus, once thought to affect only honeybees, has now been detected in more than a dozen wild bee species.",
+  "src": "test-01#26"
+ },
+ {
+  "id": "td-018",
+  "q": "large",
+  "p": "extensive",
+  "vi": "lớn, phong phú",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Only 4 per cent of those who had stopped at the extensive display went on to purchase a bottle, whereas 27 per cent of those who had seen the limited selection did so.",
+  "src": "test-01#27"
+ },
+ {
+  "id": "td-019",
+  "q": "buy",
+  "p": "purchase",
+  "vi": "mua",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Only 4 per cent of those who had stopped at the extensive display went on to purchase a bottle, whereas 27 per cent of those who had seen the limited selection did so.",
+  "src": "test-01#27"
+ },
+ {
+  "id": "td-020",
+  "q": "could have chosen better",
+  "p": "a better option was missed",
+  "vi": "lẽ ra chọn được cái tốt hơn",
+  "kind": "structure",
+  "topic": "daily-life",
+  "ex": "Even those who do choose, Hale and Reyes suggested, may end up less content, because a wide range makes it easier to imagine that a better option was missed.",
+  "src": "test-01#28"
+ },
+ {
+  "id": "td-021",
+  "q": "narrow",
+  "p": "cut",
+  "vi": "thu hẹp (mặt hàng)",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "A shop that cuts its range may lose customers who knew exactly what they wanted and can no longer find it; experienced buyers, who arrive with clear preferences, tend to benefit from a large selection.",
+  "src": "test-01#33"
+ },
+ {
+  "id": "td-022",
+  "q": "almost no difference",
+  "p": "virtually zero",
+  "vi": "gần như không khác biệt",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "When the results of many experiments were combined, the average effect of the number of options, they concluded, was virtually zero.",
+  "src": "test-01#30"
+ },
+ {
+  "id": "td-023",
+  "q": "negligible",
+  "p": "virtually zero",
+  "vi": "không đáng kể",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Brenner's team pooled dozens of studies of choice overload, and the average effect, they concluded, was virtually zero.",
+  "src": "test-01#38"
+ },
+ {
+  "id": "td-024",
+  "q": "in a number of ways",
+  "p": "on many features",
+  "vi": "ở nhiều mặt",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The effect was reliable when the options were difficult to compare, for example because each differed from the others on many features at once.",
+  "src": "test-01#31"
+ },
+ {
+  "id": "td-025",
+  "q": "general",
+  "p": "blanket",
+  "vi": "chung chung, áp dụng đại trà",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "If overload depends on circumstances, then the blanket advice to reduce options is misguided.",
+  "src": "test-01#32"
+ },
+ {
+  "id": "td-026",
+  "q": "less happy",
+  "p": "a general decline in well-being",
+  "vi": "kém hạnh phúc hơn",
+  "kind": "structure",
+  "topic": "health",
+  "ex": "Surveys do show that people sometimes regret their decisions or feel overwhelmed, but it is a considerable leap from these momentary feelings to a general decline in well-being.",
+  "src": "test-01#34"
+ },
+ {
+  "id": "td-027",
+  "q": "find it hard",
+  "p": "struggle",
+  "vi": "gặp khó khăn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "For decisions that are both complex and consequential, such as selecting a pension or a medical treatment, the evidence that people struggle is strong.",
+  "src": "test-01#35"
+ },
+ {
+  "id": "td-028",
+  "q": "important",
+  "p": "consequential",
+  "vi": "quan trọng, hệ trọng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "For decisions that are both complex and consequential, such as selecting a pension or a medical treatment, the evidence that people struggle is strong.",
+  "src": "test-01#35"
+ },
+ {
+  "id": "td-029",
+  "q": "complicated",
+  "p": "complex",
+  "vi": "phức tạp",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "For decisions that are both complex and consequential, such as selecting a pension or a medical treatment, the evidence that people struggle is strong.",
+  "src": "test-01#35"
+ },
+ {
+  "id": "td-030",
+  "q": "put off",
+  "p": "postpone",
+  "vi": "trì hoãn",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "When the number of alternatives becomes large, comparing them demands more mental effort than most people are willing to invest, and many prefer to postpone the decision or avoid it altogether.",
+  "src": "test-01#37"
+ },
+ {
+  "id": "td-031",
+  "q": "conditional",
+  "p": "only under particular conditions",
+  "vi": "có điều kiện",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Defenders of choice overload argued that averaging across so many different studies concealed an important truth: that overload occurs only under particular conditions.",
+  "src": "test-01#39"
+ },
+ {
+  "id": "td-032",
+  "q": "presentation",
+  "p": "the way they are presented",
+  "vi": "cách trình bày",
+  "kind": "word-form",
+  "topic": "media",
+  "ex": "What matters most, I would suggest, is not the number of options but the way they are presented.",
+  "src": "test-01#40"
+ },
+ {
+  "id": "td-033",
+  "q": "contain a lot of",
+  "p": "stores large amounts of",
+  "vi": "chứa nhiều",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The culm stores large amounts of starch, which makes it an attractive food for beetles, and untreated bamboo exposed to rain and sun may last as little as two years.",
+  "src": "test-02#1"
+ },
+ {
+  "id": "td-034",
+  "q": "vary",
+  "p": "change",
+  "vi": "thay đổi, khác nhau",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Even within a single stem the diameter and wall thickness change from base to tip, so engineers find it difficult to calculate loads.",
+  "src": "test-02#3"
+ },
+ {
+  "id": "td-035",
+  "q": "evenly distributed",
+  "p": "spread uniformly",
+  "vi": "phân bố đều",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "These are not spread uniformly through the wall: they are packed most densely towards the outer surface, where bending forces are greatest, and become sparser towards the hollow interior.",
+  "src": "test-02#9"
+ },
+ {
+  "id": "td-036",
+  "q": "benefit",
+  "p": "advantage",
+  "vi": "lợi ích",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Drying and pressing consume considerable energy, so that some of the plant's environmental advantage is lost in the factory.",
+  "src": "test-02#12"
+ },
+ {
+  "id": "td-037",
+  "q": "vessel",
+  "p": "a ship",
+  "vi": "tàu, thuyền",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "There the nodules are separated from most of the mud and pumped up a riser pipe several kilometres long to a ship on the surface, where they are stored before being taken ashore.",
+  "src": "test-02#14"
+ },
+ {
+  "id": "td-038",
+  "q": "reproduce the impact of",
+  "p": "imitate the effects of",
+  "vi": "mô phỏng tác động của",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "The most informative began in 1989, when German scientists dragged a plough-like device repeatedly across eleven square kilometres of seabed off the coast of Peru to imitate the effects of mining.",
+  "src": "test-02#15"
+ },
+ {
+  "id": "td-039",
+  "q": "small-scale",
+  "p": "modest",
+  "vi": "quy mô nhỏ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "If a modest experiment could leave a mark lasting decades, commercial mining, which would affect hundreds of square kilometres each year, may cause permanent damage.",
+  "src": "test-02#15"
+ },
+ {
+  "id": "td-040",
+  "q": "extracted",
+  "p": "newly mined",
+  "vi": "được khai thác",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Improved recycling of old batteries could further reduce the need for newly mined metals, and the price of nickel fell sharply after 2022 as new supplies arrived from mines on land.",
+  "src": "test-02#16"
+ },
+ {
+  "id": "td-041",
+  "q": "challenge",
+  "p": "disputed",
+  "vi": "phản bác, nghi vấn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Other scientists, including some funded by mining companies, have strongly disputed the result, and the question remains open.",
+  "src": "test-02#17"
+ },
+ {
+  "id": "td-042",
+  "q": "a smaller quantity of",
+  "p": "far less",
+  "vi": "ít hơn",
+  "kind": "structure",
+  "topic": "environment",
+  "ex": "And because each nodule is unusually rich in metal, supporters claim, far less waste is left over after processing than with ores mined on land.",
+  "src": "test-02#20"
+ },
+ {
+  "id": "td-043",
+  "q": "give permission",
+  "p": "allowing",
+  "vi": "cho phép",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The ISA has issued more than thirty contracts allowing companies and governments to explore the seabed, but it has not agreed on rules for extraction.",
+  "src": "test-02#21"
+ },
+ {
+  "id": "td-044",
+  "q": "be responsible for",
+  "p": "is charged with",
+  "vi": "chịu trách nhiệm",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The authority is charged with protecting the marine environment and with organising the exploitation of seabed minerals.",
+  "src": "test-02#22"
+ },
+ {
+  "id": "td-045",
+  "q": "temporary halt",
+  "p": "a pause",
+  "vi": "sự tạm dừng",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Meanwhile, more than thirty countries have called for a pause in deep-sea mining until its environmental effects are better understood.",
+  "src": "test-02#22"
+ },
+ {
+  "id": "td-046",
+  "q": "similar in size to",
+  "p": "about the size of",
+  "vi": "cỡ bằng",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "A remotely operated vehicle about the size of a combine harvester crawls across the seabed on caterpillar tracks, using jets of water to lift the nodules.",
+  "src": "test-02#23"
+ },
+ {
+  "id": "td-047",
+  "q": "abandon",
+  "p": "dismissed",
+  "vi": "gạt bỏ, từ bỏ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "In the 1960s, linguistic relativity was quietly dismissed as a romantic error by most researchers in the field.",
+  "src": "test-02#28"
+ },
+ {
+  "id": "td-048",
+  "q": "reliable",
+  "p": "consistent",
+  "vi": "nhất quán, đáng tin",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The result appeared in countless magazine articles and popular books, yet when other laboratories attempted to repeat the experiments with larger samples, they found no consistent effect.",
+  "src": "test-02#35"
+ },
+ {
+  "id": "td-049",
+  "q": "depend largely on",
+  "p": "relied heavily on",
+  "vi": "dựa phần lớn vào",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Later fieldwork showed that Hopi has a rich vocabulary for talking about time, and it emerged that Whorf had relied heavily on a single Hopi speaker living in New York.",
+  "src": "test-02#36"
+ },
+ {
+  "id": "td-050",
+  "q": "regular sequence",
+  "p": "predictable order",
+  "vi": "trình tự đều đặn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "A survey of colour words published in 1969 concluded that, although languages differ in how many basic colour terms they have, these terms are added in a remarkably predictable order.",
+  "src": "test-02#37"
+ },
+ {
+  "id": "td-051",
+  "q": "have to be done quickly",
+  "p": "require rapid responses",
+  "vi": "cần phản ứng nhanh",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The effects of language on thought are real but typically modest, and they tend to appear in tasks that require rapid responses.",
+  "src": "test-02#39"
+ },
+ {
+  "id": "td-052",
+  "q": "surroundings",
+  "p": "environment",
+  "vi": "môi trường xung quanh",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Because the comparison is made within the same individuals, whose culture and environment stay constant, such studies avoid the problem that has haunted the field since Whorf.",
+  "src": "test-02#40"
+ },
+ {
+  "id": "td-053",
+  "q": "dependable",
+  "p": "reliable",
+  "vi": "đáng tin cậy",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Before the invention of refrigeration, salting was one of the few reliable ways of keeping meat and fish edible through the long winter months.",
+  "src": "test-03#1"
+ },
+ {
+  "id": "td-054",
+  "q": "a small number of",
+  "p": "one of the few",
+  "vi": "một số ít",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Before the invention of refrigeration, salting was one of the few reliable ways of keeping meat and fish edible through the long winter months.",
+  "src": "test-03#1"
+ },
+ {
+  "id": "td-055",
+  "q": "so much",
+  "p": "enormous quantities of",
+  "vi": "rất nhiều",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Boiling required enormous quantities of fuel, and in parts of medieval England whole forests were cut down to keep the salt pans burning.",
+  "src": "test-03#7"
+ },
+ {
+  "id": "td-056",
+  "q": "entire",
+  "p": "whole",
+  "vi": "toàn bộ",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Boiling required enormous quantities of fuel, and in parts of medieval England whole forests were cut down to keep the salt pans burning.",
+  "src": "test-03#7"
+ },
+ {
+  "id": "td-057",
+  "q": "among the first",
+  "p": "one of their earliest",
+  "vi": "một trong những cái đầu tiên",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "What is certain is that the Romans built one of their earliest roads, the Via Salaria, specifically to carry salt from the coast to the city and the surrounding region.",
+  "src": "test-03#8"
+ },
+ {
+  "id": "td-058",
+  "q": "in many countries",
+  "p": "around the world",
+  "vi": "khắp thế giới",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The act itself was small, but it attracted the attention of newspapers around the world and inspired similar acts of civil disobedience across the country.",
+  "src": "test-03#9"
+ },
+ {
+  "id": "td-059",
+  "q": "be reported in",
+  "p": "attracted the attention of",
+  "vi": "được đưa tin",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "The act itself was small, but it attracted the attention of newspapers around the world and inspired similar acts of civil disobedience across the country.",
+  "src": "test-03#9"
+ },
+ {
+  "id": "td-060",
+  "q": "approximately",
+  "p": "around",
+  "vi": "khoảng chừng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Around 40 per cent is used by the chemical industry, mainly to manufacture chlorine and sodium hydroxide, and in cold countries vast amounts are spread on roads each winter to stop ice from forming.",
+  "src": "test-03#10"
+ },
+ {
+  "id": "td-061",
+  "q": "go to",
+  "p": "is used by",
+  "vi": "được dùng cho",
+  "kind": "structure",
+  "topic": "economy",
+  "ex": "Around 40 per cent is used by the chemical industry, mainly to manufacture chlorine and sodium hydroxide, and in cold countries vast amounts are spread on roads each winter to stop ice from forming.",
+  "src": "test-03#10"
+ },
+ {
+  "id": "td-062",
+  "q": "amount",
+  "p": "quantity",
+  "vi": "lượng, số lượng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The gabelle required every member of a household above the age of eight to buy a fixed minimum quantity of salt each year.",
+  "src": "test-03#12"
+ },
+ {
+  "id": "td-063",
+  "q": "challenge",
+  "p": "undermine",
+  "vi": "làm lung lay, thách thức",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The discovery in the 1950s of rapid eye movement (REM) sleep, during which brain activity closely resembles that of waking, began to undermine this view.",
+  "src": "test-03#14"
+ },
+ {
+  "id": "td-064",
+  "q": "prompt",
+  "p": "trigger",
+  "vi": "kích hoạt, gợi ra",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Perhaps the most striking evidence that replay matters comes from experiments in which researchers try to trigger it deliberately.",
+  "src": "test-03#17"
+ },
+ {
+  "id": "td-065",
+  "q": "lessons",
+  "p": "practical implications",
+  "vi": "bài học, hệ quả thực tế",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "The practical implications of this research are considerable, particularly for students.",
+  "src": "test-03#19"
+ },
+ {
+  "id": "td-066",
+  "q": "limits to what is known",
+  "p": "many questions remain open",
+  "vi": "còn nhiều điều chưa biết",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The findings are promising; nevertheless, many questions remain open, and some products claiming to boost memory during sleep are premature.",
+  "src": "test-03#20"
+ },
+ {
+  "id": "td-067",
+  "q": "accompanied by",
+  "p": "presented together with",
+  "vi": "đi kèm với",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Volunteers learned the positions of 50 pictures on a screen, and each picture was presented together with a characteristic sound.",
+  "src": "test-03#21"
+ },
+ {
+  "id": "td-068",
+  "q": "reach",
+  "p": "entered",
+  "vi": "đạt tới, bước vào",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Once a participant entered slow-wave sleep, the team quietly played the sounds linked to half of the pictures, at a volume too low to wake them.",
+  "src": "test-03#22"
+ },
+ {
+  "id": "td-069",
+  "q": "so that they stay asleep",
+  "p": "too low to wake them",
+  "vi": "để không bị đánh thức",
+  "kind": "structure",
+  "topic": "health",
+  "ex": "Once a participant entered slow-wave sleep, the team quietly played the sounds linked to half of the pictures, at a volume too low to wake them.",
+  "src": "test-03#23"
+ },
+ {
+  "id": "td-070",
+  "q": "locate",
+  "p": "placed",
+  "vi": "xác định vị trí",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "They placed the cued pictures significantly more accurately than the others, even though none of them reported having heard anything during the nap.",
+  "src": "test-03#24"
+ },
+ {
+  "id": "td-071",
+  "q": "at a higher speed",
+  "p": "times faster",
+  "vi": "nhanh hơn",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "When the rats later slept, the same cells fired again in the same order, but up to twenty times faster, as if the animal were replaying its route at high speed.",
+  "src": "test-03#25"
+ },
+ {
+  "id": "td-072",
+  "q": "insufficient evidence",
+  "p": "limited data",
+  "vi": "bằng chứng không đủ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Sofia Lindgren, working with surveys covering more than 130 countries, argued that the paradox was largely an illusion created by the limited data available to Brennan.",
+  "src": "test-03#28"
+ },
+ {
+  "id": "td-073",
+  "q": "tax more heavily",
+  "p": "higher taxes",
+  "vi": "đánh thuế cao hơn",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "She has proposed higher taxes on luxury consumption, on the grounds that much spending on expensive goods is an attempt to outdo others which imposes costs on everyone else.",
+  "src": "test-03#29"
+ },
+ {
+  "id": "td-074",
+  "q": "each day",
+  "p": "from day to day",
+  "vi": "hằng ngày",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Beyond that point, more money appeared to make people think their lives were going better without making them feel any better from day to day.",
+  "src": "test-03#30"
+ },
+ {
+  "id": "td-075",
+  "q": "make harder",
+  "p": "hampered",
+  "vi": "cản trở, làm khó hơn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "It seems to me that the debate has been hampered by a tendency to treat 'happiness' as a single quantity, when the evidence plainly shows that it is not.",
+  "src": "test-03#32"
+ },
+ {
+  "id": "td-076",
+  "q": "main aim",
+  "p": "overriding goal",
+  "vi": "mục tiêu chính",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "That said, I am not persuaded that Lindgren's findings justify the conclusion, often drawn by politicians, that growth should remain the overriding goal of economic policy.",
+  "src": "test-03#34"
+ },
+ {
+  "id": "td-077",
+  "q": "provide good reason for",
+  "p": "justify",
+  "vi": "biện minh, là lý do chính đáng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "That said, I am not persuaded that Lindgren's findings justify the conclusion, often drawn by politicians, that growth should remain the overriding goal of economic policy.",
+  "src": "test-03#34"
+ },
+ {
+  "id": "td-078",
+  "q": "reasonable",
+  "p": "sensible",
+  "vi": "hợp lý",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Several governments now publish well-being measures alongside figures for national output, and this seems to me a sensible compromise.",
+  "src": "test-03#37"
+ },
+ {
+  "id": "td-079",
+  "q": "differ depending on",
+  "p": "varies with",
+  "vi": "thay đổi tùy theo",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Mori himself has been cautious about the figure, pointing out that it varies with local living costs.",
+  "src": "test-03#39"
+ },
+ {
+  "id": "td-080",
+  "q": "cost of living",
+  "p": "living costs",
+  "vi": "chi phí sinh hoạt",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "Mori himself has been cautious about the figure, pointing out that it varies with local living costs.",
+  "src": "test-03#39"
+ },
+ {
+  "id": "td-081",
+  "q": "usually believe",
+  "p": "tended to assume",
+  "vi": "thường cho rằng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Money is not irrelevant to happiness, but it is a far less reliable route to it than either economists or the rest of us have tended to assume.",
+  "src": "test-03#40"
+ },
+ {
+  "id": "td-082",
+  "q": "deteriorate",
+  "p": "crack and crumble",
+  "vi": "xuống cấp, nứt vỡ",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Modern concrete, by contrast, often begins to crack and crumble within fifty to a hundred years, particularly when it is exposed to seawater.",
+  "src": "test-04#1"
+ },
+ {
+  "id": "td-083",
+  "q": "in contact with",
+  "p": "exposed to",
+  "vi": "tiếp xúc với",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Modern concrete, by contrast, often begins to crack and crumble within fifty to a hundred years, particularly when it is exposed to seawater.",
+  "src": "test-04#1"
+ },
+ {
+  "id": "td-084",
+  "q": "make",
+  "p": "produce",
+  "vi": "tạo ra, sản xuất",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Tobermorite is extremely difficult to produce in a laboratory, where it typically requires temperatures of around 200 degrees Celsius.",
+  "src": "test-04#6"
+ },
+ {
+  "id": "td-085",
+  "q": "straight",
+  "p": "directly",
+  "vi": "trực tiếp",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Their analysis suggested that the Romans had mixed quicklime, a highly reactive form of lime, directly with the ash and water, rather than first making a paste.",
+  "src": "test-04#7"
+ },
+ {
+  "id": "td-086",
+  "q": "called",
+  "p": "known as",
+  "vi": "được gọi là",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "This process, known as hot mixing, releases a great deal of heat, and it leaves behind lime clasts that are brittle and rich in calcium.",
+  "src": "test-04#8"
+ },
+ {
+  "id": "td-087",
+  "q": "a lot of",
+  "p": "a great deal of",
+  "vi": "rất nhiều",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "This process, known as hot mixing, releases a great deal of heat, and it leaves behind lime clasts that are brittle and rich in calcium.",
+  "src": "test-04#8"
+ },
+ {
+  "id": "td-088",
+  "q": "produce",
+  "p": "release",
+  "vi": "toả nhiệt",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "This process, known as hot mixing, releases a great deal of heat, and it leaves behind lime clasts that are brittle and rich in calcium.",
+  "src": "test-04#8"
+ },
+ {
+  "id": "td-089",
+  "q": "the material around them",
+  "p": "the surrounding material",
+  "vi": "vật liệu xung quanh",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "When a tiny crack forms, it tends to travel through the clasts because they are weaker than the surrounding material.",
+  "src": "test-04#9"
+ },
+ {
+  "id": "td-090",
+  "q": "deal with",
+  "p": "compensated for",
+  "vi": "bù đắp, xử lý",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The Romans compensated for this by building massive, thick walls and avoiding the slender columns and long spans common in modern architecture.",
+  "src": "test-04#13"
+ },
+ {
+  "id": "td-091",
+  "q": "very large",
+  "p": "massive",
+  "vi": "rất lớn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The Romans compensated for this by building massive, thick walls and avoiding the slender columns and long spans common in modern architecture.",
+  "src": "test-04#13"
+ },
+ {
+  "id": "td-092",
+  "q": "by accident",
+  "p": "by chance",
+  "vi": "tình cờ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "A solution emerged by chance when a researcher broke a piece of brain coral into tiny fragments while moving it between tanks.",
+  "src": "test-04#14"
+ },
+ {
+  "id": "td-093",
+  "q": "expense",
+  "p": "cost",
+  "vi": "chi phí",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Estimates of the cost vary from around US$10,000 to more than US$1 million per hectare, depending on the location and technique.",
+  "src": "test-04#15"
+ },
+ {
+  "id": "td-094",
+  "q": "weakness",
+  "p": "vulnerable",
+  "vi": "điểm yếu, dễ tổn thương",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "A reef made up of clones is vulnerable, because a disease or heatwave that kills one colony is likely to kill them all.",
+  "src": "test-04#17"
+ },
+ {
+  "id": "td-095",
+  "q": "non-scientists",
+  "p": "no scientific background",
+  "vi": "người không làm khoa học",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Volunteer divers with no scientific background can be trained to maintain nurseries, and this has made gardening popular with dive centres as well as conservation groups.",
+  "src": "test-04#18"
+ },
+ {
+  "id": "td-096",
+  "q": "first develop",
+  "p": "pioneered",
+  "vi": "đi tiên phong",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The method was pioneered in the Caribbean, where it was used mainly for fast-growing branching species such as staghorn coral, which can extend by more than ten centimetres a year.",
+  "src": "test-04#19"
+ },
+ {
+  "id": "td-097",
+  "q": "grow quickly",
+  "p": "fast-growing",
+  "vi": "lớn nhanh",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "The method was pioneered in the Caribbean, where it was used mainly for fast-growing branching species such as staghorn coral, which can extend by more than ten centimetres a year.",
+  "src": "test-04#19"
+ },
+ {
+  "id": "td-098",
+  "q": "join to form",
+  "p": "fuse together into",
+  "vi": "kết lại thành",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "As they grow, the separate pieces fuse together into a single colony, reaching in two or three years a size that would normally take decades.",
+  "src": "test-04#20"
+ },
+ {
+  "id": "td-099",
+  "q": "grow",
+  "p": "cultivating",
+  "vi": "nuôi trồng",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Others are experimenting with the symbiotic algae living inside coral tissue, cultivating strains that cope better with high temperatures.",
+  "src": "test-04#22"
+ },
+ {
+  "id": "td-100",
+  "q": "heat",
+  "p": "high temperatures",
+  "vi": "nhiệt độ cao",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Others are experimenting with the symbiotic algae living inside coral tissue, cultivating strains that cope better with high temperatures.",
+  "src": "test-04#22"
+ },
+ {
+  "id": "td-101",
+  "q": "those in power",
+  "p": "governments and companies",
+  "vi": "giới có quyền lực",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Dr Amara Okafor, a marine ecologist, goes further, warning that well-publicised restoration projects may give governments and companies an excuse to delay cutting greenhouse gas emissions, which she describes as 'the only real solution'.",
+  "src": "test-04#24"
+ },
+ {
+  "id": "td-102",
+  "q": "postpone",
+  "p": "delay",
+  "vi": "trì hoãn",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Dr Amara Okafor, a marine ecologist, goes further, warning that well-publicised restoration projects may give governments and companies an excuse to delay cutting greenhouse gas emissions, which she describes as 'the only real solution'.",
+  "src": "test-04#24"
+ },
+ {
+  "id": "td-103",
+  "q": "characteristic",
+  "p": "a single trait",
+  "vi": "đặc tính",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Selecting corals for a single trait, she argues, may come at a cost: colonies bred for heat tolerance could grow more slowly or become more susceptible to disease.",
+  "src": "test-04#25"
+ },
+ {
+  "id": "td-104",
+  "q": "have negative effects",
+  "p": "come at a cost",
+  "vi": "gây hệ quả xấu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Selecting corals for a single trait, she argues, may come at a cost: colonies bred for heat tolerance could grow more slowly or become more susceptible to disease.",
+  "src": "test-04#25"
+ },
+ {
+  "id": "td-105",
+  "q": "small pieces",
+  "p": "fragments",
+  "vi": "mảnh nhỏ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Returning to the tank some weeks later, he found that the fragments had grown far faster than an intact colony would have done.",
+  "src": "test-04#26"
+ },
+ {
+  "id": "td-106",
+  "q": "new",
+  "p": "without precedent",
+  "vi": "chưa từng có",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "What is striking is that each generation tends to regard its own worries as entirely without precedent.",
+  "src": "test-04#27"
+ },
+ {
+  "id": "td-107",
+  "q": "concern",
+  "p": "worries",
+  "vi": "mối lo ngại",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "What is striking is that each generation tends to regard its own worries as entirely without precedent.",
+  "src": "test-04#27"
+ },
+ {
+  "id": "td-108",
+  "q": "each period",
+  "p": "each generation",
+  "vi": "mỗi thời kỳ, thế hệ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "What is striking is that each generation tends to regard its own worries as entirely without precedent.",
+  "src": "test-04#27"
+ },
+ {
+  "id": "td-109",
+  "q": "be opposed to",
+  "p": "objection",
+  "vi": "phản đối",
+  "kind": "word-form",
+  "topic": "work",
+  "ex": "Yet most were skilled craftsmen, and their objection was not to machinery as such but to the way factory owners used it to cut wages and replace trained workers with cheap, unskilled labour.",
+  "src": "test-04#28"
+ },
+ {
+  "id": "td-110",
+  "q": "especially harmful",
+  "p": "particularly damaging",
+  "vi": "đặc biệt có hại",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Particularly damaging, I believe, is what some economists call 'so-so automation': machines such as self-service checkouts, which replace workers while delivering only small improvements in productivity.",
+  "src": "test-04#31"
+ },
+ {
+  "id": "td-111",
+  "q": "more jobs",
+  "p": "demand for workers",
+  "vi": "nhiều việc làm hơn",
+  "kind": "structure",
+  "topic": "work",
+  "ex": "Automation, the argument goes, lowers the cost of goods, which raises real incomes, and people spend that extra income on other products and services, creating demand for workers elsewhere.",
+  "src": "test-04#33"
+ },
+ {
+  "id": "td-112",
+  "q": "mental work",
+  "p": "cognitive tasks",
+  "vi": "công việc trí óc",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Today's technologies, she points out, are increasingly able to perform exactly these cognitive tasks, which may leave displaced workers with nowhere to go.",
+  "src": "test-04#34"
+ },
+ {
+  "id": "td-113",
+  "q": "fixed",
+  "p": "determined in advance",
+  "vi": "định sẵn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Both optimists and pessimists treat technology as an external force whose consequences are determined in advance, as if the only question were how many jobs it will destroy.",
+  "src": "test-04#37"
+ },
+ {
+  "id": "td-114",
+  "q": "decisions",
+  "p": "choices",
+  "vi": "quyết định, lựa chọn",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "The effects of a technology depend far more on the choices made by firms and governments: which technologies are developed, how they are introduced, and how the gains are shared.",
+  "src": "test-04#38"
+ },
+ {
+  "id": "td-115",
+  "q": "businesses",
+  "p": "firms",
+  "vi": "doanh nghiệp",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "The effects of a technology depend far more on the choices made by firms and governments: which technologies are developed, how they are introduced, and how the gains are shared.",
+  "src": "test-04#38"
+ },
+ {
+  "id": "td-116",
+  "q": "rewards",
+  "p": "benefits",
+  "vi": "lợi ích, thành quả",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "What it does show is that the benefits of technological change are not automatically shared.",
+  "src": "test-04#39"
+ },
+ {
+  "id": "td-117",
+  "q": "lack political influence",
+  "p": "had no political power",
+  "vi": "không có quyền lực chính trị",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The Luddites were defeated not because they misunderstood the machines, but because they had no political power to influence how those machines were used.",
+  "src": "test-04#40"
+ },
+ {
+  "id": "bh-001",
+  "q": "children",
+  "p": "young people",
+  "vi": "trẻ em, người trẻ",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Many young people now spend several hours a day online, which worries parents and teachers alike.",
+  "src": ""
+ },
+ {
+  "id": "bh-002",
+  "q": "harmful",
+  "p": "damaging",
+  "vi": "có hại",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Researchers found that long working hours can be damaging to both physical and mental health.",
+  "src": ""
+ },
+ {
+  "id": "bh-003",
+  "q": "pollution has increased",
+  "p": "there has been an increase in",
+  "vi": "đã có sự gia tăng",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "In many developing cities, there has been an increase in air pollution as car ownership has grown.",
+  "src": ""
+ },
+ {
+  "id": "bh-004",
+  "q": "invest in",
+  "p": "investment in",
+  "vi": "đầu tư vào",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "Greater investment in the public transport system should be a priority for the government.",
+  "src": ""
+ },
+ {
+  "id": "bh-005",
+  "q": "more people live in cities",
+  "p": "urban populations are larger",
+  "vi": "dân đô thị đông hơn",
+  "kind": "structure",
+  "topic": "urban",
+  "ex": "Urban populations are larger than ever, and many city services are struggling to keep up with demand.",
+  "src": ""
+ },
+ {
+  "id": "bh-006",
+  "q": "many people believe",
+  "p": "it is widely believed that",
+  "vi": "nhiều người tin rằng",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "It is widely believed that regular exercise improves both concentration and long-term memory.",
+  "src": ""
+ },
+ {
+  "id": "bh-007",
+  "q": "some people think",
+  "p": "it is often argued that",
+  "vi": "người ta thường cho rằng",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "It is often argued that homework is unnecessary for young children and takes time away from play.",
+  "src": ""
+ },
+ {
+  "id": "bh-008",
+  "q": "university",
+  "p": "higher education institutions",
+  "vi": "trường đại học",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "It is often argued that higher education institutions ought to equip students with the practical abilities that employers require.",
+  "src": ""
+ },
+ {
+  "id": "bh-009",
+  "q": "provide with",
+  "p": "equip",
+  "vi": "trang bị cho",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Schools should equip pupils with basic financial skills before they leave full-time education.",
+  "src": ""
+ },
+ {
+  "id": "bh-010",
+  "q": "skills needed in the workplace",
+  "p": "practical abilities that employers require",
+  "vi": "kỹ năng nơi làm việc cần",
+  "kind": "structure",
+  "topic": "work",
+  "ex": "Universities ought to equip students with the practical abilities that employers require, not just theoretical knowledge.",
+  "src": ""
+ },
+ {
+  "id": "bh-011",
+  "q": "show",
+  "p": "illustrates",
+  "vi": "cho thấy, minh hoạ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The bar chart illustrates the proportion of homes that had internet access in three nations over a twenty-year period.",
+  "src": ""
+ },
+ {
+  "id": "bh-012",
+  "q": "percentage",
+  "p": "proportion",
+  "vi": "tỉ lệ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The bar chart illustrates the proportion of homes that had internet access in three nations over a twenty-year period.",
+  "src": ""
+ },
+ {
+  "id": "bh-013",
+  "q": "household",
+  "p": "homes",
+  "vi": "hộ gia đình",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "The bar chart illustrates the proportion of homes that had internet access in three nations over a twenty-year period.",
+  "src": ""
+ },
+ {
+  "id": "bh-014",
+  "q": "from 2000 to 2020",
+  "p": "over a 20-year period",
+  "vi": "trong 20 năm",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The chart shows how internet access in three countries changed over a 20-year period, starting in 2000.",
+  "src": ""
+ },
+ {
+  "id": "bh-015",
+  "q": "fall",
+  "p": "decline in",
+  "vi": "giảm",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Chemicals sprayed on crops are largely responsible for the decline in bee populations across Europe.",
+  "src": ""
+ },
+ {
+  "id": "bh-016",
+  "q": "because of",
+  "p": "largely responsible for",
+  "vi": "do, là nguyên nhân chính",
+  "kind": "structure",
+  "topic": "environment",
+  "ex": "Chemicals sprayed on crops are largely responsible for the decline in bee populations across Europe.",
+  "src": ""
+ },
+ {
+  "id": "bh-017",
+  "q": "pesticide",
+  "p": "chemicals sprayed on crops",
+  "vi": "thuốc trừ sâu",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Scientists believe that chemicals sprayed on crops are largely responsible for the decline in bee populations.",
+  "src": ""
+ },
+ {
+  "id": "bh-018",
+  "q": "enjoy",
+  "p": "I'm quite into",
+  "vi": "thích",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Yes, I'm quite into making meals at home, especially when I have friends over at the weekend.",
+  "src": ""
+ },
+ {
+  "id": "bh-019",
+  "q": "young people",
+  "p": "teenagers",
+  "vi": "người trẻ, thanh thiếu niên",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Teenagers devote an excessive amount of time to social networking sites, according to a recent survey.",
+  "src": ""
+ },
+ {
+  "id": "bh-020",
+  "q": "spend time on",
+  "p": "devote time to",
+  "vi": "dành thời gian cho",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Many students devote time to volunteering, which can strengthen their applications for university places.",
+  "src": ""
+ },
+ {
+  "id": "bh-021",
+  "q": "too much",
+  "p": "an excessive amount of",
+  "vi": "quá nhiều",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Teenagers devote an excessive amount of time to social networking sites, according to a recent survey.",
+  "src": ""
+ },
+ {
+  "id": "bh-022",
+  "q": "increase sharply",
+  "p": "a sharp increase in",
+  "vi": "tăng mạnh",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "There has been a sharp increase in unemployment since the factory closed, particularly among young workers.",
+  "src": ""
+ },
+ {
+  "id": "bh-023",
+  "q": "fewer students choose",
+  "p": "enrolment has dropped",
+  "vi": "ít học sinh chọn hơn",
+  "kind": "structure",
+  "topic": "education",
+  "ex": "Enrolment has dropped in science courses in recent years, prompting concern among university leaders.",
+  "src": ""
+ },
+ {
+  "id": "bh-024",
+  "q": "subject",
+  "p": "courses",
+  "vi": "môn học, khoá học",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Enrolment in science courses has dropped in recent years, prompting concern among university leaders.",
+  "src": ""
+ },
+ {
+  "id": "bh-025",
+  "q": "damage",
+  "p": "have a detrimental effect on",
+  "vi": "gây hại cho",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Lack of sleep can have a detrimental effect on memory, concentration and overall academic performance.",
+  "src": ""
+ },
+ {
+  "id": "bh-026",
+  "q": "be very important",
+  "p": "play a crucial role in",
+  "vi": "đóng vai trò then chốt",
+  "kind": "structure",
+  "topic": "family",
+  "ex": "Parents play a crucial role in shaping their children's values and attitudes towards learning.",
+  "src": ""
+ },
+ {
+  "id": "bh-027",
+  "q": "should be prioritised",
+  "p": "should be a priority",
+  "vi": "nên được ưu tiên",
+  "kind": "word-form",
+  "topic": "government",
+  "ex": "Affordable housing should be a priority for local councils in rapidly growing cities.",
+  "src": ""
+ },
+ {
+  "id": "bh-028",
+  "q": "increase",
+  "p": "rise",
+  "vi": "tăng",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Official figures show a steady rise in the number of people working from home since 2020.",
+  "src": ""
+ },
+ {
+  "id": "bh-029",
+  "q": "increase",
+  "p": "growth",
+  "vi": "tăng trưởng",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "The rapid growth of online shopping has forced many high-street retailers to close their stores.",
+  "src": ""
+ },
+ {
+  "id": "bh-030",
+  "q": "increase",
+  "p": "surge",
+  "vi": "tăng vọt",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "There was a surge in demand for bicycles when public transport was disrupted during the strike.",
+  "src": ""
+ },
+ {
+  "id": "bh-031",
+  "q": "increase",
+  "p": "climb",
+  "vi": "leo lên, tăng",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "House prices continued to climb throughout the decade, putting home ownership out of reach for many.",
+  "src": ""
+ },
+ {
+  "id": "bh-032",
+  "q": "decrease",
+  "p": "decline",
+  "vi": "giảm",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "The decline in birth rates means that many countries will soon have fewer workers to support retirees.",
+  "src": ""
+ },
+ {
+  "id": "bh-033",
+  "q": "decrease",
+  "p": "drop",
+  "vi": "giảm",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "A sharp drop in tourist numbers hit the local economy hard during the winter months.",
+  "src": ""
+ },
+ {
+  "id": "bh-034",
+  "q": "decrease",
+  "p": "fall",
+  "vi": "giảm",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Unemployment continued to fall in the second half of the year as new factories opened.",
+  "src": ""
+ },
+ {
+  "id": "bh-035",
+  "q": "decrease",
+  "p": "dwindle",
+  "vi": "giảm dần",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Fish stocks in the North Sea began to dwindle as industrial fishing expanded after the war.",
+  "src": ""
+ },
+ {
+  "id": "bh-036",
+  "q": "important",
+  "p": "vital",
+  "vi": "thiết yếu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Clean water is vital for public health, yet millions of people still lack reliable access to it.",
+  "src": ""
+ },
+ {
+  "id": "bh-037",
+  "q": "important",
+  "p": "significant",
+  "vi": "đáng kể, quan trọng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The invention of printing had a significant impact on the spread of literacy across Europe.",
+  "src": ""
+ },
+ {
+  "id": "bh-038",
+  "q": "important",
+  "p": "of great value",
+  "vi": "rất có giá trị",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The diaries kept by ordinary soldiers are of great value to historians studying the period.",
+  "src": ""
+ },
+ {
+  "id": "bh-039",
+  "q": "cause",
+  "p": "lead to",
+  "vi": "dẫn tới",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Poor diet and lack of exercise can lead to serious health problems later in life.",
+  "src": ""
+ },
+ {
+  "id": "bh-040",
+  "q": "cause",
+  "p": "be responsible for",
+  "vi": "là nguyên nhân của",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Road transport is thought to be responsible for around a fifth of the country's carbon emissions.",
+  "src": ""
+ },
+ {
+  "id": "bh-041",
+  "q": "be caused by",
+  "p": "stem from",
+  "vi": "bắt nguồn từ",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Many of the problems facing rural schools stem from a lack of funding and qualified teachers.",
+  "src": ""
+ },
+ {
+  "id": "bh-042",
+  "q": "show",
+  "p": "reveal",
+  "vi": "tiết lộ, cho thấy",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The survey reveals that most young adults now get their news from social media rather than newspapers.",
+  "src": ""
+ },
+ {
+  "id": "bh-043",
+  "q": "show",
+  "p": "suggest",
+  "vi": "gợi ý, cho thấy",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The evidence suggests that people who walk daily are less likely to develop heart disease.",
+  "src": ""
+ },
+ {
+  "id": "bh-044",
+  "q": "change",
+  "p": "modify",
+  "vi": "điều chỉnh",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Engineers had to modify the original design after tests revealed a weakness in the bridge.",
+  "src": ""
+ },
+ {
+  "id": "bh-045",
+  "q": "change",
+  "p": "transform",
+  "vi": "biến đổi",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The smartphone has transformed the way people communicate, shop and find information.",
+  "src": ""
+ },
+ {
+  "id": "bh-046",
+  "q": "change",
+  "p": "adapt",
+  "vi": "thích nghi, điều chỉnh",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Farmers in dry regions have had to adapt their methods to cope with longer periods of drought.",
+  "src": ""
+ },
+ {
+  "id": "bh-047",
+  "q": "help",
+  "p": "assist",
+  "vi": "hỗ trợ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Volunteers assist elderly residents with shopping and other daily tasks in the local community.",
+  "src": ""
+ },
+ {
+  "id": "bh-048",
+  "q": "help",
+  "p": "contribute to",
+  "vi": "góp phần vào",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Regular physical activity can contribute to better sleep and improved mental well-being.",
+  "src": ""
+ },
+ {
+  "id": "bh-049",
+  "q": "stop",
+  "p": "halt",
+  "vi": "dừng lại",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Construction of the new stadium was halted after archaeologists discovered Roman remains on the site.",
+  "src": ""
+ },
+ {
+  "id": "bh-050",
+  "q": "stop",
+  "p": "put an end to",
+  "vi": "chấm dứt",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The new law was intended to put an end to the dumping of industrial waste in rivers.",
+  "src": ""
+ },
+ {
+  "id": "bh-051",
+  "q": "stop",
+  "p": "abandon",
+  "vi": "từ bỏ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The project was eventually abandoned when it became clear that costs would far exceed the budget.",
+  "src": ""
+ },
+ {
+  "id": "bh-052",
+  "q": "enough",
+  "p": "adequate",
+  "vi": "đủ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Many families in the region still lack adequate housing, clean water and access to basic healthcare.",
+  "src": ""
+ },
+ {
+  "id": "bh-053",
+  "q": "expensive",
+  "p": "costly",
+  "vi": "tốn kém",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Repairing the old bridge would be more costly than building a completely new one nearby.",
+  "src": ""
+ },
+ {
+  "id": "bh-054",
+  "q": "expensive",
+  "p": "a heavy financial burden",
+  "vi": "gánh nặng tài chính",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "University fees can place a heavy financial burden on families with more than one child studying.",
+  "src": ""
+ },
+ {
+  "id": "bh-055",
+  "q": "develop quickly",
+  "p": "rapid development",
+  "vi": "phát triển nhanh",
+  "kind": "word-form",
+  "topic": "technology",
+  "ex": "The rapid development of artificial intelligence has raised difficult questions about privacy and employment.",
+  "src": ""
+ },
+ {
+  "id": "bh-056",
+  "q": "difficult to predict",
+  "p": "unpredictable",
+  "vi": "khó dự đoán",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "The weather in mountain regions is highly unpredictable, so climbers are advised to carry extra clothing.",
+  "src": ""
+ },
+ {
+  "id": "bh-057",
+  "q": "difficult to predict",
+  "p": "prediction is a challenge",
+  "vi": "khó dự đoán",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "Because so many factors are involved, accurate prediction is a challenge for earthquake scientists.",
+  "src": ""
+ },
+ {
+  "id": "bh-058",
+  "q": "common",
+  "p": "not uncommon",
+  "vi": "phổ biến, không hiếm",
+  "kind": "opposite",
+  "topic": "daily-life",
+  "ex": "It is not uncommon for students to work part-time while studying at university.",
+  "src": ""
+ },
+ {
+  "id": "bh-059",
+  "q": "common",
+  "p": "far from rare",
+  "vi": "khá phổ biến",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Such allergies are far from rare, affecting around one in ten children in some countries.",
+  "src": ""
+ },
+ {
+  "id": "bh-060",
+  "q": "similar to",
+  "p": "not unlike",
+  "vi": "giống với",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "The results were not unlike those of the earlier study, which used a much smaller sample.",
+  "src": ""
+ },
+ {
+  "id": "bh-061",
+  "q": "most people agree",
+  "p": "few would dispute",
+  "vi": "hầu hết đồng ý",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Few would dispute that clean water is a basic human right that governments must protect.",
+  "src": ""
+ },
+ {
+  "id": "bh-062",
+  "q": "most people agree",
+  "p": "it is hard to deny",
+  "vi": "khó mà phủ nhận",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "It is hard to deny that the internet has changed the way young people learn and socialise.",
+  "src": ""
+ },
+ {
+  "id": "bh-063",
+  "q": "failed",
+  "p": "did not succeed",
+  "vi": "thất bại",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "The first attempt to cross the desert by car did not succeed because of mechanical problems.",
+  "src": ""
+ },
+ {
+  "id": "bh-064",
+  "q": "failed",
+  "p": "fell short of",
+  "vi": "không đạt (mục tiêu)",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The new drug fell short of the researchers' expectations in the final stage of clinical trials.",
+  "src": ""
+ },
+ {
+  "id": "bh-065",
+  "q": "failed",
+  "p": "proved unsuccessful",
+  "vi": "hoá ra thất bại",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Several attempts to reintroduce the species into the wild proved unsuccessful until a new habitat was created.",
+  "src": ""
+ },
+ {
+  "id": "bh-066",
+  "q": "experts",
+  "p": "researchers",
+  "vi": "nhà nghiên cứu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Researchers now believe that the sleeping brain actively replays information acquired during the day.",
+  "src": ""
+ },
+ {
+  "id": "bh-067",
+  "q": "experts",
+  "p": "academics",
+  "vi": "học giả",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "Many academics have questioned whether standardised tests really measure a student's ability.",
+  "src": ""
+ },
+ {
+  "id": "bh-068",
+  "q": "experts",
+  "p": "specialists",
+  "vi": "chuyên gia",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Specialists warn that the disease could spread rapidly if vaccination rates continue to fall.",
+  "src": ""
+ },
+ {
+  "id": "bh-069",
+  "q": "pets",
+  "p": "cats, dogs and rabbits",
+  "vi": "thú nuôi",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Around half of all households in the country keep cats, dogs and rabbits or other small animals.",
+  "src": ""
+ },
+ {
+  "id": "bh-070",
+  "q": "in the past",
+  "p": "for much of the twentieth century",
+  "vi": "trong quá khứ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "For much of the twentieth century, sleep was regarded as a passive state in which the brain simply rested.",
+  "src": ""
+ },
+ {
+  "id": "bh-071",
+  "q": "in the past",
+  "p": "in Victorian times",
+  "vi": "trong quá khứ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "In Victorian times, children as young as eight were often sent to work in factories and mines.",
+  "src": ""
+ },
+ {
+  "id": "bh-072",
+  "q": "be seen as",
+  "p": "be regarded as",
+  "vi": "được coi là",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "In parts of Europe, the tomato used to be regarded as poisonous rather than as a useful food.",
+  "src": ""
+ },
+ {
+  "id": "bh-073",
+  "q": "condition",
+  "p": "state",
+  "vi": "trạng thái",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "For much of the twentieth century, sleep was regarded as a passive state in which the brain simply rested.",
+  "src": ""
+ },
+ {
+  "id": "bh-074",
+  "q": "have a short sleep",
+  "p": "napped",
+  "vi": "ngủ trưa, chợp mắt",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Participants who napped for ninety minutes after learning a list of words recalled considerably more of them.",
+  "src": ""
+ },
+ {
+  "id": "bh-075",
+  "q": "stay awake",
+  "p": "remained awake",
+  "vi": "thức",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Those who napped recalled considerably more of the words than those who remained awake during the same period.",
+  "src": ""
+ },
+ {
+  "id": "bh-076",
+  "q": "most important",
+  "p": "matter most",
+  "vi": "quan trọng nhất",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The deep, slow-wave stage of sleep seems to matter most for remembering facts and figures.",
+  "src": ""
+ },
+ {
+  "id": "bh-077",
+  "q": "frequently",
+  "p": "it is not uncommon",
+  "vi": "thường xuyên",
+  "kind": "opposite",
+  "topic": "education",
+  "ex": "It is not uncommon for students to sacrifice sleep before examinations, which may harm their learning.",
+  "src": ""
+ },
+ {
+  "id": "bh-078",
+  "q": "go without",
+  "p": "sacrifice",
+  "vi": "hy sinh, bỏ qua",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "It is not uncommon for students to sacrifice sleep before examinations, which may harm their learning.",
+  "src": ""
+ },
+ {
+  "id": "bh-079",
+  "q": "test",
+  "p": "examinations",
+  "vi": "bài thi",
+  "kind": "synonym",
+  "topic": "education",
+  "ex": "It is not uncommon for students to sacrifice sleep before examinations, which may harm their learning.",
+  "src": ""
+ },
+ {
+  "id": "bh-080",
+  "q": "closely connected with",
+  "p": "closely linked to",
+  "vi": "gắn chặt với",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Poor diet is closely linked to heart disease, according to a long-term study of ten thousand adults.",
+  "src": ""
+ },
+ {
+  "id": "bh-081",
+  "q": "population grew",
+  "p": "population growth",
+  "vi": "tăng dân số",
+  "kind": "word-form",
+  "topic": "urban",
+  "ex": "Rapid population growth has put enormous pressure on housing and transport in the capital.",
+  "src": ""
+ },
+ {
+  "id": "bh-082",
+  "q": "domestic animals",
+  "p": "cats and dogs",
+  "vi": "vật nuôi trong nhà",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Cats and dogs are the most popular choices for families who want a companion animal at home.",
+  "src": ""
+ },
+ {
+  "id": "bh-083",
+  "q": "younger drivers were safer",
+  "p": "older drivers had more accidents",
+  "vi": "người lái trẻ an toàn hơn",
+  "kind": "opposite",
+  "topic": "travel",
+  "ex": "The study found that older drivers had more accidents than any other group on rural roads.",
+  "src": ""
+ },
+ {
+  "id": "bh-084",
+  "q": "affect",
+  "p": "changed",
+  "vi": "ảnh hưởng, làm thay đổi",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Few historians would dispute that the war changed the economy of the region for decades.",
+  "src": ""
+ },
+ {
+  "id": "bh-085",
+  "q": "an organ",
+  "p": "the liver",
+  "vi": "một cơ quan (nội tạng)",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Heavy drinking over many years can cause serious damage to the liver and other parts of the body.",
+  "src": ""
+ },
+ {
+  "id": "bh-086",
+  "q": "prices rose sharply",
+  "p": "a sharp rise in prices",
+  "vi": "giá tăng mạnh",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "A poor harvest led to a sharp rise in prices for wheat and other basic foods.",
+  "src": ""
+ },
+ {
+  "id": "bh-087",
+  "q": "difficult",
+  "p": "far from easy",
+  "vi": "khó",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Finding affordable accommodation in the city centre is far from easy for students on low incomes.",
+  "src": ""
+ },
+ {
+  "id": "bh-088",
+  "q": "much more",
+  "p": "considerably more",
+  "vi": "nhiều hơn đáng kể",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Electric cars are considerably more efficient than petrol vehicles, especially in city traffic.",
+  "src": ""
+ },
+ {
+  "id": "bh-089",
+  "q": "weaken",
+  "p": "undermine",
+  "vi": "làm suy yếu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Constant interruptions from phones and emails can undermine concentration in the workplace.",
+  "src": ""
+ },
+ {
+  "id": "bh-090",
+  "q": "be proved wrong",
+  "p": "be overturned",
+  "vi": "bị bác bỏ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Long-held theories about human evolution can be overturned by the discovery of a single fossil.",
+  "src": ""
+ }
+]

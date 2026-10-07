@@ -1,0 +1,252 @@
+[
+ {
+  "id": "lei-001",
+  "q": "hobby",
+  "p": "pastime",
+  "vi": "sở thích",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Gardening has become a popular pastime among young urban professionals in recent years.",
+  "src": ""
+ },
+ {
+  "id": "lei-002",
+  "q": "free time",
+  "p": "when I'm not working",
+  "vi": "thời gian rảnh",
+  "kind": "structure",
+  "topic": "leisure",
+  "ex": "When I'm not working, I enjoy painting and going for long walks in the countryside.",
+  "src": ""
+ },
+ {
+  "id": "lei-003",
+  "q": "do exercise",
+  "p": "work out",
+  "vi": "tập thể dục",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "I try to work out at the gym three times a week, usually straight after work.",
+  "src": ""
+ },
+ {
+  "id": "lei-004",
+  "q": "join a club",
+  "p": "become a member",
+  "vi": "tham gia câu lạc bộ",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Anyone over sixteen can become a member of the club for an annual fee of forty pounds.",
+  "src": ""
+ },
+ {
+  "id": "lei-005",
+  "q": "membership fee",
+  "p": "annual subscription",
+  "vi": "phí hội viên",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "The annual subscription covers unlimited access to the pool and two free guest passes.",
+  "src": ""
+ },
+ {
+  "id": "lei-006",
+  "q": "watch a film",
+  "p": "go to the cinema",
+  "vi": "xem phim",
+  "kind": "structure",
+  "topic": "leisure",
+  "ex": "We used to go to the cinema every Friday, but now we mostly stream films at home.",
+  "src": ""
+ },
+ {
+  "id": "lei-007",
+  "q": "outdoor activities",
+  "p": "things to do in the open air",
+  "vi": "hoạt động ngoài trời",
+  "kind": "structure",
+  "topic": "leisure",
+  "ex": "The centre offers plenty of things to do in the open air, including climbing, kayaking and orienteering.",
+  "src": ""
+ },
+ {
+  "id": "lei-008",
+  "q": "beginner",
+  "p": "novice",
+  "vi": "người mới bắt đầu",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "The course is aimed at complete novices, so no previous experience is required.",
+  "src": ""
+ },
+ {
+  "id": "lei-009",
+  "q": "audience",
+  "p": "spectators",
+  "vi": "khán giả",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "More than forty thousand spectators packed into the stadium to watch the cup final.",
+  "src": ""
+ },
+ {
+  "id": "lei-010",
+  "q": "go to a concert",
+  "p": "see a live performance",
+  "vi": "đi xem hòa nhạc",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "I'd much rather see a live performance than listen to a recording at home on my headphones.",
+  "src": ""
+ },
+ {
+  "id": "lei-011",
+  "q": "enjoy",
+  "p": "keen on",
+  "vi": "thích",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "My brother is really keen on photography and spends every weekend taking pictures of wildlife.",
+  "src": ""
+ },
+ {
+  "id": "lei-012",
+  "q": "dislike",
+  "p": "not really my thing",
+  "vi": "không thích",
+  "kind": "opposite",
+  "topic": "leisure",
+  "ex": "Team sports are not really my thing; I prefer swimming or cycling on my own.",
+  "src": ""
+ },
+ {
+  "id": "lei-013",
+  "q": "exhibition",
+  "p": "display",
+  "vi": "triển lãm",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "The museum has a new display of Roman coins that runs until the end of March.",
+  "src": ""
+ },
+ {
+  "id": "lei-014",
+  "q": "free entry",
+  "p": "no admission charge",
+  "vi": "vào cửa miễn phí",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "There is no admission charge for children under twelve, but adults pay eight pounds on weekdays.",
+  "src": ""
+ },
+ {
+  "id": "lei-015",
+  "q": "physical activity",
+  "p": "keeping fit",
+  "vi": "vận động, giữ dáng",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Keeping fit doesn't have to be expensive, since walking and jogging cost nothing at all.",
+  "src": ""
+ },
+ {
+  "id": "lei-016",
+  "q": "gym",
+  "p": "fitness centre",
+  "vi": "phòng tập thể hình",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "The new fitness centre has a sauna, a climbing wall and a café on the top floor.",
+  "src": ""
+ },
+ {
+  "id": "lei-017",
+  "q": "volunteer",
+  "p": "give up their time",
+  "vi": "làm tình nguyện",
+  "kind": "structure",
+  "topic": "leisure",
+  "ex": "Local residents give up their time every weekend to keep the nature reserve clean and safe.",
+  "src": ""
+ },
+ {
+  "id": "lei-018",
+  "q": "lessons",
+  "p": "sessions",
+  "vi": "buổi học",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Swimming sessions for adults take place on Tuesday evenings from seven until half past eight.",
+  "src": ""
+ },
+ {
+  "id": "lei-019",
+  "q": "start a hobby",
+  "p": "take up",
+  "vi": "bắt đầu một sở thích",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Many retired people take up painting or pottery as a way of staying socially active.",
+  "src": ""
+ },
+ {
+  "id": "lei-020",
+  "q": "quit",
+  "p": "give up",
+  "vi": "từ bỏ",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "I had to give up playing football after injuring my knee at university.",
+  "src": ""
+ },
+ {
+  "id": "lei-021",
+  "q": "playing computer games",
+  "p": "gaming",
+  "vi": "chơi điện tử",
+  "kind": "word-form",
+  "topic": "leisure",
+  "ex": "Gaming has become a sociable activity, with friends playing together online most evenings.",
+  "src": ""
+ },
+ {
+  "id": "lei-022",
+  "q": "popular",
+  "p": "attracts large crowds",
+  "vi": "được ưa chuộng, đông khách",
+  "kind": "structure",
+  "topic": "leisure",
+  "ex": "The summer festival attracts large crowds from all over the country every August.",
+  "src": ""
+ },
+ {
+  "id": "lei-023",
+  "q": "every month",
+  "p": "on a monthly basis",
+  "vi": "hằng tháng",
+  "kind": "word-form",
+  "topic": "leisure",
+  "ex": "The book club meets on a monthly basis in the back room of the local library.",
+  "src": ""
+ },
+ {
+  "id": "lei-024",
+  "q": "aged 60 or over",
+  "p": "senior citizens",
+  "vi": "người cao tuổi",
+  "kind": "number",
+  "topic": "leisure",
+  "ex": "Discounted tickets are available for senior citizens and full-time students on production of ID.",
+  "src": ""
+ },
+ {
+  "id": "lei-025",
+  "q": "competition",
+  "p": "tournament",
+  "vi": "cuộc thi đấu",
+  "kind": "synonym",
+  "topic": "leisure",
+  "ex": "Our local chess club is organising a tournament for players of all ages next month.",
+  "src": ""
+ }
+]

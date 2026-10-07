@@ -1,0 +1,252 @@
+[
+ {
+  "id": "gov-001",
+  "q": "government",
+  "p": "the authorities",
+  "vi": "chính quyền",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The authorities responded to the protests by promising to review the controversial housing plan.",
+  "src": ""
+ },
+ {
+  "id": "gov-002",
+  "q": "law",
+  "p": "legislation",
+  "vi": "luật pháp",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "New legislation requires all employers to provide a minimum of four weeks' paid holiday.",
+  "src": ""
+ },
+ {
+  "id": "gov-003",
+  "q": "ban",
+  "p": "prohibit",
+  "vi": "cấm",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Several countries now prohibit the sale of single-use plastic bags in supermarkets.",
+  "src": ""
+ },
+ {
+  "id": "gov-004",
+  "q": "policy",
+  "p": "course of action",
+  "vi": "chính sách, đường lối",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Ministers have yet to agree on the best course of action to reduce youth unemployment.",
+  "src": ""
+ },
+ {
+  "id": "gov-005",
+  "q": "tax",
+  "p": "levy",
+  "vi": "thuế, đánh thuế",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "A levy on sugary drinks was introduced in an attempt to tackle childhood obesity.",
+  "src": ""
+ },
+ {
+  "id": "gov-006",
+  "q": "pay for",
+  "p": "finance",
+  "vi": "chi trả, cấp vốn",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The new hospital will be financed partly by central government and partly by private investors.",
+  "src": ""
+ },
+ {
+  "id": "gov-007",
+  "q": "public money",
+  "p": "taxpayers' money",
+  "vi": "tiền công quỹ",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Critics claimed that the stadium project was a waste of taxpayers' money.",
+  "src": ""
+ },
+ {
+  "id": "gov-008",
+  "q": "introduce a law",
+  "p": "bring in new legislation",
+  "vi": "ban hành luật",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The government intends to bring in new legislation to protect workers in the gig economy.",
+  "src": ""
+ },
+ {
+  "id": "gov-009",
+  "q": "politician",
+  "p": "elected official",
+  "vi": "chính trị gia",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Every elected official must declare any financial interests that could affect their decisions.",
+  "src": ""
+ },
+ {
+  "id": "gov-010",
+  "q": "citizen",
+  "p": "member of the public",
+  "vi": "người dân, công dân",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Any member of the public may attend council meetings and ask questions.",
+  "src": ""
+ },
+ {
+  "id": "gov-011",
+  "q": "vote",
+  "p": "go to the polls",
+  "vi": "đi bầu cử",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Millions of people will go to the polls next month to choose a new parliament.",
+  "src": ""
+ },
+ {
+  "id": "gov-012",
+  "q": "regulate",
+  "p": "impose controls on",
+  "vi": "điều tiết, quản lý",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Many economists believe the state should impose controls on the price of basic foodstuffs.",
+  "src": ""
+ },
+ {
+  "id": "gov-013",
+  "q": "subsidise",
+  "p": "provide financial support for",
+  "vi": "trợ cấp",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "The scheme will provide financial support for farmers who switch to organic methods.",
+  "src": ""
+ },
+ {
+  "id": "gov-014",
+  "q": "help for the poor",
+  "p": "welfare provision",
+  "vi": "phúc lợi xã hội",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Welfare provision varies considerably between countries, even within the European Union.",
+  "src": ""
+ },
+ {
+  "id": "gov-015",
+  "q": "council",
+  "p": "local authority",
+  "vi": "chính quyền địa phương",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Each local authority is responsible for collecting rubbish and maintaining roads in its area.",
+  "src": ""
+ },
+ {
+  "id": "gov-016",
+  "q": "public services",
+  "p": "services provided by the state",
+  "vi": "dịch vụ công",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Services provided by the state, such as healthcare and education, account for most public spending.",
+  "src": ""
+ },
+ {
+  "id": "gov-017",
+  "q": "fine",
+  "p": "monetary penalty",
+  "vi": "tiền phạt",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Companies that breach the rules face a monetary penalty of up to ten per cent of their turnover.",
+  "src": ""
+ },
+ {
+  "id": "gov-018",
+  "q": "put into practice",
+  "p": "implement",
+  "vi": "thực thi, áp dụng",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "Local councils have struggled to implement the new recycling guidelines because of budget cuts.",
+  "src": ""
+ },
+ {
+  "id": "gov-019",
+  "q": "civil servant",
+  "p": "government employee",
+  "vi": "công chức",
+  "kind": "synonym",
+  "topic": "government",
+  "ex": "As a government employee, he was not permitted to take part in political campaigns.",
+  "src": ""
+ },
+ {
+  "id": "gov-020",
+  "q": "invest in infrastructure",
+  "p": "investment in infrastructure",
+  "vi": "đầu tư cơ sở hạ tầng",
+  "kind": "word-form",
+  "topic": "government",
+  "ex": "Increased investment in infrastructure is seen as essential for long-term economic growth.",
+  "src": ""
+ },
+ {
+  "id": "gov-021",
+  "q": "privatise",
+  "p": "the privatisation of",
+  "vi": "tư nhân hoá",
+  "kind": "word-form",
+  "topic": "government",
+  "ex": "The privatisation of the railways in the 1990s remains a subject of fierce debate.",
+  "src": ""
+ },
+ {
+  "id": "gov-022",
+  "q": "restrict",
+  "p": "restrictions on",
+  "vi": "hạn chế",
+  "kind": "word-form",
+  "topic": "government",
+  "ex": "The city has placed strict restrictions on the number of short-term rental properties.",
+  "src": ""
+ },
+ {
+  "id": "gov-023",
+  "q": "the government decided",
+  "p": "it was decided by ministers",
+  "vi": "chính phủ quyết định",
+  "kind": "structure",
+  "topic": "government",
+  "ex": "After months of debate, it was decided by ministers that the airport would not be expanded.",
+  "src": ""
+ },
+ {
+  "id": "gov-024",
+  "q": "over half of voters",
+  "p": "a majority of the electorate",
+  "vi": "hơn nửa số cử tri",
+  "kind": "number",
+  "topic": "government",
+  "ex": "In the referendum, a majority of the electorate supported lowering the voting age to sixteen.",
+  "src": ""
+ },
+ {
+  "id": "gov-025",
+  "q": "not permitted",
+  "p": "against the law",
+  "vi": "không được phép, phạm luật",
+  "kind": "opposite",
+  "topic": "government",
+  "ex": "In many countries it is against the law to smoke in enclosed public places.",
+  "src": ""
+ }
+]

@@ -29,6 +29,8 @@ LOG = ATTEMPTS / "_log"
 STUDY_LOG = LOG / "study.jsonl"      # mỗi dòng: {d, skill, sec, manual}
 STATE = LOG / "state.json"           # cài đặt, check-in, ngày nghỉ phép
 VOCAB = ATTEMPTS / "_vocab" / "vocab.json"
+PARA_DIR = ROOT / "tu-vung" / "paraphrase"          # kho cặp paraphrase (nội dung, có trong git)
+PARA_STATE = ATTEMPTS / "_vocab" / "para.json"      # tiến độ ôn từng cặp (dữ liệu cá nhân)
 STUDY_SKILLS = {"writing", "speaking", "reading", "vocab", "listening"}
 ERROR_KEYS = ["article", "plural", "tense", "agreement", "word_form", "collocation", "spelling", "punctuation", "repetition", "sentence"]
 LEITNER = [0, 1, 2, 4, 8, 16]        # số ngày chờ theo hộp 0–5
@@ -403,7 +405,7 @@ def harvest(result, src_id, theme):
 def review_card(card, ok, day=None):
     """Leitner: đúng → lên 1 hộp, chờ LEITNER[hộp] ngày; sai → về hộp 1, ôn lại ngày mai. Từ chủ động: 30 ngày."""
     d = date.fromisoformat(day or today())
-    card["prev"] = {k: card.get(k) for k in ("box", "due", "reviews", "lapses", "last")}  # để "Tôi đúng, chỉ khác cách viết" hoàn tác lần chấm sai
+    card["prev"] = {"box": card.get("box", 0), "reviews": card.get("reviews", 0), "lapses": card.get("lapses", 0), "due": card.get("due"), "last": card.get("last")}  # để "Tôi đúng, chỉ khác cách viết" hoàn tác lần chấm sai
     card["reviews"] = card.get("reviews", 0) + 1
     card["last"] = d.isoformat()
     if ok:
@@ -440,6 +442,32 @@ def vocab_action(data):
         else:
             raise ValueError("action sai")
         write_json(VOCAB, cards)
+        return {"ok": True, "card": card}
+
+
+def para_pairs():
+    return [x for p in sorted(PARA_DIR.glob("*.json")) for x in json.loads(p.read_text(encoding="utf-8"))]
+
+
+def para_list():
+    """Mọi cặp paraphrase kèm tiến độ ôn (chưa học: hộp 0, đến hạn hôm nay)."""
+    st = json.loads(PARA_STATE.read_text(encoding="utf-8")) if PARA_STATE.exists() else {}
+    return [{**x, "box": 0, "due": today(), "reviews": 0, **st.get(x["id"], {})} for x in para_pairs()]
+
+
+def para_review(data):
+    """Chấm 1 cặp theo Leitner như kho từ; undo = hoàn tác lần chấm trước (nút "Tôi đúng")."""
+    pid = data.get("id")
+    if pid not in {x["id"] for x in para_pairs()}:
+        raise ValueError("không thấy cặp paraphrase")
+    with LOCK:
+        st = json.loads(PARA_STATE.read_text(encoding="utf-8")) if PARA_STATE.exists() else {}
+        card = st.get(pid, {})
+        if data.get("undo") and card.get("prev"):
+            card.update(card.pop("prev"))
+        review_card(card, bool(data.get("ok")))
+        st[pid] = card
+        write_json(PARA_STATE, st)
         return {"ok": True, "card": card}
 
 
@@ -536,6 +564,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.send_json(vocab_list())
         elif self.path == "/api/lessons":
             self.send_json(lesson_list())
+        elif self.path == "/api/para":
+            self.send_json(para_list())
         elif self.path == "/api/reading":
             self.send_json(reading_tests())
         else:
@@ -554,6 +584,8 @@ class Handler(SimpleHTTPRequestHandler):
                 return self.send_json(update_state(data))
             if self.path == "/api/vocab":
                 return self.send_json(vocab_action(data))
+            if self.path == "/api/para":
+                return self.send_json(para_review(data))
             if self.path == "/api/vocab-check":
                 phrases = [str(p) for p in data.get("phrases", [])][:3]
                 if not phrases or not str(data.get("sentence", "")).strip():

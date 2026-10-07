@@ -1,0 +1,252 @@
+[
+ {
+  "id": "day-001",
+  "q": "flat",
+  "p": "apartment",
+  "vi": "căn hộ",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "We are looking for a two-bedroom apartment close to the station, ideally with a small balcony.",
+  "src": ""
+ },
+ {
+  "id": "day-002",
+  "q": "housework",
+  "p": "household chores",
+  "vi": "việc nhà",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "My flatmates and I share the household chores, so each of us cleans the kitchen once a week.",
+  "src": ""
+ },
+ {
+  "id": "day-003",
+  "q": "buy food",
+  "p": "do the grocery shopping",
+  "vi": "đi chợ, mua thực phẩm",
+  "kind": "structure",
+  "topic": "daily-life",
+  "ex": "I usually do the grocery shopping on Saturday mornings when the supermarket is quieter.",
+  "src": ""
+ },
+ {
+  "id": "day-004",
+  "q": "neighbours",
+  "p": "the people next door",
+  "vi": "hàng xóm",
+  "kind": "structure",
+  "topic": "daily-life",
+  "ex": "The people next door are very friendly and often look after our cat when we go away.",
+  "src": ""
+ },
+ {
+  "id": "day-005",
+  "q": "neighbourhood",
+  "p": "local area",
+  "vi": "khu phố",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "There are plenty of cafés and a small park in my local area, so I rarely get bored.",
+  "src": ""
+ },
+ {
+  "id": "day-006",
+  "q": "cook at home",
+  "p": "make my own meals",
+  "vi": "tự nấu ăn ở nhà",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Since moving out, I make my own meals most evenings to save money and eat more healthily.",
+  "src": ""
+ },
+ {
+  "id": "day-007",
+  "q": "eat out",
+  "p": "go to a restaurant",
+  "vi": "ăn ngoài",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "We tend to go to a restaurant only on special occasions such as birthdays and anniversaries.",
+  "src": ""
+ },
+ {
+  "id": "day-008",
+  "q": "daily routine",
+  "p": "what I do every day",
+  "vi": "thói quen hằng ngày",
+  "kind": "structure",
+  "topic": "daily-life",
+  "ex": "Honestly, what I do every day is fairly predictable: work, the gym, then dinner with my family.",
+  "src": ""
+ },
+ {
+  "id": "day-009",
+  "q": "wake up early",
+  "p": "an early riser",
+  "vi": "người dậy sớm",
+  "kind": "structure",
+  "topic": "daily-life",
+  "ex": "I have always been an early riser, so I like to go running before breakfast.",
+  "src": ""
+ },
+ {
+  "id": "day-010",
+  "q": "call",
+  "p": "give me a ring",
+  "vi": "gọi điện",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "If anything changes before Friday, just give me a ring on my mobile and we can rearrange.",
+  "src": ""
+ },
+ {
+  "id": "day-011",
+  "q": "home address",
+  "p": "where you live",
+  "vi": "địa chỉ nhà",
+  "kind": "structure",
+  "topic": "daily-life",
+  "ex": "Before we finish, could you tell me where you live so we can post the membership card?",
+  "src": ""
+ },
+ {
+  "id": "day-012",
+  "q": "washing machine",
+  "p": "laundry facilities",
+  "vi": "máy giặt, chỗ giặt đồ",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "The flat is fully furnished and there are shared laundry facilities in the basement.",
+  "src": ""
+ },
+ {
+  "id": "day-013",
+  "q": "bills",
+  "p": "utilities",
+  "vi": "hóa đơn điện nước",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "The rent is 750 pounds a month, but utilities such as gas and electricity are charged separately.",
+  "src": ""
+ },
+ {
+  "id": "day-014",
+  "q": "not far",
+  "p": "within walking distance",
+  "vi": "gần, đi bộ được",
+  "kind": "opposite",
+  "topic": "daily-life",
+  "ex": "The supermarket and the post office are both within walking distance of the house.",
+  "src": ""
+ },
+ {
+  "id": "day-015",
+  "q": "cheap",
+  "p": "good value for money",
+  "vi": "rẻ, đáng tiền",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "The local market is good value for money, especially if you go just before it closes.",
+  "src": ""
+ },
+ {
+  "id": "day-016",
+  "q": "busy",
+  "p": "hectic",
+  "vi": "bận rộn",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Weekday mornings are pretty hectic in our house because everyone leaves at the same time.",
+  "src": ""
+ },
+ {
+  "id": "day-017",
+  "q": "relax",
+  "p": "unwind",
+  "vi": "thư giãn",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "After a long day at work, I like to unwind by listening to music or having a bath.",
+  "src": ""
+ },
+ {
+  "id": "day-018",
+  "q": "twice a week",
+  "p": "every Tuesday and Friday",
+  "vi": "hai lần một tuần",
+  "kind": "number",
+  "topic": "daily-life",
+  "ex": "The recycling is collected every Tuesday and Friday, so please put the bins out the night before.",
+  "src": ""
+ },
+ {
+  "id": "day-019",
+  "q": "clean the house",
+  "p": "tidy up",
+  "vi": "dọn dẹp nhà",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "We always tidy up on Sunday evenings so that the week starts in a clean house.",
+  "src": ""
+ },
+ {
+  "id": "day-020",
+  "q": "deliver",
+  "p": "drop off",
+  "vi": "giao hàng",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "The courier will drop off the parcel between nine and twelve, so someone needs to be at home.",
+  "src": ""
+ },
+ {
+  "id": "day-021",
+  "q": "appointment",
+  "p": "booking",
+  "vi": "cuộc hẹn, đặt lịch",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "I'd like to make a booking with Dr Patel for some time next Thursday afternoon, please.",
+  "src": ""
+ },
+ {
+  "id": "day-022",
+  "q": "cancel",
+  "p": "call off",
+  "vi": "hủy bỏ",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "We had to call off the barbecue because heavy rain was forecast for the whole weekend.",
+  "src": ""
+ },
+ {
+  "id": "day-023",
+  "q": "free",
+  "p": "at no extra charge",
+  "vi": "miễn phí",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Breakfast is included, and parking is available at no extra charge for all residents.",
+  "src": ""
+ },
+ {
+  "id": "day-024",
+  "q": "half past seven",
+  "p": "seven thirty",
+  "vi": "bảy giờ rưỡi",
+  "kind": "number",
+  "topic": "daily-life",
+  "ex": "The surgery opens at seven thirty on weekdays, but the phone lines open slightly later.",
+  "src": ""
+ },
+ {
+  "id": "day-025",
+  "q": "convenient",
+  "p": "handy",
+  "vi": "tiện lợi",
+  "kind": "synonym",
+  "topic": "daily-life",
+  "ex": "Living near the station is really handy because I can get into the city centre in ten minutes.",
+  "src": ""
+ }
+]

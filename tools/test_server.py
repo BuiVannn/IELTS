@@ -68,4 +68,15 @@ c = server.review_card({"box": 2, "due": "2026-11-01", "reviews": 3, "lapses": 0
 assert c["box"] == 1 and c["lapses"] == 1
 c.update(c.pop("prev")); server.review_card(c, True, "2026-11-05")  # hoàn tác lần sai rồi chấm đúng
 assert c["box"] == 3 and c["lapses"] == 0 and c["reviews"] == 4
+server.PARA_STATE = tmp / "para.json"
+server.para_pairs = lambda: [{"id": "gen-001", "q": "show", "p": "demonstrate"}]
+assert server.para_list()[0]["box"] == 0
+server.para_review({"id": "gen-001", "ok": True}); server.para_review({"id": "gen-001", "ok": False})
+c = server.para_review({"id": "gen-001", "ok": True, "undo": True})["card"]
+assert c["box"] == 2 and c["lapses"] == 0, c  # sai rồi bấm "Tôi đúng" = như chưa từng sai
+try:
+    server.para_review({"id": "../x", "ok": True})
+    raise AssertionError("phải chặn id lạ")
+except ValueError:
+    pass
 print("server OK")

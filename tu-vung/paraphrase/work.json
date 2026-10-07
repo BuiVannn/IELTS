@@ -1,0 +1,252 @@
+[
+ {
+  "id": "work-001",
+  "q": "employees",
+  "p": "the workforce",
+  "vi": "lực lượng lao động",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Nearly half of the workforce in the region is now employed in the service sector rather than in manufacturing.",
+  "src": ""
+ },
+ {
+  "id": "work-002",
+  "q": "lose your job",
+  "p": "be made redundant",
+  "vi": "bị mất việc, bị cắt giảm",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Staff who are likely to be made redundant are usually offered retraining and some financial support.",
+  "src": ""
+ },
+ {
+  "id": "work-003",
+  "q": "boss",
+  "p": "line manager",
+  "vi": "cấp trên trực tiếp",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Employees are encouraged to discuss any concerns with their line manager before making a formal complaint.",
+  "src": ""
+ },
+ {
+  "id": "work-004",
+  "q": "salary",
+  "p": "remuneration",
+  "vi": "tiền lương, thù lao",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Senior executives often receive remuneration packages that include company shares and generous performance bonuses.",
+  "src": ""
+ },
+ {
+  "id": "work-005",
+  "q": "work from home",
+  "p": "telecommute",
+  "vi": "làm việc từ xa",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "A growing number of professionals now telecommute at least two days a week, saving considerable time on travel.",
+  "src": ""
+ },
+ {
+  "id": "work-006",
+  "q": "job satisfaction",
+  "p": "contentment at work",
+  "vi": "sự hài lòng trong công việc",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "The researchers found that contentment at work depended more on recognition from managers than on the level of pay.",
+  "src": ""
+ },
+ {
+  "id": "work-007",
+  "q": "retire",
+  "p": "leave the workforce",
+  "vi": "nghỉ hưu",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Many people now choose to leave the workforce gradually by reducing their working hours over several years.",
+  "src": ""
+ },
+ {
+  "id": "work-008",
+  "q": "employ",
+  "p": "take on",
+  "vi": "tuyển thêm, thuê",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "The company plans to take on another 200 staff when its new factory opens next year.",
+  "src": ""
+ },
+ {
+  "id": "work-009",
+  "q": "unemployed",
+  "p": "out of work",
+  "vi": "thất nghiệp",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Young people who are out of work for long periods may find it much harder to secure employment later.",
+  "src": ""
+ },
+ {
+  "id": "work-010",
+  "q": "colleague",
+  "p": "co-worker",
+  "vi": "đồng nghiệp",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Strong relationships with co-workers were identified as a key factor in whether staff stayed with the organisation.",
+  "src": ""
+ },
+ {
+  "id": "work-011",
+  "q": "promotion",
+  "p": "career advancement",
+  "vi": "sự thăng tiến",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Many graduates value opportunities for career advancement more highly than a large starting salary.",
+  "src": ""
+ },
+ {
+  "id": "work-012",
+  "q": "work long hours",
+  "p": "put in overtime",
+  "vi": "làm thêm giờ",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Junior doctors frequently put in overtime, which has raised serious concerns about patient safety.",
+  "src": ""
+ },
+ {
+  "id": "work-013",
+  "q": "skill",
+  "p": "expertise",
+  "vi": "chuyên môn, tay nghề",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "The project required technical expertise that few local engineers possessed at the time.",
+  "src": ""
+ },
+ {
+  "id": "work-014",
+  "q": "quit",
+  "p": "hand in their notice",
+  "vi": "xin nghỉ việc",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Several senior staff decided to hand in their notice shortly after the merger was announced.",
+  "src": ""
+ },
+ {
+  "id": "work-015",
+  "q": "temporary job",
+  "p": "short-term contract",
+  "vi": "hợp đồng ngắn hạn",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Many young people are employed on a short-term contract that offers little job security or sick pay.",
+  "src": ""
+ },
+ {
+  "id": "work-016",
+  "q": "pay rise",
+  "p": "increase in wages",
+  "vi": "tăng lương",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Union representatives negotiated an increase in wages of three per cent for all factory staff.",
+  "src": ""
+ },
+ {
+  "id": "work-017",
+  "q": "career change",
+  "p": "switch professions",
+  "vi": "đổi nghề",
+  "kind": "synonym",
+  "topic": "work",
+  "ex": "Adults who switch professions in mid-life often need to undertake a considerable amount of further training.",
+  "src": ""
+ },
+ {
+  "id": "work-018",
+  "q": "productive",
+  "p": "productivity",
+  "vi": "năng suất",
+  "kind": "word-form",
+  "topic": "work",
+  "ex": "Flexible working hours have been linked to higher productivity in several European countries.",
+  "src": ""
+ },
+ {
+  "id": "work-019",
+  "q": "qualified",
+  "p": "qualifications",
+  "vi": "bằng cấp, đủ trình độ",
+  "kind": "word-form",
+  "topic": "work",
+  "ex": "Applicants without formal qualifications may still be considered if they have relevant practical experience.",
+  "src": ""
+ },
+ {
+  "id": "work-020",
+  "q": "apply for a job",
+  "p": "submit an application",
+  "vi": "nộp đơn xin việc",
+  "kind": "word-form",
+  "topic": "work",
+  "ex": "Candidates must submit an application through the online portal before the end of the month.",
+  "src": ""
+ },
+ {
+  "id": "work-021",
+  "q": "because of stress at work",
+  "p": "owing to work-related stress",
+  "vi": "do căng thẳng công việc",
+  "kind": "structure",
+  "topic": "work",
+  "ex": "Many employees take sick leave owing to work-related stress, according to a recent national survey.",
+  "src": ""
+ },
+ {
+  "id": "work-022",
+  "q": "more people work flexibly",
+  "p": "flexible working has become more widespread",
+  "vi": "làm việc linh hoạt phổ biến hơn",
+  "kind": "structure",
+  "topic": "work",
+  "ex": "Since the pandemic, flexible working has become more widespread across most professional sectors.",
+  "src": ""
+ },
+ {
+  "id": "work-023",
+  "q": "half of the employees",
+  "p": "50 per cent of staff",
+  "vi": "một nửa số nhân viên",
+  "kind": "number",
+  "topic": "work",
+  "ex": "Roughly 50 per cent of staff reported that they regularly checked work emails while on holiday.",
+  "src": ""
+ },
+ {
+  "id": "work-024",
+  "q": "one in four workers",
+  "p": "a quarter of employees",
+  "vi": "một phần tư người lao động",
+  "kind": "number",
+  "topic": "work",
+  "ex": "A quarter of employees in the survey said they had considered leaving their job within the past year.",
+  "src": ""
+ },
+ {
+  "id": "work-025",
+  "q": "not well paid",
+  "p": "low-wage",
+  "vi": "lương thấp",
+  "kind": "opposite",
+  "topic": "work",
+  "ex": "Low-wage jobs in the retail sector are often the first to be affected by automation.",
+  "src": ""
+ }
+]

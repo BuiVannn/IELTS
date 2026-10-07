@@ -1,0 +1,1302 @@
+[
+ {
+  "id": "gen-001",
+  "q": "show",
+  "p": "demonstrate",
+  "vi": "chứng minh, cho thấy",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The experiment was designed to demonstrate that sleep deprivation significantly impairs short-term memory in adults.",
+  "src": ""
+ },
+ {
+  "id": "gen-002",
+  "q": "show",
+  "p": "indicate",
+  "vi": "cho thấy, chỉ ra",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Recent surveys indicate that fewer young people are choosing to buy their own cars than a decade ago.",
+  "src": ""
+ },
+ {
+  "id": "gen-003",
+  "q": "important",
+  "p": "crucial",
+  "vi": "rất quan trọng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Early diagnosis is crucial if the disease is to be treated successfully and long-term complications avoided.",
+  "src": ""
+ },
+ {
+  "id": "gen-004",
+  "q": "important",
+  "p": "of great significance",
+  "vi": "có ý nghĩa rất lớn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The discovery of the ancient settlement was of great significance to historians studying early farming communities.",
+  "src": ""
+ },
+ {
+  "id": "gen-005",
+  "q": "cause",
+  "p": "give rise to",
+  "vi": "gây ra, làm nảy sinh",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Rapid urban expansion can give rise to serious problems such as traffic congestion and air pollution.",
+  "src": ""
+ },
+ {
+  "id": "gen-006",
+  "q": "help",
+  "p": "facilitate",
+  "vi": "tạo điều kiện, giúp dễ dàng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Online platforms facilitate communication between researchers working in different countries and time zones.",
+  "src": ""
+ },
+ {
+  "id": "gen-007",
+  "q": "need",
+  "p": "require",
+  "vi": "cần, đòi hỏi",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Most of these plants require large amounts of water during the early stages of their growth.",
+  "src": ""
+ },
+ {
+  "id": "gen-008",
+  "q": "try",
+  "p": "attempt",
+  "vi": "cố gắng, thử",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Several governments have attempted to reduce plastic waste by introducing a small charge on carrier bags.",
+  "src": ""
+ },
+ {
+  "id": "gen-009",
+  "q": "enough",
+  "p": "sufficient",
+  "vi": "đủ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "There was not sufficient evidence to conclude that the new drug was more effective than the existing treatment.",
+  "src": ""
+ },
+ {
+  "id": "gen-010",
+  "q": "get",
+  "p": "obtain",
+  "vi": "đạt được, thu được",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Researchers were able to obtain detailed data on household spending from more than two thousand families.",
+  "src": ""
+ },
+ {
+  "id": "gen-011",
+  "q": "use",
+  "p": "utilise",
+  "vi": "sử dụng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Many modern factories utilise solar panels to reduce their dependence on electricity from the national grid.",
+  "src": ""
+ },
+ {
+  "id": "gen-012",
+  "q": "change",
+  "p": "alter",
+  "vi": "thay đổi",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Even a slight rise in temperature can alter the behaviour of insects that depend on seasonal signals.",
+  "src": ""
+ },
+ {
+  "id": "gen-013",
+  "q": "begin",
+  "p": "commence",
+  "vi": "bắt đầu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Construction of the new railway line is expected to commence in the spring, subject to final approval.",
+  "src": ""
+ },
+ {
+  "id": "gen-014",
+  "q": "stop",
+  "p": "cease",
+  "vi": "ngừng, chấm dứt",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The factory ceased production in 1998, and the site was later converted into a museum of industrial history.",
+  "src": ""
+ },
+ {
+  "id": "gen-015",
+  "q": "find out",
+  "p": "establish",
+  "vi": "xác định, tìm ra",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Investigators have so far been unable to establish exactly how the fire started in the old warehouse.",
+  "src": ""
+ },
+ {
+  "id": "gen-016",
+  "q": "main",
+  "p": "primary",
+  "vi": "chính, chủ yếu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The primary aim of the programme is to improve literacy rates among children in rural areas.",
+  "src": ""
+ },
+ {
+  "id": "gen-017",
+  "q": "big",
+  "p": "substantial",
+  "vi": "đáng kể, lớn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The introduction of the scheme led to a substantial reduction in the number of road accidents involving cyclists.",
+  "src": ""
+ },
+ {
+  "id": "gen-018",
+  "q": "affect",
+  "p": "have an impact on",
+  "vi": "ảnh hưởng đến",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Changes in diet can have an impact on both physical health and mental well-being over time.",
+  "src": ""
+ },
+ {
+  "id": "gen-019",
+  "q": "improve",
+  "p": "enhance",
+  "vi": "nâng cao, cải thiện",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Regular reading is thought to enhance vocabulary development and comprehension skills in young learners.",
+  "src": ""
+ },
+ {
+  "id": "gen-020",
+  "q": "keep",
+  "p": "maintain",
+  "vi": "duy trì, giữ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "It is difficult for small businesses to maintain their profits when energy prices are rising so quickly.",
+  "src": ""
+ },
+ {
+  "id": "gen-021",
+  "q": "check",
+  "p": "examine",
+  "vi": "xem xét, kiểm tra",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The study set out to examine whether working from home has any long-term effect on employee productivity.",
+  "src": ""
+ },
+ {
+  "id": "gen-022",
+  "q": "think about",
+  "p": "consider",
+  "vi": "cân nhắc, xem xét",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Planners must consider the needs of elderly residents when designing public transport systems for the city.",
+  "src": ""
+ },
+ {
+  "id": "gen-023",
+  "q": "build",
+  "p": "construct",
+  "vi": "xây dựng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The Romans constructed an extensive network of roads that linked distant parts of their empire.",
+  "src": ""
+ },
+ {
+  "id": "gen-024",
+  "q": "suggest",
+  "p": "propose",
+  "vi": "đề xuất",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The committee proposed that all new buildings should be fitted with rainwater collection systems.",
+  "src": ""
+ },
+ {
+  "id": "gen-025",
+  "q": "necessary",
+  "p": "essential",
+  "vi": "thiết yếu, cần thiết",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Access to clean drinking water is essential for preventing the spread of many infectious diseases.",
+  "src": ""
+ },
+ {
+  "id": "gen-026",
+  "q": "clear",
+  "p": "evident",
+  "vi": "rõ ràng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "It soon became evident that the original estimates had seriously underestimated the cost of the project.",
+  "src": ""
+ },
+ {
+  "id": "gen-027",
+  "q": "common",
+  "p": "widespread",
+  "vi": "phổ biến, lan rộng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The use of mobile phones for banking is now widespread, even in regions with limited internet access.",
+  "src": ""
+ },
+ {
+  "id": "gen-028",
+  "q": "old-fashioned",
+  "p": "outdated",
+  "vi": "lỗi thời",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Critics argue that the current examination system is outdated and fails to reflect the skills employers need.",
+  "src": ""
+ },
+ {
+  "id": "gen-029",
+  "q": "come from",
+  "p": "originate from",
+  "vi": "bắt nguồn từ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Many of the words used in modern English originate from Latin, French and Old Norse.",
+  "src": ""
+ },
+ {
+  "id": "gen-030",
+  "q": "make up",
+  "p": "constitute",
+  "vi": "cấu thành, chiếm",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Women now constitute almost half of the workforce in the country's financial services sector.",
+  "src": ""
+ },
+ {
+  "id": "gen-031",
+  "q": "look into",
+  "p": "investigate",
+  "vi": "điều tra, nghiên cứu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Scientists hope to investigate why some species of coral are more resistant to rising sea temperatures than others.",
+  "src": ""
+ },
+ {
+  "id": "gen-032",
+  "q": "deal with",
+  "p": "tackle",
+  "vi": "giải quyết, xử lý",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Local councils have introduced a range of measures to tackle the growing problem of homelessness.",
+  "src": ""
+ },
+ {
+  "id": "gen-033",
+  "q": "give",
+  "p": "provide",
+  "vi": "cung cấp",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The charity provides free meals and basic medical care for families on low incomes.",
+  "src": ""
+ },
+ {
+  "id": "gen-034",
+  "q": "way",
+  "p": "method",
+  "vi": "phương pháp, cách",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Researchers developed a new method of measuring air quality using low-cost sensors attached to street lamps.",
+  "src": ""
+ },
+ {
+  "id": "gen-035",
+  "q": "result",
+  "p": "outcome",
+  "vi": "kết quả",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The outcome of the trial suggested that the treatment was most effective when combined with regular exercise.",
+  "src": ""
+ },
+ {
+  "id": "gen-036",
+  "q": "goal",
+  "p": "objective",
+  "vi": "mục tiêu",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "One key objective of the policy is to halve the number of people living in poverty by 2035.",
+  "src": ""
+ },
+ {
+  "id": "gen-037",
+  "q": "chance",
+  "p": "opportunity",
+  "vi": "cơ hội",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Studying abroad gives students the opportunity to develop independence and experience a different culture.",
+  "src": ""
+ },
+ {
+  "id": "gen-038",
+  "q": "rely on",
+  "p": "depend on",
+  "vi": "phụ thuộc vào",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Many coastal communities depend on fishing and tourism as their main sources of income.",
+  "src": ""
+ },
+ {
+  "id": "gen-039",
+  "q": "fast",
+  "p": "rapid",
+  "vi": "nhanh chóng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "The rapid growth of online shopping has forced many traditional high street shops to close.",
+  "src": ""
+ },
+ {
+  "id": "gen-040",
+  "q": "basic",
+  "p": "fundamental",
+  "vi": "cơ bản, nền tảng",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "There is a fundamental difference between learning a language at school and acquiring it naturally at home.",
+  "src": ""
+ },
+ {
+  "id": "gen-041",
+  "q": "remove",
+  "p": "eliminate",
+  "vi": "loại bỏ",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Vaccination programmes have helped to eliminate several diseases that were once common in many parts of the world.",
+  "src": ""
+ },
+ {
+  "id": "gen-042",
+  "q": "allow",
+  "p": "enable",
+  "vi": "cho phép, giúp có thể",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Satellite technology enables farmers to monitor the condition of their crops across very large areas.",
+  "src": ""
+ },
+ {
+  "id": "gen-043",
+  "q": "be linked to",
+  "p": "be associated with",
+  "vi": "có liên quan đến",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "A diet high in sugar is likely to be associated with an increased risk of heart disease.",
+  "src": ""
+ },
+ {
+  "id": "gen-044",
+  "q": "choose",
+  "p": "opt for",
+  "vi": "chọn",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "An increasing number of commuters now opt for bicycles rather than cars for short journeys in the city.",
+  "src": ""
+ },
+ {
+  "id": "gen-045",
+  "q": "problem",
+  "p": "challenge",
+  "vi": "thách thức, vấn đề",
+  "kind": "synonym",
+  "topic": "general",
+  "ex": "Providing affordable housing for young people remains one of the greatest challenges facing city authorities.",
+  "src": ""
+ },
+ {
+  "id": "gen-046",
+  "q": "increase",
+  "p": "a rise in",
+  "vi": "sự tăng lên",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Experts have recorded a rise in the number of students choosing to study engineering at university.",
+  "src": ""
+ },
+ {
+  "id": "gen-047",
+  "q": "decide",
+  "p": "make a decision",
+  "vi": "quyết định",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Consumers often make a decision about a product within a few seconds of seeing its packaging.",
+  "src": ""
+ },
+ {
+  "id": "gen-048",
+  "q": "grow",
+  "p": "growth in",
+  "vi": "sự tăng trưởng",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The report highlights steady growth in demand for renewable energy across Southeast Asia since 2015.",
+  "src": ""
+ },
+ {
+  "id": "gen-049",
+  "q": "popular",
+  "p": "the popularity of",
+  "vi": "sự phổ biến của",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The popularity of podcasts has encouraged many newspapers to produce audio versions of their articles.",
+  "src": ""
+ },
+ {
+  "id": "gen-050",
+  "q": "important",
+  "p": "the importance of",
+  "vi": "tầm quan trọng của",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Teachers increasingly stress the importance of critical thinking rather than simple memorisation of facts.",
+  "src": ""
+ },
+ {
+  "id": "gen-051",
+  "q": "develop",
+  "p": "the development of",
+  "vi": "sự phát triển của",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The development of the printing press made books far cheaper and helped to spread literacy across Europe.",
+  "src": ""
+ },
+ {
+  "id": "gen-052",
+  "q": "fail",
+  "p": "failure",
+  "vi": "sự thất bại",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The failure of the harvest in 1846 led to widespread famine and mass emigration from the region.",
+  "src": ""
+ },
+ {
+  "id": "gen-053",
+  "q": "succeed",
+  "p": "be successful",
+  "vi": "thành công",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Small start-ups are more likely to be successful if they receive mentoring during their first two years.",
+  "src": ""
+ },
+ {
+  "id": "gen-054",
+  "q": "decrease",
+  "p": "a fall in",
+  "vi": "sự giảm",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Economists attributed a fall in unemployment to the expansion of the construction and tourism industries.",
+  "src": ""
+ },
+ {
+  "id": "gen-055",
+  "q": "effective",
+  "p": "the effectiveness of",
+  "vi": "hiệu quả của",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Researchers questioned the effectiveness of the campaign, as smoking rates barely changed over the following decade.",
+  "src": ""
+ },
+ {
+  "id": "gen-056",
+  "q": "be able to",
+  "p": "have the ability to",
+  "vi": "có khả năng",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Some birds have the ability to recognise individual human faces and remember them for several years.",
+  "src": ""
+ },
+ {
+  "id": "gen-057",
+  "q": "improve",
+  "p": "an improvement in",
+  "vi": "sự cải thiện",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The new teaching approach led to an improvement in reading scores among pupils from disadvantaged backgrounds.",
+  "src": ""
+ },
+ {
+  "id": "gen-058",
+  "q": "reduce",
+  "p": "a reduction in",
+  "vi": "sự giảm bớt",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Lower speed limits in residential areas resulted in a reduction in serious injuries to pedestrians.",
+  "src": ""
+ },
+ {
+  "id": "gen-059",
+  "q": "invest",
+  "p": "investment in",
+  "vi": "sự đầu tư vào",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Greater investment in public transport could significantly reduce traffic congestion in major cities.",
+  "src": ""
+ },
+ {
+  "id": "gen-060",
+  "q": "available",
+  "p": "the availability of",
+  "vi": "sự sẵn có của",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The availability of cheap flights has transformed the way many Europeans spend their holidays.",
+  "src": ""
+ },
+ {
+  "id": "gen-061",
+  "q": "dependent on",
+  "p": "dependence on",
+  "vi": "sự phụ thuộc vào",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The country is trying to reduce its dependence on imported oil by developing wind and solar power.",
+  "src": ""
+ },
+ {
+  "id": "gen-062",
+  "q": "analyse",
+  "p": "an analysis of",
+  "vi": "sự phân tích",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "An analysis of hospital records revealed that winter admissions had risen steadily over the past decade.",
+  "src": ""
+ },
+ {
+  "id": "gen-063",
+  "q": "explain",
+  "p": "an explanation for",
+  "vi": "lời giải thích cho",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Scientists have yet to find an explanation for the sudden disappearance of the bee colonies.",
+  "src": ""
+ },
+ {
+  "id": "gen-064",
+  "q": "expand",
+  "p": "the expansion of",
+  "vi": "sự mở rộng",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The expansion of the airport has been strongly opposed by residents concerned about noise and pollution.",
+  "src": ""
+ },
+ {
+  "id": "gen-065",
+  "q": "be responsible for",
+  "p": "take responsibility for",
+  "vi": "chịu trách nhiệm về",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Parents are increasingly expected to take responsibility for their children's online safety and screen time.",
+  "src": ""
+ },
+ {
+  "id": "gen-066",
+  "q": "likely",
+  "p": "the likelihood of",
+  "vi": "khả năng xảy ra",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Regular physical activity reduces the likelihood of developing a range of chronic illnesses in later life.",
+  "src": ""
+ },
+ {
+  "id": "gen-067",
+  "q": "accurate",
+  "p": "accuracy",
+  "vi": "độ chính xác",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The accuracy of weather forecasts has improved considerably thanks to more powerful computer models.",
+  "src": ""
+ },
+ {
+  "id": "gen-068",
+  "q": "emphasise",
+  "p": "place emphasis on",
+  "vi": "nhấn mạnh",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "Modern language courses tend to place emphasis on speaking skills rather than grammar exercises.",
+  "src": ""
+ },
+ {
+  "id": "gen-069",
+  "q": "survive",
+  "p": "the survival of",
+  "vi": "sự sống sót của",
+  "kind": "word-form",
+  "topic": "general",
+  "ex": "The survival of the species depends largely on the protection of its remaining forest habitat.",
+  "src": ""
+ },
+ {
+  "id": "gen-070",
+  "q": "because of",
+  "p": "owing to",
+  "vi": "do, bởi vì",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The outdoor concert was postponed owing to severe weather warnings issued for the whole region.",
+  "src": ""
+ },
+ {
+  "id": "gen-071",
+  "q": "because of",
+  "p": "as a result of",
+  "vi": "do, là kết quả của",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Many villages were abandoned as a result of the decline in traditional farming during the twentieth century.",
+  "src": ""
+ },
+ {
+  "id": "gen-072",
+  "q": "but",
+  "p": "whereas",
+  "vi": "trong khi, còn",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Older employees tend to prefer face-to-face meetings, whereas younger staff are more comfortable using video calls.",
+  "src": ""
+ },
+ {
+  "id": "gen-073",
+  "q": "so",
+  "p": "consequently",
+  "vi": "do đó, vì vậy",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The river had been heavily polluted for decades; consequently, very few fish could survive in its waters.",
+  "src": ""
+ },
+ {
+  "id": "gen-074",
+  "q": "in the past",
+  "p": "historically",
+  "vi": "trong lịch sử, trước đây",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Historically, most people in the region worked in agriculture, but today the majority are employed in services.",
+  "src": ""
+ },
+ {
+  "id": "gen-075",
+  "q": "not until",
+  "p": "only when",
+  "vi": "chỉ khi, mãi đến khi",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The true value of the painting was recognised only when it was examined by experts in the 1950s.",
+  "src": ""
+ },
+ {
+  "id": "gen-076",
+  "q": "although",
+  "p": "despite the fact that",
+  "vi": "mặc dù",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Despite the fact that the town is small, it attracts thousands of tourists every summer.",
+  "src": ""
+ },
+ {
+  "id": "gen-077",
+  "q": "also",
+  "p": "in addition",
+  "vi": "ngoài ra",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The scheme reduced household energy bills. In addition, it created hundreds of new jobs in the local area.",
+  "src": ""
+ },
+ {
+  "id": "gen-078",
+  "q": "however",
+  "p": "nevertheless",
+  "vi": "tuy nhiên",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The results were encouraging. Nevertheless, the researchers warned that a larger study would be needed to confirm them.",
+  "src": ""
+ },
+ {
+  "id": "gen-079",
+  "q": "for example",
+  "p": "for instance",
+  "vi": "ví dụ",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Some animals change colour with the seasons; the Arctic fox, for instance, turns white in winter.",
+  "src": ""
+ },
+ {
+  "id": "gen-080",
+  "q": "because",
+  "p": "due to the fact that",
+  "vi": "bởi vì",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The project was delayed due to the fact that several key suppliers failed to deliver materials on time.",
+  "src": ""
+ },
+ {
+  "id": "gen-081",
+  "q": "in order to",
+  "p": "so as to",
+  "vi": "để",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The museum extended its opening hours so as to attract more visitors who work during the day.",
+  "src": ""
+ },
+ {
+  "id": "gen-082",
+  "q": "if",
+  "p": "provided that",
+  "vi": "miễn là, với điều kiện",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Students may submit their work late provided that they have a valid medical certificate.",
+  "src": ""
+ },
+ {
+  "id": "gen-083",
+  "q": "only if",
+  "p": "on condition that",
+  "vi": "với điều kiện là",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The land was donated to the city on condition that it would remain a public park forever.",
+  "src": ""
+ },
+ {
+  "id": "gen-084",
+  "q": "before",
+  "p": "prior to",
+  "vi": "trước khi",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Prior to the invention of refrigeration, food was commonly preserved by salting, drying or smoking.",
+  "src": ""
+ },
+ {
+  "id": "gen-085",
+  "q": "after",
+  "p": "following",
+  "vi": "sau khi",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Following the introduction of the new law, the number of plastic bags used in supermarkets fell dramatically.",
+  "src": ""
+ },
+ {
+  "id": "gen-086",
+  "q": "now",
+  "p": "at present",
+  "vi": "hiện nay",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "At present, only a small proportion of household waste is recycled in most developing countries.",
+  "src": ""
+ },
+ {
+  "id": "gen-087",
+  "q": "recently",
+  "p": "in recent years",
+  "vi": "những năm gần đây",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "In recent years, there has been growing concern about the effect of social media on teenagers' mental health.",
+  "src": ""
+ },
+ {
+  "id": "gen-088",
+  "q": "at the same time",
+  "p": "simultaneously",
+  "vi": "đồng thời",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "The device can measure temperature, humidity and air pressure simultaneously, making it ideal for field research.",
+  "src": ""
+ },
+ {
+  "id": "gen-089",
+  "q": "instead of",
+  "p": "rather than",
+  "vi": "thay vì",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Many employers now look at practical skills rather than academic qualifications when recruiting new staff.",
+  "src": ""
+ },
+ {
+  "id": "gen-090",
+  "q": "about",
+  "p": "with regard to",
+  "vi": "về, liên quan đến",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "There is still considerable disagreement among experts with regard to the long-term safety of the chemical.",
+  "src": ""
+ },
+ {
+  "id": "gen-091",
+  "q": "in the future",
+  "p": "in the years to come",
+  "vi": "trong những năm tới",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Demand for care workers is expected to rise sharply in the years to come as the population ages.",
+  "src": ""
+ },
+ {
+  "id": "gen-092",
+  "q": "until now",
+  "p": "to date",
+  "vi": "cho đến nay",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "To date, no reliable evidence has been found to support the claim that the herb improves memory.",
+  "src": ""
+ },
+ {
+  "id": "gen-093",
+  "q": "lead to",
+  "p": "result in",
+  "vi": "dẫn đến",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Poor planning can result in overcrowded schools and a shortage of basic services in new housing areas.",
+  "src": ""
+ },
+ {
+  "id": "gen-094",
+  "q": "a third",
+  "p": "33 per cent",
+  "vi": "một phần ba",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Roughly 33 per cent of adults in the survey said they had never used public transport in the city.",
+  "src": ""
+ },
+ {
+  "id": "gen-095",
+  "q": "double",
+  "p": "a twofold increase",
+  "vi": "tăng gấp đôi",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The past decade has seen a twofold increase in the number of people working from home at least once a week.",
+  "src": ""
+ },
+ {
+  "id": "gen-096",
+  "q": "most",
+  "p": "the majority of",
+  "vi": "phần lớn",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The majority of respondents believed that the government should spend more on mental health services.",
+  "src": ""
+ },
+ {
+  "id": "gen-097",
+  "q": "a few",
+  "p": "a handful of",
+  "vi": "một vài, một nhúm",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Only a handful of companies control most of the world's supply of rare earth metals.",
+  "src": ""
+ },
+ {
+  "id": "gen-098",
+  "q": "rose sharply",
+  "p": "soared",
+  "vi": "tăng vọt",
+  "kind": "number",
+  "topic": "general",
+  "ex": "House prices soared in the capital during the early 2000s, making it difficult for first-time buyers to enter the market.",
+  "src": ""
+ },
+ {
+  "id": "gen-099",
+  "q": "half",
+  "p": "50 per cent",
+  "vi": "một nửa",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Almost 50 per cent of the food produced on farms is wasted before it reaches consumers.",
+  "src": ""
+ },
+ {
+  "id": "gen-100",
+  "q": "a quarter",
+  "p": "one in four",
+  "vi": "một phần tư",
+  "kind": "number",
+  "topic": "general",
+  "ex": "According to the report, one in four children in the region does not have access to secondary education.",
+  "src": ""
+ },
+ {
+  "id": "gen-101",
+  "q": "fell dramatically",
+  "p": "plummeted",
+  "vi": "giảm mạnh, lao dốc",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Sales of printed newspapers plummeted after free news websites became widely available in the late 1990s.",
+  "src": ""
+ },
+ {
+  "id": "gen-102",
+  "q": "nearly 30",
+  "p": "just under 30",
+  "vi": "gần 30",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The average age of first-time mothers in the country has risen to just under 30 over the past twenty years.",
+  "src": ""
+ },
+ {
+  "id": "gen-103",
+  "q": "more than",
+  "p": "in excess of",
+  "vi": "hơn, vượt quá",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The new bridge cost in excess of two billion pounds and took nearly eight years to complete.",
+  "src": ""
+ },
+ {
+  "id": "gen-104",
+  "q": "stayed the same",
+  "p": "remained stable",
+  "vi": "giữ ổn định",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Although prices rose elsewhere, the cost of public transport remained stable throughout the period.",
+  "src": ""
+ },
+ {
+  "id": "gen-105",
+  "q": "a lot of",
+  "p": "a considerable number of",
+  "vi": "một số lượng đáng kể",
+  "kind": "number",
+  "topic": "general",
+  "ex": "A considerable number of graduates now take jobs that are unrelated to the subject they studied.",
+  "src": ""
+ },
+ {
+  "id": "gen-106",
+  "q": "triple",
+  "p": "increase threefold",
+  "vi": "tăng gấp ba",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Global demand for lithium is forecast to increase threefold by 2030 because of the popularity of electric cars.",
+  "src": ""
+ },
+ {
+  "id": "gen-107",
+  "q": "went up and down",
+  "p": "fluctuated",
+  "vi": "dao động",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The number of visitors to the national park fluctuated considerably between 2010 and 2020, depending on the weather.",
+  "src": ""
+ },
+ {
+  "id": "gen-108",
+  "q": "every year",
+  "p": "annually",
+  "vi": "hằng năm",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The festival is held annually in August and attracts performers from more than forty countries.",
+  "src": ""
+ },
+ {
+  "id": "gen-109",
+  "q": "about",
+  "p": "approximately",
+  "vi": "khoảng, xấp xỉ",
+  "kind": "number",
+  "topic": "general",
+  "ex": "The ancient wall stretches for approximately 120 kilometres across the northern part of the country.",
+  "src": ""
+ },
+ {
+  "id": "gen-110",
+  "q": "a small number",
+  "p": "a minority of",
+  "vi": "một số ít",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Only a minority of participants reported any side effects, and these were generally mild and short-lived.",
+  "src": ""
+ },
+ {
+  "id": "gen-111",
+  "q": "highest point",
+  "p": "peaked at",
+  "vi": "đạt đỉnh",
+  "kind": "number",
+  "topic": "general",
+  "ex": "Unemployment peaked at 12 per cent in 1993 before falling steadily over the rest of the decade.",
+  "src": ""
+ },
+ {
+  "id": "gen-112",
+  "q": "not common",
+  "p": "rare",
+  "vi": "hiếm",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Serious side effects from the vaccine are extremely rare, affecting fewer than one in a million patients.",
+  "src": ""
+ },
+ {
+  "id": "gen-113",
+  "q": "impossible",
+  "p": "out of the question",
+  "vi": "không thể nào",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "With the current budget, building a second hospital in the area is simply out of the question.",
+  "src": ""
+ },
+ {
+  "id": "gen-114",
+  "q": "might",
+  "p": "it is possible that",
+  "vi": "có thể là",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "It is possible that the decline in bird numbers is linked to the increased use of pesticides on farms.",
+  "src": ""
+ },
+ {
+  "id": "gen-115",
+  "q": "all",
+  "p": "without exception",
+  "vi": "không có ngoại lệ, tất cả",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Without exception, the students who took part in the programme reported greater confidence in public speaking.",
+  "src": ""
+ },
+ {
+  "id": "gen-116",
+  "q": "not cheap",
+  "p": "costly",
+  "vi": "đắt đỏ",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Repairing the damage caused by the floods proved extremely costly for both local businesses and the council.",
+  "src": ""
+ },
+ {
+  "id": "gen-117",
+  "q": "not enough",
+  "p": "insufficient",
+  "vi": "không đủ",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Many rural schools receive insufficient funding to buy modern equipment or hire specialist teachers.",
+  "src": ""
+ },
+ {
+  "id": "gen-118",
+  "q": "not the same as",
+  "p": "dissimilar to",
+  "vi": "khác với",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "The diet of the island's inhabitants was quite dissimilar to that of people living on the mainland at the time.",
+  "src": ""
+ },
+ {
+  "id": "gen-119",
+  "q": "never",
+  "p": "at no time",
+  "vi": "chưa bao giờ, không lúc nào",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "At no time during the experiment were the participants told the real purpose of the study.",
+  "src": ""
+ },
+ {
+  "id": "gen-120",
+  "q": "few people",
+  "p": "hardly anyone",
+  "vi": "hầu như không ai",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Before the railway arrived, hardly anyone in the village had travelled more than a few miles from home.",
+  "src": ""
+ },
+ {
+  "id": "gen-121",
+  "q": "not allowed",
+  "p": "prohibited",
+  "vi": "bị cấm",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Smoking is prohibited in all enclosed public spaces, including restaurants, bars and railway stations.",
+  "src": ""
+ },
+ {
+  "id": "gen-122",
+  "q": "not certain",
+  "p": "remains unclear",
+  "vi": "vẫn chưa rõ",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "It remains unclear whether the new policy will have any lasting effect on youth unemployment.",
+  "src": ""
+ },
+ {
+  "id": "gen-123",
+  "q": "probably",
+  "p": "in all likelihood",
+  "vi": "rất có thể",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "In all likelihood, the ancient tools were used for cutting meat rather than for working wood.",
+  "src": ""
+ },
+ {
+  "id": "gen-124",
+  "q": "seem",
+  "p": "appear to",
+  "vi": "dường như",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "Children who eat breakfast regularly appear to perform better in tests of concentration and memory.",
+  "src": ""
+ },
+ {
+  "id": "gen-125",
+  "q": "not easy",
+  "p": "challenging",
+  "vi": "khó khăn, thử thách",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Learning to read music can be challenging for adults who have never studied an instrument before.",
+  "src": ""
+ },
+ {
+  "id": "gen-126",
+  "q": "no longer",
+  "p": "ceased to",
+  "vi": "không còn nữa",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "By the end of the nineteenth century, the canal had ceased to be an important route for transporting goods.",
+  "src": ""
+ },
+ {
+  "id": "gen-127",
+  "q": "usually",
+  "p": "tend to",
+  "vi": "thường có xu hướng",
+  "kind": "structure",
+  "topic": "general",
+  "ex": "People who live in large cities tend to walk faster than those living in small towns.",
+  "src": ""
+ },
+ {
+  "id": "gen-128",
+  "q": "not have",
+  "p": "lack",
+  "vi": "thiếu",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "Many older homes lack proper insulation, which means a large amount of heat is lost during winter.",
+  "src": ""
+ },
+ {
+  "id": "gen-129",
+  "q": "not important",
+  "p": "of little significance",
+  "vi": "không quan trọng",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "At first, the discovery was considered of little significance, but it later transformed our understanding of genetics.",
+  "src": ""
+ },
+ {
+  "id": "gen-130",
+  "q": "little",
+  "p": "minimal",
+  "vi": "rất ít, tối thiểu",
+  "kind": "opposite",
+  "topic": "general",
+  "ex": "The new manufacturing process produces minimal waste and uses far less water than traditional methods.",
+  "src": ""
+ }
+]

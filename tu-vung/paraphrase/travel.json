@@ -1,0 +1,252 @@
+[
+ {
+  "id": "tra-001",
+  "q": "visitors",
+  "p": "tourists",
+  "vi": "du khách",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "The town receives more than two million tourists each year, mostly during the summer months.",
+  "src": ""
+ },
+ {
+  "id": "tra-002",
+  "q": "book in advance",
+  "p": "reserve ahead of time",
+  "vi": "đặt trước",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "It is advisable to reserve ahead of time, as rooms sell out quickly during the festival.",
+  "src": ""
+ },
+ {
+  "id": "tra-003",
+  "q": "hotel",
+  "p": "accommodation",
+  "vi": "chỗ ở",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Accommodation in the old town is limited, so many visitors stay in nearby villages instead.",
+  "src": ""
+ },
+ {
+  "id": "tra-004",
+  "q": "trip",
+  "p": "journey",
+  "vi": "chuyến đi",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "The journey from London to Edinburgh takes just over four hours by train.",
+  "src": ""
+ },
+ {
+  "id": "tra-005",
+  "q": "go abroad",
+  "p": "travel overseas",
+  "vi": "ra nước ngoài",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Younger people are more likely to travel overseas for gap years or working holidays.",
+  "src": ""
+ },
+ {
+  "id": "tra-006",
+  "q": "return ticket",
+  "p": "round trip",
+  "vi": "vé khứ hồi",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "A round trip to the island costs twenty-five pounds, including the ferry crossing.",
+  "src": ""
+ },
+ {
+  "id": "tra-007",
+  "q": "timetable",
+  "p": "schedule",
+  "vi": "lịch trình",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Please check the bus schedule online, as services are reduced on Sundays and bank holidays.",
+  "src": ""
+ },
+ {
+  "id": "tra-008",
+  "q": "luggage",
+  "p": "baggage",
+  "vi": "hành lý",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Each passenger is allowed one piece of hand baggage weighing no more than seven kilograms.",
+  "src": ""
+ },
+ {
+  "id": "tra-009",
+  "q": "delayed",
+  "p": "running late",
+  "vi": "bị trễ",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Our flight was running late, so we missed the connection in Frankfurt and had to stay overnight.",
+  "src": ""
+ },
+ {
+  "id": "tra-010",
+  "q": "sightseeing",
+  "p": "see the sights",
+  "vi": "tham quan",
+  "kind": "word-form",
+  "topic": "travel",
+  "ex": "We spent the whole afternoon walking around the city to see the sights.",
+  "src": ""
+ },
+ {
+  "id": "tra-011",
+  "q": "guided tour",
+  "p": "tour led by a guide",
+  "vi": "tour có hướng dẫn viên",
+  "kind": "word-form",
+  "topic": "travel",
+  "ex": "There is a tour led by a guide every hour, starting from the main entrance of the castle.",
+  "src": ""
+ },
+ {
+  "id": "tra-012",
+  "q": "public transport",
+  "p": "buses and trains",
+  "vi": "phương tiện công cộng",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Most visitors use buses and trains, as parking in the centre is very expensive.",
+  "src": ""
+ },
+ {
+  "id": "tra-013",
+  "q": "beautiful scenery",
+  "p": "stunning landscapes",
+  "vi": "phong cảnh đẹp",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "The Lake District is famous for its stunning landscapes, which draw hikers and photographers all year round.",
+  "src": ""
+ },
+ {
+  "id": "tra-014",
+  "q": "local people",
+  "p": "residents",
+  "vi": "người dân địa phương",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Some residents complain that mass tourism has driven up house prices in the area.",
+  "src": ""
+ },
+ {
+  "id": "tra-015",
+  "q": "ecotourism",
+  "p": "environmentally friendly holidays",
+  "vi": "du lịch sinh thái",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Demand for environmentally friendly holidays has grown as travellers become more aware of their carbon footprint.",
+  "src": ""
+ },
+ {
+  "id": "tra-016",
+  "q": "holiday destination",
+  "p": "place to visit",
+  "vi": "điểm đến du lịch",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Croatia has become a fashionable place to visit for British families in recent years.",
+  "src": ""
+ },
+ {
+  "id": "tra-017",
+  "q": "travel documents",
+  "p": "passport and visa",
+  "vi": "giấy tờ đi lại",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Make sure your passport and visa are valid for at least six months before you depart.",
+  "src": ""
+ },
+ {
+  "id": "tra-018",
+  "q": "leave",
+  "p": "depart",
+  "vi": "khởi hành",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "The coach will depart from the station at eight fifteen sharp, so please arrive early.",
+  "src": ""
+ },
+ {
+  "id": "tra-019",
+  "q": "arrive",
+  "p": "get in",
+  "vi": "đến nơi",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "The train is due to get in at twenty past six, which gives us plenty of time for dinner.",
+  "src": ""
+ },
+ {
+  "id": "tra-020",
+  "q": "cheap flights",
+  "p": "budget airlines",
+  "vi": "hãng bay giá rẻ",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "Budget airlines have made weekend breaks in European cities affordable for millions of people.",
+  "src": ""
+ },
+ {
+  "id": "tra-021",
+  "q": "travel agent",
+  "p": "tour operator",
+  "vi": "công ty lữ hành",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "We booked the whole package through a tour operator, which included flights, transfers and meals.",
+  "src": ""
+ },
+ {
+  "id": "tra-022",
+  "q": "no rooms available",
+  "p": "fully booked",
+  "vi": "hết phòng",
+  "kind": "structure",
+  "topic": "travel",
+  "ex": "Unfortunately, the hostel is fully booked for the first week of August, so try somewhere else.",
+  "src": ""
+ },
+ {
+  "id": "tra-023",
+  "q": "two weeks",
+  "p": "a fortnight",
+  "vi": "hai tuần",
+  "kind": "number",
+  "topic": "travel",
+  "ex": "We spent a fortnight in Portugal last summer and visited Lisbon, Porto and the Algarve.",
+  "src": ""
+ },
+ {
+  "id": "tra-024",
+  "q": "not direct",
+  "p": "change trains",
+  "vi": "không đi thẳng, phải đổi tàu",
+  "kind": "opposite",
+  "topic": "travel",
+  "ex": "There is no through service to Liverpool, so passengers must change trains at Crewe.",
+  "src": ""
+ },
+ {
+  "id": "tra-025",
+  "q": "travel around the city",
+  "p": "get around",
+  "vi": "đi lại trong thành phố",
+  "kind": "synonym",
+  "topic": "travel",
+  "ex": "The easiest way to get around Amsterdam is by bicycle, as the city is flat and compact.",
+  "src": ""
+ }
+]

@@ -1,0 +1,242 @@
+[
+ {
+  "id": "med-001",
+  "q": "newspapers",
+  "p": "the press",
+  "vi": "báo chí",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "The press played a crucial role in exposing corruption within the local council during the 1990s.",
+  "src": ""
+ },
+ {
+  "id": "med-002",
+  "q": "advertisement",
+  "p": "commercial",
+  "vi": "quảng cáo (trên TV)",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "A thirty-second commercial during the final can cost advertisers several million pounds.",
+  "src": ""
+ },
+ {
+  "id": "med-003",
+  "q": "viewers",
+  "p": "audience",
+  "vi": "khán giả",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "The programme attracted an audience of nearly ten million on the night it was first shown.",
+  "src": ""
+ },
+ {
+  "id": "med-004",
+  "q": "fake news",
+  "p": "misinformation",
+  "vi": "tin giả, thông tin sai lệch",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Social media platforms have been criticised for allowing misinformation to spread rapidly during elections.",
+  "src": ""
+ },
+ {
+  "id": "med-005",
+  "q": "report",
+  "p": "cover",
+  "vi": "đưa tin",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Few journalists were permitted to cover the conflict from inside the country.",
+  "src": ""
+ },
+ {
+  "id": "med-006",
+  "q": "reporter",
+  "p": "correspondent",
+  "vi": "phóng viên",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Our foreign correspondent sent daily updates from the capital throughout the political crisis.",
+  "src": ""
+ },
+ {
+  "id": "med-007",
+  "q": "influence what people think",
+  "p": "shape public opinion",
+  "vi": "định hướng dư luận",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Television news continues to shape public opinion, particularly among older voters in rural areas.",
+  "src": ""
+ },
+ {
+  "id": "med-008",
+  "q": "popular",
+  "p": "widely read",
+  "vi": "được nhiều người đọc",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "It remains one of the most widely read daily papers in the country despite falling print sales.",
+  "src": ""
+ },
+ {
+  "id": "med-009",
+  "q": "social media",
+  "p": "social networking sites",
+  "vi": "mạng xã hội",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Teenagers spend an average of three hours a day on social networking sites, according to the study.",
+  "src": ""
+ },
+ {
+  "id": "med-010",
+  "q": "broadcast",
+  "p": "air",
+  "vi": "phát sóng",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "The documentary will air on national television next month after two years of filming.",
+  "src": ""
+ },
+ {
+  "id": "med-011",
+  "q": "headline",
+  "p": "front-page story",
+  "vi": "tin trang nhất",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "The scandal became a front-page story in almost every national newspaper the following morning.",
+  "src": ""
+ },
+ {
+  "id": "med-012",
+  "q": "censor",
+  "p": "restrict what is published",
+  "vi": "kiểm duyệt",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Some governments restrict what is published about public health or military matters during emergencies.",
+  "src": ""
+ },
+ {
+  "id": "med-013",
+  "q": "go viral",
+  "p": "spread rapidly online",
+  "vi": "lan truyền nhanh trên mạng",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "The video began to spread rapidly online within hours of being posted by a local resident.",
+  "src": ""
+ },
+ {
+  "id": "med-014",
+  "q": "famous person",
+  "p": "celebrity",
+  "vi": "người nổi tiếng",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Brands increasingly pay a celebrity to promote their products to young followers on social media.",
+  "src": ""
+ },
+ {
+  "id": "med-015",
+  "q": "private life",
+  "p": "personal affairs",
+  "vi": "đời tư",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Politicians frequently complain that tabloid journalists intrude into their personal affairs.",
+  "src": ""
+ },
+ {
+  "id": "med-016",
+  "q": "printed newspapers",
+  "p": "print media",
+  "vi": "báo in",
+  "kind": "synonym",
+  "topic": "media",
+  "ex": "Print media has struggled to compete with the free online news services that emerged in the early 2000s.",
+  "src": ""
+ },
+ {
+  "id": "med-017",
+  "q": "censored",
+  "p": "censorship",
+  "vi": "sự kiểm duyệt",
+  "kind": "word-form",
+  "topic": "media",
+  "ex": "Strict censorship meant that many foreign films were never shown in local cinemas.",
+  "src": ""
+ },
+ {
+  "id": "med-018",
+  "q": "advertise",
+  "p": "advertising campaign",
+  "vi": "chiến dịch quảng cáo",
+  "kind": "word-form",
+  "topic": "media",
+  "ex": "The advertising campaign targeted young adults mainly through video-sharing websites and mobile apps.",
+  "src": ""
+ },
+ {
+  "id": "med-019",
+  "q": "biased",
+  "p": "bias",
+  "vi": "sự thiên vị",
+  "kind": "word-form",
+  "topic": "media",
+  "ex": "Critics accused the channel of political bias in its coverage of the general election.",
+  "src": ""
+ },
+ {
+  "id": "med-021",
+  "q": "readers",
+  "p": "readership",
+  "vi": "lượng độc giả",
+  "kind": "word-form",
+  "topic": "media",
+  "ex": "The magazine's readership has fallen steadily since the launch of its free online edition.",
+  "src": ""
+ },
+ {
+  "id": "med-022",
+  "q": "people trust the news less",
+  "p": "trust in the news has declined",
+  "vi": "niềm tin vào tin tức giảm",
+  "kind": "structure",
+  "topic": "media",
+  "ex": "Surveys suggest that trust in the news has declined sharply over the past decade, especially among the young.",
+  "src": ""
+ },
+ {
+  "id": "med-023",
+  "q": "because of the internet",
+  "p": "with the advent of the internet",
+  "vi": "khi internet ra đời",
+  "kind": "structure",
+  "topic": "media",
+  "ex": "With the advent of the internet, newspapers lost much of their income from classified advertising.",
+  "src": ""
+ },
+ {
+  "id": "med-024",
+  "q": "two thirds of adults",
+  "p": "roughly 67 per cent of adults",
+  "vi": "khoảng hai phần ba người lớn",
+  "kind": "number",
+  "topic": "media",
+  "ex": "Roughly 67 per cent of adults now get at least some of their news from social media.",
+  "src": ""
+ },
+ {
+  "id": "med-025",
+  "q": "not objective",
+  "p": "one-sided",
+  "vi": "phiến diện, thiếu khách quan",
+  "kind": "opposite",
+  "topic": "media",
+  "ex": "The report was criticised as one-sided because it ignored the views of local residents.",
+  "src": ""
+ }
+]

@@ -467,6 +467,23 @@ select.rt-in{width:auto;min-width:72px}
   .rt-pass,.rt-qs{padding:16px 16px 32px}.hide-s{display:none}
   .rt-top{padding:8px 10px}
 }
+
+.vprog{height:4px;border-radius:99px;background:var(--surface-2);overflow:hidden}.vprog i{display:block;height:100%;background:var(--sV);transition:width .3s}
+.vflip{display:grid;gap:12px;justify-items:start}
+.vopts{display:grid;gap:8px}
+.vopt{display:flex;align-items:center;gap:10px;text-align:left;padding:11px 14px;border:1.5px solid var(--line-2);border-radius:10px;background:var(--surface);font:16px var(--read);color:var(--ink);cursor:pointer;transition:border-color .15s,background .15s}
+.vopt:hover:not(:disabled){border-color:var(--sV)}.vopt kbd{font:600 11px var(--mono);color:var(--mute);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+.vopt.ok{border-color:var(--ok);background:var(--ok-soft)}.vopt.no{border-color:var(--bad);background:var(--bad-soft)}.vopt:disabled{cursor:default}
+.vspot{font:18px/1.9 var(--read)}.vw{cursor:pointer;border-radius:4px;padding:1px 2px}.vw:hover{background:var(--surface-2)}
+.vw.hit{background:var(--ok-soft);color:var(--ok);font-weight:600}.vw.miss{background:var(--bad-soft);color:var(--bad);text-decoration:line-through}
+.vhit{background:none;color:var(--sV);font-weight:600}
+.vlinks{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;margin-top:4px}.vlinks a{color:var(--brand);font-weight:600}
+.vmatch{display:grid;grid-template-columns:1fr 1fr;gap:10px}.vmatch>div{display:grid;gap:8px;align-content:start}
+.vm{min-height:48px;padding:8px 12px;border:1.5px solid var(--line-2);border-radius:10px;background:var(--surface);font:15px var(--read);color:var(--ink);cursor:pointer;text-align:left}
+.vm:hover:not(:disabled){border-color:var(--sV)}.vm.on{border-color:var(--sV);background:var(--surface-2);box-shadow:0 0 0 2px var(--sV) inset}
+.vm.ok{opacity:.35;border-color:var(--ok);background:var(--ok-soft)}.vm.no{border-color:var(--bad);background:var(--bad-soft);animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media (prefers-reduced-motion:reduce){.vm.no{animation:none}}
 </style>
 </head>
 <body>
@@ -496,11 +513,11 @@ const S_PARTS = {1:['Part 1 · Interview','Câu hỏi ngắn · 20–30 giây m�
 const SP_LIMIT = {1:40, 2:120, 3:60};
 const W_RANGE = {1:[150,200], 2:[250,320]};
 const W_MIN = {1:20, 2:40};
-const NAV = [['','layout-dashboard','Tổng quan'],['hoc','graduation-cap','Học'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['reading','book-open-check','Reading'],['tu-vung','sparkles','Từ chủ động','Từ'],['thi-thu','timer','Thi thử'],
+const NAV = [['','layout-dashboard','Tổng quan'],['hoc','graduation-cap','Học'],['writing/1','pen-line','Writing'],['speaking/1','mic','Speaking'],['reading','book-open-check','Reading'],['tu-vung','sparkles','Từ vựng','Từ'],['thi-thu','timer','Thi thử'],
   ['tien-do','calendar-days','Tiến độ'],['lich-su','history','Lịch sử'],['tai-lieu','book-open','Tài liệu']];
 const NAV_SEC = {'writing/1': 'Luyện', 'tien-do': 'Theo dõi'};
 const S_KEYS = ['writing', 'speaking', 'reading', 'vocab', 'listening'];
-const S_NAME = {writing: 'Writing', speaking: 'Speaking', reading: 'Reading', vocab: 'Từ chủ động', listening: 'Listening'};
+const S_NAME = {writing: 'Writing', speaking: 'Speaking', reading: 'Reading', vocab: 'Từ vựng', listening: 'Listening'};
 const S_VAR = {writing: '--sW', speaking: '--sS', reading: '--sR', vocab: '--sV', listening: '--sL'};
 const ERR_NAME = {article: 'Mạo từ a/the', plural: 'Số ít / số nhiều', tense: 'Thì động từ', agreement: 'Hoà hợp chủ–vị', word_form: 'Sai từ loại',
   collocation: 'Collocation / dùng từ', spelling: 'Chính tả', punctuation: 'Dấu câu', repetition: 'Lặp từ', sentence: 'Cấu trúc câu'};
@@ -562,7 +579,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const ic = (n, cls='') => `<i data-lucide="${n}" class="${cls}" aria-hidden="true"></i>`;
 const icons = () => window.lucide?.createIcons();
 const app = $('#app');
-let READING = [], ITEMS = [], ATTEMPTS = [], RLLOG = [], STUDY = {}, STATE = {settings: {}, checks: {}, freezes: [], lessons: {}}, VOCAB = [], LESSONS = [];
+let READING = [], ITEMS = [], ATTEMPTS = [], RLLOG = [], STUDY = {}, STATE = {settings: {}, checks: {}, freezes: [], lessons: {}}, VOCAB = [], PARA = [], LESSONS = [];
 function safeGet(k){ try { return localStorage.getItem(k) } catch { return null } }
 function safeSet(k, v){ try { localStorage.setItem(k, v) } catch {} }
 const ui = Object.assign({key:false, hideDone:false, wgroup:'qtype', q:''}, JSON.parse(safeGet('ui2') || '{}'));
@@ -570,7 +587,7 @@ const saveUi = () => safeSet('ui2', JSON.stringify(ui));
 const isKey = x => x.hot === 'true';
 function toast(msg, ms=3200){ const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role','status'); t.textContent = msg; document.body.append(t); setTimeout(() => t.remove(), ms); }
 
-async function load(){ [ITEMS, ATTEMPTS, RLLOG, STUDY, STATE, VOCAB, LESSONS, READING] = await Promise.all(['/api/items', '/api/attempts', '/api/rl', '/api/study', '/api/state', '/api/vocab', '/api/lessons', '/api/reading'].map(u => fetch(u).then(r => r.json()))); }
+async function load(){ [ITEMS, ATTEMPTS, RLLOG, STUDY, STATE, VOCAB, LESSONS, READING, PARA] = await Promise.all(['/api/items', '/api/attempts', '/api/rl', '/api/study', '/api/state', '/api/vocab', '/api/lessons', '/api/reading', '/api/para'].map(u => fetch(u).then(r => r.json()))); }
 async function api(url, data){ const r = await fetch(url, {method: 'POST', body: JSON.stringify(data)}).then(r => r.json()); if (r.error) throw new Error(r.error); return r; }
 const todayIso = () => iso(new Date());
 const set = () => STATE.settings;
@@ -664,7 +681,7 @@ function shell(){
   const cur = location.hash.slice(2);
   const on = k => k === '' ? cur === '' : cur.startsWith(k.split('/')[0]);
   const t = todayIso(), st = streakOf(STUDY, STATE.freezes, set().min_day * 60, t), ex = set().exam_date, due = dueCount(t);
-  const pill = {'tu-vung': due ? `<span class="pill hot" title="${due} cụm đến hạn ôn">${due}</span>` : '',
+  const pill = {'tu-vung': due ? `<span class="pill hot" title="${due} thẻ cần ôn hôm nay">${due}</span>` : '',
     'hoc': (n => n ? `<span class="pill">${n}</span>` : '')(LESSONS.filter(l => l.kind === 'lesson' && !lessonDone(l.id)).length)};
   $('#nav').innerHTML = NAV.map(([k, i, l]) => `${NAV_SEC[k] ? `<div class="sec">${NAV_SEC[k]}</div>` : ''}<a href="#/${k}" class="${on(k) ? 'on' : ''} ${k === 'tu-vung' && due ? 'dot' : ''}" data-tip="${l}" aria-label="${l}">${ic(i)}<span class="lbl">${l}</span>${pill[k] || ''}</a>`).join('');
   $('#tabbar').innerHTML = NAV.map(([k, i, l, sh]) => `<a href="#/${k}" class="${on(k)?'on':''}">${ic(i)}${sh || l}</a>`).join('');
@@ -745,7 +762,7 @@ function critAvg(skill){  // trung bình từng tiêu chí của 3 bài gần nh
     const v = xs.map(c => k === 'TA/TR' ? c.TA ?? c.TR : c[k]).filter(v => v != null);
     return [k, v.length ? half(mean(v)) : null]; });
 }
-const dueCount = d => VOCAB.filter(c => c.due <= d).length;
+const dueCount = () => vocabQueue('mine').length + vocabQueue('para').length;
 const nextItem = f => ITEMS.filter(x => f(x) && x.status !== 'done').sort((a, b) => isKey(b) - isKey(a))[0] || ITEMS.filter(f)[0];
 const doneOn = (d, f) => ATTEMPTS.some(a => dayOf(a) === d && f(a));
 /* hạn mức ngày theo lịch tuần (0 = CN) */
@@ -756,8 +773,8 @@ function task(k, d){
   const learnt = Object.entries(STATE.lessons || {}).find(([, v]) => v.date === d), sug = learnt ? LESSONS.find(l => l.id === learnt[0]) : suggestLessons(1)[0];
   return {
     learn: () => ({label: sug ? `Học: ${sug.title}` : 'Học 1 bài', href: sug ? '#/bai/' + sug.id : '#/hoc', est: 15, auto: !!learnt}),
-    vocab: () => ({label: VOCAB.length ? (due ? `Ôn ${due} cụm từ chủ động đến hạn` : 'Ôn từ chủ động · hết cụm đến hạn') : 'Từ chủ động · kho trống, chấm 1 bài để thu hoạch cụm', href: '#/tu-vung', est: 12,
-      auto: VOCAB.some(c => c.last === d) && !due}),
+    vocab: () => ({label: due ? `Từ vựng · ôn ${due} thẻ (paraphrase + cụm của tôi)` : 'Từ vựng · đã ôn hết thẻ hôm nay', href: '#/tu-vung', est: 12,
+      auto: [...VOCAB, ...PARA].some(c => c.last === d) && !due}),
     w1: () => ({label: 'Writing Task 1 · 20 phút', href: link(x => x.skill === 'writing' && x.part == 1, '#/writing/1'), est: 25, auto: doneOn(d, a => a.skill === 'writing' && a.part == 1)}),
     w2: () => ({label: 'Writing Task 2 · 40 phút', href: link(x => x.skill === 'writing' && x.part == 2, '#/writing/2'), est: 45, auto: doneOn(d, a => a.skill === 'writing' && a.part == 2)}),
     s1: () => ({label: 'Speaking Part 1 · 1 chủ đề, dùng từ đích', href: link(x => x.skill === 'speaking' && x.part == 1, '#/speaking/1'), est: 10, auto: doneOn(d, a => a.skill === 'speaking' && a.part == 1)}),
@@ -795,7 +812,7 @@ function bindDaily(){
   box.querySelector('[data-dl="fold"]').onclick = () => { ui.dailyOpen = {d: t, v: !(ui.dailyOpen?.d === t ? ui.dailyOpen.v : true)}; saveUi(); redo(); };
   box.querySelectorAll('[data-dw]').forEach(b => b.onclick = async () => { const w = x.words[+b.dataset.dw];
     const ex = x.type === 'quote' ? x.text : (x.text.split(/(?<=[.!?])\s+/).find(s => s.toLowerCase().includes(w.en.toLowerCase())) || '');
-    try { await api('/api/vocab', {action: 'add', en: w.en, vi: w.vi, ex, src: 'doc-moi-ngay'}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast(`Đã thêm “${w.en}” vào kho Từ chủ động.`); redo(); } catch (e) { toast(e.message); } });
+    try { await api('/api/vocab', {action: 'add', en: w.en, vi: w.vi, ex, src: 'doc-moi-ngay'}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast(`Đã thêm “${w.en}” vào Cụm của tôi.`); redo(); } catch (e) { toast(e.message); } });
 }
 function checkin(){
   const t = todayIso(), S = set(), minS = S.min_day * 60, sec = daySec(STUDY, t), FZ = STATE.freezes;
@@ -873,7 +890,7 @@ function home(){
         <p class="small mute" style="margin:10px 0 0">Listening tự ôn ngoài web. Overall 7.0 cần tổng 4 kỹ năng ≥ 27, ví dụ 7 / 7 / 6.5 / 6.5.</p></div>
       <div class="card pad"><div class="ct"><h2>Tiến độ kho đề</h2><a class="small" href="#/tien-do">Xem thống kê</a></div>${rows.map(([l, f, h]) => { const [d, n] = prog(f);
         return `<a href="${h}" class="row" style="color:inherit;padding:7px 0"><span style="width:140px" class="small">${l}</span><div class="meter grow"><i style="width:${n ? d / n * 100 : 0}%"></i></div><span class="small mute" style="width:48px;text-align:right;font-family:var(--mono)">${d}/${n}</span></a>`; }).join('')}
-        <a href="#/tu-vung" class="row" style="color:inherit;padding:7px 0"><span style="width:140px" class="small">Từ chủ động</span><div class="meter grow"><i style="width:${VOCAB.length ? VOCAB.filter(c => c.stage === 'active').length / VOCAB.length * 100 : 0}%;background:var(--sV)"></i></div><span class="small mute" style="width:48px;text-align:right;font-family:var(--mono)">${VOCAB.filter(c => c.stage === 'active').length}/${VOCAB.length}</span></a></div>
+        <a href="#/tu-vung" class="row" style="color:inherit;padding:7px 0"><span style="width:140px" class="small">Cụm chủ động</span><div class="meter grow"><i style="width:${VOCAB.length ? VOCAB.filter(c => c.stage === 'active').length / VOCAB.length * 100 : 0}%;background:var(--sV)"></i></div><span class="small mute" style="width:48px;text-align:right;font-family:var(--mono)">${VOCAB.filter(c => c.stage === 'active').length}/${VOCAB.length}</span></a></div>
     </div>
     ${drafts.length ? `<div class="section"><div class="section-h"><h2>Tiếp tục bài đang làm</h2></div><div class="rows">${drafts.map(row).join('')}</div></div>` : ''}`;
   bindStatus(); bindCheckin(); bindDaily();
@@ -1070,7 +1087,7 @@ function progressPage(){
         <div class="card pad"><div class="ct"><h2>Reading theo dạng câu</h2><span class="small mute">% đúng · tất cả các lần</span></div>${rlRows.length ? '<div class="cbox"><canvas id="cRead" role="img" aria-label="Tỉ lệ đúng theo dạng câu Reading"></canvas></div>' : empty('Chưa có câu Reading nào được gán dạng câu.')}</div>
         <div class="card pad"><div class="ct"><h2>Lỗi lặp lại</h2><span class="small mute">trung bình mỗi bài · ${errAtt.length >= 2 ? 'nửa đầu so với nửa gần nhất' : ''}</span></div>${errAtt.length >= 2 ? '<div class="cbox"><canvas id="cErr" role="img" aria-label="Số lỗi theo loại, các bài đầu so với các bài gần nhất"></canvas></div>' : empty('Cần ít nhất 2 bài chấm có gắn nhãn lỗi.')}</div>
       </div>
-      <div class="card pad" style="margin-top:16px"><div class="ct"><h2>Từ chủ động</h2><a class="small" href="#/tu-vung">Mở kho từ</a></div>${VOCAB.length ? '<div class="cbox sm"><canvas id="cFun" role="img" aria-label="Số cụm ở từng bước"></canvas></div>' : empty('Kho từ trống. Mỗi lần chấm bài, các cụm nên học sẽ tự vào kho.')}</div>
+      <div class="card pad" style="margin-top:16px"><div class="ct"><h2>Cụm của tôi</h2><a class="small" href="#/tu-vung">Mở Từ vựng</a></div>${VOCAB.length ? '<div class="cbox sm"><canvas id="cFun" role="img" aria-label="Số cụm ở từng bước"></canvas></div>' : empty('Kho từ trống. Mỗi lần chấm bài, các cụm nên học sẽ tự vào kho.')}</div>
     </div>`;
   app.querySelectorAll('[data-mo]').forEach(b => b.onclick = () => { const [y, m] = (ui.calMonth || t.slice(0, 7)).split('-').map(Number), d = new Date(y, m - 1 + +b.dataset.mo, 1);
     ui.calMonth = iso(d).slice(0, 7); progressPage(); icons(); });
@@ -1118,100 +1135,216 @@ function drawStats(wAtt, errAtt, rlRows){
     options: {indexAxis: 'y', scales: {x: {beginAtZero: true, ticks: {precision: 0}}, y: {grid: {display: false}}}, plugins: {legend: {display: false}}}});
 }
 
-/* ---------- từ chủ động ---------- */
-const VMODE = {recall: 'Gợi nhớ ngược', cloze: 'Điền vào câu', write: 'Tự đặt câu', speak: 'Nói 1–2 câu'};
-const modeOf = c => { const b = c.box || 0, hasEx = c.ex && phraseRe(c.en).test(c.ex);
-  return b <= 1 ? (c.vi ? 'recall' : hasEx ? 'cloze' : 'write') : b === 2 ? (hasEx ? 'cloze' : 'recall') : b === 3 || c.stage === 'active' ? 'write' : 'speak'; };
+/* ---------- từ vựng: 2 bộ (Paraphrase · Cụm của tôi), 1 bộ máy trò chơi + lịch ôn Leitner ---------- */
 const hint = en => en.split(/\s+/).map(w => w[0] + '_'.repeat(Math.max(0, w.length - 1))).join(' ');
-function vocabQueue(){
-  const t = todayIso(), dueOld = VOCAB.filter(c => c.due <= t && (c.box || 0) > 0).sort((a, b) => (a.box || 0) - (b.box || 0) || a.due.localeCompare(b.due));
-  const newToday = VOCAB.filter(c => c.last === t && c.reviews === 1 && (c.box || 0) <= 1).length;
-  const fresh = VOCAB.filter(c => (c.box || 0) === 0 && c.due <= t).slice(0, Math.max(0, set().new_words_per_day - newToday));
-  return [...dueOld, ...fresh];
+const TOPIC_VI = {general: 'Chung (mọi đề)', education: 'Giáo dục', technology: 'Công nghệ', environment: 'Môi trường', government: 'Chính phủ', urban: 'Đô thị', work: 'Công việc',
+  media: 'Truyền thông', health: 'Sức khoẻ', family: 'Gia đình', culture: 'Văn hoá', crime: 'Tội phạm', economy: 'Kinh tế', 'daily-life': 'Đời sống', leisure: 'Giải trí', travel: 'Du lịch'};
+const KIND_VI = {synonym: 'đồng nghĩa', 'word-form': 'đổi từ loại', structure: 'đổi cấu trúc', number: 'số liệu', opposite: 'phủ định ngược'};
+const VMODE = {flash: 'Thẻ mới', choice: 'Chọn paraphrase', spot: 'Tìm trong câu', listen: 'Nghe – gõ', recall: 'Tự nhớ ra', speak: 'Nói', write: 'Tự đặt câu', match: 'Ghép cặp'};
+/* một "thẻ" chung cho cả 2 bộ: cue = thứ nhìn thấy, ans = thứ phải nhận ra / nói ra */
+const asItem = (c, deck) => deck === 'para' ? {id: c.id, deck, cue: c.q, ans: c.p, vi: c.vi, ex: c.ex, box: c.box || 0, due: c.due, last: c.last, reviews: c.reviews || 0, topic: c.topic, kind: c.kind}
+  : {id: c.id, deck, cue: c.vi || c.en, ans: c.en, vi: c.vi, ex: c.ex, box: c.box || 0, due: c.due, last: c.last, reviews: c.reviews || 0, topic: c.theme};
+const deckItems = deck => deck === 'para' ? PARA.map(c => asItem(c, 'para')) : VOCAB.map(c => asItem(c, 'mine'));
+const hasSR = () => !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+const tokRe = /[A-Za-z0-9'’-]+/g;
+const spotRange = (ex, ans) => { const w = [...(ex || '').matchAll(tokRe)].map(m => m[0].toLowerCase()), a = (ans.match(tokRe) || []).map(x => x.toLowerCase());
+  for (let i = 0; a.length && i + a.length <= w.length; i++) if (a.every((x, j) => w[i + j] === x)) return [i, i + a.length - 1]; return null; };
+const modeFor = it => { const b = it.box;
+  if (b === 0) return 'flash';
+  if (b === 1) return 'choice';
+  if (b === 2) return spotRange(it.ex, it.ans) ? 'spot' : 'choice';
+  if (b === 3) return it.deck === 'mine' ? 'write' : 'listen';
+  return hasSR() && Math.random() < .35 ? 'speak' : it.deck === 'mine' && Math.random() < .5 ? 'write' : 'recall'; };
+function vocabQueue(deck, topic){
+  const t = todayIso(), all = deckItems(deck).filter(x => !topic || x.topic === topic);
+  const due = all.filter(x => x.box > 0 && x.due <= t).sort((a, b) => a.box - b.box || a.due.localeCompare(b.due));
+  const newToday = all.filter(x => x.last === t && x.reviews === 1 && x.box <= 1).length;
+  const fresh = all.filter(x => x.box === 0 && x.due <= t).slice(0, Math.max(0, (set().new_words_per_day || 10) - newToday));
+  return [...due, ...fresh];
+}
+/* âm thanh: giọng Anh–Anh có sẵn trong máy (Daniel trên Mac) + tiếng báo đúng/sai bằng WebAudio */
+let VOICE = null;
+function say(text, slow){ try { const vs = speechSynthesis.getVoices();
+  VOICE ||= vs.find(v => v.name === 'Daniel') || vs.find(v => v.lang === 'en-GB') || vs.find(v => v.lang?.startsWith('en'));
+  speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); if (VOICE) u.voice = VOICE; u.lang = VOICE?.lang || 'en-GB'; u.rate = slow ? .7 : .95; speechSynthesis.speak(u); } catch {} }
+try { speechSynthesis.onvoiceschanged = () => { VOICE = null; }; } catch {}
+let AC = null;
+function sfx(ok){ if (ui.sfx === false) return; try { AC ||= new AudioContext(); const t = AC.currentTime;
+  (ok ? [660, 990] : [220, 165]).forEach((f, i) => { const o = AC.createOscillator(), g = AC.createGain(); o.type = ok ? 'sine' : 'triangle'; o.frequency.value = f;
+    g.gain.setValueAtTime(.0001, t + i * .09); g.gain.exponentialRampToValueAtTime(.18, t + i * .09 + .02); g.gain.exponentialRampToValueAtTime(.0001, t + i * .09 + .16);
+    o.connect(g).connect(AC.destination); o.start(t + i * .09); o.stop(t + i * .09 + .18); }); } catch {} }
+const extLinks = ans => { const w = ans.replace(/[^A-Za-z' -]/g, ' ').replace(/\s+/g, ' ').trim(), head = (w.split(' ').sort((a, b) => b.length - a.length)[0] || w).toLowerCase();
+  return `<span class="vlinks"><a href="https://youglish.com/pronounce/${encodeURIComponent(w)}/english/uk" target="_blank" rel="noopener">YouGlish</a><a href="https://ozdic.com/collocation-dictionary/${encodeURIComponent(head)}" target="_blank" rel="noopener">Ozdic</a><a href="https://dictionary.cambridge.org/search/english/direct/?q=${encodeURIComponent(w)}" target="_blank" rel="noopener">Cambridge</a></span>`; };
+const sayBtn = (t, slow) => `<button class="btn icon sm" data-say="${esc(t)}" ${slow ? 'data-slow="1"' : ''} aria-label="${slow ? 'Nghe chậm' : 'Nghe'}">${ic(slow ? 'snail' : 'volume-2')}</button>`;
+const exHtml = it => it.ex ? esc(it.ex).replace(phraseRe(it.ans), m => `<mark class="vhit">${m}</mark>`) : '';
+const bindSay = el => el.querySelectorAll('[data-say]').forEach(b => b.onclick = () => say(b.dataset.say, !!b.dataset.slow));
+function distractors(it, n){ const pool = deckItems(it.deck).filter(x => x.id !== it.id && x.ans.toLowerCase() !== it.ans.toLowerCase() && x.cue.toLowerCase() !== it.cue.toLowerCase());
+  const tiers = [pool.filter(x => x.topic === it.topic && x.kind === it.kind), pool.filter(x => x.topic === it.topic), pool.filter(x => x.kind === it.kind), pool];  // nhiễu cùng chủ đề, cùng kiểu mới khó
+  const out = []; for (const t of tiers) for (const x of shuffle(t)) if (out.length < n && !out.includes(x.ans)) out.push(x.ans); return out; }
+async function review(it, ok, undo){
+  const r = it.deck === 'para' ? await api('/api/para', {id: it.id, ok, undo}) : await api('/api/vocab', {action: 'review', id: it.id, ok, undo});
+  const src = it.deck === 'para' ? PARA : VOCAB, c = src.find(x => x.id === it.id); if (c) Object.assign(c, r.card);
 }
 let VSES = null;
 function vocabPage(){
-  const t = todayIso(), q = vocabQueue(), cnt = k => VOCAB.filter(c => c.stage === k).length;
-  const lst = VOCAB.filter(c => !ui.vq || (c.en + ' ' + c.vi).toLowerCase().includes(ui.vq.toLowerCase())).sort((a, b) => ['active', 'used', 'recall', 'new'].indexOf(a.stage) - ['active', 'used', 'recall', 'new'].indexOf(b.stage) || a.due.localeCompare(b.due));
-  app.innerHTML = `<h1>Từ chủ động</h1><p class="sub">Luyện để tự nói, tự viết ra được những cụm bạn đã đọc hiểu: nhìn nghĩa tiếng Việt rồi tự lấy cụm tiếng Anh ra, rồi dùng nó trong bài thật. Một cụm chỉ thành “chủ động” khi bạn đã dùng đúng trong ${3} bài Writing hoặc Speaking khác nhau.</p>
-    <div class="funnel">${['new', 'recall', 'used', 'active'].map(k => `<div><b>${cnt(k)}</b><span>${STAGE[k]}</span></div>`).join('')}</div>
-    <div class="section" id="vses">${VSES ? '' : `<div class="card pad focusc"><div><div class="k">Hôm nay</div><div style="font-size:17px;font-weight:600;margin:4px 0">${q.length ? `${q.length} cụm cần ôn · khoảng ${Math.max(3, Math.round(q.length * .8))} phút` : VOCAB.length ? 'Đã ôn hết cụm đến hạn hôm nay.' : 'Kho đang trống.'}</div>
-      <div class="small mute">${VOCAB.length ? 'Ôn theo lịch giãn cách 1 → 2 → 4 → 8 → 16 ngày. Bài ôn khó dần: gợi nhớ ngược → điền vào câu → tự đặt câu → nói.' : 'Chấm 1 bài Writing hoặc Speaking: các cụm nên học sẽ tự vào đây. Hoặc tự thêm cụm ở bên dưới.'}</div></div>
-      ${q.length ? `<button class="btn primary" id="vstart">${ic('play')}Bắt đầu ôn</button>` : ''}</div>`}</div>
-    <div class="section"><div class="section-h"><h2>Thêm cụm</h2><span class="small mute">ví dụ cụm gặp khi làm Reading</span></div>
+  const deck = ui.deck || 'para', t = todayIso(), items = deckItems(deck), topic = deck === 'para' ? ui.ptopic || '' : '';
+  const q = vocabQueue(deck, topic), nDue = q.filter(x => x.box > 0).length, nNew = q.length - nDue;
+  const bands = deck === 'para' ? [['Chưa học', x => x.box === 0], ['Đang học', x => x.box >= 1 && x.box <= 2], ['Nhớ', x => x.box >= 3 && x.box <= 4], ['Thuộc', x => x.box >= 5]]
+    : Object.entries(STAGE).map(([k, l]) => [l, x => VOCAB.find(c => c.id === x.id)?.stage === k]);
+  const filt = items.filter(x => (!topic || x.topic === topic) && (!ui.vq || [x.cue, x.ans, x.vi].join(' ').toLowerCase().includes(ui.vq.toLowerCase())));
+  app.innerHTML = `<h1>Từ vựng</h1><p class="sub">${deck === 'para' ? 'Cặp paraphrase kiểu IELTS: câu hỏi nói một kiểu, bài đọc và bài nghe nói kiểu khác. Nhận ra nhanh thì Reading, Listening lên điểm; tự dùng được thì Writing, Speaking lên điểm.' : 'Cụm thu từ bài chấm và bài học của bạn. Cụm chỉ thành "chủ động" khi đã dùng đúng trong 3 bài Writing hoặc Speaking khác nhau.'}</p>
+    <div class="row wrap" style="gap:10px;margin-bottom:14px"><div class="seg" role="group" aria-label="Bộ từ">${[['para', `Paraphrase · ${PARA.length}`], ['mine', `Cụm của tôi · ${VOCAB.length}`]].map(([k, l]) => `<button data-deck="${k}" class="${deck === k ? 'on' : ''}">${l}</button>`).join('')}</div>
+      <span class="grow"></span><label class="small row" style="gap:6px;cursor:pointer"><input type="checkbox" id="vsfx" ${ui.sfx === false ? '' : 'checked'}>Âm báo đúng/sai</label></div>
+    <div class="funnel">${bands.map(([l, f]) => `<div><b>${items.filter(f).length}</b><span>${l}</span></div>`).join('')}</div>
+    <div class="section" id="vses">${VSES ? '' : `<div class="card pad focusc"><div><div class="k">Hôm nay</div><div style="font-size:17px;font-weight:600;margin:4px 0">${q.length ? `${nDue} cặp đến hạn ôn · ${nNew} cặp mới · khoảng ${Math.max(3, Math.round(q.length * .6))} phút` : items.length ? 'Đã ôn hết cho hôm nay.' : 'Bộ này đang trống.'}</div>
+        <div class="small mute">Mỗi cặp đi qua 6 kiểu bài khó dần: thẻ mới → chọn paraphrase → ghép cặp / tìm trong câu → nghe – gõ → tự nhớ ra → nói. Ôn lại sau 1 → 2 → 4 → 8 → 16 ngày.</div>
+        ${deck === 'para' ? `<div class="row wrap" style="gap:8px;margin-top:10px"><select id="vtopic" class="sel" aria-label="Chủ đề"><option value="">Mọi chủ đề</option>${Object.entries(TOPIC_VI).map(([k, l]) => `<option value="${k}" ${topic === k ? 'selected' : ''}>${l} (${PARA.filter(x => x.topic === k).length})</option>`).join('')}</select></div>` : ''}</div>
+      <div class="row wrap" style="gap:8px">${q.length ? `<button class="btn primary" id="vstart">${ic('play')}Bắt đầu ôn</button>` : ''}${items.length >= 6 ? `<button class="btn" id="vmatch">${ic('grid-2x2')}Ghép cặp nhanh</button>` : ''}</div></div>`}</div>
+    ${deck === 'mine' ? `<div class="section"><div class="section-h"><h2>Thêm cụm</h2><span class="small mute">ví dụ cụm gặp khi làm Reading</span></div>
       <div class="card pad form3"><input id="v-en" placeholder="Cụm tiếng Anh, ví dụ: place undue pressure on sb" aria-label="Cụm tiếng Anh"><input id="v-vi" placeholder="Nghĩa tiếng Việt" aria-label="Nghĩa tiếng Việt">
-        <input id="v-ex" placeholder="Câu ví dụ có chứa cụm (không bắt buộc)" aria-label="Câu ví dụ"><button class="btn primary" id="v-add">${ic('plus')}Thêm</button></div></div>
-    <div class="section"><div class="section-h"><h2>Kho từ</h2><span class="small mute">${VOCAB.length} cụm</span><span class="grow"></span><label class="search">${ic('search')}<input id="vq" type="search" placeholder="Tìm cụm…" value="${esc(ui.vq || '')}" aria-label="Tìm cụm"></label></div>
-      <div class="card" style="overflow-x:auto">${lst.length ? `<table class="vt"><tr><th>Cụm</th><th>Nghĩa</th><th>Giai đoạn</th><th>Đã dùng</th><th>Ôn lại</th><th></th></tr>${lst.map(c => `<tr>
-        <td><div class="en">${esc(c.en)}</div>${c.from ? `<div class="small mute">thay cho “${esc(c.from)}”</div>` : ''}</td><td>${esc(c.vi)}</td>
-        <td><span class="stg ${c.stage}">${STAGE[c.stage]}</span> <span class="box5" title="Hộp ${c.box || 0}/5">${[1, 2, 3, 4, 5].map(i => `<i class="${(c.box || 0) >= i ? 'on' : ''}"></i>`).join('')}</span></td>
-        <td style="font-family:var(--mono)">${new Set((c.uses || []).filter(u => u.ok).map(u => u.id)).size}/3</td><td class="small mute" style="white-space:nowrap">${c.due <= t ? 'hôm nay' : new Date(c.due + 'T00:00').toLocaleDateString('vi-VN')}</td>
-        <td><button class="btn ghost icon" data-del="${c.id}" aria-label="Xoá ${esc(c.en)}">${ic('trash-2')}</button></td></tr>`).join('')}</table>` : '<div class="pad mute">Chưa có cụm nào.</div>'}</div></div>`;
-  $('#vstart') && ($('#vstart').onclick = () => { VSES = {q: vocabQueue(), i: 0, ok: 0, retry: new Set()}; vocabPage(); icons(); });
+        <input id="v-ex" placeholder="Câu ví dụ có chứa cụm (không bắt buộc)" aria-label="Câu ví dụ"><button class="btn primary" id="v-add">${ic('plus')}Thêm</button></div></div>` : ''}
+    <div class="section"><div class="section-h"><h2>${deck === 'para' ? 'Kho paraphrase' : 'Kho cụm'}</h2><span class="small mute">${filt.length} ${deck === 'para' ? 'cặp' : 'cụm'}</span><span class="grow"></span><label class="search">${ic('search')}<input id="vq" type="search" placeholder="Tìm…" value="${esc(ui.vq || '')}" aria-label="Tìm"></label></div>
+      <div class="card" style="overflow-x:auto">${filt.length ? `<table class="vt"><tr><th>${deck === 'para' ? 'Trong câu hỏi' : 'Cụm'}</th><th>${deck === 'para' ? 'Trong bài' : 'Nghĩa'}</th><th>${deck === 'para' ? 'Nghĩa' : 'Đã dùng'}</th><th>Mức</th><th>Ôn lại</th><th></th></tr>${filt.slice(0, ui.vall ? 9999 : 80).map(x => `<tr>
+        ${deck === 'para' ? `<td>${esc(x.cue)}</td><td><div class="en">${esc(x.ans)}</div><div class="small mute">${esc(KIND_VI[x.kind] || '')} · ${esc(TOPIC_VI[x.topic] || '')}</div></td><td>${esc(x.vi)}</td>`
+          : `<td><div class="en">${esc(x.ans)}</div></td><td>${esc(x.vi)}</td><td style="font-family:var(--mono)">${new Set((VOCAB.find(c => c.id === x.id)?.uses || []).filter(u => u.ok).map(u => u.id)).size}/3</td>`}
+        <td><span class="box5" title="Hộp ${x.box}/5">${[1, 2, 3, 4, 5].map(i => `<i class="${x.box >= i ? 'on' : ''}"></i>`).join('')}</span></td>
+        <td class="small mute" style="white-space:nowrap">${x.box === 0 ? 'chưa học' : x.due <= t ? 'hôm nay' : new Date(x.due + 'T00:00').toLocaleDateString('vi-VN')}</td>
+        <td style="white-space:nowrap">${sayBtn(x.ans)}${deck === 'mine' ? `<button class="btn ghost icon sm" data-del="${x.id}" aria-label="Xoá ${esc(x.ans)}">${ic('trash-2')}</button>` : ''}</td></tr>`).join('')}</table>
+        ${filt.length > 80 && !ui.vall ? `<div class="pad"><button class="btn ghost" id="vall">Xem cả ${filt.length}</button></div>` : ''}` : '<div class="pad mute">Không có mục nào.</div>'}</div></div>`;
+  bindSay(app);
+  app.querySelectorAll('[data-deck]').forEach(b => b.onclick = () => { ui.deck = b.dataset.deck; ui.vall = false; saveUi(); VSES = null; vocabPage(); icons(); });
+  $('#vsfx').onchange = e => { ui.sfx = e.target.checked; saveUi(); };
+  $('#vtopic') && ($('#vtopic').onchange = e => { ui.ptopic = e.target.value; saveUi(); vocabPage(); icons(); });
+  $('#vall') && ($('#vall').onclick = () => { ui.vall = true; vocabPage(); icons(); });
+  $('#vstart') && ($('#vstart').onclick = () => { VSES = startSession(vocabQueue(deck, topic)); vocabPage(); icons(); });
+  $('#vmatch') && ($('#vmatch').onclick = () => { const pool = items.filter(x => x.box > 0).length >= 6 ? items.filter(x => x.box > 0) : items;
+    VSES = {q: [], i: 0, ok: 0, retry: new Set(), practice: true, match: shuffle(pool).slice(0, 6)}; vocabPage(); icons(); });
   if (VSES) vocabCard();
-  const add = async () => { const en = $('#v-en').value.trim(); if (!en) return toast('Nhập cụm tiếng Anh.');
-    try { await api('/api/vocab', {action: 'add', en, vi: $('#v-vi').value, ex: $('#v-ex').value}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast('Đã thêm vào kho.'); vocabPage(); icons(); } catch (e) { toast(e.message); } };
-  $('#v-add').onclick = add; ['#v-en', '#v-vi', '#v-ex'].forEach(id => $(id).onkeydown = e => e.key === 'Enter' && add());
+  if (deck === 'mine') {
+    const add = async () => { const en = $('#v-en').value.trim(); if (!en) return toast('Nhập cụm tiếng Anh.');
+      try { await api('/api/vocab', {action: 'add', en, vi: $('#v-vi').value, ex: $('#v-ex').value}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast('Đã thêm vào kho.'); vocabPage(); icons(); } catch (e) { toast(e.message); } };
+    $('#v-add').onclick = add; ['#v-en', '#v-vi', '#v-ex'].forEach(id => $(id).onkeydown = e => e.key === 'Enter' && add());
+    app.querySelectorAll('[data-del]').forEach(b => b.onclick = async () => { const c = VOCAB.find(x => x.id === b.dataset.del);
+      if (!confirm(`Xoá “${c.en}” khỏi kho?`)) return; await api('/api/vocab', {action: 'delete', id: c.id}); VOCAB = VOCAB.filter(x => x !== c); vocabPage(); icons(); });
+  }
   $('#vq').oninput = e => { ui.vq = e.target.value; const pos = e.target.selectionStart; vocabPage(); icons(); const n = $('#vq'); n.focus(); n.setSelectionRange(pos, pos); };
-  app.querySelectorAll('[data-del]').forEach(b => b.onclick = async () => { const c = VOCAB.find(x => x.id === b.dataset.del);
-    if (!confirm(`Xoá “${c.en}” khỏi kho?`)) return; await api('/api/vocab', {action: 'delete', id: c.id}); VOCAB = VOCAB.filter(x => x !== c); vocabPage(); icons(); });
+}
+/* buổi ôn: thẻ hộp 1–2 gom 6 cái đầu thành 1 ván ghép cặp; còn lại mỗi thẻ 1 kiểu bài theo hộp */
+function startSession(q){
+  const pool = q.filter(x => x.box >= 1 && x.box <= 2), match = pool.length >= 6 ? shuffle(pool).slice(0, 6) : null;
+  return {q: q.filter(x => !match?.includes(x)).map(x => ({...x, mode: modeFor(x)})), i: 0, ok: 0, retry: new Set(), match, n: q.length};
 }
 function vocabCard(){
   const box = $('#vses'), S = VSES;
+  if (S.match) return matchRound(box, S);
   if (S.i >= S.q.length) {
-    box.innerHTML = `<div class="card pad focusc"><div><div class="k">Xong buổi ôn</div><div style="font-size:17px;font-weight:600;margin:4px 0">${S.ok}/${S.q.length} cụm nhớ ra ngay lần đầu.</div>
-      <div class="small mute">Cụm sai sẽ quay lại ngày mai. Lần làm bài tới, web gợi ý vài cụm làm “từ đích” để bạn dùng thật.</div></div><button class="btn primary" id="vdone">Xong</button></div>`;
+    box.innerHTML = `<div class="card pad focusc"><div><div class="k">${S.practice ? 'Xong ván ghép cặp' : 'Xong buổi ôn'}</div>${S.practice ? '' : `<div style="font-size:17px;font-weight:600;margin:4px 0">${S.ok}/${S.n} cặp đúng ngay lần đầu.</div>`}
+      <div class="small mute">Cặp sai sẽ quay lại ngày mai. Thử dùng 2–3 cặp vừa học trong bài Writing hoặc Speaking tiếp theo.</div></div><button class="btn primary" id="vdone">Xong</button></div>`;
     $('#vdone').onclick = () => { VSES = null; vocabPage(); icons(); }; icons(); return;
   }
-  const c = S.q[S.i], mode = modeOf(c), retry = S.retry.has(c.id);
-  const cloze = mode === 'cloze' ? esc(c.ex).replace(phraseRe(c.en), `<span style="border-bottom:2px solid var(--sV);padding:0 4px">${hint(c.en)}</span>`) : '';
-  const q1 = VOCAB.length && ITEMS.find(x => x.skill === 'speaking' && x.part == 1 && x.theme === c.theme) || ITEMS.find(x => x.skill === 'speaking' && x.part == 1);
-  box.innerHTML = `<div class="card pad"><div class="vcard">
-    <div class="row wrap" style="justify-content:space-between"><span class="small" style="font-weight:600;color:var(--sV);letter-spacing:.06em;text-transform:uppercase">${VMODE[mode]}${retry ? ' · làm lại' : ''}</span>
-      <span class="row small mute" style="gap:10px"><span class="box5" title="Hộp ${c.box || 0}/5">${[1, 2, 3, 4, 5].map(i => `<i class="${(c.box || 0) >= i ? 'on' : ''}"></i>`).join('')}</span><span style="font-family:var(--mono)">${S.i + 1}/${S.q.length}</span></span></div>
-    ${mode === 'recall' ? `<div class="cueq">${esc(c.vi)}</div><div class="small mute" style="font-family:var(--mono)">gợi ý: ${hint(c.en)}</div><input class="ans" id="va" autocomplete="off" spellcheck="false" placeholder="Gõ cụm tiếng Anh rồi Enter">`
-    : mode === 'cloze' ? `<div class="exs">${cloze}</div><div class="small mute">${esc(c.vi)}</div><input class="ans" id="va" autocomplete="off" spellcheck="false" placeholder="Gõ cụm còn thiếu rồi Enter">`
-    : `<div class="cueq">${mode === 'speak' ? 'Nói 1–2 câu' : 'Viết 1 câu'} về chính bạn có dùng: <span style="font-family:var(--read);color:var(--sV)">${esc(c.en)}</span></div>
-      <div class="small mute">${esc(c.vi)}${mode === 'speak' && q1 ? ` · gợi ý trả lời câu Part 1 chủ đề “${esc(q1.title)}”` : ''}</div>
-      <textarea id="va" rows="3" spellcheck="false" placeholder="${mode === 'speak' ? 'Bấm micro rồi nói, hoặc gõ' : 'Ví dụ: ...'}"></textarea>
-      ${mode === 'speak' ? `<div><button class="btn" id="vmic">${ic('mic')}<span>Nói</span></button></div>` : ''}`}
-    <div id="vres"></div>
-    <div class="row wrap" id="vbtns"><button class="btn primary" id="vcheck">${ic('check')}Kiểm tra</button><button class="btn ghost" id="vskip">Không nhớ</button></div>
-    ${c.from || c.src ? `<p class="small mute" style="margin:0">Nguồn: ${c.from ? `bạn từng viết “${esc(c.from)}” · ` : ''}${esc(ITEMS.find(x => x.id === c.src)?.title || c.src)}</p>` : ''}
-  </div></div>`;
-  icons();
-  const inp = $('#va'), btns = $('#vbtns'); inp.focus();
-  let done = false;  // mỗi thẻ chỉ chấm 1 lần: bấm Enter 2 lần / bấm "Không nhớ" khi đang chấm câu không được chấm lại hay ghi đè nút của thẻ sau
-  const finish = async (ok, html) => {
-    if (done) return; done = true; inp.readOnly = true;
-    $('#vres').innerHTML = html;
-    if (!ok && !retry) { S.retry.add(c.id); S.q.push(c); }
+  const it = S.q[S.i], retry = S.retry.has(it.id), mode = it.mode;
+  const head = `<div class="row wrap" style="justify-content:space-between"><span class="small" style="font-weight:600;color:var(--sV);letter-spacing:.06em;text-transform:uppercase">${VMODE[mode]}${retry ? ' · làm lại' : ''}</span>
+    <span class="row small mute" style="gap:10px"><span class="box5" title="Hộp ${it.box}/5">${[1, 2, 3, 4, 5].map(i => `<i class="${it.box >= i ? 'on' : ''}"></i>`).join('')}</span><span style="font-family:var(--mono)">${S.i + 1}/${S.q.length}</span></span></div>
+    <div class="vprog"><i style="width:${S.i / S.q.length * 100}%"></i></div>`;
+  const cueQ = it.deck === 'para' ? `Trong câu hỏi: <b>${esc(it.cue)}</b>` : `<b>${esc(it.cue)}</b>`;
+  let body = '';
+  if (mode === 'flash') body = `<div class="vflip" id="vflip"><div class="cueq">${esc(it.cue)}</div><div class="small mute">${it.deck === 'para' ? 'Bài đọc sẽ nói ý này thế nào?' : 'Cụm tiếng Anh là gì?'} Nghĩ trong đầu rồi bấm lật thẻ.</div>
+      <button class="btn primary" id="vturn">${ic('rotate-3d')}Lật thẻ · Space</button></div>`;
+  else if (mode === 'choice') { const opts = shuffle([it.ans, ...distractors(it, 3)]);
+    body = `<div class="cueq">${cueQ}</div><div class="small mute">${it.deck === 'para' ? 'Bài đọc nhiều khả năng viết là:' : 'Chọn cụm tiếng Anh đúng:'}</div>
+      <div class="vopts">${opts.map((o, i) => `<button class="vopt" data-o="${esc(o)}"><kbd>${i + 1}</kbd>${esc(o)}</button>`).join('')}</div>`; }
+  else if (mode === 'spot') { let k = 0; const ex = esc(it.ex).replace(/[A-Za-z0-9'’-]+/g, m => `<span class="vw" data-k="${k++}">${m}</span>`);
+    body = `<div class="cueq">${it.deck === 'para' ? `Bấm vào chỗ trong câu nói cùng ý với <b>${esc(it.cue)}</b>` : `Bấm vào cụm có nghĩa “${esc(it.vi)}”`}</div><div class="exs vspot">${ex}</div>`; }
+  else if (mode === 'listen') body = `<div class="cueq">Nghe rồi gõ lại cụm</div><div class="row" style="gap:8px">${sayBtn(it.ans)}${sayBtn(it.ans, true)}<span class="small mute">gợi ý: ${esc(it.vi)}</span></div>
+      <input class="ans" id="va" autocomplete="off" spellcheck="false" autocapitalize="off" placeholder="Gõ điều bạn nghe được rồi Enter">`;
+  else if (mode === 'recall') body = `<div class="cueq">${cueQ}</div><div class="small mute">${esc(it.vi)} · gợi ý: <span style="font-family:var(--mono)">${hint(it.ans)}</span></div>
+      <input class="ans" id="va" autocomplete="off" spellcheck="false" autocapitalize="off" placeholder="Gõ ${it.deck === 'para' ? 'cách nói trong bài' : 'cụm tiếng Anh'} rồi Enter">`;
+  else if (mode === 'speak') body = `<div class="cueq">${cueQ}</div><div class="small mute">${esc(it.vi)} · gợi ý: <span style="font-family:var(--mono)">${hint(it.ans)}</span> · bấm micro và nói to ${it.deck === 'para' ? 'cách nói trong bài' : 'cụm'} (nói cả câu cũng được)</div>
+      <div class="row" style="gap:8px"><button class="btn" id="vmic">${ic('mic')}<span>Nói</span></button></div><textarea id="va" rows="2" spellcheck="false" placeholder="Lời bạn nói hiện ở đây, hoặc gõ"></textarea>`;
+  else if (mode === 'write') body = `<div class="cueq">Viết 1 câu về chính bạn có dùng: <span style="font-family:var(--read);color:var(--sV)">${esc(it.ans)}</span></div><div class="small mute">${esc(it.vi)}</div>
+      <textarea id="va" rows="3" spellcheck="false" placeholder="Ví dụ: ..."></textarea>`;
+  const typed = ['listen', 'recall', 'speak', 'write'].includes(mode);
+  box.innerHTML = `<div class="card pad"><div class="vcard">${head}${body}<div id="vres"></div>
+    <div class="row wrap" id="vbtns">${typed ? `<button class="btn primary" id="vcheck">${ic('check')}Kiểm tra</button>` : ''}${mode === 'flash' ? '' : `<button class="btn ghost" id="vskip">Không nhớ</button>`}</div></div></div>`;
+  icons(); bindSay(box);
+  const inp = $('#va'); inp?.focus();
+  if (mode === 'listen') setTimeout(() => say(it.ans), 250);
+  let done = false;  // mỗi thẻ chỉ chấm 1 lần
+  const reveal = (ok, extra = '') => `<div class="res ${ok ? 'ok' : 'no'}">${ok ? 'Đúng' : 'Đáp án'}<b>${esc(it.ans)} ${sayBtn(it.ans)}</b>${extra}${it.ex ? `<span class="small" style="color:var(--ink-2)">${exHtml(it)}</span>` : ''}${extLinks(it.ans)}</div>`;
+  const finish = (ok, extra) => {
+    if (done) return; done = true; if (inp) inp.readOnly = true;
+    sfx(ok); $('#vres').innerHTML = reveal(ok, extra); bindSay($('#vres')); icons();
+    if (!ok && !retry) { S.retry.add(it.id); S.q.push({...it, mode: mode === 'flash' ? 'choice' : mode}); }
     if (!retry && ok) S.ok++;
-    const save = retry ? null : api('/api/vocab', {action: 'review', id: c.id, ok}).then(r => Object.assign(c, r.card)).catch(e => toast(e.message));
-    btns.innerHTML = `<button class="btn primary" id="vnext">Tiếp · Enter${ic('arrow-right')}</button>${!ok ? '<button class="btn ghost" id="vover">Tôi đúng, chỉ khác cách viết</button>' : ''}`; icons();
+    const save = retry || S.practice ? null : review(it, ok).catch(e => toast(e.message));
+    if (ok || mode === 'flash' || mode === 'choice' || mode === 'spot') say(it.ans);
+    $('#vbtns').innerHTML = `<button class="btn primary" id="vnext">Tiếp · Enter${ic('arrow-right')}</button>${!ok && typed && mode !== 'write' ? '<button class="btn ghost" id="vover">Tôi đúng, chỉ khác cách viết</button>' : ''}`; icons();
     const next = () => { document.removeEventListener('keydown', keyNext); S.i++; vocabCard(); };
     const keyNext = e => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); next(); } };
     setTimeout(() => document.addEventListener('keydown', keyNext), 0);
     $('#vnext').onclick = next; $('#vnext').focus();
-    $('#vover') && ($('#vover').onclick = async () => { if (!retry) { await save; await api('/api/vocab', {action: 'review', id: c.id, ok: true, undo: true}); S.ok++; } S.q.splice(S.q.lastIndexOf(c), 1); S.retry.delete(c.id); next(); });
-    await save; VOCAB = await fetch('/api/vocab').then(r => r.json());
+    $('#vover') && ($('#vover').onclick = async () => { if (!retry) { await save; await review(it, true, true); S.ok++; } S.q.splice(S.q.findLastIndex(x => x.id === it.id), 1); S.retry.delete(it.id); next(); });
   };
-  const norm = x => x.toLowerCase().replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();
-  const check = async () => {
-    const v = inp.value.trim(); if (!v || done || $('#vcheck').disabled) return;
-    if (mode === 'recall' || mode === 'cloze') {
-      const ok = norm(v) === norm(c.en) || near(norm(v), norm(c.en));
-      return finish(ok, `<div class="res ${ok ? 'ok' : 'no'}">${ok ? 'Đúng' : 'Chưa đúng'}<b>${esc(c.en)}</b>${c.ex ? `<span class="small" style="color:var(--ink-2)">${esc(c.ex)}</span>` : ''}</div>`);
-    }
-    $('#vcheck').disabled = true; $('#vres').innerHTML = '<div class="small mute">Đang chấm câu (khoảng 5–10 giây)…</div>';
-    try { const r = await api('/api/vocab-check', {phrases: [c.en], sentence: v});
-      finish(!!r.ok, `<div class="res ${r.ok ? 'ok' : 'no'}">${r.ok ? 'Dùng đúng' : 'Chưa tự nhiên'}<b>${wordDiff(v, r.fixed || v)}</b><span class="small" style="color:var(--ink-2)">${esc(r.note || '')}</span></div>`);
-    } catch (e) { toast('Lỗi chấm: ' + e.message, 5000); $('#vcheck').disabled = false; $('#vres').innerHTML = ''; }
-  };
-  $('#vcheck').onclick = check;
-  inp.onkeydown = e => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); check(); } };
-  $('#vskip').onclick = () => finish(false, `<div class="res no">Đáp án<b>${esc(c.en)}</b>${c.ex ? `<span class="small" style="color:var(--ink-2)">${esc(c.ex)}</span>` : ''}</div>`);
-  $('#vmic') && ($('#vmic').onclick = () => dictate(inp, $('#vmic')));
+  const norm = x => x.toLowerCase().replace(/[’]/g, "'").replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();
+  const match = v => norm(v) === norm(it.ans) || near(norm(v), norm(it.ans));
+  $('#vskip') && ($('#vskip').onclick = () => finish(false));
+  if (mode === 'flash') {
+    const turn = () => { document.removeEventListener('keydown', keyTurn); $('#vflip').innerHTML = `<div class="small mute">${it.deck === 'para' ? `Trong câu hỏi: ${esc(it.cue)}` : ''}</div>${reveal(true).replace('res ok', 'res').replace('>Đúng<', '>' + (it.deck === 'para' ? 'Trong bài' : 'Cụm') + '<')}`;
+      bindSay($('#vflip')); icons(); say(it.ans);
+      $('#vbtns').innerHTML = `<button class="btn" id="vno">Chưa nhớ</button><button class="btn primary" id="vyes">Nhớ rồi · Enter</button>`;
+      $('#vno').onclick = () => { $('#vbtns').innerHTML = ''; finishFlash(false); }; $('#vyes').onclick = () => { $('#vbtns').innerHTML = ''; finishFlash(true); }; $('#vyes').focus(); };
+    const finishFlash = ok => { $('#vflip').querySelector('.res')?.classList.add(ok ? 'ok' : 'no'); finish(ok); $('#vres').innerHTML = ''; };
+    const keyTurn = e => { if (e.key === ' ' && !/INPUT|TEXTAREA/.test(document.activeElement?.tagName)) { e.preventDefault(); turn(); } };
+    document.addEventListener('keydown', keyTurn); $('#vturn').onclick = turn;
+  }
+  if (mode === 'choice') {
+    const pick = b => { if (done) return; const ok = b.dataset.o === it.ans; b.classList.add(ok ? 'ok' : 'no');
+      box.querySelector(`.vopt[data-o="${CSS.escape(it.ans)}"]`)?.classList.add('ok'); box.querySelectorAll('.vopt').forEach(x => x.disabled = true); document.removeEventListener('keydown', keyPick); finish(ok); };
+    const keyPick = e => { const n = +e.key; if (n >= 1 && n <= 4) { const b = box.querySelectorAll('.vopt')[n - 1]; if (b) { e.preventDefault(); pick(b); } } };
+    document.addEventListener('keydown', keyPick); box.querySelectorAll('.vopt').forEach(b => b.onclick = () => pick(b));
+  }
+  if (mode === 'spot') { const [a, b] = spotRange(it.ex, it.ans);
+    box.querySelectorAll('.vw').forEach(w => w.onclick = () => { if (done) return; const k = +w.dataset.k, ok = k >= a && k <= b;
+      box.querySelectorAll('.vw').forEach(x => { const j = +x.dataset.k; if (j >= a && j <= b) x.classList.add('hit'); }); if (!ok) w.classList.add('miss'); finish(ok); }); }
+  if (typed) {
+    const check = async () => { const v = inp.value.trim(); if (!v || done || $('#vcheck').disabled) return;
+      if (mode === 'speak') return finish(norm(v).includes(norm(it.ans)) || norm(v).split(' ').length <= norm(it.ans).split(' ').length + 1 && match(v), `<span class="small mute">Bạn nói: “${esc(v)}”</span>`);
+      if (mode !== 'write') return finish(match(v), match(v) && norm(v) !== norm(it.ans) ? `<span class="small mute">Bạn gõ: “${esc(v)}” (gần đúng)</span>` : '');
+      $('#vcheck').disabled = true; $('#vres').innerHTML = '<div class="small mute">Đang chấm câu (khoảng 5–10 giây)…</div>';
+      try { const r = await api('/api/vocab-check', {phrases: [it.ans], sentence: v});
+        finish(!!r.ok, `<span class="small"><b>${r.ok ? 'Dùng đúng' : 'Chưa tự nhiên'}:</b> ${wordDiff(v, r.fixed || v)}</span><span class="small mute">${esc(r.note || '')}</span>`);
+      } catch (e) { toast('Lỗi chấm: ' + e.message, 5000); $('#vcheck').disabled = false; $('#vres').innerHTML = ''; } };
+    $('#vcheck').onclick = check;
+    inp.onkeydown = e => { if (e.key === 'Enter' && !e.shiftKey && !e.isComposing) { e.preventDefault(); check(); } };
+    $('#vmic') && ($('#vmic').onclick = () => dictate(inp, $('#vmic')));
+  }
+}
+/* ghép cặp: bấm 1 ô trái + 1 ô phải; ghép sai thì cặp đó tính là chưa thuộc; có bấm giờ và kỷ lục */
+function matchRound(box, S){
+  const its = S.match, L = shuffle(its), R = shuffle(its), t0 = Date.now(), miss = new Set(), got = new Set();
+  box.innerHTML = `<div class="card pad"><div class="vcard" style="max-width:720px"><div class="row" style="justify-content:space-between"><span class="small" style="font-weight:600;color:var(--sV);letter-spacing:.06em;text-transform:uppercase">Ghép cặp${S.practice ? ' · luyện nhanh' : ''}</span><span class="timer" id="mt">0,0 giây</span></div>
+    <div class="small mute">Bấm 1 ô bên trái rồi ô ${its[0].deck === 'para' ? 'paraphrase' : 'nghĩa'} tương ứng bên phải.</div>
+    <div class="vmatch"><div>${L.map(x => `<button class="vm" data-l="${x.id}">${esc(x.cue)}</button>`).join('')}</div><div>${R.map(x => `<button class="vm" data-r="${x.id}">${esc(x.ans)}</button>`).join('')}</div></div><div id="vres"></div></div></div>`;
+  const tick = setInterval(() => { const el = $('#mt'); if (!el) return clearInterval(tick); el.textContent = ((Date.now() - t0) / 1000).toFixed(1).replace('.', ',') + ' giây'; }, 100);
+  let sel = null;
+  box.querySelectorAll('.vm').forEach(b => b.onclick = async () => {
+    if (b.disabled) return;
+    if (b.dataset.l) { box.querySelectorAll('[data-l]').forEach(x => x.classList.remove('on')); sel = b; b.classList.add('on'); say(its.find(x => x.id === b.dataset.l).cue); return; }
+    if (!sel) return;
+    const id = sel.dataset.l, it = its.find(x => x.id === id);
+    if (b.dataset.r === id) { sfx(true); say(it.ans); [sel, b].forEach(x => { x.classList.remove('on'); x.classList.add('ok'); x.disabled = true; }); got.add(id); sel = null; }
+    else { sfx(false); miss.add(id); b.classList.add('no'); setTimeout(() => b.classList.remove('no'), 450); }
+    if (got.size < its.length) return;
+    clearInterval(tick); const sec = (Date.now() - t0) / 1000, best = +safeGet('vm:best') || 0, rec = !miss.size && (!best || sec < best);
+    if (rec) safeSet('vm:best', sec.toFixed(1));
+    if (!S.practice) { for (const x of its) { const ok = !miss.has(x.id); if (ok) S.ok++; else S.q.push({...x, mode: 'choice'}), S.retry.add(x.id); review(x, ok).catch(e => toast(e.message)); } }
+    $('#vres').innerHTML = `<div class="res ${miss.size ? 'no' : 'ok'}">${rec ? 'Kỷ lục mới' : miss.size ? `Ghép sai ${miss.size} cặp${S.practice ? '' : ', sẽ gặp lại cuối buổi'}` : 'Không sai cặp nào'}<b>${sec.toFixed(1).replace('.', ',')} giây</b>${best && !rec ? `<span class="small mute">Kỷ lục: ${String(best).replace('.', ',')} giây</span>` : ''}</div>
+      <div class="row" style="margin-top:10px;gap:8px"><button class="btn primary" id="vnext">${S.practice ? 'Xong' : 'Tiếp tục ôn'} · Enter${ic('arrow-right')}</button>${S.practice ? `<button class="btn" id="vagain">${ic('rotate-ccw')}Ván mới</button>` : ''}</div>`; icons();
+    const next = () => { document.removeEventListener('keydown', keyNext); S.match = null; vocabCard(); };
+    const keyNext = e => { if (e.key === 'Enter') { e.preventDefault(); next(); } };
+    setTimeout(() => document.addEventListener('keydown', keyNext), 0); $('#vnext').onclick = next; $('#vnext').focus();
+    $('#vagain') && ($('#vagain').onclick = () => { document.removeEventListener('keydown', keyNext); const pool = deckItems(its[0].deck); S.match = shuffle(pool.filter(x => x.box > 0).length >= 6 ? pool.filter(x => x.box > 0) : pool).slice(0, 6); vocabCard(); });
+  });
 }
 let dictStop = null;
 function dictate(ta, btn){  // chuyển giọng nói thành chữ cho bài ôn từ (Chrome/Edge)
@@ -1260,7 +1393,7 @@ function hocPage(){
       return t ? `<a class="card pad" href="#/chu-de/${k}" style="color:inherit;display:grid;gap:4px"><div class="row"><b class="grow">${esc(name)}</b>${lessonDone(k) ? ic('circle-check', 'okc') : ''}</div>
           <span class="small mute">${esc(t.summary || '')}</span><span class="small" style="color:var(--brand)">${n} đề trong kho · cụm từ, ý tưởng Task 2, Speaking</span></a>`
         : `<div class="card pad" style="opacity:.6;display:grid;gap:4px"><b>${esc(name)}</b><span class="small mute">Sắp có (đợt 3) · ${n} đề trong kho</span></div>`; }).join('')}</div>`;
-  app.innerHTML = `<h1>Học</h1><p class="sub">Bài học ngắn 10–15 phút. Mỗi bài có phần cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (đưa thẳng vào kho Từ chủ động) và 3–5 câu kiểm tra nhanh. Học xong thì làm đề cùng dạng.</p>
+  app.innerHTML = `<h1>Học</h1><p class="sub">Bài học ngắn 10–15 phút. Mỗi bài có phần cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (đưa thẳng vào Cụm của tôi) và 3–5 câu kiểm tra nhanh. Học xong thì làm đề cùng dạng.</p>
     <div class="card pad focusc"><div><div class="k">Nên học tiếp · ${done}/${all.length} bài đã học</div>
       <div class="rows" style="margin-top:8px">${sug.map(lessonRow).join('') || '<div class="pad mute">Đã học hết các bài hiện có.</div>'}</div>
       <div class="small mute" style="margin-top:6px">${ATTEMPTS.length ? 'Chọn theo tiêu chí và lỗi đang kéo điểm xuống ở các bài chấm gần đây.' : 'Chưa có bài chấm, nên gợi ý theo thứ tự nền tảng → Task 2 → Speaking.'}</div></div></div>
@@ -1271,12 +1404,12 @@ const splitSecs = text => { const p = body(text).split(/^## (.+)$/m), out = {}; 
 function phraseList(text, src, theme){
   const ps = [...text.matchAll(PHRASE_RE)].map(m => ({en: m[1].trim(), vi: m[2].trim(), ex: m[3].trim()}));
   const box = document.createElement('div');
-  const render = () => { box.innerHTML = `<div class="row wrap" style="margin-bottom:8px"><span class="small mute grow">Bấm + để đưa cụm vào kho Từ chủ động: web sẽ cho bạn ôn và gợi ý dùng nó khi làm bài.</span>
+  const render = () => { box.innerHTML = `<div class="row wrap" style="margin-bottom:8px"><span class="small mute grow">Bấm + để đưa cụm vào Cụm của tôi: web sẽ cho bạn ôn và gợi ý dùng nó khi làm bài.</span>
       ${ps.some(p => !inVocab(p.en)) ? `<button class="btn" data-addall>${ic('list-plus')}Thêm tất cả</button>` : ''}</div>
     <div class="rows">${ps.map((p, i) => `<div class="pad" style="border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center">
       <div><div style="font:600 17px var(--read)">${esc(p.en)} <span class="small mute" style="font:13px var(--ui)">· ${esc(p.vi)}</span></div><div class="small" style="color:var(--ink-2);font-family:var(--read);font-size:15px">${esc(p.ex)}</div></div>
       ${inVocab(p.en) ? `<span class="badge ok">${ic('check')}Trong kho</span>` : `<button class="btn" data-add="${i}" aria-label="Thêm ${esc(p.en)} vào kho">${ic('plus')}</button>`}</div>`).join('')}</div>`; icons();
-    const add = async xs => { try { for (const p of xs) if (!inVocab(p.en)) await api('/api/vocab', {action: 'add', ...p, src, theme}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast(`Đã thêm ${xs.length} cụm vào kho Từ chủ động.`); render(); } catch (e) { toast(e.message); } };
+    const add = async xs => { try { for (const p of xs) if (!inVocab(p.en)) await api('/api/vocab', {action: 'add', ...p, src, theme}); VOCAB = await fetch('/api/vocab').then(r => r.json()); toast(`Đã thêm ${xs.length} cụm vào Cụm của tôi.`); render(); } catch (e) { toast(e.message); } };
     box.querySelectorAll('[data-add]').forEach(b => b.onclick = () => add([ps[+b.dataset.add]]));
     box.querySelector('[data-addall]') && (box.querySelector('[data-addall]').onclick = () => add(ps.filter(p => !inVocab(p.en)))); };
   render(); return box;
@@ -1447,7 +1580,7 @@ async function exam(id){
       draft._feedback = r.feedback; draft._result = r.result; saveDraft();
       panelState.result = r; await load();
       const used = (r.result.targets || []).filter(x => x.used && x.ok).length;
-      toast(`Đã chấm xong và lưu vào lịch sử.${used ? ` Dùng đúng ${used} từ đích.` : ''}${r.result.vocab_added ? ` Thêm ${r.result.vocab_added} cụm vào kho Từ chủ động.` : ''}`, 6000);
+      toast(`Đã chấm xong và lưu vào lịch sử.${used ? ` Dùng đúng ${used} từ đích.` : ''}${r.result.vocab_added ? ` Thêm ${r.result.vocab_added} cụm vào Cụm của tôi.` : ''}`, 6000);
     } catch (e) { toast('Lỗi chấm: ' + e.message, 6000); }
     panelState.grading = false; btn.disabled = false; btn.querySelector('span').textContent = 'Nộp & chấm';
     if (location.hash.includes(id)) openPanel('result');

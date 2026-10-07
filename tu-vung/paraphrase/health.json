@@ -1,0 +1,252 @@
+[
+ {
+  "id": "hea-001",
+  "q": "overweight",
+  "p": "obese",
+  "vi": "béo phì",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Children who are obese are more likely to develop diabetes and heart problems later in life.",
+  "src": ""
+ },
+ {
+  "id": "hea-002",
+  "q": "get better",
+  "p": "recover",
+  "vi": "hồi phục",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Most patients recover fully within six weeks if they follow the exercise programme carefully.",
+  "src": ""
+ },
+ {
+  "id": "hea-003",
+  "q": "doctor",
+  "p": "physician",
+  "vi": "bác sĩ",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "The physician recommended a series of blood tests before prescribing any medication.",
+  "src": ""
+ },
+ {
+  "id": "hea-004",
+  "q": "exercise",
+  "p": "physical activity",
+  "vi": "vận động thể chất",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Adults are advised to do at least 150 minutes of moderate physical activity every week.",
+  "src": ""
+ },
+ {
+  "id": "hea-005",
+  "q": "diet",
+  "p": "eating habits",
+  "vi": "thói quen ăn uống",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Changes in eating habits over the last century have contributed to a rise in heart disease.",
+  "src": ""
+ },
+ {
+  "id": "hea-006",
+  "q": "stop smoking",
+  "p": "give up cigarettes",
+  "vi": "bỏ thuốc lá",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "People who give up cigarettes before the age of forty can avoid most of the associated health risks.",
+  "src": ""
+ },
+ {
+  "id": "hea-007",
+  "q": "long-term illness",
+  "p": "chronic condition",
+  "vi": "bệnh mãn tính",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Patients with a chronic condition such as asthma need regular reviews of their treatment.",
+  "src": ""
+ },
+ {
+  "id": "hea-008",
+  "q": "prevent disease",
+  "p": "ward off illness",
+  "vi": "phòng bệnh",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Many people take vitamin supplements in the belief that they help ward off illness.",
+  "src": ""
+ },
+ {
+  "id": "hea-009",
+  "q": "medicine",
+  "p": "prescription drugs",
+  "vi": "thuốc kê đơn",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Spending on prescription drugs has risen sharply as the population has aged.",
+  "src": ""
+ },
+ {
+  "id": "hea-010",
+  "q": "fit",
+  "p": "in good shape",
+  "vi": "khỏe mạnh, cân đối",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Older adults who stay in good shape are far less likely to suffer serious falls.",
+  "src": ""
+ },
+ {
+  "id": "hea-011",
+  "q": "death rate",
+  "p": "mortality",
+  "vi": "tỉ lệ tử vong",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Infant mortality has fallen dramatically over the last fifty years thanks to vaccination programmes.",
+  "src": ""
+ },
+ {
+  "id": "hea-012",
+  "q": "harmful",
+  "p": "detrimental to health",
+  "vi": "có hại cho sức khỏe",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Prolonged exposure to loud noise can be detrimental to health as well as to hearing.",
+  "src": ""
+ },
+ {
+  "id": "hea-013",
+  "q": "side effect",
+  "p": "adverse reaction",
+  "vi": "tác dụng phụ",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "A small number of volunteers suffered an adverse reaction to the vaccine during the trial.",
+  "src": ""
+ },
+ {
+  "id": "hea-014",
+  "q": "mental health problems",
+  "p": "psychological disorders",
+  "vi": "rối loạn tâm lý",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Psychological disorders such as depression are now among the leading causes of disability worldwide.",
+  "src": ""
+ },
+ {
+  "id": "hea-015",
+  "q": "spread of disease",
+  "p": "outbreak",
+  "vi": "sự bùng phát dịch",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "Health officials moved quickly to contain the outbreak before it reached the capital.",
+  "src": ""
+ },
+ {
+  "id": "hea-016",
+  "q": "check-up",
+  "p": "medical examination",
+  "vi": "khám sức khỏe",
+  "kind": "synonym",
+  "topic": "health",
+  "ex": "All new employees must undergo a medical examination before they are allowed to start work.",
+  "src": ""
+ },
+ {
+  "id": "hea-017",
+  "q": "nutritious",
+  "p": "nutrition",
+  "vi": "dinh dưỡng",
+  "kind": "word-form",
+  "topic": "health",
+  "ex": "Poor nutrition in early childhood can have lasting effects on brain development.",
+  "src": ""
+ },
+ {
+  "id": "hea-018",
+  "q": "treat",
+  "p": "treatment",
+  "vi": "điều trị",
+  "kind": "word-form",
+  "topic": "health",
+  "ex": "The new treatment reduced symptoms in more than half of the patients involved in the trial.",
+  "src": ""
+ },
+ {
+  "id": "hea-019",
+  "q": "diagnose",
+  "p": "diagnosis",
+  "vi": "chẩn đoán",
+  "kind": "word-form",
+  "topic": "health",
+  "ex": "Early diagnosis significantly improves a patient's chances of surviving the disease.",
+  "src": ""
+ },
+ {
+  "id": "hea-020",
+  "q": "infectious",
+  "p": "infection",
+  "vi": "sự nhiễm trùng",
+  "kind": "word-form",
+  "topic": "health",
+  "ex": "Washing hands regularly greatly reduces the risk of infection on hospital wards.",
+  "src": ""
+ },
+ {
+  "id": "hea-021",
+  "q": "life expectancy",
+  "p": "how long people live",
+  "vi": "tuổi thọ",
+  "kind": "structure",
+  "topic": "health",
+  "ex": "Improvements in sanitation have greatly increased how long people live in many developing countries.",
+  "src": ""
+ },
+ {
+  "id": "hea-022",
+  "q": "because of poor diet",
+  "p": "as a result of unhealthy eating",
+  "vi": "do ăn uống không lành mạnh",
+  "kind": "structure",
+  "topic": "health",
+  "ex": "Many cases of type 2 diabetes develop as a result of unhealthy eating and a lack of exercise.",
+  "src": ""
+ },
+ {
+  "id": "hea-023",
+  "q": "one in five children",
+  "p": "20 per cent of children",
+  "vi": "một phần năm trẻ em",
+  "kind": "number",
+  "topic": "health",
+  "ex": "Around 20 per cent of children in the study were classified as overweight by the age of eleven.",
+  "src": ""
+ },
+ {
+  "id": "hea-024",
+  "q": "not active",
+  "p": "sedentary",
+  "vi": "ít vận động",
+  "kind": "opposite",
+  "topic": "health",
+  "ex": "A sedentary lifestyle is closely linked to heart disease, diabetes and some forms of cancer.",
+  "src": ""
+ },
+ {
+  "id": "hea-025",
+  "q": "not contagious",
+  "p": "cannot be passed on",
+  "vi": "không lây nhiễm",
+  "kind": "opposite",
+  "topic": "health",
+  "ex": "Unlike flu, the condition cannot be passed on from one person to another through physical contact.",
+  "src": ""
+ }
+]

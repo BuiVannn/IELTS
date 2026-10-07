@@ -1,0 +1,252 @@
+[
+ {
+  "id": "cri-001",
+  "q": "criminal",
+  "p": "offender",
+  "vi": "người phạm tội",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Young offenders who receive regular mentoring are far less likely to commit further crimes after their release.",
+  "src": ""
+ },
+ {
+  "id": "cri-002",
+  "q": "send to prison",
+  "p": "give a custodial sentence",
+  "vi": "kết án tù giam",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Judges are increasingly reluctant to give a custodial sentence to first-time offenders convicted of minor theft.",
+  "src": ""
+ },
+ {
+  "id": "cri-003",
+  "q": "crime rate",
+  "p": "level of offending",
+  "vi": "tỷ lệ tội phạm",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "The level of offending in the city centre fell sharply after street lighting was improved in 2019.",
+  "src": ""
+ },
+ {
+  "id": "cri-004",
+  "q": "police",
+  "p": "law enforcement",
+  "vi": "cảnh sát, lực lượng thực thi pháp luật",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Law enforcement agencies have begun using facial recognition software to identify suspects in crowded public spaces.",
+  "src": ""
+ },
+ {
+  "id": "cri-005",
+  "q": "prevent crime",
+  "p": "deter would-be offenders",
+  "vi": "ngăn chặn tội phạm",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Visible CCTV cameras are thought to deter would-be offenders from targeting shops and car parks at night.",
+  "src": ""
+ },
+ {
+  "id": "cri-006",
+  "q": "commit another crime",
+  "p": "reoffend",
+  "vi": "tái phạm",
+  "kind": "structure",
+  "topic": "crime",
+  "ex": "Prisoners who learn a trade while serving their sentence are significantly less likely to reoffend within two years.",
+  "src": ""
+ },
+ {
+  "id": "cri-007",
+  "q": "harsher punishment",
+  "p": "tougher penalties",
+  "vi": "hình phạt nặng hơn",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "The government plans to introduce tougher penalties for drivers caught using mobile phones at the wheel.",
+  "src": ""
+ },
+ {
+  "id": "cri-008",
+  "q": "steal from shops",
+  "p": "shoplifting",
+  "vi": "trộm đồ trong cửa hàng",
+  "kind": "structure",
+  "topic": "crime",
+  "ex": "Shoplifting has risen noticeably since the cost-of-living crisis began, according to retailers in northern England.",
+  "src": ""
+ },
+ {
+  "id": "cri-009",
+  "q": "break the law",
+  "p": "commit an offence",
+  "vi": "phạm luật",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "People who commit an offence while on bail are usually held in custody until their trial.",
+  "src": ""
+ },
+ {
+  "id": "cri-010",
+  "q": "young criminal",
+  "p": "juvenile delinquent",
+  "vi": "trẻ vị thành niên phạm tội",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Early intervention can prevent a juvenile delinquent from drifting into more serious crime as an adult.",
+  "src": ""
+ },
+ {
+  "id": "cri-011",
+  "q": "people affected by crime",
+  "p": "victims",
+  "vi": "nạn nhân",
+  "kind": "structure",
+  "topic": "crime",
+  "ex": "Support services for victims are often underfunded, leaving many people to cope with trauma on their own.",
+  "src": ""
+ },
+ {
+  "id": "cri-012",
+  "q": "crime increased",
+  "p": "a surge in offending",
+  "vi": "tội phạm gia tăng",
+  "kind": "structure",
+  "topic": "crime",
+  "ex": "Police recorded a surge in offending during the summer months, particularly in busy tourist areas.",
+  "src": ""
+ },
+ {
+  "id": "cri-013",
+  "q": "illegal",
+  "p": "against the law",
+  "vi": "bất hợp pháp",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Selling alcohol or cigarettes to anyone under eighteen is against the law in the United Kingdom.",
+  "src": ""
+ },
+ {
+  "id": "cri-014",
+  "q": "not guilty",
+  "p": "innocent",
+  "vi": "vô tội",
+  "kind": "opposite",
+  "topic": "crime",
+  "ex": "Under British law, a defendant is presumed innocent until the prosecution proves otherwise beyond reasonable doubt.",
+  "src": ""
+ },
+ {
+  "id": "cri-015",
+  "q": "be convicted",
+  "p": "a criminal conviction",
+  "vi": "bị kết án, tiền án",
+  "kind": "word-form",
+  "topic": "crime",
+  "ex": "Having a criminal conviction can make it much harder to find work or rent a flat.",
+  "src": ""
+ },
+ {
+  "id": "cri-016",
+  "q": "punish",
+  "p": "penalise",
+  "vi": "trừng phạt",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Courts should penalise companies that knowingly dump toxic waste into rivers and lakes.",
+  "src": ""
+ },
+ {
+  "id": "cri-017",
+  "q": "crime",
+  "p": "wrongdoing",
+  "vi": "hành vi sai trái, phạm pháp",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "The official inquiry found no evidence of wrongdoing by the officers involved in the arrest.",
+  "src": ""
+ },
+ {
+  "id": "cri-018",
+  "q": "investigate",
+  "p": "look into",
+  "vi": "điều tra",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Police have promised to look into the complaints raised by residents about drug dealing near the park.",
+  "src": ""
+ },
+ {
+  "id": "cri-019",
+  "q": "arrest",
+  "p": "take into custody",
+  "vi": "bắt giữ",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Officers have the power to take into custody anyone suspected of a serious offence.",
+  "src": ""
+ },
+ {
+  "id": "cri-020",
+  "q": "surveillance cameras",
+  "p": "CCTV",
+  "vi": "camera giám sát",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "The council installed CCTV in the high street after a series of burglaries last winter.",
+  "src": ""
+ },
+ {
+  "id": "cri-021",
+  "q": "community service",
+  "p": "carry out unpaid work",
+  "vi": "lao động công ích",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Instead of prison, minor offenders may be ordered to carry out unpaid work such as cleaning parks.",
+  "src": ""
+ },
+ {
+  "id": "cri-022",
+  "q": "death penalty",
+  "p": "capital punishment",
+  "vi": "án tử hình",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Capital punishment was abolished in Britain in 1965, although public opinion remained divided for decades.",
+  "src": ""
+ },
+ {
+  "id": "cri-023",
+  "q": "one in five crimes",
+  "p": "20 per cent of offences",
+  "vi": "một phần năm số vụ phạm tội",
+  "kind": "number",
+  "topic": "crime",
+  "ex": "Researchers estimate that 20 per cent of offences are never reported to the police at all.",
+  "src": ""
+ },
+ {
+  "id": "cri-024",
+  "q": "rehabilitate",
+  "p": "reintegrate into society",
+  "vi": "cải tạo, tái hòa nhập",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Education in prison helps inmates reintegrate into society and find stable employment after release.",
+  "src": ""
+ },
+ {
+  "id": "cri-025",
+  "q": "internet fraud",
+  "p": "online scams",
+  "vi": "lừa đảo qua mạng",
+  "kind": "synonym",
+  "topic": "crime",
+  "ex": "Online scams targeting elderly people have become far more sophisticated over the past five years.",
+  "src": ""
+ }
+]

@@ -1,0 +1,252 @@
+[
+ {
+  "id": "env-001",
+  "q": "pollution",
+  "p": "contamination",
+  "vi": "ô nhiễm",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Contamination of groundwater by agricultural chemicals poses a serious threat to drinking supplies.",
+  "src": ""
+ },
+ {
+  "id": "env-002",
+  "q": "endangered",
+  "p": "at risk of extinction",
+  "vi": "có nguy cơ tuyệt chủng",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "More than a third of amphibian species are now considered to be at risk of extinction.",
+  "src": ""
+ },
+ {
+  "id": "env-003",
+  "q": "global warming",
+  "p": "rising temperatures worldwide",
+  "vi": "nóng lên toàn cầu",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Rising temperatures worldwide are causing glaciers to retreat at an unprecedented rate.",
+  "src": ""
+ },
+ {
+  "id": "env-004",
+  "q": "renewable energy",
+  "p": "sustainable power sources",
+  "vi": "năng lượng tái tạo",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "The government plans to generate half of the nation's electricity from sustainable power sources by 2040.",
+  "src": ""
+ },
+ {
+  "id": "env-005",
+  "q": "fossil fuels",
+  "p": "coal, oil and gas",
+  "vi": "nhiên liệu hoá thạch",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Burning coal, oil and gas remains the main source of carbon dioxide in the atmosphere.",
+  "src": ""
+ },
+ {
+  "id": "env-006",
+  "q": "natural home",
+  "p": "habitat",
+  "vi": "môi trường sống",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "The orangutan's habitat has shrunk dramatically as palm oil plantations have expanded.",
+  "src": ""
+ },
+ {
+  "id": "env-007",
+  "q": "cut down trees",
+  "p": "deforestation",
+  "vi": "phá rừng",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Deforestation in the Amazon has accelerated, driven largely by demand for cattle pasture.",
+  "src": ""
+ },
+ {
+  "id": "env-008",
+  "q": "rubbish",
+  "p": "household waste",
+  "vi": "rác thải sinh hoạt",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Only a small proportion of household waste is currently recycled in many British cities.",
+  "src": ""
+ },
+ {
+  "id": "env-009",
+  "q": "recycle",
+  "p": "reprocess",
+  "vi": "tái chế",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Specialist plants reprocess used plastic bottles into fibres for clothing and carpets.",
+  "src": ""
+ },
+ {
+  "id": "env-010",
+  "q": "plants and animals",
+  "p": "flora and fauna",
+  "vi": "hệ động thực vật",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "The island is home to a remarkable variety of flora and fauna found nowhere else on Earth.",
+  "src": ""
+ },
+ {
+  "id": "env-011",
+  "q": "die out",
+  "p": "become extinct",
+  "vi": "tuyệt chủng",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Scientists warn that many coral species could become extinct before the end of the century.",
+  "src": ""
+ },
+ {
+  "id": "env-012",
+  "q": "harm the environment",
+  "p": "have an adverse ecological impact",
+  "vi": "gây hại môi trường",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Large dams can have an adverse ecological impact on fish populations downstream.",
+  "src": ""
+ },
+ {
+  "id": "env-013",
+  "q": "carbon emissions",
+  "p": "CO2 output",
+  "vi": "lượng khí thải carbon",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "China and the United States together account for over 40 per cent of global CO2 output.",
+  "src": ""
+ },
+ {
+  "id": "env-014",
+  "q": "lack of rain",
+  "p": "drought",
+  "vi": "hạn hán",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "A prolonged drought in the region has left farmers unable to grow even basic crops.",
+  "src": ""
+ },
+ {
+  "id": "env-015",
+  "q": "natural resources",
+  "p": "the earth's raw materials",
+  "vi": "tài nguyên thiên nhiên",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Rapid industrialisation has placed enormous pressure on the earth's raw materials, from timber to minerals.",
+  "src": ""
+ },
+ {
+  "id": "env-016",
+  "q": "protect",
+  "p": "conserve",
+  "vi": "bảo tồn, bảo vệ",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Local volunteers work to conserve wetlands that provide shelter for migrating birds.",
+  "src": ""
+ },
+ {
+  "id": "env-017",
+  "q": "flood",
+  "p": "inundate",
+  "vi": "làm ngập lụt",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Rising sea levels could inundate low-lying coastal cities within the next hundred years.",
+  "src": ""
+ },
+ {
+  "id": "env-018",
+  "q": "range of species",
+  "p": "biodiversity",
+  "vi": "đa dạng sinh học",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Intensive farming has been blamed for a dramatic loss of biodiversity across Europe.",
+  "src": ""
+ },
+ {
+  "id": "env-019",
+  "q": "environmentally friendly",
+  "p": "low-impact",
+  "vi": "thân thiện môi trường",
+  "kind": "synonym",
+  "topic": "environment",
+  "ex": "Tourists are increasingly choosing low-impact holidays that avoid air travel altogether.",
+  "src": ""
+ },
+ {
+  "id": "env-020",
+  "q": "pollute rivers",
+  "p": "the pollution of rivers",
+  "vi": "làm ô nhiễm sông",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "The pollution of rivers by industrial waste was the main concern raised at the conference.",
+  "src": ""
+ },
+ {
+  "id": "env-021",
+  "q": "emit carbon dioxide",
+  "p": "carbon dioxide emissions",
+  "vi": "thải khí CO2",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "Carbon dioxide emissions from aviation are expected to double over the next two decades.",
+  "src": ""
+ },
+ {
+  "id": "env-022",
+  "q": "consume energy",
+  "p": "energy consumption",
+  "vi": "tiêu thụ năng lượng",
+  "kind": "word-form",
+  "topic": "environment",
+  "ex": "Better insulation can cut energy consumption in older homes by as much as a third.",
+  "src": ""
+ },
+ {
+  "id": "env-023",
+  "q": "because of climate change",
+  "p": "as a consequence of climate change",
+  "vi": "do biến đổi khí hậu",
+  "kind": "structure",
+  "topic": "environment",
+  "ex": "Many coastal communities may be forced to relocate as a consequence of climate change.",
+  "src": ""
+ },
+ {
+  "id": "env-024",
+  "q": "a quarter of species",
+  "p": "25 per cent of species",
+  "vi": "một phần tư số loài",
+  "kind": "number",
+  "topic": "environment",
+  "ex": "Researchers estimate that 25 per cent of species in the region have declined since 1970.",
+  "src": ""
+ },
+ {
+  "id": "env-025",
+  "q": "not renewable",
+  "p": "finite",
+  "vi": "không tái tạo, có hạn",
+  "kind": "opposite",
+  "topic": "environment",
+  "ex": "Oil is a finite resource, so alternatives must be developed before reserves run out.",
+  "src": ""
+ }
+]

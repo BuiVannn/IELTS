@@ -1,0 +1,252 @@
+[
+ {
+  "id": "tech-001",
+  "q": "invent",
+  "p": "devise",
+  "vi": "phát minh, nghĩ ra",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Engineers managed to devise a method of storing solar energy far more cheaply than before.",
+  "src": ""
+ },
+ {
+  "id": "tech-002",
+  "q": "device",
+  "p": "gadget",
+  "vi": "thiết bị",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The average household now owns more than ten electronic gadgets, from tablets to smart speakers.",
+  "src": ""
+ },
+ {
+  "id": "tech-003",
+  "q": "robot",
+  "p": "automated machine",
+  "vi": "rô-bốt, máy tự động",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Each automated machine on the assembly line can work around the clock without a break.",
+  "src": ""
+ },
+ {
+  "id": "tech-004",
+  "q": "replace workers",
+  "p": "render manual labour obsolete",
+  "vi": "thay thế công nhân",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Some economists fear that artificial intelligence will render manual labour obsolete in many industries.",
+  "src": ""
+ },
+ {
+  "id": "tech-005",
+  "q": "out of date",
+  "p": "obsolete",
+  "vi": "lỗi thời",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Within a few years, most software becomes obsolete and must be replaced or updated.",
+  "src": ""
+ },
+ {
+  "id": "tech-006",
+  "q": "modern",
+  "p": "cutting-edge",
+  "vi": "hiện đại, tối tân",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The laboratory is equipped with cutting-edge instruments capable of detecting single molecules.",
+  "src": ""
+ },
+ {
+  "id": "tech-007",
+  "q": "breakthrough",
+  "p": "major advance",
+  "vi": "bước đột phá",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The discovery of penicillin represented a major advance in the treatment of bacterial infections.",
+  "src": ""
+ },
+ {
+  "id": "tech-008",
+  "q": "first developed",
+  "p": "pioneered",
+  "vi": "lần đầu phát triển",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The technique was pioneered by a small team of researchers in Cambridge in the 1970s.",
+  "src": ""
+ },
+ {
+  "id": "tech-009",
+  "q": "widely used",
+  "p": "commonplace",
+  "vi": "phổ biến",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Mobile payments, once a novelty, are now commonplace in shops throughout Asia.",
+  "src": ""
+ },
+ {
+  "id": "tech-010",
+  "q": "easy to use",
+  "p": "user-friendly",
+  "vi": "dễ sử dụng",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "The designers aimed to create a user-friendly interface that elderly people could operate without help.",
+  "src": ""
+ },
+ {
+  "id": "tech-011",
+  "q": "social media",
+  "p": "online platforms",
+  "vi": "mạng xã hội",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Young people increasingly get their news from online platforms rather than from newspapers.",
+  "src": ""
+ },
+ {
+  "id": "tech-012",
+  "q": "personal data",
+  "p": "private information",
+  "vi": "dữ liệu cá nhân",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Critics argue that technology companies collect far too much private information about their customers.",
+  "src": ""
+ },
+ {
+  "id": "tech-013",
+  "q": "online crime",
+  "p": "cybercrime",
+  "vi": "tội phạm mạng",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Banks spend billions every year protecting their systems against cybercrime.",
+  "src": ""
+ },
+ {
+  "id": "tech-014",
+  "q": "mobile phone",
+  "p": "handheld device",
+  "vi": "điện thoại di động",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Almost every handheld device sold today contains a camera and a satellite navigation system.",
+  "src": ""
+ },
+ {
+  "id": "tech-015",
+  "q": "rely on",
+  "p": "be dependent on",
+  "vi": "phụ thuộc vào",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Modern economies have come to be dependent on a stable supply of electricity and internet access.",
+  "src": ""
+ },
+ {
+  "id": "tech-016",
+  "q": "access the internet",
+  "p": "go online",
+  "vi": "truy cập mạng",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "In some rural areas, residents must travel to the nearest town simply to go online.",
+  "src": ""
+ },
+ {
+  "id": "tech-017",
+  "q": "screen time",
+  "p": "time spent on digital devices",
+  "vi": "thời gian dùng thiết bị điện tử",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Paediatricians recommend limiting the time spent on digital devices by children under five.",
+  "src": ""
+ },
+ {
+  "id": "tech-018",
+  "q": "store data",
+  "p": "retain information",
+  "vi": "lưu trữ dữ liệu",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Early computers could retain information only while they were switched on.",
+  "src": ""
+ },
+ {
+  "id": "tech-019",
+  "q": "virtual reality",
+  "p": "computer-generated environments",
+  "vi": "thực tế ảo",
+  "kind": "synonym",
+  "topic": "technology",
+  "ex": "Trainee surgeons now practise operations in computer-generated environments before working on real patients.",
+  "src": ""
+ },
+ {
+  "id": "tech-020",
+  "q": "automate tasks",
+  "p": "the automation of tasks",
+  "vi": "tự động hoá công việc",
+  "kind": "word-form",
+  "topic": "technology",
+  "ex": "The automation of tasks such as data entry has freed office staff to focus on more creative work.",
+  "src": ""
+ },
+ {
+  "id": "tech-021",
+  "q": "innovate",
+  "p": "a spirit of innovation",
+  "vi": "đổi mới, sáng tạo",
+  "kind": "word-form",
+  "topic": "technology",
+  "ex": "The company attributes its success to a spirit of innovation that encourages employees to experiment.",
+  "src": ""
+ },
+ {
+  "id": "tech-022",
+  "q": "develop rapidly",
+  "p": "rapid development",
+  "vi": "phát triển nhanh",
+  "kind": "word-form",
+  "topic": "technology",
+  "ex": "The rapid development of battery technology has made electric cars a realistic option for many drivers.",
+  "src": ""
+ },
+ {
+  "id": "tech-023",
+  "q": "thanks to technology",
+  "p": "owing to technological advances",
+  "vi": "nhờ công nghệ",
+  "kind": "structure",
+  "topic": "technology",
+  "ex": "Life expectancy has risen dramatically, largely owing to technological advances in medicine.",
+  "src": ""
+ },
+ {
+  "id": "tech-024",
+  "q": "twice as fast",
+  "p": "double the speed",
+  "vi": "nhanh gấp đôi",
+  "kind": "number",
+  "topic": "technology",
+  "ex": "The new processor operates at double the speed of its predecessor while using less power.",
+  "src": ""
+ },
+ {
+  "id": "tech-025",
+  "q": "not reliable",
+  "p": "prone to failure",
+  "vi": "không đáng tin cậy",
+  "kind": "opposite",
+  "topic": "technology",
+  "ex": "The first generation of the system was prone to failure, especially in extreme temperatures.",
+  "src": ""
+ }
+]

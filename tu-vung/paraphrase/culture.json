@@ -1,0 +1,252 @@
+[
+ {
+  "id": "cul-001",
+  "q": "tradition",
+  "p": "custom",
+  "vi": "phong tục",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The custom of exchanging gifts at the new year dates back several centuries in the region.",
+  "src": ""
+ },
+ {
+  "id": "cul-002",
+  "q": "old buildings",
+  "p": "historic sites",
+  "vi": "di tích lịch sử",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Visitor numbers at historic sites have doubled since entry fees were abolished.",
+  "src": ""
+ },
+ {
+  "id": "cul-003",
+  "q": "show",
+  "p": "exhibition",
+  "vi": "triển lãm",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The exhibition features over 200 paintings borrowed from private collections across Europe.",
+  "src": ""
+ },
+ {
+  "id": "cul-004",
+  "q": "ancient",
+  "p": "dating back thousands of years",
+  "vi": "cổ xưa",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The temple walls are covered with carvings dating back thousands of years.",
+  "src": ""
+ },
+ {
+  "id": "cul-005",
+  "q": "disappear",
+  "p": "die out",
+  "vi": "mai một, biến mất",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Linguists warn that hundreds of minority languages could die out by the end of the century.",
+  "src": ""
+ },
+ {
+  "id": "cul-006",
+  "q": "protect traditions",
+  "p": "preserve cultural heritage",
+  "vi": "bảo tồn di sản văn hóa",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Governments are under increasing pressure to preserve cultural heritage in the face of rapid development.",
+  "src": ""
+ },
+ {
+  "id": "cul-007",
+  "q": "festival",
+  "p": "celebration",
+  "vi": "lễ hội",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The harvest celebration attracts thousands of visitors to the village every autumn.",
+  "src": ""
+ },
+ {
+  "id": "cul-008",
+  "q": "foreign culture",
+  "p": "other ways of life",
+  "vi": "văn hóa nước ngoài",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Travelling abroad exposes young people to other ways of life and encourages tolerance.",
+  "src": ""
+ },
+ {
+  "id": "cul-009",
+  "q": "handmade goods",
+  "p": "traditional crafts",
+  "vi": "đồ thủ công truyền thống",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Tourism has helped to revive traditional crafts such as weaving and pottery in the area.",
+  "src": ""
+ },
+ {
+  "id": "cul-010",
+  "q": "local people",
+  "p": "indigenous communities",
+  "vi": "cộng đồng bản địa",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Researchers worked closely with indigenous communities to record their songs and oral histories.",
+  "src": ""
+ },
+ {
+  "id": "cul-011",
+  "q": "music performance",
+  "p": "live concert",
+  "vi": "buổi hòa nhạc trực tiếp",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The orchestra gave its first live concert in the newly restored opera house last spring.",
+  "src": ""
+ },
+ {
+  "id": "cul-012",
+  "q": "play",
+  "p": "theatrical production",
+  "vi": "vở kịch",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The theatrical production toured twelve cities before transferring to a London theatre.",
+  "src": ""
+ },
+ {
+  "id": "cul-013",
+  "q": "adjust to a new culture",
+  "p": "adapt to unfamiliar customs",
+  "vi": "thích nghi với văn hóa mới",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "International students often need several months to adapt to unfamiliar customs and social norms.",
+  "src": ""
+ },
+ {
+  "id": "cul-014",
+  "q": "tourist attraction",
+  "p": "landmark",
+  "vi": "địa danh nổi tiếng",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "The cathedral is the city's most famous landmark and receives over a million visitors annually.",
+  "src": ""
+ },
+ {
+  "id": "cul-015",
+  "q": "funding for the arts",
+  "p": "arts subsidies",
+  "vi": "trợ cấp cho nghệ thuật",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "Cuts to arts subsidies have forced several regional theatres to close in recent years.",
+  "src": ""
+ },
+ {
+  "id": "cul-016",
+  "q": "passed down",
+  "p": "transmitted from generation to generation",
+  "vi": "truyền từ đời này sang đời khác",
+  "kind": "synonym",
+  "topic": "culture",
+  "ex": "These folk tales were transmitted from generation to generation long before they were written down.",
+  "src": ""
+ },
+ {
+  "id": "cul-017",
+  "q": "diverse",
+  "p": "diversity",
+  "vi": "sự đa dạng",
+  "kind": "word-form",
+  "topic": "culture",
+  "ex": "The city's cultural diversity is reflected in its food, music and annual street festivals.",
+  "src": ""
+ },
+ {
+  "id": "cul-018",
+  "q": "identify with",
+  "p": "sense of identity",
+  "vi": "bản sắc",
+  "kind": "word-form",
+  "topic": "culture",
+  "ex": "Language plays a central role in a community's sense of identity.",
+  "src": ""
+ },
+ {
+  "id": "cul-019",
+  "q": "creative",
+  "p": "creativity",
+  "vi": "sự sáng tạo",
+  "kind": "word-form",
+  "topic": "culture",
+  "ex": "Exposure to music and art in childhood is thought to encourage creativity in later life.",
+  "src": ""
+ },
+ {
+  "id": "cul-020",
+  "q": "symbolise",
+  "p": "symbol",
+  "vi": "biểu tượng",
+  "kind": "word-form",
+  "topic": "culture",
+  "ex": "The dragon is a powerful symbol of strength and good fortune in Chinese culture.",
+  "src": ""
+ },
+ {
+  "id": "cul-021",
+  "q": "people from many backgrounds",
+  "p": "a multicultural society",
+  "vi": "xã hội đa văn hóa",
+  "kind": "structure",
+  "topic": "culture",
+  "ex": "Britain has gradually developed into a multicultural society over the past seventy years.",
+  "src": ""
+ },
+ {
+  "id": "cul-022",
+  "q": "everywhere becomes the same",
+  "p": "cultural homogenisation",
+  "vi": "sự đồng nhất văn hóa",
+  "kind": "structure",
+  "topic": "culture",
+  "ex": "Critics argue that globalisation leads to cultural homogenisation, as local customs give way to global brands.",
+  "src": ""
+ },
+ {
+  "id": "cul-023",
+  "q": "tourism damages local culture",
+  "p": "the erosion of local culture by tourism",
+  "vi": "du lịch làm xói mòn văn hóa",
+  "kind": "structure",
+  "topic": "culture",
+  "ex": "Residents have expressed concern about the erosion of local culture by tourism in the old town.",
+  "src": ""
+ },
+ {
+  "id": "cul-024",
+  "q": "nearly half of languages",
+  "p": "almost 50 per cent of languages",
+  "vi": "gần một nửa số ngôn ngữ",
+  "kind": "number",
+  "topic": "culture",
+  "ex": "Experts predict that almost 50 per cent of languages spoken today may vanish by 2100.",
+  "src": ""
+ },
+ {
+  "id": "cul-025",
+  "q": "not widely known",
+  "p": "obscure",
+  "vi": "ít người biết đến",
+  "kind": "opposite",
+  "topic": "culture",
+  "ex": "The museum displays works by obscure artists alongside those of internationally famous painters.",
+  "src": ""
+ }
+]

@@ -1,0 +1,252 @@
+[
+ {
+  "id": "fam-001",
+  "q": "parents",
+  "p": "mothers and fathers",
+  "vi": "cha mẹ",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Many mothers and fathers now share childcare responsibilities more equally than previous generations did.",
+  "src": ""
+ },
+ {
+  "id": "fam-002",
+  "q": "bring up",
+  "p": "raise",
+  "vi": "nuôi dạy",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Couples who raise children in large cities face particularly high childcare and housing costs.",
+  "src": ""
+ },
+ {
+  "id": "fam-003",
+  "q": "children",
+  "p": "offspring",
+  "vi": "con cái",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Wealthier parents tend to invest more time and money in the education of their offspring.",
+  "src": ""
+ },
+ {
+  "id": "fam-004",
+  "q": "old people",
+  "p": "the elderly",
+  "vi": "người cao tuổi",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Loneliness is a growing problem among the elderly, especially those who live alone in rural areas.",
+  "src": ""
+ },
+ {
+  "id": "fam-005",
+  "q": "grandparents",
+  "p": "the older generation",
+  "vi": "thế hệ đi trước",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "In many families, the older generation provides free childcare while both parents go out to work.",
+  "src": ""
+ },
+ {
+  "id": "fam-006",
+  "q": "get married",
+  "p": "tie the knot",
+  "vi": "kết hôn",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Couples are choosing to tie the knot later in life than they did fifty years ago.",
+  "src": ""
+ },
+ {
+  "id": "fam-007",
+  "q": "divorce",
+  "p": "marriage breakdown",
+  "vi": "ly hôn, hôn nhân đổ vỡ",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Marriage breakdown can have lasting effects on children's emotional well-being and school performance.",
+  "src": ""
+ },
+ {
+  "id": "fam-008",
+  "q": "single parent",
+  "p": "lone parent",
+  "vi": "cha/mẹ đơn thân",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "A lone parent may struggle to combine full-time employment with the demands of childcare.",
+  "src": ""
+ },
+ {
+  "id": "fam-009",
+  "q": "relatives",
+  "p": "extended family",
+  "vi": "họ hàng",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "In many cultures, members of the extended family traditionally live together under one roof.",
+  "src": ""
+ },
+ {
+  "id": "fam-010",
+  "q": "look after",
+  "p": "care for",
+  "vi": "chăm sóc",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Adult children are often expected to care for their ageing parents without any financial support.",
+  "src": ""
+ },
+ {
+  "id": "fam-011",
+  "q": "childhood",
+  "p": "early years",
+  "vi": "những năm đầu đời",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Experiences in the early years strongly influence a child's later social and emotional development.",
+  "src": ""
+ },
+ {
+  "id": "fam-012",
+  "q": "teenager",
+  "p": "adolescent",
+  "vi": "thanh thiếu niên",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "An adolescent typically needs more sleep than an adult, yet many get far less during term time.",
+  "src": ""
+ },
+ {
+  "id": "fam-013",
+  "q": "brothers and sisters",
+  "p": "siblings",
+  "vi": "anh chị em ruột",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Children with older siblings often learn to speak earlier than those without.",
+  "src": ""
+ },
+ {
+  "id": "fam-014",
+  "q": "live with parents",
+  "p": "remain in the family home",
+  "vi": "sống chung với bố mẹ",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "High rents mean that many young adults remain in the family home well into their late twenties.",
+  "src": ""
+ },
+ {
+  "id": "fam-015",
+  "q": "household chores",
+  "p": "domestic tasks",
+  "vi": "việc nhà",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Women in the survey still carried out the majority of domestic tasks, even when they worked full-time.",
+  "src": ""
+ },
+ {
+  "id": "fam-016",
+  "q": "spoil",
+  "p": "overindulge",
+  "vi": "nuông chiều",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Parents who overindulge their children may unintentionally encourage selfish behaviour.",
+  "src": ""
+ },
+ {
+  "id": "fam-017",
+  "q": "role model",
+  "p": "example to follow",
+  "vi": "tấm gương",
+  "kind": "synonym",
+  "topic": "family",
+  "ex": "Older brothers and sisters often provide an example to follow for younger children in the family.",
+  "src": ""
+ },
+ {
+  "id": "fam-018",
+  "q": "marry",
+  "p": "marriage",
+  "vi": "hôn nhân",
+  "kind": "word-form",
+  "topic": "family",
+  "ex": "The average age of first marriage has risen considerably in most Western countries.",
+  "src": ""
+ },
+ {
+  "id": "fam-019",
+  "q": "depend on parents",
+  "p": "financial dependence on parents",
+  "vi": "phụ thuộc tài chính vào bố mẹ",
+  "kind": "word-form",
+  "topic": "family",
+  "ex": "Rising housing costs have prolonged young adults' financial dependence on parents in many cities.",
+  "src": ""
+ },
+ {
+  "id": "fam-020",
+  "q": "become parents",
+  "p": "parenthood",
+  "vi": "việc làm cha mẹ",
+  "kind": "word-form",
+  "topic": "family",
+  "ex": "Many couples delay parenthood until they feel financially secure and have a stable home.",
+  "src": ""
+ },
+ {
+  "id": "fam-021",
+  "q": "close",
+  "p": "closeness",
+  "vi": "sự gắn bó",
+  "kind": "word-form",
+  "topic": "family",
+  "ex": "Sharing meals regularly can strengthen the closeness between family members of different ages.",
+  "src": ""
+ },
+ {
+  "id": "fam-022",
+  "q": "have fewer babies",
+  "p": "a decline in the birth rate",
+  "vi": "sinh ít con hơn",
+  "kind": "structure",
+  "topic": "family",
+  "ex": "Economists are concerned that a decline in the birth rate will shrink the future workforce.",
+  "src": ""
+ },
+ {
+  "id": "fam-023",
+  "q": "families are smaller now",
+  "p": "family size has shrunk",
+  "vi": "quy mô gia đình nhỏ đi",
+  "kind": "structure",
+  "topic": "family",
+  "ex": "Over the past century, family size has shrunk in almost every industrialised nation.",
+  "src": ""
+ },
+ {
+  "id": "fam-024",
+  "q": "a quarter of households",
+  "p": "25 per cent of homes",
+  "vi": "một phần tư hộ gia đình",
+  "kind": "number",
+  "topic": "family",
+  "ex": "Nearly 25 per cent of homes in the capital are now occupied by just one person.",
+  "src": ""
+ },
+ {
+  "id": "fam-025",
+  "q": "not strict",
+  "p": "lenient",
+  "vi": "dễ dãi",
+  "kind": "opposite",
+  "topic": "family",
+  "ex": "Some experts argue that lenient parents fail to teach their children self-discipline.",
+  "src": ""
+ }
+]

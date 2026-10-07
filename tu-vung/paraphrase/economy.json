@@ -1,0 +1,252 @@
+[
+ {
+  "id": "eco-001",
+  "q": "the economy grows",
+  "p": "economic expansion",
+  "vi": "kinh tế tăng trưởng",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "The country enjoyed a decade of economic expansion driven largely by exports of manufactured goods.",
+  "src": ""
+ },
+ {
+  "id": "eco-002",
+  "q": "rising prices",
+  "p": "inflation",
+  "vi": "lạm phát, giá tăng",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Inflation reached its highest level in forty years, squeezing household budgets across the country.",
+  "src": ""
+ },
+ {
+  "id": "eco-003",
+  "q": "unemployment",
+  "p": "joblessness",
+  "vi": "thất nghiệp",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Joblessness among young people remains stubbornly high in many former industrial towns.",
+  "src": ""
+ },
+ {
+  "id": "eco-004",
+  "q": "poor people",
+  "p": "low-income households",
+  "vi": "người thu nhập thấp",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Low-income households spend a far larger share of their budget on food and energy.",
+  "src": ""
+ },
+ {
+  "id": "eco-005",
+  "q": "rich",
+  "p": "affluent",
+  "vi": "giàu có",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Affluent consumers are more willing to pay extra for organic and locally produced food.",
+  "src": ""
+ },
+ {
+  "id": "eco-006",
+  "q": "spend less",
+  "p": "tighten their belts",
+  "vi": "chi tiêu ít đi",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "During the recession, many families had to tighten their belts and postpone major purchases.",
+  "src": ""
+ },
+ {
+  "id": "eco-007",
+  "q": "save money",
+  "p": "put money aside",
+  "vi": "tiết kiệm tiền",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Financial advisers recommend that workers put money aside each month for unexpected expenses.",
+  "src": ""
+ },
+ {
+  "id": "eco-008",
+  "q": "income",
+  "p": "earnings",
+  "vi": "thu nhập",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Average earnings in the capital are considerably higher than those in rural regions.",
+  "src": ""
+ },
+ {
+  "id": "eco-009",
+  "q": "be in debt",
+  "p": "owe money",
+  "vi": "mắc nợ",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Nearly a third of graduates still owe money to their bank five years after leaving university.",
+  "src": ""
+ },
+ {
+  "id": "eco-010",
+  "q": "pay rise",
+  "p": "wage increase",
+  "vi": "tăng lương",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Nurses were offered a wage increase of 4 per cent, which unions said failed to match inflation.",
+  "src": ""
+ },
+ {
+  "id": "eco-011",
+  "q": "economic decline",
+  "p": "downturn",
+  "vi": "suy thoái kinh tế",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Tourism was one of the first sectors to suffer during the economic downturn of 2008.",
+  "src": ""
+ },
+ {
+  "id": "eco-012",
+  "q": "trade between countries",
+  "p": "international commerce",
+  "vi": "thương mại quốc tế",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "International commerce depends heavily on reliable shipping routes and stable exchange rates.",
+  "src": ""
+ },
+ {
+  "id": "eco-013",
+  "q": "invest in",
+  "p": "an investment in",
+  "vi": "đầu tư vào",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "Building the new railway line represents an investment in the long-term prosperity of the region.",
+  "src": ""
+ },
+ {
+  "id": "eco-014",
+  "q": "production",
+  "p": "output",
+  "vi": "sản lượng",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Industrial output fell by 3 per cent in the first quarter, the steepest drop since 2020.",
+  "src": ""
+ },
+ {
+  "id": "eco-015",
+  "q": "profitable",
+  "p": "make a profit",
+  "vi": "có lãi",
+  "kind": "word-form",
+  "topic": "economy",
+  "ex": "Few start-ups manage to make a profit within their first three years of trading.",
+  "src": ""
+ },
+ {
+  "id": "eco-016",
+  "q": "unaffordable",
+  "p": "beyond the means of",
+  "vi": "quá đắt, không đủ tiền mua",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Owning a home in London is now beyond the means of most young professionals.",
+  "src": ""
+ },
+ {
+  "id": "eco-017",
+  "q": "consumers",
+  "p": "shoppers",
+  "vi": "người tiêu dùng",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Shoppers have been switching to discount supermarkets to cope with higher food prices.",
+  "src": ""
+ },
+ {
+  "id": "eco-018",
+  "q": "doubled",
+  "p": "increased twofold",
+  "vi": "tăng gấp đôi",
+  "kind": "number",
+  "topic": "economy",
+  "ex": "Since 2010, the price of an average house in the region has increased twofold.",
+  "src": ""
+ },
+ {
+  "id": "eco-019",
+  "q": "wealth gap",
+  "p": "income inequality",
+  "vi": "bất bình đẳng thu nhập",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Income inequality has widened, with the top 10 per cent earning far more than everyone else.",
+  "src": ""
+ },
+ {
+  "id": "eco-020",
+  "q": "boom",
+  "p": "period of rapid growth",
+  "vi": "thời kỳ bùng nổ kinh tế",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "The 1990s were a period of rapid growth for the technology sector in the United States.",
+  "src": ""
+ },
+ {
+  "id": "eco-021",
+  "q": "borrow money",
+  "p": "take out a loan",
+  "vi": "vay tiền",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Many students take out a loan to cover tuition fees and living costs at university.",
+  "src": ""
+ },
+ {
+  "id": "eco-022",
+  "q": "fall in demand",
+  "p": "consumers bought less",
+  "vi": "nhu cầu giảm",
+  "kind": "structure",
+  "topic": "economy",
+  "ex": "In the months after the tax rise, consumers bought less and retailers reported weaker profits.",
+  "src": ""
+ },
+ {
+  "id": "eco-023",
+  "q": "not profitable",
+  "p": "loss-making",
+  "vi": "thua lỗ",
+  "kind": "opposite",
+  "topic": "economy",
+  "ex": "The government stepped in to rescue the loss-making airline in order to protect thousands of jobs.",
+  "src": ""
+ },
+ {
+  "id": "eco-024",
+  "q": "funding",
+  "p": "financial support",
+  "vi": "nguồn tài trợ",
+  "kind": "synonym",
+  "topic": "economy",
+  "ex": "Small businesses can apply for financial support from the regional development agency.",
+  "src": ""
+ },
+ {
+  "id": "eco-025",
+  "q": "a quarter of",
+  "p": "one in four",
+  "vi": "một phần tư",
+  "kind": "number",
+  "topic": "economy",
+  "ex": "One in four adults in the survey said they had no savings at all.",
+  "src": ""
+ }
+]

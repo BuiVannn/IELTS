@@ -1,0 +1,252 @@
+[
+ {
+  "id": "urb-001",
+  "q": "city",
+  "p": "urban area",
+  "vi": "thành phố, đô thị",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "By 2050, almost seven in ten people are expected to live in an urban area.",
+  "src": ""
+ },
+ {
+  "id": "urb-002",
+  "q": "countryside",
+  "p": "rural areas",
+  "vi": "nông thôn",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Young people continue to leave rural areas in search of better-paid employment.",
+  "src": ""
+ },
+ {
+  "id": "urb-003",
+  "q": "traffic jam",
+  "p": "congestion",
+  "vi": "tắc đường",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "London introduced a charge for driving in the centre in an effort to reduce congestion.",
+  "src": ""
+ },
+ {
+  "id": "urb-004",
+  "q": "public transport",
+  "p": "mass transit",
+  "vi": "giao thông công cộng",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Investment in mass transit has allowed the city to cut car use by a quarter.",
+  "src": ""
+ },
+ {
+  "id": "urb-005",
+  "q": "housing",
+  "p": "accommodation",
+  "vi": "nhà ở, chỗ ở",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Students in the capital often struggle to find affordable accommodation close to their university.",
+  "src": ""
+ },
+ {
+  "id": "urb-006",
+  "q": "crowded",
+  "p": "densely populated",
+  "vi": "đông đúc",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Hong Kong is one of the most densely populated places on the planet.",
+  "src": ""
+ },
+ {
+  "id": "urb-007",
+  "q": "suburbs",
+  "p": "outskirts",
+  "vi": "ngoại ô",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Large retail parks on the outskirts of town have drawn shoppers away from the high street.",
+  "src": ""
+ },
+ {
+  "id": "urb-008",
+  "q": "city centre",
+  "p": "urban core",
+  "vi": "trung tâm thành phố",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Planners hope that new flats will bring residents back into the urban core after office hours.",
+  "src": ""
+ },
+ {
+  "id": "urb-009",
+  "q": "poor neighbourhood",
+  "p": "deprived area",
+  "vi": "khu nghèo",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Children growing up in a deprived area are less likely to have access to safe play spaces.",
+  "src": ""
+ },
+ {
+  "id": "urb-010",
+  "q": "old buildings",
+  "p": "heritage sites",
+  "vi": "công trình cổ",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Strict rules govern any alterations to heritage sites in the historic quarter.",
+  "src": ""
+ },
+ {
+  "id": "urb-011",
+  "q": "skyscraper",
+  "p": "high-rise building",
+  "vi": "nhà chọc trời",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Each new high-rise building must include a proportion of affordable flats.",
+  "src": ""
+ },
+ {
+  "id": "urb-012",
+  "q": "move to cities",
+  "p": "urban migration",
+  "vi": "di cư ra thành phố",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Urban migration has transformed small fishing villages into sprawling metropolitan areas.",
+  "src": ""
+ },
+ {
+  "id": "urb-013",
+  "q": "residents",
+  "p": "inhabitants",
+  "vi": "cư dân",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "The town's inhabitants voted overwhelmingly against the proposed motorway extension.",
+  "src": ""
+ },
+ {
+  "id": "urb-014",
+  "q": "commute",
+  "p": "travel to work",
+  "vi": "đi làm hằng ngày",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Many employees now travel to work for more than an hour each way.",
+  "src": ""
+ },
+ {
+  "id": "urb-015",
+  "q": "roads and bridges",
+  "p": "infrastructure",
+  "vi": "cơ sở hạ tầng",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "The city's ageing infrastructure was not designed to cope with such a large population.",
+  "src": ""
+ },
+ {
+  "id": "urb-016",
+  "q": "parks",
+  "p": "green spaces",
+  "vi": "không gian xanh",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Access to green spaces has been shown to improve the mental health of city dwellers.",
+  "src": ""
+ },
+ {
+  "id": "urb-017",
+  "q": "affordable housing",
+  "p": "low-cost homes",
+  "vi": "nhà ở giá rẻ",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Developers are required to build a number of low-cost homes for first-time buyers.",
+  "src": ""
+ },
+ {
+  "id": "urb-018",
+  "q": "cost of living",
+  "p": "everyday expenses",
+  "vi": "chi phí sinh hoạt",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "Rising rents have pushed up everyday expenses for families in the capital.",
+  "src": ""
+ },
+ {
+  "id": "urb-019",
+  "q": "pedestrians",
+  "p": "people on foot",
+  "vi": "người đi bộ",
+  "kind": "synonym",
+  "topic": "urban",
+  "ex": "The main square has been closed to cars and is now reserved for people on foot.",
+  "src": ""
+ },
+ {
+  "id": "urb-020",
+  "q": "regenerate",
+  "p": "the regeneration of",
+  "vi": "cải tạo, tái thiết",
+  "kind": "word-form",
+  "topic": "urban",
+  "ex": "The regeneration of the old docklands created thousands of jobs and attracted new businesses.",
+  "src": ""
+ },
+ {
+  "id": "urb-021",
+  "q": "expand rapidly",
+  "p": "rapid expansion",
+  "vi": "mở rộng nhanh",
+  "kind": "word-form",
+  "topic": "urban",
+  "ex": "The rapid expansion of the city has swallowed up surrounding farmland.",
+  "src": ""
+ },
+ {
+  "id": "urb-022",
+  "q": "plan cities",
+  "p": "urban planning",
+  "vi": "quy hoạch đô thị",
+  "kind": "word-form",
+  "topic": "urban",
+  "ex": "Good urban planning ensures that schools, shops and transport are within walking distance of homes.",
+  "src": ""
+ },
+ {
+  "id": "urb-023",
+  "q": "too many cars",
+  "p": "an excessive number of vehicles",
+  "vi": "quá nhiều xe",
+  "kind": "structure",
+  "topic": "urban",
+  "ex": "An excessive number of vehicles on narrow streets has made the old town unpleasant to walk through.",
+  "src": ""
+ },
+ {
+  "id": "urb-024",
+  "q": "two thirds of people",
+  "p": "approximately 67 per cent of the population",
+  "vi": "hai phần ba dân số",
+  "kind": "number",
+  "topic": "urban",
+  "ex": "Approximately 67 per cent of the population now lives within commuting distance of the capital.",
+  "src": ""
+ },
+ {
+  "id": "urb-025",
+  "q": "not safe at night",
+  "p": "hazardous after dark",
+  "vi": "không an toàn ban đêm",
+  "kind": "opposite",
+  "topic": "urban",
+  "ex": "Poorly lit underpasses can be hazardous after dark, particularly for those walking alone.",
+  "src": ""
+ }
+]

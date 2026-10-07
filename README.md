@@ -10,13 +10,13 @@ Dùng Chrome/Edge (ghi âm + chuyển giọng nói thành chữ). Muốn có ico
 
 | Màn | Nội dung |
 |---|---|
-| Học | 51 bài học 10–15 phút theo kỹ năng (Nền tảng, Task 1, Task 2, Speaking, Reading, Listening) và 15 trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Từ chủ động), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
+| Học | 51 bài học 10–15 phút theo kỹ năng (Nền tảng, Task 1, Task 2, Speaking, Reading, Listening) và 15 trang theo chủ đề; mỗi bài: cần nhớ, ví dụ chuẩn, lỗi hay gặp, cụm nên học (thêm vào kho Cụm của tôi), kiểm tra nhanh. Gợi ý bài theo tiêu chí và lỗi yếu nhất |
 | Writing | Task 1 (biểu đồ vẽ từ khối ```chart) và Task 2; đồng hồ 20/40 phút; đếm từ theo mốc 150/250; chấm 4 tiêu chí |
 | Speaking | Part 1; Part 2 cue card (1 phút chuẩn bị, 2 phút nói) + Part 3; chấm FC/LR/GRA/P (P là ước lượng) |
 | Reading | Đề làm trực tiếp như thi trên máy (`reading/de/*.json`, 3 passage · 40 câu · 60 phút, hoặc 1 passage 20 phút): bài đọc trái, câu hỏi phải, kéo đổi độ rộng, tô sáng, đồng hồ, thanh số câu. Nộp → band, thống kê theo dạng câu, giải thích từng câu và tô chỗ có đáp án trong bài. Vẫn nhập được đáp án đề sách giấy. (Listening tự ôn ngoài web.) |
 | Thi thử | Speaking Part 1 → 2 → 3, khoảng 13 phút, bốc đề ngẫu nhiên |
 | Tổng quan | Đọc mỗi ngày (1 quote hoặc truyện ngắn, xoay vòng 120 bài trong `hoc/doc-moi-ngay.json`), Chuỗi ngày học, phút học hôm nay/tuần, hạn mức 3 việc mỗi ngày (tự đánh dấu khi làm xong), ghi tay phút Listening, 2 ngày nghỉ phép/tháng, tiêu chí yếu nhất, bảng band theo tiêu chí |
-| Từ chủ động | Kho cụm tự thu từ mỗi lần chấm; ôn giãn cách 1→2→4→8→16 ngày với 4 kiểu bài (gợi nhớ ngược, điền câu, tự đặt câu, nói); “từ đích” hiện khi làm bài, máy chấm kiểm tra đã dùng đúng chưa; dùng đúng ở 3 bài khác nhau = chủ động |
+| Từ vựng | Hai bộ chung một lịch ôn giãn cách 1→2→4→8→16 ngày. **Paraphrase**: 711 cặp kiểu IELTS (câu hỏi ↔ bài đọc) theo 15 chủ đề + chung, lấy từ 4 đề Reading, bài Học và bộ soạn riêng (`tu-vung/paraphrase/`, quy ước `tu-vung/QUY-UOC.md`). **Cụm của tôi**: cụm tự thu từ mỗi lần chấm; thành "chủ động" khi dùng đúng trong 3 bài. 6 kiểu bài khó dần: thẻ lật, chọn paraphrase, ghép cặp có bấm giờ, tìm trong câu, nghe – gõ, tự nhớ / nói / tự đặt câu (AI chấm). Có giọng đọc Anh–Anh, âm báo đúng/sai, liên kết YouGlish · Ozdic · Cambridge |
 | Tiến độ | Lịch tháng, lưới chặng tới ngày thi, cài đặt mục tiêu; biểu đồ giờ học/tuần, band theo thời gian, tiêu chí Writing, Reading theo dạng câu, lỗi lặp lại, phễu từ chủ động |
 
 **Giờ học** được tự đếm khi đang mở một bài (đề, Reading có bấm giờ, ôn từ, thi thử) và tab đang hiện, có thao tác trong 2 phút gần nhất hoặc đồng hồ đang chạy.
@@ -76,6 +76,7 @@ Sau khi thêm/sửa đề: `python3 tools/build_index.py`.
 ## Kiểm tra
 
 ```bash
+python3 tools/validate_para.py     # kho paraphrase: trùng cặp, câu ví dụ chứa nguyên văn cụm
 python3 tools/validate_reading.py  # cấu trúc đề Reading, đáp án có nguyên văn trong bài (quy ước: reading/QUY-UOC.md)
 node tools/test_scoring.mjs        # chấm Reading, làm tròn band, chuỗi ngày, tô câu sửa, nhận cụm đích
 python3 tools/validate_hoc.py       # định dạng bài học
